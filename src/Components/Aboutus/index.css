@@ -1,0 +1,178 @@
+/* Base styles for all devices */
+.aboutus-container {
+    background-image: url('https://res.cloudinary.com/dots1s0gu/image/upload/v1689671651/Techasoft_Banner_o3bwsv.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+  }
+  
+  .heading {
+    text-align: center;
+    padding: 50px;
+    color: rgb(60, 85, 226);
+  }
+  
+  .aboutUsCard {
+    border-radius: 15px;
+    margin: 30px;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px #888888;
+  }
+  
+  .mainContainer {
+    background-image: linear-gradient(to left, #2980b9, #6dd5fa);
+    background-size: cover;
+  }
+  
+  .about-title {
+    color: #6dd5fa;
+    font-family: montserrat, sans-serif;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .about-description {
+    color: #000000;
+    padding: 10px;
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+  }
+  
+  .about-button {
+    box-shadow: 2px 2px 5px #7ebce8;
+  }
+  
+  .about-button:hover {
+    /* Hover styles */
+    background-color: greenyellow;
+    color: #ffffff;
+  }
+  
+  .about-mission {
+    color: blue;
+    background-color: powderblue;
+    border-radius: 50%;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .mission-description {
+    color: #000000;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .about-mission-card {
+    border-radius: 15px;
+    margin: 30px;
+    padding: 25px;
+    height: auto;
+    max-width: 500px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px #888888;
+  }
+  
+  .about-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .mission-image,
+  .vision-image {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  /* Responsive styles for devices with a maximum width of 768px (e.g., tablets and mobile devices) */
+  @media (max-width: 768px) {
+    .container {
+      height: 300px;
+    }
+  
+    .heading {
+      padding: 30px;
+      font-size: 24px;
+    }
+  
+    .aboutUsCard {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .about-mission-card {
+      width: 90%;
+    }
+  
+    .mission-image,
+    .vision-image {
+      height: 100px;
+      width: 100px;
+    }
+  
+    /* Display mission and vision cards in a column on mobile devices */
+    .about-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Responsive styles for devices with a maximum width of 1024px (e.g., tablets in landscape mode) */
+  @media (max-width: 1024px) {
+    .container {
+      height: 350px;
+    }
+  
+    .heading {
+      font-size: 28px;
+    }
+  
+    .aboutUsCard {
+      margin: 25px;
+      padding: 20px;
+    }
+  
+    .about-mission-card {
+      width: 80%;
+    }
+  
+    .mission-image,
+    .vision-image {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  
+  /* Responsive styles for devices with a maximum width of 1440px (e.g., larger desktop screens) */
+  @media (max-width: 1440px) {
+    .container {
+      height: 450px;
+    }
+  
+    .heading {
+      font-size: 32px;
+    }
+  
+    .aboutUsCard {
+      margin: 40px;
+      padding: 30px;
+    }
+  
+    .about-mission-card {
+      width: 600px;
+    }
+  
+    .mission-image,
+    .vision-image {
+      height: 180px;
+      width: 180px;
+    }
+  }

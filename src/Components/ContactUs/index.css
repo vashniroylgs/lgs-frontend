@@ -1,0 +1,87 @@
+/* Styling for the ContactUs component */
+
+.Registration_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-column {
+    width: 400px;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-column h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .form-column p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .form-column form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .form-column form input,
+  .form-column form select,
+  .form-column form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .form-column form textarea {
+    resize: vertical;
+  }
+  
+  .form-column form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .form-column form button.close-button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the success and error alerts */
+  
+  .alert-success,
+  .alert-error {
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .alert-error {
+    background-color: #ffcccc;
+    color: #ff0000;
+  }
+  

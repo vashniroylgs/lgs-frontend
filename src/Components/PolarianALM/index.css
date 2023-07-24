@@ -1,0 +1,109 @@
+.polarian-main-container{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+
+.feature-box {
+
+    height: 250px;
+  
+    width: 300px;
+  
+  }
+  
+  
+  
+  
+  .dark-graybg {
+  
+    background-color: #373f52;
+  
+  }
+  
+  .radius5 {
+  
+    border-radius: 5px;
+  
+  }
+  
+  .my-5 {
+  
+    margin-top: 3rem !important;
+  
+    margin-bottom: 3rem !important;
+  
+  }
+  
+  
+  
+  
+  .feature-box figure .img-block {
+  
+    height: 125px;
+  
+    width: 125px;
+  
+    margin: -70px auto 40px;
+  
+    border: 1px solid #464f63;
+  
+    border-radius: 50%;
+  
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+  }
+  
+  .feature-box figure .img-block {
+  
+    height: 125px;
+  
+    width: 125px;
+  
+    margin: -70px auto 40px;
+  
+    border: 1px solid #464f63;
+  
+    border-radius: 50%;
+  
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+  }
+  
+.bgdarkblue {
+    background-color: #ffffff;
+  
+  }
+  
+.polarian-card-image {
+  
+    border-radius: 30%;
+  
+  }
+  
+
+  .polarian-card-image-2 {
+  
+    border-radius: 50%;
+  
+  }
+  
+  .polarian-home {
+  
+    height: 400px;
+  
+    width: 400px;
+  
+  }
