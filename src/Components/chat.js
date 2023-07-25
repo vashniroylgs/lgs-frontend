@@ -42,12 +42,9 @@ componentDidMount(){
 
   render() {
 
-    return
-    //  (
-
-    //   // <h1>MY CHATBOT</h1>
-
-    // )
+    return (
+      <p>hi</p>
+    );
 
   }
 

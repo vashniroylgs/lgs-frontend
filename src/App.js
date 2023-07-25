@@ -65,7 +65,7 @@ function App() {
 
   return (
     <>
-      {showPopup && <Registration onClose={handleClosePopup} />}
+      {showPopup && <Registration onClose={handleClosePopup} onComplete={handleClosePopup}/>}
 
       <div>
         <Header />
