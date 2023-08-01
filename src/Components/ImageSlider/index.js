@@ -3,29 +3,31 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
-import mendix from "../images/mendix.jpg"
-import polarian from "../images/polarian.jpg";
+import mendix from "../images/mendix.jpg";
 import salesforce from "../images/salesforce.jpg";
-import mobile from "../images/mobile.jpg";
+import polarian from "../images/polarian.jpg";
 import webdesign from "../images/webdesign.jpg";
-import marketing from "../images/digitalmarketing.jpg"
+import mobile from "../images/mobile.jpg";
+import digital from "../images/marketing.jpg";
 
 const Images = [
   {
     backgroundImage: mendix,
   },
   {
-    backgroundImage:
-      polarian,
-  },
-  
-  {
-    backgroundImage:
-      salesforce,
+    backgroundImage: polarian,
   },
   {
-    backgroundImage:
-      marketing,
+    backgroundImage: salesforce,
+  },
+  {
+    backgroundImage: webdesign,
+  },
+  {
+    backgroundImage: mobile,
+  },
+  {
+    backgroundImage: digital,
   },
 ];
 
@@ -36,7 +38,7 @@ class ImageSlider extends Component {
       infinite: true,
       speed: 2000,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 5050,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,

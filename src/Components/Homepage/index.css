@@ -198,8 +198,9 @@
 }
 
 .home-page-slider-main-container{
-  background-color: #000000;
-  height: 550px;
+  background-image: url("../images/bgimage.jpg");
+  background-size: cover;
+  
 }
 
 
