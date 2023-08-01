@@ -36,3 +36,31 @@
   font-family: "Poppins", sans-serif !important;
   font-size: 12px !important;
 }
+
+@media screen and (max-width: 768px) {
+  .slider-heading {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    color: white !important;
+  }
+
+  .slider-paragraph {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: white !important   ;
+    width: 300px;
+  }
+  .slider-container {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-button {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px !important;
+    height: 30px;
+  }
+}
