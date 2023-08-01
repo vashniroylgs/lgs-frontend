@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
-import mendix from "../images/mendix.jpg";
+import mendix from "../images/mendix.png";
 import salesforce from "../images/salesforce.jpg";
-import polarian from "../images/polarian.jpg";
+import polarian from "../images/polarian.png";
 import webdesign from "../images/webdesign.jpg";
 import mobile from "../images/mobile.jpg";
 import digital from "../images/marketing.jpg";
@@ -38,7 +38,7 @@ class ImageSlider extends Component {
       infinite: true,
       speed: 2000,
       autoplay: true,
-      autoplaySpeed: 5050,
+      autoplaySpeed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
