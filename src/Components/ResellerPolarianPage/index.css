@@ -177,7 +177,7 @@
   }
   
   .card-container .card:hover {
-    height: 400px;
+    height: 380px !important;
   }
   
   .card-container .card .img-box {
@@ -210,9 +210,9 @@
   
   .card-container .card .content {
     position: absolute;
-    top: 252px;
+    top: 230px !important;
     width: 100%;
-    height: 35px;
+    height: 37px !important;
     padding: 0 30px;
     text-align: center;
     overflow: hidden;
@@ -220,8 +220,8 @@
   }
   
   .card-container .card:hover .content {
-    top: 130px;
-    height: 200px;
+    top: 130px !important ;
+    height: 300px !important;
   }
   
   .card-container .card .content h2 {
@@ -255,7 +255,7 @@
 
   .polarian-resellsr-card-heading{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff !important;
-
+    padding: 5px;
   }

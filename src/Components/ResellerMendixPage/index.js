@@ -1,7 +1,7 @@
 import { Component } from "react"
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Heading,CardHead} from "./styledcomponets";
+
 
 class ResellerMendix extends Component{
     render(){
@@ -156,17 +156,17 @@ class ResellerMendix extends Component{
                 <div className="row p-3">
                     {/*<Heading className="text-center">App Development</Heading>*/}
                     <div className="col-12 col-md-6 col-lg-4">
-                    <div class="card-container">
-                        <div class="card">
-                        <div class="img-box">
+                    <div className="card-container">
+                        <div className="card">
+                        <div className="img-box">
                             <img
                                 src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689916240/app-icon_tvkvp8.png"
                                 alt="appdevelopment"
                             />
                         </div>
-                        <div class="content">
-                            <CardHead>App Development</CardHead>
-                            <p>
+                        <div className="content">
+                            <h1 className="mendix-card-heading">App Development</h1>
+                            <p className="para">
                                 Empower co-creation across a diverse developer spectrum with a common visual language and dedicated IDEs 
                                 to meet business needs quickly and efficiently.
                             </p>
@@ -184,8 +184,8 @@ class ResellerMendix extends Component{
                             />
                         </div>
                         <div class="content">
-                            <CardHead>Cloud</CardHead>
-                            <p>
+                            <h1 className="mendix-card-heading">Cloud</h1>
+                            <p className="para">
                             Build and deliver portable, scalable, and resilient applications without specialized expertise. 
                             Deploy anywhere in one click.
                             </p>
@@ -204,8 +204,8 @@ class ResellerMendix extends Component{
                             />
                         </div>
                         <div class="content">
-                            <CardHead>Intelligent Automation</CardHead>
-                            <p>
+                            <h1 className="mendix-card-heading">Intelligent Automation</h1>
+                            <p className="para">
                             Deliver end-to-end process automation with applications that bring people, data, and systems together.
                             </p>
                         </div>
@@ -222,8 +222,8 @@ class ResellerMendix extends Component{
                             />
                         </div>
                         <div class="content">
-                            <CardHead>Data Integration</CardHead>
-                            <p>
+                            <h1 className="mendix-card-heading">Data Integration</h1>
+                            <p className="para">
                             Open and extensible at every level: platform, models and applications.Integrate data and logic 
                             from any data source, system or service.
                             </p>
@@ -241,8 +241,8 @@ class ResellerMendix extends Component{
                             />
                         </div>
                         <div class="content">
-                            <CardHead>Multi-Experience</CardHead>
-                            <p>
+                            <h1 className="mendix-card-heading">Multi-Experience</h1>
+                            <p className="para">
                             Visually design, context aware smart applications, that deliver exceptional users experiences across 
                             a range of touchpoints and modalities.
                             </p>
@@ -261,8 +261,8 @@ class ResellerMendix extends Component{
                             />
                         </div>
                         <div class="content">
-                            <CardHead>Artificial Intelligence</CardHead>
-                            <p>
+                            <h1 className="mendix-card-heading">Artificial Intelligence</h1>
+                            <p className="para">
                             Embrace smart applications; seamlessly connect AI and cognitive services to elevate your solution.
                             </p>
                         </div>

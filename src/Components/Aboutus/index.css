@@ -1,2473 +1,320 @@
-/* Base styles for all devices
-.aboutus-container {
-    background-image: url('https://res.cloudinary.com/dots1s0gu/image/upload/v1689671651/Techasoft_Banner_o3bwsv.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-  }
-  
-  .heading {
-    text-align: center;
-    padding: 50px;
-    color: rgb(60, 85, 226);
-  }
-  
-  .aboutUsCard {
-    border-radius: 15px;
-    margin: 30px;
-    padding: 25px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 5px #888888;
-  }
-  
-  .mainContainer {
-    background-image: linear-gradient(to left, #2980b9, #6dd5fa);
-    background-size: cover;
-  }
-  
-  .about-title {
-    color: #6dd5fa;
-    font-family: montserrat, sans-serif;
-    padding: 5px;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .about-description {
-    color: #000000;
-    padding: 10px;
-    font-family: montserrat, sans-serif;
-    font-size: 20px;
-  }
-  
-  .about-button {
-    box-shadow: 2px 2px 5px #7ebce8;
-  }
-  
-  .about-button:hover {
-    background-color: greenyellow;
-    color: #ffffff;
-  }
-  
-  .about-mission {
-    color: blue;
-    background-color: powderblue;
-    border-radius: 50%;
-    border-color: aqua;
-    border-width: 2px;
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .mission-description {
-    color: #000000;
-    font-family: montserrat, sans-serif;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  .about-mission-card {
-    border-radius: 15px;
-    margin: 30px;
-    padding: 25px;
-    height: auto;
-    max-width: 500px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 5px #888888;
-  }
-  
-  .about-cards-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .mission-image,
-  .vision-image {
-    height: 150px;
-    width: 150px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      height: 300px;
-    }
-  
-    .heading {
-      padding: 30px;
-      font-size: 24px;
-    }
-  
-    .aboutUsCard {
-      margin: 20px;
-      padding: 15px;
-    }
-  
-    .about-mission-card {
-      width: 90%;
-    }
-  
-    .mission-image,
-    .vision-image {
-      height: 100px;
-      width: 100px;
-    }
-  
-    .about-cards-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .container {
-      height: 350px;
-    }
-  
-    .heading {
-      font-size: 28px;
-    }
-  
-    .aboutUsCard {
-      margin: 25px;
-      padding: 20px;
-    }
-  
-    .about-mission-card {
-      width: 80%;
-    }
-  
-    .mission-image,
-    .vision-image {
-      height: 120px;
-      width: 120px;
-    }
-  }
-  
-  @media (max-width: 1440px) {
-    .container {
-      height: 450px;
-    }
-  
-    .heading {
-      font-size: 32px;
-    }
-  
-    .aboutUsCard {
-      margin: 40px;
-      padding: 30px;
-    }
-  
-    .about-mission-card {
-      width: 600px;
-    }
-  
-    .mission-image,
-    .vision-image {
-      height: 180px;
-      width: 180px;
-    }
-  } */
-/* 
-  .aboutus-intro {
-
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
-  
-    background-size: cover;
-  
-    background-position: center;
-  
-    background-repeat: no-repeat;
-  
-    padding: 80px 0;
-  
-    text-align: center;
-  
-    position: relative;
-  
-  }
-  
-  
-  
-  
-  .aboutus-intro .heading {
-  
-    font-size: 36px;
-  
-    margin-bottom: 20px;
-  
-    color: #fff; 
-  }
-  
-  
-  
-  
-  .aboutus-intro .intro-text {
-  
-    font-size: 18px;
-  
-    color: #f7f7f7; 
-  
-  }
-  
-  
-  
-  
-  
-  .aboutus-intro .heading,
-  
-  .aboutus-intro .intro-text {
-  
-    opacity: 0;
-  
-    transform: translateY(20px);
-  
-    transition: opacity 1s ease, transform 1s ease;
-  
-  }
-  
-  
-  
-  
-  .aboutus-intro:hover .heading,
-  
-  .aboutus-intro:hover .intro-text {
-  
-    opacity: 1;
-  
-    transform: translateY(0);
-  
-  }
-  
-  
-  
-  
-  
-  .aboutus-mission-vision {
-  
-    display: flex;
-  
-    justify-content: space-between;
-  
-    gap: 20px; 
-  
-  }
-  
-  
-  
-  
-  .mission, .vision {
-  
-    flex: 1;
-  
-    height: 300px;
-  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-    overflow: hidden;
-  
-    position: relative;
-  
-    cursor: pointer;
-  
-  }
-  
-  
-  
-  
-  .mission-image, .vision-image {
-  
-    height: 100%;
-  
-    background-size: cover;
-  
-    background-position: center;
-  
-    background-repeat: no-repeat;
-  
-    display: flex;
-  
-    align-items: center;
-  
-    justify-content: center;
-  
-    color: #fff;
-  
-    text-align: center;
-  
-    transition: transform 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .mission-image h3, .vision-image h3 {
-  
-    font-size: 1.5rem;
-  
-  }
-  
-  
-  
-  
-  .mission:hover .mission-image, .vision:hover .vision-image {
-  
-    transform: scale(1.1);
-  
-  }
-  
-  
-  
-  
-  .mission-details, .vision-details {
-  
-    position: absolute;
-  
-    top: 0;
-  
-    left: 0;
-  
-    width: 100%;
-  
-    height: 100%;
-  
-    display: flex;
-  
-    align-items: center;
-  
-    justify-content: center;
-  
-    background-color: rgba(0, 0, 0, 0.8);
-  
-    color: #fff;
-  
-    opacity: 0; 
-  
-    transition: opacity 0.3s ease;
-  
-    padding: 20px;
-  
-  }
-  
-  
-  
-  
-  .mission:hover .mission-details, .vision:hover .vision-details {
-  
-    opacity: 1; 
-  
-  }
-  
-  
-  
-  
-  .mission-details p, .vision-details p {
-  
-    font-size: 1rem;
-  
-  }
-  
-  .aboutus-founder {
-  
-    padding: 40px 0;
-  
-    background-color: #f7f7f7; 
-  
-    text-align: center; 
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .section-heading {
-  
-    font-size: 36px;
-  
-    margin-bottom: 20px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder {
-  
-    position: relative;
-  
-    width: 540px; 
-  
-    height: 350px; 
-  
-    margin: 0 auto;
-  
-    border-radius: 50%;
-  
-    overflow: hidden; 
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder-image {
-  
-    width: 150%; 
-  
-    height: 100%; 
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
-  
-    background-size: cover;
-  
-    background-position: center;
-  
-    background-repeat: no-repeat;
-  
-    transition: opacity 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder:hover .founder-image {
-  
-    opacity: 0.3; 
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder-details {
-  
-    position: absolute;
-  
-    top: 0;
-  
-    left: 0;
-  
-    right: 0;
-  
-    bottom: 0;
-  
-    display: flex;
-  
-    flex-direction: column;
-  
-    align-items: center;
-  
-    justify-content: center;
-  
-    opacity: 0;
-  
-    background-color: rgba(0, 0, 0, 0.7); 
-  
-    color: #fff; 
-    padding: 20px;
-  
-    border-radius: 8px;
-  
-    transition: opacity 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder:hover .founder-details {
-  
-    opacity: 1;
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder h3 {
-  
-    font-size: 24px;
-  
-    margin-bottom: 10px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-founder .founder blockquote {
-  
-    font-size: 18px;
-  
-    font-style: italic;
-  
-    margin-bottom: 20px;
-  
-    color: #fff; 
-  
-  }
-  
-  
-  
-  
-  
-  .aboutus-services {
-  
-    padding: 40px 0;
-  
-  }
-  
-  
-  
-  
-  .aboutus-services .section-heading {
-  
-    font-size: 30px;
-  
-    margin-bottom: 20px;
-  
-    text-align: center;
-  
-  }
-  
-  
-  
-  
-  .service-row {
-  
-    display: flex;
-  
-    justify-content: space-between;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service {
-  
-    flex-basis: calc(33.33% - 20px);
-  
-    position: relative;
-  
-    width: 240px; 
-  
-    height: 240px; 
-  
-    margin-bottom: 20px;
-    border-radius: 50%;
-  
-    overflow: hidden; 
-  
-  }
-  
-  
-  
-  
-  .aboutus-service .service-image {
-  
-    width: 100%;
-  
-    height: 100%;
-  
-    background-size: cover;
-  
-    background-position: center;
-  
-    background-repeat: no-repeat;
-  
-    transition: opacity 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service .service-details {
-  
-    position: absolute;
-  
-    top: 0;
-  
-    left: 0;
-  
-    right: 0;
-  
-    bottom: 0;
-  
-    display: flex;
-  
-    flex-direction: column;
-  
-    align-items: center;
-  
-    justify-content: center;
-  
-    opacity: 0;
-  
-    background-color: rgba(0, 0, 0, 0.7); 
-    color: #fff;
-  
-    padding: 20px;
-  
-    border-radius: 8px;
-  
-    transition: opacity 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service:hover .service-details {
-  
-    opacity: 1;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service h3 {
-  
-    font-size: 24px;
-  
-    margin-bottom: 10px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service p {
-  
-    font-size: 16px;
-  
-  }
-  
-  .aboutus-service.salesforce .service-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  .aboutus-service.mendix .service-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.polarion .service-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.web-development .service-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.mobile-app-development .service-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.saas-cloud-services .service-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  
-  .aboutus-service.mendix .service-details::before {
-  
-    content: "Mendix Service";
-  
-    font-size: 20px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.polarion .service-details::before {
-  
-    content: "Polarion Service";
-  
-    font-size: 20px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.web-development .service-details::before {
-  
-    content: "Web Development";
-  
-    font-size: 20px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-service.mobile-app-development .service-details::before {
-  
-    content: "Mobile App Development";
-  
-    font-size: 20px;
-  
-  }
-  
-  .aboutus-service.salesforce .service-details::before {
-  
-    content: "Salesforce Service";
-  
-    font-size: 20px;
-  
-  }
-  
-  .aboutus-service.saas-cloud-services .service-details::before {
-  
-    content: "SaaS and Cloud Services";
-  
-    font-size: 20px;
-  
-  }
-  
-  
-  
-  
-  
-  .aboutus-team {
-  
-    padding: 40px 0;
-  
-  }
-  
-  
-  
-  
-  .aboutus-team .section-heading {
-  
-    font-size: 30px;
-  
-    margin-bottom: 20px;
-  
-  }
-  
-  
-  
-  
-  .team-grid {
-  
-    display: grid;
-  
-    grid-template-columns: repeat(4, 1fr);
-  
-    gap: 20px;
-  
-  }
-  
-  
-  
-  
-  .team-member {
-  
-    position: relative;
-  
-    text-align: center;
-  
-    padding: 20px;
-  
-    background-color: #f7f7f7;
-  
-    border-radius: 10px;
-  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    overflow: hidden;
-  
-  }
-  
-  
-  
-  
-  .team-member img {
-  
-    width: 150px;
-  
-    height: 150px;
-  
-    border-radius: 50%;
-  
-    margin-bottom: 10px;
-  
-  }
-  
-  
-  
-  
-  .team-member h3,
-  
-  .team-member p {
-  
-    opacity: 0;
-  
-    transition: opacity 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .team-member:hover h3,
-  
-  .team-member:hover p {
-  
-    opacity: 1; 
-  
-  }
-  
-  
-  
-  
-  .team-member h3 {
-  
-    font-size: 20px;
-  
-    margin-bottom: 5px;
-  
-  }
-  
-  
-  
-  
-  .team-member p {
-  
-    font-size: 16px;
-  
-    color: #555;
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  .culture-content {
-  
-    display: flex;
-  
-    flex-wrap: wrap;
-  
-    justify-content: space-between;
-  
-  }
-  
-  .section-heading{
-  
-    text-align: center;
-  
-    color: #0d0f0e;
-  
-   
-  
-  }
-  
-  .culture-box {
-  
-    position: relative;
-  
-    width: calc(33.33% - 20px);
-  
-    margin-bottom: 30px;
-  
-    border: 1px solid #ccc;
-  
-    overflow: hidden;
-  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-    transition: transform 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .culture-image {
-  
-    position: relative;
-  
-    width: 100%;
-  
-    height: 250px;
-  
-    background-size: cover;
-  
-    background-repeat: no-repeat;
-  
-    background-position: center;
-  
-    border-radius: 0 30px 0 30px;
-  
-  }
-  
-  
-  
-  
-  .playing-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .working-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .fun-image {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
-  
-  }
-  
-  
-  
-  
-  .culture-text {
-  
-    position: absolute;
-  
-    bottom: 0;
-  
-    left: 0;
-  
-    padding: 20px;
-  
-    background-color:  rgba(255, 255, 255, 0.8);
-  
-    width: 100%;
-  
-    opacity: 0;
-  
-    transition: opacity 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .culture-box:hover {
-  
-    transform: scale(1.1);
-  
-  }
-  
-  
-  
-  
-  .culture-box:hover .culture-text {
-  
-    opacity: 0.6;
-  
-  }
-  
-  
-  
-  
-  
-  
-  .aboutus-testimonials {
-  
-    padding: 40px 0;
-  
-  }
-  
-  
-  
-  
-  .aboutus-testimonials .section-heading {
-  
-    font-size: 30px;
-  
-    margin-bottom: 20px;
-  
-    text-align: center;
-  
-    color: #0d0f0e;
-  
-   
-  
-  }
-  
-  
-  
-  
-  .testimonial-row {
-  
-    display: flex;
-  
-    flex-wrap: wrap;
-  
-    justify-content: space-between;
-  
-  }
-  
-  
-  
-  
-  .testimonial {
-  
-    flex: 0 0 calc(33.33% - 20px);
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
-  
-    background-size: cover;
-  
-    background-position: center;
-  
-    border-radius: 0 30px 0 30px;
-  
-    color: #fff;
-  
-    padding: 20px;
-  
-    margin-bottom: 20px;
-  
-    cursor: pointer;
-  
-    transition: opacity 0.3s ease;
-  
-    position: relative;
-  
-    height: 300px;
-  
-  }
-  
-  
-  
-  
-  .testimonial:hover {
-  
-    opacity: 0.8;
-  
-  }
-  
-  
-  
-  
-  .testimonial img {
-  
-    width: 100px;
-  
-    height: 100px;
-  
-    border-radius: 50%;
-  
-    margin-bottom: 10px;
-  
-  }
-  
-  
-  
-  
-  .testimonial-content {
-  
-    display: none;
-  
-    position: absolute;
-  
-    top: 0;
-  
-    left: 0;
-  
-    right: 0;
-  
-    bottom: 0;
-  
-    padding: 20px;
-  
-    background-color: rgba(0, 0, 0, 0.7);
-  
-  }
-  
-  
-  
-  
-  .testimonial:hover .testimonial-content {
-  
-    display: block;
-  
-  }
-  
-  
-  
-  
-  .testimonial-content p {
-  
-    margin-bottom: 10px;
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  .aboutus-awards {
-  
-    padding: 40px 0;
-  
-  }
-  
-  
-  
-  
-  .aboutus-awards .section-heading {
-  
-    font-size: 30px;
-  
-    margin-bottom: 20px;
-  
-    text-align: center;
-  
-    color: #0d0f0e;
-  
-   
-  
-  }
-  
-  
-  
-  
-  .award-row {
-  
-    display: flex;
-  
-    flex-wrap: wrap;
-  
-    justify-content: space-between;
-  
-  }
-  
-  
-  
-  
-  .award {
-  
-    flex: 0 0 calc(33.33% - 20px);
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
-    height: 250px;
-
-  
-    background-size: cover;
-  
-    background-position: center;
-  
-    color: #fff;
-  
-    padding: 20px;
-  
-    margin-bottom: 20px;
-  
-    cursor: pointer;
-  
-    transition: opacity 0.3s ease;
-  
-    position: relative;
-  
-    border-radius: 0 30px 0 30px;
-  
-    overflow: hidden;
-  
-  }
-  
-  
-  
-  
-  .award-content {
-  
-    display: none;
-  
-    position: absolute;
-  
-    opacity: 0.7;
-  
-    top: 0;
-  
-    left: 0;
-  
-    right: 0;
-  
-    bottom: 0;
-  
-    padding: 20px;
-  
-    background-color: rgba(0, 0, 0, 0.7);
-  
-  }
-  
-  
-  
-  
-  .award:hover .award-content {
-  
-    display: block;
-  
-  }
-  
-  
-  
-  
-  
-  .aboutus-cta {
-  
-    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
-  
-    background-size: contain;
-  
-    background-color: #bda7a7;
-  
-    background-repeat: no-repeat;
-  
-    padding: 40px 0;
-  
-    text-align: center;
-  
-  }
-  
-  
-  
-  
-  .aboutus-cta .section-heading {
-  
-    font-size: 30px;
-  
-    margin-bottom: 20px;
-  
-    color: #333;
-  
-  }
-  
-  
-  
-  
-  .aboutus-cta p {
-  
-    font-size: 18px;
-  
-    color: #030000;
-  
-    margin-bottom: 30px;
-  
-  }
-  
-  
-  
-  
-  .aboutus-cta .contact-us-button {
-  
-    background-color: #535658;
-  
-    color: #fff;
-  
-    font-size: 16px;
-  
-    padding: 15px 25px;
-  
-    border: none;
-  
-    border-radius: 5px;
-  
-    cursor: pointer;
-  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  
-  }
-  
-  
-  
-  
-  .aboutus-cta .contact-us-button:hover {
-  
-    background-color: #229658;
-  
-    transform: translateY(-2px);
-  
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  
-  }
-  
-  
-  
-  
-  .aboutus-cta .contact-us-button:active {
-  
-    transform: translateY(0);
-  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-  }
- 
-  
-  @media screen and (max-width: 768px) {
-  
-    .aboutus-mission-vision .mission,
-  
-    .aboutus-mission-vision .vision,
-  
-    .aboutus-team .team-member {
-  
-      width: 100%;
-  
-    }
-  
-  }
-  
-
-  
-  @media screen and (max-width: 1200px) {
-  
-    .container {
-  
-      max-width: 960px;
-  
-    }
-  
-  }
-  
-  
-  
-  
-  @media screen and (max-width: 992px) {
-  
-    .container {
-  
-      max-width: 720px;
-  
-    }
-  
-  }
-  
-  
-  
-  
-  @media screen and (max-width: 768px) {
-  
-    .container {
-  
-      max-width: 540px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-intro .heading,
-  
-    .aboutus-intro .intro-text {
-  
-      font-size: 24px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-mission-vision .mission,
-  
-    .aboutus-mission-vision .vision,
-  
-    .aboutus-team .team-member,
-  
-    .culture-content .culture-box {
-  
-      width: 100%;
-  
-      height: auto;
-  
-      border-radius: 0;
-  
-      overflow: hidden;
-  
-    }
-  
-  
-  
-  
-    .aboutus-mission-vision .mission .mission-image,
-  
-    .aboutus-mission-vision .vision .vision-image,
-  
-    .aboutus-team .team-member img,
-  
-    .culture-box {
-  
-      height: 200px;
-  
-      border-radius: 0;
-  
-    }
-  
-  
-  
-  
-    .aboutus-mission-vision .mission .mission-details,
-  
-    .aboutus-mission-vision .vision .vision-details,
-  
-    .aboutus-team .team-member h3,
-  
-    .aboutus-team .team-member p,
-  
-    .culture-box h3,
-  
-    .culture-box p {
-  
-      font-size: 14px;
-  
-    }
-  
-  }
-  
-  
-  
-  
-  @media screen and (max-width: 576px) {
-  
-    .container {
-  
-      max-width: 100%;
-  
-      padding: 10px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-intro .heading,
-  
-    .aboutus-intro .intro-text {
-  
-      font-size: 20px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-awards .award,
-  
-    .aboutus-testimonials .testimonial,
-  
-    .aboutus-services .aboutus-service,
-  
-    .aboutus-founder .founder,
-  
-    .aboutus-mission-vision .mission,
-  
-    .aboutus-mission-vision .vision,
-  
-    .aboutus-team .team-member,
-  
-    .culture-content .culture-box {
-  
-      height: 200px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-service .service-image,
-  
-    .aboutus-founder .founder-image,
-  
-    .testimonial,
-  
-    .award,
-  
-    .aboutus-mission-vision .mission-image,
-  
-    .aboutus-mission-vision .vision-image,
-  
-    .aboutus-team .team-member img,
-  
-    .culture-box {
-  
-      border-radius: 0;
-  
-    }
-  
-  
-  
-  
-    .aboutus-service .service-details,
-  
-    .aboutus-founder .founder-details,
-  
-    .testimonial-content,
-  
-    .award-content,
-  
-    .aboutus-mission-vision .mission-details,
-  
-    .aboutus-mission-vision .vision-details,
-  
-    .aboutus-team .team-member h3,
-  
-    .aboutus-team .team-member p,
-  
-    .culture-box h3,
-  
-    .culture-box p {
-  
-      font-size: 14px;
-  
-    }
-  
-  }
-  
-  
-  
-  
-  
-  @media screen and (max-width: 425px) {
-  
-    .aboutus-intro .heading,
-  
-    .aboutus-intro .intro-text {
-  
-      font-size: 18px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-awards .award,
-  
-    .aboutus-testimonials .testimonial,
-  
-    .aboutus-services .aboutus-service,
-  
-    .aboutus-founder .founder,
-  
-    .aboutus-mission-vision .mission,
-  
-    .aboutus-mission-vision .vision,
-  
-    .aboutus-team .team-member,
-  
-    .culture-content .culture-box {
-  
-      height: 180px;
-  
-    }
-  
-  
-  
-  
-    .aboutus-service .service-details,
-  
-    .aboutus-founder .founder-details,
-  
-    .testimonial-content,
-  
-    .award-content,
-  
-    .aboutus-mission-vision .mission-details,
-  
-    .aboutus-mission-vision .vision-details,
-  
-    .aboutus-team .team-member h3,
-  
-    .aboutus-team .team-member p,
-  
-    .culture-box h3,
-  
-    .culture-box p {
-  
-      font-size: 12px;
-  
-    }
-  
-  
-  
-  
-    .container {
-  
-      max-width: 100%;
-  
-      padding: 5px;
-  
-    }
-  
-  } */
-
-
-
-* {
-
-  margin: 0;
-
-  padding: 0;
-
-}
-
- 
-
-/* Basic styling for the main container */
-
-.mainContainer {
-
-  font-family: Arial, sans-serif;
-
-  background-image: url('https://getstackhost.com/wp-content/uploads/2022/07/Stories-B1.png');
-
-}
-
- 
-
-/* Hero Section */
-
-.hero-section {
-
+/* Base styles for all devices */
+.image-container {
+  background-image: url('https://res.cloudinary.com/dots1s0gu/image/upload/v1689671651/Techasoft_Banner_o3bwsv.jpg');
   background-size: cover;
-
   background-position: center;
-
-  height: 300px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  color: #fff;
-
-  text-align: center;
-
+  height: 400px;
+  width: 100%;
 }
-
- 
-
-.hero-content {
-
-  max-width: 600px;
-
-}
-
- 
 
 .heading {
-
-  font-size: 36px;
-
-  font-weight: bold;
-
-  margin-bottom: 20px;
-
+  text-align: center;
+  padding: 50px;
+  color: rgb(60, 85, 226);
 }
 
- 
+.aboutUsCard {
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #888888;
+}
 
-.hero-quote {
+.mainContainer {
+  background-image: linear-gradient(to left, #2980b9, #6dd5fa);
+  
+}
 
+.about-title {
+  color: #6dd5fa;
+  font-family: montserrat, sans-serif;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-description {
+  color: #000000;
+  padding: 10px;
+  font-family: montserrat, sans-serif;
   font-size: 20px;
-
-  font-style: italic;
-
-  margin-bottom: 20px;
-
 }
 
+.about-button {
+  box-shadow: 2px 2px 5px #7ebce8;
+}
 
-.aboutus-section {
+.about-button:hover {
+  /* Hover styles */
+  background-color: greenyellow;
+  color: #ffffff;
+}
 
-  background-color:white;
-
-  background-image: url('https://www.pngmagic.com/product_images/ecommerce-website-banner.jpg');
-
-  padding: 60px 0;
-
+.about-mission {
+  color: blue;
+  background-color: powderblue;
+  border-radius: 50%;
+  border-color: aqua;
+  border-width: 2px;
+  padding: 25px;
   text-align: center;
-
 }
 
- 
-
-.container {
-
-  max-width: 800px;
-
-  margin: 0 auto;
-
-  padding: 0 20px;
-
-}
-
- 
-
-.aboutus-content {
-
-  margin: -61px -35px;
-
-  width: 832px;
-
-  background-color: beige;
-
-  height: 638px;
-
-  border-radius: 127px 0;
-
-}
-
- 
-
-.section-heading {
-
-  font-size: 36px;
-
-  font-weight: bold;
-
-  margin-bottom: 20px;
-
-}
-
- 
-
-.intro-text {
-
+.mission-description {
+  color: #000000;
+  font-family: montserrat, sans-serif;
+  text-align: center;
   font-size: 20px;
-
-  line-height: 1.6;
-
 }
 
- 
-
-.whyus-section {
-
-  background-image: url('https://www.pngmagic.com/product_images/ecommerce-website-banner.jpg');
-
-  padding: 40px 0;
-
-  background-color: #fff;
-
-  text-align: center;
-
+.about-mission-card {
+  border-radius: 15px;
+  margin: 30px;
+  padding: 25px;
+  height: auto;
+  max-width: 500px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #888888;
 }
 
+.about-cards-container {
+  display: flex;
+  justify-content: center;
  
-
-.whyus-content {
-
- 
-
-  margin-top: 0%;
-
-  max-width: 793px;
-
-  height: 500px;
-
-  background-color: beige;
-
-  border-radius: 107px 0 90px 0;
-
 }
 
- 
-
-.whyus-content h2 {
-
-  font-size: 36px;
-
-  font-weight: bold;
-
+.mission-image,
+.vision-image {
+  height: 150px;
+  width: 150px;
   margin-bottom: 20px;
-
+  object-fit: cover;
 }
 
-
-
-.mission-vision-section {
-
-  padding: 40px 0;
-
-  height: 370px;
-
-   /* background-image: url('https://www.pngm.com/product_images/ecommerce-website-banner.jpg');  */
-
-}
-
- 
-
-.mission-vision-row {
-
-  display: flex;
-
-    justify-content: center;
-
-    align-items: flex-start;
-
-    flex-wrap: nowrap;
-
+/* Responsive styles for devices with a maximum width of 768px (e.g., tablets and mobile devices) */
+@media (max-width: 768px) {
+  .container {
     height: 300px;
-
-}
-
- 
-
-.mission,
-
-.vision {
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  margin: 20px;
-
-
-  width: 403px;
-
-    height: 388px;
-
-  overflow: hidden;
-
-
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-
-  transition: height 0.3s ease;
-
-  cursor: pointer;
-
-  margin-left: 67px;
-
-}
-
- 
-
-.mission:hover,
-
-.vision:hover {
-
-  height: 250px;
-
-}
-
- 
-
-.circle {
-
-  width: 100px;
-
-    height: 100px;
-
-    border-radius: 50%;
-
-    background-color: #007bff;
-
-    color: #fff;
-
-    font-size: 18px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    margin-bottom: 17px;
-
-    padding: 10px;
-
-    box-sizing: border-box;
-
-    z-index: 1;
-
-    position: relative;
-
-    margin-bottom: 171px;
-
-    margin-top: -132px;
-
-    margin-right: 320px;
-
-}
-
-.mission:hover .circle,
-
-.vision:hover .circle {
-
-  opacity: 0;
-
-}
-
- 
-
-.mission-details,
-
-.vision-details {
-
-  text-align: center;
-
-}
-
- 
-
-.mission h3,
-
-.vision h3 {
-
-  font-size: 24px;
-
-  font-weight: bold;
-
-  color: #fff;
-
-  margin: 0; 
-
-}
-
- 
-
-.mission h2,
-
-.vision h2 {
-
-  font-size: 24px;
-
-  font-weight: bold;
-
-  color: #007bff;
-
-  margin-bottom: 10px;
-
-}
-
- 
-
-.mission p,
-
-.vision p {
-
-  font-size: 16px;
-
-  line-height: 1.6;
-
-
-  opacity: 1;
-
-
-  transition: opacity 0.3s ease;
-
-}
-
- 
-
-.mission:hover p,
-
-.vision:hover p {
-
-
-  opacity: 1;
-
-}
-
- 
-
-.mission::before,
-
-.vision::before {
-
-  content: '';
-
-  position: absolute;
-
-  width: 2px;
-
-  height: 100%;
-
-  background-color: #ccc;
-
-  top: 0;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  z-index: -1;
-
-}
-
- 
-
-.mission::before {
-
-  animation: slideInLeft 1s ease-in-out;
-
-}
-
- 
-
-.vision::before {
-
-  animation: slideInRight 1s ease-in-out;
-
-}
-
- 
-
- 
-
-
-@media screen and (max-width: 1450px) {
-
-  .aboutus-content {
-
-    max-width: 100%;
-
-    padding: 0 20px;
-
-    margin: -41px -20px;
-
   }
-
- 
-
-  .aboutus-content h2 {
-
-    font-size: 30px;
-
-  }
-
- 
-
-  .intro-text {
-
-    font-size: 18px;
-
-  }
-
- 
-
-  .whyus-content {
-
-    margin-top: 0%;
-
-    max-width: 600px;
-
-    height: 500px;
-
-    border-radius: 50%;
-
-  }
-
- 
-
-  .whyus-content h2 {
-
-    font-size: 30px;
-
-  }
-
- 
-
-  .mission-vision-row {
-
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-
-  }
-
- 
-
-  .mission,
-
-  .vision {
-
-    width: 100%;
-
-    margin-left: 0;
-
-    margin-bottom: 30px;
-
-  }
-
- 
-
-  .circle {
-
-    margin: 0 auto;
-
-    margin-bottom: 17px;
-
-    margin-top: -100px;
-
-  }
-
-}
-
- 
-
-
-@media screen and (max-width: 768px) {
-
-  .aboutus-content {
-
-    max-width: 100%;
-
-    padding: 0 20px;
-
-    margin: -20px -20px;
-
-  }
-
- 
-
-  .aboutus-content h2 {
-
-    font-size: 24px;
-
-  }
-
- 
-
-  .intro-text {
-
-    font-size: 16px;
-
-  }
-
- 
-
-  .mission,
-
-  .vision {
-
-    width: 100%;
-
-    margin-left: 0;
-
-    margin-bottom: 30px;
-
-  }
-
- 
-
-  .mission-vision-row {
-
-    justify-content: center;
-
-  }
-
- 
-
-  .circle {
-
-    margin: 0 auto;
-
-    margin-bottom: 17px;
-
-    margin-top: -100px;
-
-  }
-
- 
-
-  .whyus-content {
-
-    height: 300px;
-
-  }
-
-}
-
- 
-
-
-@media screen and (max-width: 576px) {
-
-  .mainContainer {
-
-    background-size: contain;
-
-  }
-
- 
-
-  .hero-section {
-
-    height: 200px;
-
-  }
-
- 
 
   .heading {
-
+    padding: 30px;
     font-size: 24px;
-
   }
 
- 
-
-  .hero-quote {
-
-    font-size: 16px;
-
+  .aboutUsCard {
+    margin: 20px;
+    padding: 15px;
   }
 
- 
-
-  .aboutus-content {
-
-    margin: -20px -20px;
-
-    width: 100%;
-
-    height: auto;
-
-    border-radius: 0;
-
+  .about-mission-card {
+    width: 90%;
   }
 
- 
-
-  .section-heading {
-
-    font-size: 24px;
-
+  .mission-image,
+  .vision-image {
+    height: 100px;
+    width: 100px;
   }
 
- 
-
-  .intro-text {
-
-    font-size: 16px;
-
-  }
-
- 
-
-  .whyus-content {
-
-    height: auto;
-
-    border-radius: 0;
-
-  }
-
- 
-
-  .whyus-content h2 {
-
-    font-size: 24px;
-
-  }
-
- 
-
-  .mission,
-
-  .vision {
-
-    width: 100%;
-
-    margin-left: 0;
-
-    margin-bottom: 30px;
-
-  }
-
- 
-
-  .mission-vision-row {
-
+  /* Display mission and vision cards in a column on mobile devices */
+  .about-cards-container {
     flex-direction: column;
-
     align-items: center;
-
   }
-
- 
-
-  .circle {
-
-    margin: 0 auto;
-
-    margin-bottom: 17px;
-
-    margin-top: 0;
-
-  }
-
 }
 
-
-@media screen and (max-width: 1500px) {
-
-
- 
-
-  .mission,
-
-  .vision {
-
-    width: 100%;
-
-    max-width: 300px;
-
-    margin-left: 0;
-
-    margin-bottom: 30px;
-
+/* Responsive styles for devices with a maximum width of 1024px (e.g., tablets in landscape mode) */
+@media (max-width: 1024px) {
+  .container {
+    height: 350px;
   }
 
- 
-
-  .circle {
-
-    margin: 0 auto;
-
-    margin-bottom: 17px;
-
-    margin-top: 0;
-
+  .heading {
+    font-size: 28px;
   }
 
+  .aboutUsCard {
+    margin: 25px;
+    padding: 20px;
+  }
+
+  .about-mission-card {
+    width: 80%;
+  }
+
+  .mission-image,
+  .vision-image {
+    height: 120px;
+    width: 120px;
+  }
 }
 
- 
-
-
-@media screen and (max-width: 768px) {
-
-
- 
-
-  .mission,
-
-  .vision {
-
-    width: 100%;
-
-    max-width: 100%;
-
-    margin-left: 0;
-
-    margin-bottom: 30px;
-
+/* Responsive styles for devices with a maximum width of 1440px (e.g., larger desktop screens) */
+@media (max-width: 1440px) {
+  .container {
+    height: 450px;
   }
 
- 
-
-  .circle {
-
-    margin: 0 auto;
-
-    margin-bottom: 17px;
-
-    margin-top: 0;
-
+  .heading {
+    font-size: 32px;
   }
 
+  .aboutUsCard {
+    margin: 40px;
+    padding: 30px;
+  }
+
+  .about-mission-card {
+    width: 600px;
+  }
+
+  .mission-image,
+  .vision-image {
+    height: 180px;
+    width: 180px;
+  }
 }
 
- 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
+h1:first-of-type {
+  font-weight: var(--weight1);
+  color: var(--varyDarkBlue);
+}
 
-@media screen and (max-width: 576px) {
+h1:last-of-type {
+  color: var(--varyDarkBlue);
+}
 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
- 
+.header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
 
-  .mission,
+.header p {
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
+}
 
-  .vision {
+.box p {
+  color: var(--grayishBlue);
+}
 
-    width: 100%;
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px gray;
+  padding: 30px;
+  margin: 20px;
+}
+.box-2 {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px gray;
+  padding: 30px;
+  margin: 20px;
+}
 
-    max-width: 100%;
+img {
+  float: right;
+}
 
-    margin-left: 0;
-
-    margin-bottom: 30px;
-
+@media (max-width: 450px) {
+  .box {
+    min-height: 500px;
   }
 
- 
+  .box-2 {
+    min-height: 250px;
+    padding-bottom: 40px;
+  }
+}
 
-  .circle {
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+    text-align: center;
+    min-height: 300px;
+  }
+  .box-2 {
+    min-height: 250px;
+    padding-bottom: 40px;
+  }
+}
 
-    margin: 0 auto;
+.cyan {
+  border-top: 3px solid red;
+}
+.red {
+  border-top: 3px solid green;
+}
+.blue {
+  border-top: 3px solid blue;
+}
+.orange {
+  border-top: 3px solid skyblue;
+}
 
-    margin-bottom: 17px;
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
 
-    margin-top: 0;
-
-    width: 80px;
-
-    height: 80px;
-
-    font-size: 14px;
-
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-down {
+    position: relative;
+    
+  }
+  .box {
+    width: 25%;
+  }
+  .box-2 {
+    width: 25%;
+    background-color: #fff;
+  }
+  .header p {
+    width: 30%;
+  }
+}
+
+.services-card-heading {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.services-heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
 }

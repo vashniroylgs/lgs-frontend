@@ -496,7 +496,7 @@ class HomePage extends Component {
         <WhatsAppIntegration />
         <div className="row p-5">
           <div className="col-12 col-md-7 home-page-content-container">
-            <h1 className="home-page-heading">About ALM</h1>
+            <h1 className="home-page-heading">About LGS</h1>
             <h5 className="mb-4">
               Labyrinth Global Solutions is one of the best Website Development
               Companies in India. We have a team of professional experts having

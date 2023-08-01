@@ -141,14 +141,9 @@ class Header extends Component {
               />
             </Link>
             <ul className="nav-menu">
-              <Link
-                to="/"
-                className="nav-link"
-              >
-                <li className="nav-menu-item">HOME</li>
-              </Link>
+    
               <li className="Nav-Service-container nav-menu-item service-name">
-                    SERVICES
+                    PRODUCTS
                 <ul className="Nav-Service-container-items">
                          <Link to="/polarianalm" className="link">
                          <li className="Headeroption-item">Polarion ALM</li>
@@ -170,6 +165,237 @@ class Header extends Component {
                     </Link>
                 </ul>
               </li>
+              <li className="Nav-Service-container nav-menu-item service-name">
+                    CLIENTS
+                <ul className="Nav-Service-container-items">
+                         <Link to="/polarianalm" className="link">
+                         <li className="Headeroption-item">Polarion ALM</li>
+                        </Link>
+                    <Link to="/saascloudsolutions" className="link">
+                         <li className="Headeroption-item">SAAS & cloud Solutions</li>
+                    </Link>
+                    <Link to="/ptcintegrity" className="link">
+                        <li className="Headeroption-item">PTC Integrity</li>
+                    </Link>
+                    <Link to="/mobileandappdevelopment" className="link">
+                        <li className="Headeroption-item">Mobile & APP Development</li>
+                    </Link>
+                    <Link to="/resellermendix" className="link">
+                        <li className="Headeroption-item">Mendix</li>
+                    </Link>
+                    <Link to="/salesforcepage" className="link">
+                        <li className="Headeroption-item">Sales Force</li>
+                    </Link>
+                </ul>
+              </li>
+    
+              <li className="Nav-Service-container nav-menu-item service-name">
+                    SERVICES
+                <ul className="Nav-Service-container-items">
+                         <Link to="/mobileandappdevelopment" className="link">
+                         <li className="Headeroption-item">Mobile & APP Development</li>
+                        </Link>
+                    <Link to="/mobileandappdevelopmen" className="link">
+                         <li className="Headeroption-item">Web Development</li>
+                    </Link>
+                    <Link to="/resellermendix" className="link">
+                        <li className="Headeroption-item">Mendix</li>
+                    </Link>
+                    <Link to="/polarianalm" className="link">
+                        <li className="Headeroption-item">Polarion ALM</li>
+                    </Link>
+                    <Link to="/ptcintegrity" className="link">
+                        <li className="Headeroption-item">PTC Integrity</li>
+                    </Link>
+                    <Link to="/salesforcepage" className="link">
+                        <li className="Headeroption-item">Sales Force</li>
+                    </Link>
+                    <Link to="/saascloudsolutions" className="link">
+                        <li className="Headeroption-item"> SAAS & cloud Solutions</li>
+                    </Link>
+                    <Link to="/" className="link">
+                        <li className="Headeroption-item">Digital Marketing</li>
+                    </Link>
+                </ul>
+              </li>
+              <Link
+                to="/"
+                className="nav-link"
+              >
+                <li className="Nav-teachnology-container nav-menu-item technology-item">TECHNOLOGIES
+                
+                  {/* <ul className="Nav-teachnology-container-items">
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">UI DESIGN</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                          <Link to="" className="link">
+                                  <li className="Nav-technology-item">HTML/HTML5, CSS3</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">ANGULARJS, JS</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">AJAX/JSON</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">JQUERY, JQUERY UI</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">DRUPAL</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">JOOMLA</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">WORDPRESS</li>
+                            </Link>
+                            <Link to="" className="link">
+                                  <li className="Nav-technology-item">REACT</li>
+                            </Link>
+                            </ul>
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">CLOUD COMPUTING</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                          <Link to="" className="link">
+                                  <li className="Nav-technology-item">AWS DEVELOPMENT</li>
+                          </Link>
+                          <Link to="" className="link">
+                                  <li className="Nav-technology-item">GOOGLE CLOUD</li>
+                          </Link>
+                          <Link to="" className="link">
+                                  <li className="Nav-technology-item">GO DADDY</li>
+                          </Link>
+                          <Link to="" className="link">
+                                  <li className="Nav-technology-item">REACT</li>
+                          </Link>
+                          </ul>
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">SERVER SIDE SCRIPTING</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">PHP</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">J2EE, J2SE, SWING, SERVLET</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">SPRING, STRUTS, HIBERNATE</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">JSP, JSF, APACHECXF</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">JUNIT, TESTING, MOCKITO</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">MICROSOFT VISIO, ENTERPRISE ARCHITECT</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">SHELL</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">PERL</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">PYTHON</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">NODE JS</li>
+                            </Link>
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">EXPRESS JS</li>
+                            </Link>
+                          </ul>
+                      </div>
+                      <div>
+                        <h1 className="Nav-teachnology-main-heading">DATA MINING & ANALYTICS</h1>
+                        <ul className="Nav-technology-sub-container-items">
+                          <Link to="" className="link">
+                                    <li className="Nav-technology-item">DATA BASE DESIGN: ORACLE</li>
+                          </Link>
+                          <Link to="" className="link">
+                                    <li className="Nav-technology-item">SQL DATABASE</li>
+                          </Link>
+                          <Link to="" className="link">
+                                    <li className="Nav-technology-item">DATABASE DEVELOPMENT MONGO DBE</li>
+                          </Link>
+                          <Link to="" className="link">
+                                    <li className="Nav-technology-item">DATABASE CONSULTING SQL SERVER</li>
+                          </Link>
+                          <Link to="" className="link">
+                                    <li className="Nav-technology-item">DATABASE CONSULTING SQL SERVER</li>
+                          </Link>
+                        </ul>
+                       
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">WEB SERVER TECHNOLOGY</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">JBOSS</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">APACHE</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">TOMCAT</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">IIS</li>
+                            </Link>
+                          </ul>
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">TESTING</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">SOFTWARE TESTING</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">UNIT TESTING</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">INTEGRATION  TESTING</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">SYSTEM TESTING</li>
+                            </Link>
+                            <Link to="" className="link">
+                                      <li className="Nav-technology-item">DEPLOYMENT AUTOMATION SUPPORT</li>
+                            </Link>
+                          </ul>
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">LOW CODE PLATFORM</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">MENDIX</li>
+                            </Link>
+                          </ul>
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">APPLICATION LIFECYCLE MANAGEMENT TOOL</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">POLARION</li>
+                            </Link>
+                          </ul>
+                      </div>
+                      <div>
+                          <h1 className="Nav-teachnology-main-heading">CRM SOFTWARE</h1>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="" className="link">
+                                    <li className="Nav-technology-item">SALESFORCE</li>
+                            </Link>
+                          </ul>
+                      </div>
+                        
+                  </ul>
+                 */}
+                </li>
+              </Link>
               <a className="link" target='_blank' href='https://www.linkedin.com/company/labyrinth-global-solutions/mycompany/'>
                 <li className="nav-menu-item">CAREERS</li>
               </a>

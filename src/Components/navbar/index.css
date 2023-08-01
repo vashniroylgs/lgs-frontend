@@ -5,7 +5,6 @@
     align-items: center;
     background-color: white;
     border-bottom: 1px solid #dbdbdb;
-    
   }
 .mbl-nav-items-container{
     display: flex;
@@ -199,8 +198,12 @@
 }
   .nav-menu-item{
     font-size:15px;
-    color: black; 
+    color: rgb(122,141,162); 
     font-weight: 500;
+}
+
+.nav-menu-item:hover{
+  color: black;
 }
 
 .nav-menu-item::after{
@@ -218,6 +221,56 @@
     background-color: #007bff;
     width: 100%;
 }
+.technology-item{
+  height:50px;
+  padding-top:15px;
+}
+.Nav-teachnology-container {
+  position:relative;
+  list-style-type: none;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.Nav-teachnology-container-items{
+  position:absolute;
+  top:50px;
+  left:-85px;
+  list-style-type:disc;
+  visibility: hidden;
+  text-decoration: none;
+  background-color:white;
+  display:flex;
+  flex-wrap:wrap;
+  gap:50px;
+  z-index: 100;
+  min-width:90vw;
+  padding:20px;
+  
+}
+
+.Nav-teachnology-container:hover .Nav-teachnology-container-items{
+  visibility:visible;
+  padding-left:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.Nav-technology-sub-container-items{
+  padding:10px 0px 10px 25px;
+  list-style-type: disc;
+}
+.Nav-technology-item{
+  color:#222;
+  text-decoration: none;
+  min-width:100px;
+  font-size:12px;
+}
+
+.Nav-teachnology-main-heading{
+  font-size:18px;
+  font-weight:bold;
+}
+
 .Nav-Reseller-container {
     position:relative;
     list-style-type: none;
