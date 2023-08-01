@@ -1,0 +1,65 @@
+.icon-image {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+  }
+  
+  .whatsapp-image {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+  }
+  
+  .first_nav_content {
+    display: flex;
+    align-self: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(6, 41, 83, .8);
+  }
+
+  .first_nav_content:hover {
+    color: black;
+  }
+  
+ .logos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 50px;
+ }
+  
+  .logos-container-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+  }
+  
+  .email-icon {
+    width: 25px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  
+  .line {
+    height: 2px;
+    margin: 0px;
+  }
+  
+  .uae-image {
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+  }
+  
+  .uae-container {
+    margin-top: 5px;
+  }
+
+  .contact-info{
+    text-decoration: none;
+  }
