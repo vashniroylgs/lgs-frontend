@@ -48,6 +48,7 @@ const FirstTimePopup = () => {
       if (response.ok) {
         const data = await response.json();
         setSuccessMsg(data.success);
+        alert('registration successful')
         setErrorMsg("");
       } else {
         const data = await response.json();
