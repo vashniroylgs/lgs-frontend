@@ -38,7 +38,7 @@ class ImageSlider extends Component {
       infinite: true,
       speed: 2000,
       autoplay: true,
-      autoplaySpeed: 5050,
+      autoplaySpeed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
