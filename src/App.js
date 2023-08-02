@@ -56,12 +56,14 @@ import Ptcintegrety from './Components/PTCintegrity';
 import About from './Components/Aboutus';
 import HomePage from './Components/Homepage';
 import Chat from './Components/chat';
-import FirstTimePopup from './Components/StartPopup';
+import FirstTimePopup from './Components/Popup';
 import VisitTracker from './Components/Tracker';
 import CareerForm from './Components/CareerForm';
 import PopupForm from './Components/Popup'
 import CountriesBar from './Components/Countriesbar';
 import DigitalMarketing from './Components/DigitalMarketing'
+import SaasPage from './Components/SaasPage';
+import ClientsPage from './Components/Clients';
 
 
 
@@ -121,10 +123,11 @@ function App() {
           <Route path="/ptcintegrity" element={<Ptcintegrety />} />
           <Route path="/digitalmarketing" element={<DigitalMarketing />} />
           <Route path="/aboutus" element={<About />} />
-          <Route path="/careers" element={<CareerForm />} />
-          {/* The "Contact Us" link should navigate to the /contactus page */}
-          <Route path="/contactus" element={<PopupForm />} />
+          <Route path="/careers" element={<CareerForm />} />  
+          <Route path="/contactus" element={<FirstTimePopup />} />
+          <Route path='saascloudsolutions' element={<SaasPage />} />
           <Route path='/digitalmarketing' element={<DigitalMarketing />} />
+          <Route path='/clientsPage' element={<ClientsPage />} />
         </Routes>
 
         <Footer />

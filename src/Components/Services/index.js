@@ -65,9 +65,8 @@ class Services extends Component {
           <div class="box box-down blue services-reval">
             <h2 className="services-heading">Digital Marketing</h2>
             <p>
-            From crafting captivating websites that leave lasting impressions 
-            to implementing data-driven SEO strategies that propel businesses to the top of search engines, we leave no stone unturned in our pursuit of digital excellence. Social media marketing, content creation, email campaigns, and everything in between, 
-            we orchestrate the perfect symphony of marketing tactics tailored to your specific needs ...<Link to="/digitalmarketing">Know More</Link>
+            From crafting captivating websites that leave lasting impressions to implementing data-driven SEO strategies that propel businesses to the top of search engines, we leave no stone unturned in our pursuit of digital excellence. Social media marketing, content creation, email campaigns, and everything in between, 
+            we orchestrate the perfect symphony of marketing tactics tailored to your specific needs.. <Link to="/digitalmarketing">Know More</Link> 
             </p>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PTC_Integrity.png/640px-PTC_Integrity.png"

@@ -57,6 +57,7 @@ class ReactSlick extends Component {
       infinite: true,
       speed: 2000,
       autoplay: true,
+      lazyLoad: 'ondemand',
       autoplaySpeed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,

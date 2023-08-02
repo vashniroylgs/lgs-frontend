@@ -10,6 +10,10 @@ import webdesign from "../images/webdesign.jpg";
 import mobile from "../images/mobile.jpg";
 import digital from "../images/marketing.jpg";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+
 const Images = [
   {
     backgroundImage: mendix,
@@ -31,6 +35,8 @@ const Images = [
   },
 ];
 
+
+
 class ImageSlider extends Component {
   render() {
     const settings = {
@@ -38,7 +44,8 @@ class ImageSlider extends Component {
       infinite: true,
       speed: 2000,
       autoplay: true,
-      autoplaySpeed: 5050,
+      lazyLoad: 'ondemand',
+      autoplaySpeed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
@@ -50,11 +57,14 @@ class ImageSlider extends Component {
         <Slider {...settings}>
           {Images.map((slide, index) => (
             <div className="image-slide " key={index}>
-              <img
+              {/* <img
                 className="image-slider-image"
                 src={slide.backgroundImage}
                 alt={`slide${index}`}
-              />
+              /> */}
+              <LazyLoadImage src={slide.backgroundImage}
+                alt={`slide${index}`} effect="blur"
+            style={{ width: '100%', height: 'auto' }} />
             </div>
           ))}
         </Slider>
