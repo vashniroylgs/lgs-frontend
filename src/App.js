@@ -1,47 +1,3 @@
-// import './App.css';
-// import {Route,Routes} from 'react-router-dom'
-
-// import CountriesBar from './Components/Countriesbar';
-// import Navbar from './Components/navbar';
-// import Footer from './Components/Footer'
-// import ResellerMendix from './Components/ResellerMendixPage'
-// import ResellerPolarian from './Components/ResellerPolarianPage';
-// import WebMobile from './Components/MobileandAppDevelopment';
-// import PolarianALM from './Components/PolarianALM';
-// import Ptcintegrety from './Components/PTCintegrity';
-// import About from './Components/Aboutus';
-// import HomePage from './Components/Homepage';
-// import ContactUs from './Components/ContactUs';
-// import Chat from './Components/chat';
-// import Popup from './Components/Popup';
-// import SaasPage from './Components/SaasPage';
-// import SalesForce from './Components/SalesforcePage';
-// import FirstTimePopup from './Components/StartPopup';
-// import PopupForm from './Components/Popup';
-
-// function App() {
-//   return (
-//     <>
-//     <CountriesBar />
-//     <Navbar />
-//     <Routes>
-//         <Route path="/" Component={HomePage} />
-//         <Route path="/resellerpolarian" Component={ResellerPolarian} />
-//         <Route path="/resellermendix" Component={ResellerMendix} />
-//         <Route path="/mobileandappdevelopment" Component={WebMobile} />
-//         <Route path="/polarianalm" Component={PolarianALM} />
-//         <Route path="/ptcintegrity" Component={Ptcintegrety} />
-//         <Route path="/aboutus" Component={About} />
-//         <Route exact path="/contactus" Component={PopupForm} />
-//         <Route path='/saascloudsolutions' Component={SaasPage} />
-//         <Route path='/salesforcepage' Component={SalesForce} />
-//     </Routes>
-//     <Footer />
-//     </>
-//   );
-
-// export default App;
-
 
 import React, { useEffect, useState } from 'react';
 import './App.css';
@@ -58,12 +14,11 @@ import HomePage from './Components/Homepage';
 import Chat from './Components/chat';
 import FirstTimePopup from './Components/Popup';
 import VisitTracker from './Components/Tracker';
-import CareerForm from './Components/CareerForm';
-import PopupForm from './Components/Popup'
 import CountriesBar from './Components/Countriesbar';
 import DigitalMarketing from './Components/DigitalMarketing'
 import SaasPage from './Components/SaasPage';
-import ClientsPage from './Components/Clients';
+import Clients from './Components/Clients';
+import Careers from './Components/Careers';
 
 
 
@@ -112,24 +67,23 @@ function App() {
       <div>
         <CountriesBar />
         <Header />
-        {/* <VisitTracker visitCount={visitCount} /> */}
+        {/* <VisitTracker visitCount={visitCount} />  */}
         <Chat />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/resellerpolarian" element={<ResellerPolarian />} />
-          <Route path="/resellermendix" element={<ResellerMendix />} />
-          <Route path="/mobileandappdevelopment" element={<WebMobile />} />
-          <Route path="/polarianalm" element={<PolarianALM />} />
-          <Route path="/ptcintegrity" element={<Ptcintegrety />} />
-          <Route path="/digitalmarketing" element={<DigitalMarketing />} />
-          <Route path="/aboutus" element={<About />} />
-          <Route path="/careers" element={<CareerForm />} />  
-          <Route path="/contactus" element={<FirstTimePopup />} />
-          <Route path='saascloudsolutions' element={<SaasPage />} />
-          <Route path='/digitalmarketing' element={<DigitalMarketing />} />
-          <Route path='/clientsPage' element={<ClientsPage />} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/resellerpolarian" element={<ResellerPolarian />} />
+          <Route exact path="/resellermendix" element={<ResellerMendix />} />
+          <Route exact path="/mobileandappdevelopment" element={<WebMobile />} />
+          <Route exact path="/polarianalm" element={<PolarianALM />} />
+          <Route exact path="/ptcintegrity" element={<Ptcintegrety />} />
+          <Route exact path="/digitalmarketing" element={<DigitalMarketing />} />
+          <Route exact path="/aboutus" element={<About />} />
+          <Route exact path="/careers" element={<Careers />} />  
+          <Route exact path="/contactus" element={<FirstTimePopup />} />
+          <Route exact path='saascloudsolutions' element={<SaasPage />} />
+          <Route exact path='/digitalmarketing' element={<DigitalMarketing />} />
+          <Route exact path='/clientsPage' element={<Clients />} />
         </Routes>
-
         <Footer />
       </div>
     </>

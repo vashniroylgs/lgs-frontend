@@ -25,7 +25,7 @@ class SaasPageCarouselSlider extends Component {
                     </div>
                         <img className="courseReviewProfileImage" alt="profile" src="https://marketplace.canva.com/EAFXS8-cvyQ/1/0/1600w/canva-brown-and-light-brown%2C-circle-framed-instagram-profile-picture-2PE9qJLmPac.jpg" />   
                 </div> } */}
-        <div className="image-container">
+        <div className="saas-carousel-image-container">
           <img className="courseReviewProfileImage" src={imgurl} />
         </div>
         <div className="courseTransformingContainer3">

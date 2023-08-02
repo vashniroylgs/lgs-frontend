@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import {Link} from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css"; // Create a CSS file to style the slider (Slider.css)
@@ -74,9 +75,10 @@ class ReactSlick extends Component {
                 <h1 className="slider-heading">{slide.title}</h1>
                 <p className="slider-paragraph">{slide.content}</p>
                 <div>
-                  <button className="btn btn-primary slider-button">
+                  <Link to="/contactus"><button className="btn btn-primary slider-button">
                     {slide.buttonText}
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -18,7 +19,7 @@ const items = [
 const About = () => {
   return (
     <div className='mainContainer'>
-      <div className='image-container'>
+      <div className='aboutus-image-container'>
         <center>
           <h1 className='heading'>Get to know about <span>LGS</span></h1>
         </center>
@@ -37,7 +38,11 @@ const About = () => {
         <p className='about-description'>We believe that communication is the key and our team of experts always follows this principle. We carry out constant communication between team members and clients, ensuring transparency. This also enables us to get greater insights as well as trust from all our clients. All of our projects are delivered at the stated times and our services come within a rather affordable range.</p>
         <p className='about-description'>Our development process is seamlessly carried out and it follows a systematic approach  We begin with signing a Non-Disclosure Agreement (NDA) with the client. Post which process and documentation is done. The responsibilities are shared among the team member to ensure a timely and smooth progression of the project. Proper scheduling is done of the whole process and we also carry out frequent reporting to keep everyone (including the clients) within the loop. We have a completely agile approach and get continuous client feedback and output, and accordingly change and progress with our development. This is why we can take on complex projects that other developers may perceive as difficult, making us one of the best software developers out there.</p>
       </div>
-      <center><button className='btn btn-primary about-button'>Contact us</button></center>
+      <center>
+        <Link to="/contactus">
+          <button className='btn btn-primary about-button'>Contact us</button>
+        </Link>
+        </center>
       </div>
       
       <div className='about-cards-container'>
