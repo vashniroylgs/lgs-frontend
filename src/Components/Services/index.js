@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 class Services extends Component {
@@ -31,12 +31,12 @@ class Services extends Component {
       <div>
         <div class="row1-container">
           <div class="box-2 box-down cyan services-reval">
-            <h2 className="services-heading">Polarion ALM</h2>
+            <h2 className="services-heading">Web & Mobile App Development </h2>
             <p>
-              We are a proud partner of Siemens for implementing solutions on
-              it’s cutting edge technology Polarion ALM. We provide a range of
-              Polarion ALM services including....
-              {/* <Link to="/polarianalm">Know More</Link> */}
+            At Labyrinth Global Solutions, we don't just build websites and apps; we build experiences that connect, inspire, and empower. 
+            We are not just developers; 
+            we are dreamers and visionaries who are passionate about making a 
+            difference in the digital world ...<Link to="/resellermendix">Know More</Link>
             </p>
             <img
               src="https://www.labyrinthglobalsolutions.com/assets/img/polarion/siemens.png"
@@ -47,13 +47,12 @@ class Services extends Component {
           </div>
 
           <div class="box red services-reval">
-            <h2 className="services-heading">SAAS & Cloud Solutions</h2>
+            <h2 className="services-heading">Mendix</h2>
             <p>
-              SaaS and the cloud have revolutionized the software industry by
-              offering businesses a cost-effective and flexible approach to
-              software usage, ensuring automatic updates, data backups, and
-              enhanced collaboration possibilities...
-              {/* <Link to="/saascloud">Know More</Link> */}
+            In today's fast-paced world, staying ahead of the competition requires agility, adaptability, 
+            and the ability to rapidly deploy custom applications. 
+            That's where Mendix comes in—a powerful low-code development platform that 
+            enables us to build robust and scalable applications faster than ever before...<Link to="/resellermendix">Know More</Link>
             </p>
             <img
               src="https://cdn-icons-png.flaticon.com/128/5256/5256916.png"
@@ -64,12 +63,11 @@ class Services extends Component {
           </div>
 
           <div class="box box-down blue services-reval">
-            <h2 className="services-heading">Integrity Lifecycle Manager</h2>
+            <h2 className="services-heading">Digital Marketing</h2>
             <p>
-              We also do implementations on Windchill RV&S (Requirements
-              Validation & Source) formly known as (PTC Integrity Lifecycle
-              Manager). Some of the services we provide on this ALM tool are...
-              {/* <Link to="/ptcintegrity">Know More</Link> */}
+            From crafting captivating websites that leave lasting impressions 
+            to implementing data-driven SEO strategies that propel businesses to the top of search engines, we leave no stone unturned in our pursuit of digital excellence. Social media marketing, content creation, email campaigns, and everything in between, 
+            we orchestrate the perfect symphony of marketing tactics tailored to your specific needs ...<Link to="/digitalmarketing">Know More</Link>
             </p>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PTC_Integrity.png/640px-PTC_Integrity.png"
@@ -81,12 +79,11 @@ class Services extends Component {
         </div>
         <div class="row2-container">
           <div class="box orange services-reval">
-            <h2 className="services-heading">Web & Mobile App Development</h2>
+            <h2 className="services-heading">Polarion</h2>
             <p>
-              We love working on complex web applications and delivering easy to
-              use, beautiful products. And we also enjoy creating simple-to-use,
-              and good-looking apps for iOS and Android devices....
-              {/* <Link to="/webandmobileapp">Know More</Link> */}
+            Welcome to the cutting-edge world of Polarion Solutions & Development, 
+            where innovation meets excellence! We empower businesses and individuals with state-of-the-art 
+            Polarion Solutions that redefine possibilities and accelerate growth....<Link to="/resellerpolarian">Know More</Link>
             </p>
             <img
               src="https://cdn-icons-png.flaticon.com/128/7991/7991055.png"

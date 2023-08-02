@@ -493,17 +493,17 @@ class HomePage extends Component {
             <ImageSlider />
           </div>
         </div>
-        <WhatsAppIntegration />
+        <WhatsAppIntegration  />
         <div className="row p-5">
           <div className="col-12 col-md-7 home-page-content-container">
             <h1 className="home-page-heading">About LGS</h1>
             <h5 className="mb-4">
-              Labyrinth Global Solutions is one of the best Website Development
-              Companies in India. We have a team of professional experts having
-              years of experience in this field. Our specialised team can
-              provide custom web solutions to establish your business online.
+            Welcome to the world of innovation and digital excellence! At Labyrinth Global Solutions, 
+            we are more than just an IT company; we are your partners in transforming ideas into reality. 
+            As pioneers in web and app development, 
+            we harness the power of technology to create seamless digital experiences that drive growth and inspire change. 
             </h5>
-            <h4>Industry Focus</h4>
+            <h4>Industries We are Serving </h4>
             <div className="home-page-list-container">
               <ul>
                 <li className="home-page-list">

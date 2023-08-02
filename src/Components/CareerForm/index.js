@@ -30,7 +30,7 @@ const CareerForm = () => {
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    setFormData({
+    setFormData({ 
       ...formData,
       resume: file,
     });

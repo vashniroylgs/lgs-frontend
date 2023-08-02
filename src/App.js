@@ -62,6 +62,8 @@ import FirstTimePopup from './Components/StartPopup';
 import VisitTracker from './Components/Tracker';
 import CareerForm from './Components/CareerForm';
 import PopupForm from './Components/Popup'
+import CountriesBar from './Components/Countriesbar';
+import DigitalMarketing from './Components/DigitalMarketing';
 
 
 
@@ -105,10 +107,10 @@ function App() {
       onComplete={handleClosePopup}/>}
 
       <div>
+        <CountriesBar />
         <Header />
         <VisitTracker visitCount={visitCount} />
         <Chat />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/resellerpolarian" element={<ResellerPolarian />} />
@@ -120,6 +122,7 @@ function App() {
           <Route path='/careers' element={<CareerForm/>}/>
           {/* The "Contact Us" link should navigate to the /contactus page */}
           <Route path="/contactus" element={<PopupForm />} />
+          <Route path='/digitalmarketing' element={<DigitalMarketing />} />
         </Routes>
 
         <Footer />
