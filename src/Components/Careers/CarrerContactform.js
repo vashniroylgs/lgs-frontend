@@ -3,22 +3,20 @@ import axios from "axios";
 
 const ContactForm = () => {
   const [formValues, setFormValues] = useState({
-    lead_url: "/careers",
-    career_name: "",
-    career_phone: "",
-    career_total_exp: "",
-    career_gap: "",
-    career_current_loc: "",
-    career_preferred_loc: "",
-    career_job_change: "",
-    job_profile: "0",
-    career_email: "",
-    career_relevant_exp: "",
-    career_current_ctc: "",
-    career_exp_ctc: "",
-    career_notice_period: "",
-    attach_document: null,
-    career_message: "",
+    name: '',
+    phone: '',
+    totalExp: '',
+    careerGap: '',
+    currentLocation: '',
+    preferredLocation: '',
+    reasonForJobChange: '',
+    jobProfile: '',
+    email: '',
+    relevantExp: '',
+    currentCTC: '',
+    expectedCTC: '',
+    noticePeriod: '',
+    resume: null,
   });
 
   const handleInputChange = (event) => {
@@ -30,18 +28,7 @@ const ContactForm = () => {
     event.preventDefault();
 
     // Simple form validation (checking if required fields are not empty)
-    const requiredFields = [
-      "career_name",
-      "career_phone",
-      "career_total_exp",
-      "career_job_change",
-      "career_email",
-      "career_relevant_exp",
-      "career_current_ctc",
-      "career_exp_ctc",
-      "career_notice_period",
-      "attach_document",
-    ];
+    const requiredFields = ['name', 'phone', 'totalExp', 'reasonForJobChange', 'email', 'relevantExp', 'currentCTC', 'expectedCTC', 'noticePeriod', 'resume'];
 
     const isFormValid = requiredFields.every(
       (field) => formValues[field].trim() !== ""
@@ -59,21 +46,20 @@ const ContactForm = () => {
         alert("Form submitted successfully. Email sent.");
         setFormValues({
           ...formValues,
-          career_name: "",
-          career_phone: "",
-          career_total_exp: "",
-          career_gap: "",
-          career_current_loc: "",
-          career_preferred_loc: "",
-          career_job_change: "",
-          job_profile: "0",
-          career_email: "",
-          career_relevant_exp: "",
-          career_current_ctc: "",
-          career_exp_ctc: "",
-          career_notice_period: "",
-          attach_document: null,
-          career_message: "",
+          name: '',
+          phone: '',
+          totalExp: '',
+          careerGap: '',
+          currentLocation: '',
+          preferredLocation: '',
+          reasonForJobChange: '',
+          jobProfile: '',
+          email: '',
+          relevantExp: '',
+          currentCTC: '',
+          expectedCTC: '',
+          noticePeriod: '',
+          resume: null,
         });
       })
       .catch((error) => {

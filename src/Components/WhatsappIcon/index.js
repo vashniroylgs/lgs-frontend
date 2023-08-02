@@ -7,8 +7,8 @@ import './index.css'
 
 const WhatsAppIntegration = () => {
   return (
-    <a className='nav-join-whatsapp-anchor' href='http://wa.me/919866238940' target='_blank'>
-        <Lottie className="whatsapp-icon" loop={true} animationData={WhatsappTime} />
+    <a className='nav-join-whatsapp-anchor mr-5' href='http://wa.me/917672086195' target='_blank'>
+        <Lottie  className="whatsapp-icon" loop={true} animationData={WhatsappTime} />
     </a>
   );
 };
