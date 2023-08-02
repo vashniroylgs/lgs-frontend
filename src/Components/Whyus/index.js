@@ -131,7 +131,6 @@ class WhyUs extends Component {
 
   render() {
     const { details } = this.props;
-
     const { question } = details;
 
     return (

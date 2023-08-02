@@ -24,6 +24,8 @@ const FirstTimePopup = () => {
   };
 
   const handleSubmit = async (event) => {
+    const service=course
+    const message=comment
     event.preventDefault();
     try {
       const response = await fetch(
@@ -36,9 +38,9 @@ const FirstTimePopup = () => {
           body: JSON.stringify({
             name,
             email,
-            course,
+            service,
             phoneNumber,
-            comment
+            message
           })
         }
       );
@@ -78,7 +80,7 @@ const FirstTimePopup = () => {
               />
             </div>
           </div>
-          <form className="form-container">
+          <form onSubmit={handleSubmit} className="form-container">
             <div className='close-container' onClick={closePopup}>
               <RxCross2 className='close-1'  />
             </div>

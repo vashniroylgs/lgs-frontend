@@ -306,7 +306,7 @@ import Chat from "../chat";
 import Services from "../Services";
 import { BsArrowRightShort } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
-// import Navbar from "../Navbar";
+import {Link} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import IndustriesPage from "../IndustriesPage";
@@ -318,33 +318,33 @@ const Details = [
   {
     id: 1,
     question:
-      "Siemens's Polarion for Health Tech customers has helped achieve compliance",
+      "Expertise and Experience",
     answer:
-      "Accelerate medical device innovation and automate proof of compliance.Achieve Proof of Compliance in lesser time.Automate Risk Management and Compliance with help of Siemens Polarion.Quick-Start with Automated Industry Processes.Synchronize Collaboration In Real Time with Siemens Polarion Requirement Management Automate Your Validation and Verification",
+      "LGS specialize in web and mobile app development, which means they have a team of skilled professionals with years of experience in this field. They have the expertise to understand your specific requirements and deliver high-quality solutions. ",
   },
   {
     id: 2,
-    question: "Polarion for Automotive & Transportation Industries",
+    question: "Cost-Effectiveness",
     answer:
-      "Polarion offers 90% reduced time in bringing the product to market for many OEMs and suppliers in the automotive and transportation industries. Seamless real-time collaboration Built-in support for ReqIF data exchange, and/or through common document formats such as Word/Excel® or PDF® Contextual visibility improves team effectiveness.Comprehensive traceabilityand automated tracking speeds and protects functional safety compliance. Model Driven development with Polarion’s Diagram Editor, plus integration with Sparx Systems Enterprise Architect™ and with MATLAB® Simulink™ Intuitive workflow drives rapid adoption. Enabling automotive industry project templates facilitate functional safety compliance, process assessment, Agile development practices, and other objectives. Comprehensive traceability and automated tracking speeds and protects functional safety compliance. Model Driven development with Polarion’s Diagram Editor, plus integration with Sparx Systems Enterprise Architect™ and with MATLAB® Simulink™ Intuitive workflow drives rapid adoption.",
+      "While in-house development teams can be costly to maintain, partnering with LGS allows you to access a skilled workforce without the overhead expenses. You pay for the services you need, making it a cost-effective solution.",
   },
   {
     id: 3,
-    question: "Polarion for Aerospace",
+    question: "Full-Service Solutions",
     answer:
-      "With Polarion it is possible to reduce time-to-market and improve quality and safety. Polarion provides guaranteed traceability and proof of compliance for systems and software engineering organizations in regulated industries. A unified solution for Requirements-, Quality- and Application Lifecycle Management. recent integrations with MATLAB® Simulink®, Klocwork’s and others show a real deep understanding for the target markets integrating Product Lifecycle Management (PLM) and Application Lifecycle Management (ALM) processes allows us to bridge the gap between mechanical, hardware, electronic and software development, delivering unprecedented efficiencies.",
+      "LGS offer end-to-end services, from concept to design, development, testing, and maintenance. This means you get comprehensive support throughout the entire development lifecycle. ",
   },
   {
     id: 4,
-    question: "Polarion for Oil & Gas",
+    question: "Customization",
     answer:
-      "With Polarion it is possible to reduce time-to-market and improve quality and safety. Polarion provides guaranteed traceability and proof of compliance for systems and software engineering organizations in regulated industries. A unified solution for Requirements-, Quality- and Application Lifecycle Management. Seamless real-time collaboration Built-in support for ReqIF data exchange, and/or through common document formats such as Word/Excel® or PDF® Contextual visibility improves team effectiveness.Comprehensive traceability and automated tracking speeds. Powerful reporting engine & Word round trip, ability to export/import requiremets into Polarion achieved awesome milestones to Oil & Gas customer.",
+      "LGS tailor solutions to meet your specific business needs. They can create custom features, user interfaces, and experiences that align with your brand and target audience.",
   },
   {
     id: 5,
-    question: "Polarion for Enterprise Agile",
+    question: "Faster Time-to-Market",
     answer:
-      "You must comply with regulations like ISO 26262, FDA 21 CFR Part 820 or IEC 62304. You must meet standards like CMMI, SPICE, etc. to achieve transparency in globally distributed environments. You’re required to demonstrate diligence in Corporate Governance for shareholders, regulators, etc. Requirements Management, Engineering and Test Management are key for time-to-market and success. You need to mitigate the risks of product and project failure.",
+      "With a dedicated team of experts, LGS can develop your web and mobile apps more efficiently. This leads to faster time-to-market, helping you gain a competitive advantage and reach your customers sooner.",
   },
 ];
 
@@ -453,7 +453,6 @@ class HomePage extends Component {
       <div className="container-fluid">
         <div
           className="home-page-slider-main-container row"
-          // style={{ backgroundColor: "#000000", height: "550px" }}
         >
           <div className="col-12 col-md-6">
             <ReactSlick />
@@ -467,12 +466,10 @@ class HomePage extends Component {
           <div className="col-12 col-md-7 home-page-content-container">
             <h1 className="home-page-heading">About LGS</h1>
             <h5 className="mb-4">
-              Welcome to the world of innovation and digital excellence! At
-              Labyrinth Global Solutions, we are more than just an IT company;
-              we are your partners in transforming ideas into reality. As
-              pioneers in web and app development, we harness the power of
-              technology to create seamless digital experiences that drive
-              growth and inspire change.
+            Welcome to the world of innovation and digital excellence! At Labyrinth Global Solutions, 
+            we are more than just an IT company; we are your partners in transforming ideas into reality. 
+            As pioneers in web and app development, 
+            we harness the power of technology to create seamless digital experiences that drive growth and inspire change. 
             </h5>
             <h4>Industries We are Serving </h4>
             <div className="home-page-list-container">
@@ -504,9 +501,11 @@ class HomePage extends Component {
                 </li>
               </ul>
             </div>
+            <Link to='/contactus'>
             <button className="btn btn-primary">
               Learn More <BsArrowRightShort className="home-page-arrow" />
             </button>
+            </Link>
           </div>
           <div className="col-12 col-md-5">
             <img

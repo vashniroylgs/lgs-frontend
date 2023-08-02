@@ -31,10 +31,10 @@ class ResellerMendix extends Component{
             </div>
             <div className="mendix-main-container container-fluid">
                 <div className="siemens-mendix-card row col-12">
-                <div className="second-pic-container col-4">
+                <div className="second-pic-container col-lg-4 col-12">
                     <img alt="mendixpic" className="second-pic" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690458271/Blog-Header_-Fused-IDEs_-_Copy_vredfk.png" />
                 </div>
-                <div className="siemens-mendix-hover-card col-4">
+                <div className="siemens-mendix-hover-card col-lg-4 col-12">
                     <img alt="siemens-card-logo" className="siemens-card-logo" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689752914/12-1-300x298_zuhtua.png" />
                     <div className="mendix-card-description">
                         <h1 className="mendix-card-description-heading">LABYRINTH OFFERING</h1>
