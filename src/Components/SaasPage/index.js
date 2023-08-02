@@ -169,7 +169,6 @@
 
 // export default SaasPage;
 
-
 // SaasPage.js
 
 import React, { Component } from "react";
@@ -298,34 +297,34 @@ class SaasPage extends Component {
           </div>
         </div>
         <div className="row p-5 saas-reval ">
-          <div className="col-lg-6 saas-content">
+          <div className="col-12 col-md-6 saas-content">
+            <h2>
+              Streamline Your Business Operations with Labyrinth Global
+              Solutions
+            </h2>
+            <p>
+              Are you looking to revolutionize your business operations, enhance
+              productivity, and outperform the competition? Look no further!
+              Labyrinth Global Solutions offers a cutting-edge Software as a
+              Service (SaaS) platform, empowering businesses of all sizes to
+              thrive in the digital age.
+            </p>
+            <p>
+              Our comprehensive suite of SaaS tools provides seamless
+              integration, unparalleled scalability, and top-notch security,
+              giving you the edge you need to succeed.
+            </p>
+            <h2>Experience the Future of SaaS</h2>
+            <p>
+              Unlock the full potential of your business with Labyrinth Global
+              Solutions. Sign up today for a free trial and discover how our
+              SaaS platform can take your business to new heights.
+            </p>
             <div>
-              <h2>
-                Streamline Your Business Operations with Labyrinth Global
-                Solutions
-              </h2>
-              <p>
-                Are you looking to revolutionize your business operations,
-                enhance productivity, and outperform the competition? Look no
-                further! Labyrinth Global Solutions offers a cutting-edge
-                Software as a Service (SaaS) platform, empowering businesses of
-                all sizes to thrive in the digital age.
-              </p>
-              <p>
-                Our comprehensive suite of SaaS tools provides seamless
-                integration, unparalleled scalability, and top-notch security,
-                giving you the edge you need to succeed.
-              </p>
-              <h2>Experience the Future of SaaS</h2>
-              <p>
-                Unlock the full potential of your business with Labyrinth Global
-                Solutions. Sign up today for a free trial and discover how our
-                SaaS platform can take your business to new heights.
-              </p>
               <button className="cta-btn">Contact us</button>
             </div>
           </div>
-          <div className="col-lg-6 saas-image-container">
+          <div className="col-12 col-md-6 saas-image-container">
             <img
               className="saas-image animate_animated animate_fadeInRight"
               alt="saas"

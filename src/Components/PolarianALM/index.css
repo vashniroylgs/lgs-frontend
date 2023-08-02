@@ -121,7 +121,6 @@
   }
 } */
 
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .feature-box {
@@ -187,7 +186,7 @@
 }
 
 .polarain-alm-first-page {
-  height: 80vh;
+  height: max-content;
 }
 
 .polarian-alm-card-heading {
