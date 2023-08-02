@@ -1,27 +1,25 @@
-
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import ResellerMendix from './Components/ResellerMendixPage';
-import ResellerPolarian from './Components/ResellerPolarianPage';
-import Header from './Components/navbar';
-import Footer from './Components/Footer';
-import WebMobile from './Components/MobileandAppDevelopment';
-import PolarianALM from './Components/PolarianALM';
-import Ptcintegrety from './Components/PTCintegrity';
-import About from './Components/Aboutus';
-import HomePage from './Components/Homepage';
-import Chat from './Components/chat';
-import FirstTimePopup from './Components/Popup';
-import VisitTracker from './Components/Tracker';
-import CountriesBar from './Components/Countriesbar';
-import DigitalMarketing from './Components/DigitalMarketing'
-import SaasPage from './Components/SaasPage';
-import Clients from './Components/Clients';
-import Careers from './Components/Careers';
-import WhatsAppIntegration from './Components/WhatsappIcon';
-
-
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import ResellerMendix from "./Components/ResellerMendixPage";
+import ResellerPolarian from "./Components/ResellerPolarianPage";
+import Header from "./Components/navbar";
+import Footer from "./Components/Footer";
+import WebMobile from "./Components/MobileandAppDevelopment";
+import PolarianALM from "./Components/PolarianALM";
+import Ptcintegrety from "./Components/PTCintegrity";
+import About from "./Components/Aboutus";
+import HomePage from "./Components/Homepage";
+import Chat from "./Components/chat";
+import FirstTimePopup from "./Components/Popup";
+import VisitTracker from "./Components/Tracker";
+import CountriesBar from "./Components/Countriesbar";
+import DigitalMarketing from "./Components/DigitalMarketing";
+import SaasPage from "./Components/SaasPage";
+import Clients from "./Components/Clients";
+import Careers from "./Components/Careers";
+import WhatsAppIntegration from "./Components/WhatsappIcon";
+import SalesForce from "./Components/SalesforcePage/index";
 
 function App() {
   const [showPopup, setShowPopup] = useState(true); // Set to true to show the pop-up on initial load
@@ -92,13 +90,14 @@ function App() {
           />
           <Route exact path="/aboutus" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/contactus" element={<HomePage />} />
-          <Route exact path="saascloudsolutions" element={<SaasPage />} />
+          <Route exact path="/contactus" element={<FirstTimePopup />} />
+          <Route exact path="/saascloudsolutions" element={<SaasPage />} />
           <Route
             exact
             path="/digitalmarketing"
             element={<DigitalMarketing />}
           />
+          <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
         </Routes>
       </div>
