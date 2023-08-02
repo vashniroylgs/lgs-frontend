@@ -1,4 +1,4 @@
-/* .totalContactUsContainer{
+/* /* .totalContactUsContainer{
   min-height:100vh;
 
   display:flex;
@@ -65,10 +65,9 @@
       display:flex;
       flex-direction:column;
   }
-} */
+} 
 
 
-/* Styling for the ContactUs component */
 
 .Registration_container {
   display: flex;
@@ -161,7 +160,6 @@
   cursor: pointer;
 }
 
-/* Styling for the success and error alerts */
 
 .alert-success,
 .alert-error {
@@ -175,4 +173,4 @@
 .alert-error {
   background-color: #ffcccc;
   color: #ff0000;
-}
+} */

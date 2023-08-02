@@ -1,4 +1,4 @@
-.nav-header {
+   .nav-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,8 +11,6 @@
     align-self: flex-start;
     margin-left: 8%;
 }
-
-
   .nav-content {
     display: flex;
     align-items: center;
@@ -186,6 +184,11 @@
     min-width:150px;
     justify-content: flex-start;
   }
+
+.Headeroption-item:hover{
+  color: #007bff;
+}
+
   .link{
     text-decoration: none;
   }
@@ -235,17 +238,19 @@
 .Nav-teachnology-container-items{
   position:absolute;
   top:50px;
-  left:-85px;
+  left:-450px;
   list-style-type:disc;
   visibility: hidden;
   text-decoration: none;
   background-color:white;
   display:flex;
   flex-wrap:wrap;
+  justify-content: space-between;
   gap:50px;
   z-index: 100;
-  min-width:90vw;
+  min-width:75vw;
   padding:20px;
+  background-color:white;
   
 }
 
@@ -266,9 +271,12 @@
   font-size:12px;
 }
 
+.Nav-technology-item:hover{
+  color: #007bff;
+}
+
 .Nav-teachnology-main-heading{
-  font-size:18px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .Nav-Reseller-container {
@@ -278,6 +286,31 @@
     flex-direction: column;
     justify-content:space-between;
 }
+.Nav-technology-low-code-container{
+    display:flex;
+    gap:30px;
+}
+
+.nav-reseller-polarion-text:hover{
+  color: #007bff;
+}
+
+.nav-reseller-mendix-text:hover{
+  color: #007bff;
+}
+
+@media (max-width:1350px){
+    .Nav-technology-low-code-container{
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+    }
+}
+@media (max-width:1000px){
+    .Nav-teachnology-container-items{
+        left:-250px;
+    }
+  }
 .Nav-Reseller-container-items{
     position:absolute;
     top:30px;
@@ -291,9 +324,8 @@
     gap:30px;
     z-index: 100;
     min-width:220px;
-    
   }
-
+  
   .Nav-Reseller-container:hover .Nav-Reseller-container-items{
     visibility:visible;
     padding-left:50px;
@@ -371,5 +403,3 @@
         padding-left:100px;
     }
 }
-  
-  

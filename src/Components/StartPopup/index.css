@@ -241,9 +241,12 @@
     }
   }
 
-  .close{
-    padding: 150px;
-    padding-right: 250px;
-    color: white !important;
-
+  .close-1{
+    color: black !important;
+    cursor: pointer;
+   font-size: 30px;
+  }
+  .close-container{
+    display: flex;
+    justify-content: flex-end;
   }
