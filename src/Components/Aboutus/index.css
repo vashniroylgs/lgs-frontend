@@ -318,3 +318,32 @@ h2 {
   font-family: "Poppins", sans-serif;
   color: #000000;
 }
+
+
+.my-card{
+
+  background-color: white;
+
+  box-shadow: 2px 2px 2px 2px #Bfbfbf;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 70px;
+
+  font-size: 25px;
+
+  padding: 10px;
+
+}
+
+.my-card-text{
+
+  text-align: center;  
+
+}

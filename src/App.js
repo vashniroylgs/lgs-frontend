@@ -112,7 +112,7 @@ function App() {
       <div>
         <CountriesBar />
         <Header />
-        <VisitTracker visitCount={visitCount} />
+        {/* <VisitTracker visitCount={visitCount} /> */}
         <Chat />
         <Routes>
           <Route path="/" element={<HomePage />} />

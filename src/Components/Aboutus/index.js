@@ -1,6 +1,19 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import {Chrono} from 'react-chrono'
+
+const items = [
+  {
+    cardTitle: "Our Mission",
+    cardDetailedText:
+      "Our mission is to empower businesses and individuals through cutting-edge software solutions that drive innovation and growth. We are committed to delivering reliable, efficient, and user-centric software that exceeds our clients expectations. By fostering a culture of collaboration and continuous improvement, we aim to create a positive impact on the world through technology.",
+  },
+  {
+    cardTitle: "Our Vision",
+    cardDetailedText:"Our vision  is to be a globally recognized software development leader, renowned for our unwavering commitment to excellence and customer satisfaction. We envision a future where our innovative products and services empower organizations to thrive in an ever-evolving digital landscape. Through our passion for technology and human-centric approach, we strive to revolutionize industries, one software solution at a time."
+  },
+]
 
 const About = () => {
   return (
@@ -28,31 +41,26 @@ const About = () => {
       </div>
       
       <div className='about-cards-container'>
-      <div class="box-2 box-down cyan services-reval">
-            <h2 className="services-heading">Mission</h2>
-            <p>
-            At LGS, our mission is to empower businesses and individuals through cutting-edge software solutions that drive innovation and growth. We are committed to delivering reliable, efficient, and user-centric software that exceeds our clients' expectations. By fostering a culture of collaboration and continuous improvement, we aim to create a positive impact on the world through technology.
-              {/* <Link to="/polarianalm">Know More</Link> */}
-            </p>
-            <img
-              src="https://res.cloudinary.com/dots1s0gu/image/upload/v1689829990/target_s8r7w7.png"
-              alt=""
-              className='mission-image'
-            />
-      </div>
-      <div class="box-2 box-down red services-reval">
-            <h2 className="services-heading">Vision</h2>
-            <p>
-            Our vision at LGS is to be a globally recognized software development leader, renowned for our unwavering commitment to excellence and customer satisfaction. We envision a future where our innovative products and services empower organizations to thrive in an ever-evolving digital landscape. Through our passion for technology and human-centric approach, we strive to revolutionize industries, one software solution at a time.
-              {/* <Link to="/polarianalm">Know More</Link> */}
-            </p>
-            <img
-              src="https://png.pngitem.com/pimgs/s/50-500574_vision-png-transparent-images-vision-statement-png-download.png"
-              alt=""
-              
-              className='vision-image'
-            />
-      </div>
+      <div className="chrono-container">
+        <Chrono  classNames={{
+            card: 'my-card',
+            cardText: 'my-card-text',
+            
+        controls: 'my-controls',
+
+    title: 'my-title',
+
+  }}
+  cardHeight={300}
+  fontSizes={{
+
+    cardTitle: '1.5rem',
+
+  }}
+
+   mode="VERTICAL_ALTERNATING" items={items} />
+
+  </div>
       </div>
     </div>
   );
