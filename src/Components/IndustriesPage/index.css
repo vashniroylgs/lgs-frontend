@@ -1,9 +1,8 @@
-.toolsHeading {
-  font-weight: 900;
+.industries-heading {
   font-family: "Poppins";
   color: #ffffff !important;
   font-size: 25px;
-  font-weight: bold !important;
+  text-align: center;
 }
 
 .h-line {
@@ -20,6 +19,7 @@
 
 .ToolsPageContainer {
   width: 95%;
+  height: 100%;
 }
 
 .totalToolsPageContainer {
@@ -28,13 +28,15 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 100%;
   align-items: center;
 }
 
-.toolPageParaColor {
-  font-weight: 600;
+.industries-para {
+  font-weight: normal;
   color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .imageContainer {
@@ -55,4 +57,24 @@
 
 .educationImage {
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .industries-para {
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 3px;
+    text-transform: uppercase;
+  }
+  .industriesImage {
+    height: 20px;
+    width: 20px;
+  }
+  .industries-heading {
+    font-family: "Poppins";
+    color: #ffffff !important;
+    font-size: 20px;
+    font-weight: bold !important;
+  }
 }

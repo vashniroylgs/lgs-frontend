@@ -67,39 +67,36 @@
 
 // ];
 
-
 // const ScrolllingImages = [
 
 //     "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Zoox_Motors_qhr2hn.png",
 
 //     "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Taulia_ffxzhx.png",
-          
+
 //     "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Tata_Alexis_ptw73z.png",
-         
+
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Siemens_Healthineers_dh3pcl.png",
-           
+
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Record_Linc_w9zxvc.jpg",
-       
+
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689926991/64_BitStore_poolzk.png",
-          
+
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/siemens_s7ucfi.png",
-            
+
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/sedemac_dlcgdk.jpg",
-          
-    
+
 //               "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/ptc_xxn1tl.png",
-            
+
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Padmini-Vna_ep4pwk.jpg",
 //                 "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/CIBT_Visas_cfxkcy.png",
-          
-//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Cognizant_esfsi8.png",
-          
-//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Broadcom_e0g8vx.png",
-         
-//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Alcove_Furniture_feq4qz.png",
-        
-//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Air_BNB_ijkep7.png",
 
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Cognizant_esfsi8.png",
+
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Broadcom_e0g8vx.png",
+
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Alcove_Furniture_feq4qz.png",
+
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Air_BNB_ijkep7.png",
 
 //   ].map((image) => ({
 
@@ -109,29 +106,24 @@
 
 //   }));
 
-
-
-  
 // const ScrolllingImages1 = [
 //           "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Nityas_Fashion_a9ly47.png",
-          
-//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Oracle_dmaiik.png",
-   
-//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/napino_obfge2.jpg",
-         
-//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png",
-         
-         
-//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png",
-       
-//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/LJB_lladcr.png",
-         
-//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/Hematogenix_frhdaa.png",
-               
-//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/DrR_Logo_wvw2gc.jpg",
-       
-//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/ESPN_Sports_ww7vfh.png",
 
+//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Oracle_dmaiik.png",
+
+//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/napino_obfge2.jpg",
+
+//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png",
+
+//         "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png",
+
+//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/LJB_lladcr.png",
+
+//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/Hematogenix_frhdaa.png",
+
+//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/DrR_Logo_wvw2gc.jpg",
+
+//       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/ESPN_Sports_ww7vfh.png",
 
 // ].map((image) => ({
 
@@ -141,23 +133,20 @@
 
 // }));
 
-
-
-
 // const ScrolllingImages2 = [
 
 //     "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Fidelity_investments_y7t61u.png",
-          
+
 //       "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Esnaad_gba3ox.png",
-        
+
 //     "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Delight_Cabs_aet4l7.png",
-        
+
 //   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Covidien_kbldon.png",
-        
+
 //   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Compliance_Group_x8sgyy.jpg",
-      
+
 //   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/ConvaTec_almrlt.png",
-       
+
 //    "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Capgemini-Logo_xe2sql.png",
 
 // ].map((image) => ({
@@ -167,7 +156,6 @@
 //   image
 
 // }));
-
 
 // class HomePage extends Component {
 //   render() {
@@ -308,14 +296,13 @@
 
 // export default HomePage;
 
-
 import React, { Component } from "react";
 import ReactSlick from "../Slider";
 import ImageSlider from "../ImageSlider";
-import WhyUs from '../Whyus'
+import WhyUs from "../Whyus";
 import about from "../images/whyusimage.png";
-import StartPopup from '../StartPopup'
-import Chat from '../chat'
+import StartPopup from "../StartPopup";
+import Chat from "../chat";
 import Services from "../Services";
 import { BsArrowRightShort } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
@@ -361,96 +348,79 @@ const Details = [
   },
 ];
 
-
-
 const ScrolllingImages = [
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Zoox_Motors_qhr2hn.png",
 
-    "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Zoox_Motors_qhr2hn.png",
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Taulia_ffxzhx.png",
 
-    "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Taulia_ffxzhx.png",
-          
-    "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Tata_Alexis_ptw73z.png",
-         
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Siemens_Healthineers_dh3pcl.png",
-           
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Record_Linc_w9zxvc.jpg",
-       
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689926991/64_BitStore_poolzk.png",
-          
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/siemens_s7ucfi.png",
-            
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/sedemac_dlcgdk.jpg",
-          
-    
-              "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/ptc_xxn1tl.png",
-            
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Padmini-Vna_ep4pwk.jpg",
-                "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/CIBT_Visas_cfxkcy.png",
-          
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Tata_Alexis_ptw73z.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Siemens_Healthineers_dh3pcl.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Record_Linc_w9zxvc.jpg",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689926991/64_BitStore_poolzk.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/siemens_s7ucfi.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/sedemac_dlcgdk.jpg",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/ptc_xxn1tl.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Padmini-Vna_ep4pwk.jpg",
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/CIBT_Visas_cfxkcy.png",
+
   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Cognizant_esfsi8.png",
   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Broadcom_e0g8vx.png",
   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Alcove_Furniture_feq4qz.png",
   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Air_BNB_ijkep7.png",
-
-  ].map((image) => ({
-    id: crypto.randomUUID(),
-    image
-  }));
-  
-const ScrolllingImages1 = [
-          "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Nityas_Fashion_a9ly47.png",
-          
-        "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Oracle_dmaiik.png",
-   
-        "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/napino_obfge2.jpg",
-         
-        "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png",
-         
-         
-        "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png",
-       
-      "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/LJB_lladcr.png",
-         
-      "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/Hematogenix_frhdaa.png",
-               
-      "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/DrR_Logo_wvw2gc.jpg",
-       
-      "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/ESPN_Sports_ww7vfh.png",
-
-
 ].map((image) => ({
-
   id: crypto.randomUUID(),
-
-  image
-
+  image,
 }));
 
+const ScrolllingImages1 = [
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Nityas_Fashion_a9ly47.png",
 
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Oracle_dmaiik.png",
 
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/napino_obfge2.jpg",
 
-const ScrolllingImages2 = [
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png",
 
-    "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Fidelity_investments_y7t61u.png",
-          
-      "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Esnaad_gba3ox.png",
-        
-    "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Delight_Cabs_aet4l7.png",
-        
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Covidien_kbldon.png",
-        
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Compliance_Group_x8sgyy.jpg",
-      
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/ConvaTec_almrlt.png",
-       
-   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Capgemini-Logo_xe2sql.png",
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png",
 
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/LJB_lladcr.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/Hematogenix_frhdaa.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/DrR_Logo_wvw2gc.jpg",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/ESPN_Sports_ww7vfh.png",
 ].map((image) => ({
-
   id: crypto.randomUUID(),
 
-  image
+  image,
+}));
 
+const ScrolllingImages2 = [
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Fidelity_investments_y7t61u.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Esnaad_gba3ox.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Delight_Cabs_aet4l7.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Covidien_kbldon.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Compliance_Group_x8sgyy.jpg",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/ConvaTec_almrlt.png",
+
+  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Capgemini-Logo_xe2sql.png",
+].map((image) => ({
+  id: crypto.randomUUID(),
+
+  image,
 }));
 
 class HomePage extends Component {
@@ -481,7 +451,6 @@ class HomePage extends Component {
   render() {
     return (
       <div className="container-fluid">
-
         <div
           className="home-page-slider-main-container row"
           // style={{ backgroundColor: "#000000", height: "550px" }}
@@ -493,15 +462,17 @@ class HomePage extends Component {
             <ImageSlider />
           </div>
         </div>
-        <WhatsAppIntegration  />
+        <WhatsAppIntegration />
         <div className="row p-5">
           <div className="col-12 col-md-7 home-page-content-container">
             <h1 className="home-page-heading">About LGS</h1>
             <h5 className="mb-4">
-            Welcome to the world of innovation and digital excellence! At Labyrinth Global Solutions, 
-            we are more than just an IT company; we are your partners in transforming ideas into reality. 
-            As pioneers in web and app development, 
-            we harness the power of technology to create seamless digital experiences that drive growth and inspire change. 
+              Welcome to the world of innovation and digital excellence! At
+              Labyrinth Global Solutions, we are more than just an IT company;
+              we are your partners in transforming ideas into reality. As
+              pioneers in web and app development, we harness the power of
+              technology to create seamless digital experiences that drive
+              growth and inspire change.
             </h5>
             <h4>Industries We are Serving </h4>
             <div className="home-page-list-container">
@@ -566,12 +537,16 @@ class HomePage extends Component {
             </ul>
           </div>
           <IndustriesPage />
-          <TechnologiesPage />
-          <Card />
-        </div>   
+          <div className="Technology-mbl-container">
+            <TechnologiesPage />
+          </div>
+          <div>
+            <Card />
+          </div>
+        </div>
         <StartPopup />
         <Chat />
-        </div>
+      </div>
     );
   }
 }
