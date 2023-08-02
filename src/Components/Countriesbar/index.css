@@ -1,65 +1,174 @@
 .icon-image {
-    height: 20px;
-    width: 20px;
-    margin: 5px;
+  height: 20px;
+  width: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.whatsapp-image {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.first_nav_content {
+  display: flex;
+  align-self: center;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(6, 41, 83, 0.8);
+}
+
+.first_nav_content:hover {
+  color: black;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
+.logos-container-2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.email-icon {
+  width: 25px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.line {
+  height: 2px;
+  margin: 0px;
+}
+
+.uae-image {
+  height: 25px;
+  width: 25px;
+  margin: 3px;
+}
+
+.uae-container {
+  margin-top: 5px;
+}
+
+.contact-info {
+  text-decoration: none;
+}
+.countries-main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .countries-main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
-  
+  .logos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    width: 25%;
+  }
+
+  .logos-container-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+    width: 65%;
+    flex-wrap: wrap;
+  }
+  .uae-image {
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+  }
+
+  .email-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 0px;
+  }
+  .icon-image {
+    height: 10px;
+    width: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
   .whatsapp-image {
-    width: 35px;
-    height: 35px;
-    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+    margin-left: 0px;
   }
-  
   .first_nav_content {
     display: flex;
     align-self: center;
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     text-align: left;
-    color: rgba(6, 41, 83, .8);
+    color: rgba(6, 41, 83, 0.8);
   }
+}
 
-  .first_nav_content:hover {
-    color: black;
-  }
-  
- .logos-container{
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .logos-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 50px;
- }
-  
+  }
+
   .logos-container-2 {
     display: flex;
     justify-content: flex-end;
     margin-right: 60px;
   }
-  
+
   .email-icon {
-    width: 25px;
-    height: 20px;
-    margin-left: 20px;
+    width: 17px;
+    height: 17px;
+    margin-left: 2px;
   }
-  
-  .line {
-    height: 2px;
-    margin: 0px;
-  }
-  
-  .uae-image {
-    height: 25px;
-    width: 25px;
-    margin: 3px;
-  }
-  
-  .uae-container {
-    margin-top: 5px;
+  .icon-image {
+    height: 15px;
+    width: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
-  .contact-info{
-    text-decoration: none;
+  .whatsapp-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
   }
+  .first_nav_content {
+    display: flex;
+    align-self: center;
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(6, 41, 83, 0.8);
+  }
+}
