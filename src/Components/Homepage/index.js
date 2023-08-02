@@ -314,6 +314,7 @@ import TechnologiesPage from "../Technologies";
 import Card from "../Card";
 import WhatsAppIntegration from "../WhatsappIcon";
 
+
 const Details = [
   {
     id: 1,
@@ -461,7 +462,9 @@ class HomePage extends Component {
             <ImageSlider />
           </div>
         </div>
-        <WhatsAppIntegration />
+        <div className="whatsapp-container">
+          <WhatsAppIntegration />
+        </div>
         <div className="row p-5">
           <div className="col-12 col-md-7 home-page-content-container">
             <h1 className="home-page-heading">About LGS</h1>

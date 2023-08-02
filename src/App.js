@@ -19,6 +19,7 @@ import DigitalMarketing from './Components/DigitalMarketing'
 import SaasPage from './Components/SaasPage';
 import Clients from './Components/Clients';
 import Careers from './Components/Careers';
+import WhatsAppIntegration from './Components/WhatsappIcon';
 
 
 
