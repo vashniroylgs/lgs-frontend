@@ -1,61 +1,58 @@
-
-
-.toolsHeading{
-    font-weight:900;
-    font-family:"Poppins";
-    color:#ffffff  !important;
-    font-size:25px;
-    font-weight: bold !important;
+.toolsHeading {
+  font-weight: 900;
+  font-family: "Poppins";
+  color: #ffffff !important;
+  font-size: 25px;
+  font-weight: bold !important;
 }
 
-.h-line{
-    border-bottom: 3px solid #529ff1;
-    width: 150px;
-    margin: auto;
-    margin-bottom: 85px;
+.h-line {
+  border-bottom: 3px solid #529ff1;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 85px;
 }
 
-.industriesImage{
-  height:29px;
-  width:29px;
+.industriesImage {
+  height: 29px;
+  width: 29px;
 }
 
-.ToolsPageContainer{
-    width:95%;
+.ToolsPageContainer {
+  width: 95%;
 }
 
-.totalToolsPageContainer{
-    background-image:url("https://www.techasoft.com/debug/img/industries-back.jpg");
-    background-size:cover;
-    flex-direction: column;
-    display:flex;
-    justify-content:center;
-    height: 400px;
-    align-items: center;
+.totalToolsPageContainer {
+  background-image: url("https://www.techasoft.com/debug/img/industries-back.jpg");
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
 }
 
-.toolPageParaColor{
-    font-weight:600;
-    color:#ffffff
+.toolPageParaColor {
+  font-weight: 600;
+  color: #ffffff;
 }
 
-.imageContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
-
 
 .image-evolution img {
-    opacity: 0; /* The images are initially hidden */
-    transition: opacity 0.5s ease; /* Use a transition for the evolving effect */
-  }
-  
-  .image-evolution.evolved img {
-    opacity: 1; /* When the images are evolved, they become visible */
-  }
+  opacity: 0; /* The images are initially hidden */
+  transition: opacity 0.5s ease; /* Use a transition for the evolving effect */
+}
 
-  .educationImage{
-    background-color:#ffffff;
-  }
+.image-evolution.evolved img {
+  opacity: 1; /* When the images are evolved, they become visible */
+}
+
+.educationImage {
+  background-color: #ffffff;
+}
