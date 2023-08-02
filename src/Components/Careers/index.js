@@ -7,8 +7,8 @@ import "./index .css";
 class Careers extends Component {
   render() {
     return (
-      <div className="container career-form-main-container">
-        <div className="row">
+      <div className="container career-form-main-container ">
+        <div className="row ">
           <div className="col-12 col-md-5 careers-heading-container">
             <h1 className="careers-heading">CAREERS</h1>
             <h3>Passion for Tech?</h3>
