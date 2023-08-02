@@ -40,31 +40,26 @@
 //     </>
 //   );
 
-
-
 // export default App;
 
-
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import ResellerMendix from './Components/ResellerMendixPage';
-import ResellerPolarian from './Components/ResellerPolarianPage';
-import Header from './Components/navbar';
-import Footer from './Components/Footer';
-import WebMobile from './Components/MobileandAppDevelopment';
-import PolarianALM from './Components/PolarianALM';
-import Ptcintegrety from './Components/PTCintegrity';
-import About from './Components/Aboutus';
-import HomePage from './Components/Homepage';
-import Chat from './Components/chat';
-import FirstTimePopup from './Components/StartPopup';
-import VisitTracker from './Components/Tracker';
-import CareerForm from './Components/CareerForm';
-import PopupForm from './Components/Popup'
-
-
-
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import ResellerMendix from "./Components/ResellerMendixPage";
+import ResellerPolarian from "./Components/ResellerPolarianPage";
+import Header from "./Components/navbar";
+import Footer from "./Components/Footer";
+import WebMobile from "./Components/MobileandAppDevelopment";
+import PolarianALM from "./Components/PolarianALM";
+import Ptcintegrety from "./Components/PTCintegrity";
+import About from "./Components/Aboutus";
+import HomePage from "./Components/Homepage";
+import Chat from "./Components/chat";
+import FirstTimePopup from "./Components/StartPopup";
+import VisitTracker from "./Components/Tracker";
+import CareerForm from "./Components/CareerForm";
+import PopupForm from "./Components/Popup";
+import DigitalMarketing from "./Components/DigitalMarketing";
 
 function App() {
   const [showPopup, setShowPopup] = useState(true); // Set to true to show the pop-up on initial load
@@ -73,7 +68,7 @@ function App() {
   useEffect(() => {
     fetchVisitCount(); // Fetch the visit count on initial load
     // Increment the visit count on every page load by making a request to the homepage
-    fetch('http://localhost:3005/', { method: 'GET' })
+    fetch("http://localhost:3005/", { method: "GET" })
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
@@ -81,17 +76,17 @@ function App() {
         }
       })
       .catch((error) => {
-        console.error('Error incrementing visit count:', error);
+        console.error("Error incrementing visit count:", error);
       });
   }, []);
 
   const fetchVisitCount = async () => {
     try {
-      const response = await fetch('http://localhost:3005/api/visit-count');
+      const response = await fetch("http://localhost:3005/api/visit-count");
       const data = await response.json();
       setVisitCount(data.visitCount);
     } catch (error) {
-      console.error('Error fetching visit count:', error);
+      console.error("Error fetching visit count:", error);
     }
   };
 
@@ -101,8 +96,12 @@ function App() {
 
   return (
     <>
-      {showPopup && <FirstTimePopup onClose={handleClosePopup} 
-      onComplete={handleClosePopup}/>}
+      {showPopup && (
+        <FirstTimePopup
+          onClose={handleClosePopup}
+          onComplete={handleClosePopup}
+        />
+      )}
 
       <div>
         <Header />
@@ -116,8 +115,9 @@ function App() {
           <Route path="/mobileandappdevelopment" element={<WebMobile />} />
           <Route path="/polarianalm" element={<PolarianALM />} />
           <Route path="/ptcintegrity" element={<Ptcintegrety />} />
+          <Route path="/digitalmarketing" element={<DigitalMarketing />} />
           <Route path="/aboutus" element={<About />} />
-          <Route path='/careers' element={<CareerForm/>}/>
+          <Route path="/careers" element={<CareerForm />} />
           {/* The "Contact Us" link should navigate to the /contactus page */}
           <Route path="/contactus" element={<PopupForm />} />
         </Routes>
@@ -128,4 +128,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;
