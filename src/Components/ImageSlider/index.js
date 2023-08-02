@@ -50,7 +50,7 @@ class ImageSlider extends Component {
         <Slider {...settings}>
           {Images.map((slide, index) => (
             <div className="image-slide " key={index}>
-              {/* <img
+              <img
                 className="image-slider-image"
                 src={slide.backgroundImage}
                 alt={`slide${index}`}
