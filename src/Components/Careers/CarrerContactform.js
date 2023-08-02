@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const [formValues, setFormValues] = useState({
@@ -30,18 +30,20 @@ const ContactForm = () => {
     // Simple form validation (checking if required fields are not empty)
     const requiredFields = ['name', 'phone', 'totalExp', 'reasonForJobChange', 'email', 'relevantExp', 'currentCTC', 'expectedCTC', 'noticePeriod', 'resume'];
 
-    const isFormValid = requiredFields.every((field) => formValues[field].trim() !== '');
+    const isFormValid = requiredFields.every(
+      (field) => formValues[field].trim() !== ""
+    );
     if (!isFormValid) {
-      alert('Please fill in all the required fields.');
+      alert("Please fill in all the required fields.");
       return;
     }
 
     // Call the API to send form data to the server and send the email
     axios
-      .post('http://localhost:5000/send-email', formValues) // Change the URL to match your server's endpoint
+      .post("http://localhost:5000/send-email", formValues) // Change the URL to match your server's endpoint
       .then((response) => {
         console.log(response.data);
-        alert('Form submitted successfully. Email sent.');
+        alert("Form submitted successfully. Email sent.");
         setFormValues({
           ...formValues,
           name: '',
@@ -61,26 +63,35 @@ const ContactForm = () => {
         });
       })
       .catch((error) => {
-        console.error('Error submitting form:', error);
-        alert('An error occurred while submitting the form. Please try again later.');
+        console.error("Error submitting form:", error);
+        alert(
+          "An error occurred while submitting the form. Please try again later."
+        );
       });
   };
 
   return (
-    <div className="container rounded pb-5 px-4">
-      <h4 className="semi_heading-career text-center text-uppercase pt-5 font-weight-bold careers-heading">
+    <div className="container career-form rounded pb-5 px-4">
+      <h4 className="col-12 semi_heading-career text-center text-uppercase pt-5 font-weight-bold careers-heading">
         Come Work With Us
       </h4>
       <div className="text-uppercase text-center pb-5">
         Don't be shY! Drop us a line and our team will get to you asap.
       </div>
       <form id="career_form" onSubmit={handleSubmit}>
-        <input hidden type="text" value={formValues.lead_url} className="form-control" name="lead_url" required />
+        <input
+          hidden
+          type="text"
+          value={formValues.lead_url}
+          className="form-control"
+          name="lead_url"
+          required
+        />
         <div className="row career-contact rounded p-4">
-          <div className="col-md-6">
+          <div className="col-12 col-md-6">
             <div className="form-group">
               <label htmlFor="career_name">
-                Name <a style={{ color: 'red' }}>*</a>
+                Name <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 type="text"
@@ -94,7 +105,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_phone">
-                Phone No <a style={{ color: 'red' }}>*</a>
+                Phone No <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 type="tel"
@@ -103,7 +114,9 @@ const ContactForm = () => {
                 name="career_phone"
                 minLength="10"
                 maxLength="16"
-                onKeyPress={(event) => event.charCode >= 48 && event.charCode <= 57}
+                onKeyPress={(event) =>
+                  event.charCode >= 48 && event.charCode <= 57
+                }
                 required
                 value={formValues.career_phone}
                 onChange={handleInputChange}
@@ -111,7 +124,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_total_exp">
-                Total Exp <a style={{ color: 'red' }}>*</a>
+                Total Exp <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 className="form-control career-fields"
@@ -158,7 +171,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_job_change">
-                Reason for job change <a style={{ color: 'red' }}>*</a>
+                Reason for job change <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 className="form-control career-fields"
@@ -189,10 +202,10 @@ const ContactForm = () => {
               </select>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-12 col-md-6">
             <div className="form-group">
               <label htmlFor="career_email">
-                Email <a style={{ color: 'red' }}>*</a>
+                Email <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 type="email"
@@ -206,7 +219,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_relevant_exp">
-                Relevant Exp <a style={{ color: 'red' }}>*</a>
+                Relevant Exp <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 className="form-control career-fields"
@@ -220,7 +233,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_current_ctc">
-                Current CTC <a style={{ color: 'red' }}>*</a>
+                Current CTC <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 className="form-control career-fields"
@@ -234,7 +247,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_exp_ctc">
-                Expected CTC(Offer if any) <a style={{ color: 'red' }}>*</a>
+                Expected CTC(Offer if any) <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 className="form-control career-fields"
@@ -248,7 +261,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_notice_period">
-                Notice Period(LWD if serving) <a style={{ color: 'red' }}>*</a>
+                Notice Period(LWD if serving) <a style={{ color: "red" }}>*</a>
               </label>
               <input
                 className="form-control career-fields"
@@ -261,8 +274,13 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="attach_document">Attach your resume <a style={{ color: 'red' }}>*</a></label>
-              <div className="custom-file cursor-pointer z-1" id="attach_document">
+              <label htmlFor="attach_document">
+                Attach your resume <a style={{ color: "red" }}>*</a>
+              </label>
+              <div
+                className="custom-file cursor-pointer z-1"
+                id="attach_document"
+              >
                 <input
                   type="file"
                   className="custom-file-input cursor-pointer"
@@ -271,7 +289,10 @@ const ContactForm = () => {
                   required
                   // onChange={handleFileChange} // If you want to handle file selection
                 />
-                <label className="custom-file-label rounded-0 career-fields file-choose cursor-pointer" htmlFor="customFile">
+                <label
+                  className="custom-file-label rounded-0 career-fields file-choose cursor-pointer"
+                  htmlFor="customFile"
+                >
                   Choose file
                 </label>
               </div>
@@ -287,31 +308,15 @@ const ContactForm = () => {
                 onChange={handleInputChange}
               ></textarea>
             </div>
-          </div>
-          <div className="col-12">
-            <div>
-              <a href="tel:+91 8897145382" className="phone-link">
-                <span className="font-weight-bold">Contact HR :</span>
-                <img
-                  src=""
-                  width="12.5px"
-                  height="9.5px"
-                  className="img-fluid"
-                  alt="call"
-                />
-                +91 8897145382
-              </a>
+            <div className="text-end mt-4">
+              <button
+                className="btn text-uppercase text-white ml-auto add_career_pop_up_button"
+                type="submit"
+                style={{ background: "rgb(2, 80, 169)" }}
+              >
+                Submit
+              </button>
             </div>
-          </div>
-          <div className="col-md-12 text-center">
-            <span className="add_career_error" style={{ color: 'red' }}></span>
-            <button
-              className="btn text-uppercase text-white ml-auto add_career_pop_up_button"
-              type="submit"
-              style={{ background: 'rgb(2, 80, 169)' }}
-            >
-              Submit <span className="add_career_pop_up_fa_spin_icon"></span>
-            </button>
           </div>
         </div>
       </form>
