@@ -40,8 +40,6 @@
 //     </>
 //   );
 
-
-
 // export default App;
 
 
@@ -62,8 +60,6 @@ import FirstTimePopup from './Components/StartPopup';
 import VisitTracker from './Components/Tracker';
 import CareerForm from './Components/CareerForm';
 import PopupForm from './Components/Popup'
-import CountriesBar from './Components/Countriesbar';
-import DigitalMarketing from './Components/DigitalMarketing';
 
 
 
@@ -75,7 +71,7 @@ function App() {
   useEffect(() => {
     fetchVisitCount(); // Fetch the visit count on initial load
     // Increment the visit count on every page load by making a request to the homepage
-    fetch('http://localhost:3005/', { method: 'GET' })
+    fetch("http://localhost:3005/", { method: "GET" })
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
@@ -83,17 +79,17 @@ function App() {
         }
       })
       .catch((error) => {
-        console.error('Error incrementing visit count:', error);
+        console.error("Error incrementing visit count:", error);
       });
   }, []);
 
   const fetchVisitCount = async () => {
     try {
-      const response = await fetch('http://localhost:3005/api/visit-count');
+      const response = await fetch("http://localhost:3005/api/visit-count");
       const data = await response.json();
       setVisitCount(data.visitCount);
     } catch (error) {
-      console.error('Error fetching visit count:', error);
+      console.error("Error fetching visit count:", error);
     }
   };
 
@@ -103,8 +99,12 @@ function App() {
 
   return (
     <>
-      {showPopup && <FirstTimePopup onClose={handleClosePopup} 
-      onComplete={handleClosePopup}/>}
+      {showPopup && (
+        <FirstTimePopup
+          onClose={handleClosePopup}
+          onComplete={handleClosePopup}
+        />
+      )}
 
       <div>
         <CountriesBar />
@@ -118,8 +118,9 @@ function App() {
           <Route path="/mobileandappdevelopment" element={<WebMobile />} />
           <Route path="/polarianalm" element={<PolarianALM />} />
           <Route path="/ptcintegrity" element={<Ptcintegrety />} />
+          <Route path="/digitalmarketing" element={<DigitalMarketing />} />
           <Route path="/aboutus" element={<About />} />
-          <Route path='/careers' element={<CareerForm/>}/>
+          <Route path="/careers" element={<CareerForm />} />
           {/* The "Contact Us" link should navigate to the /contactus page */}
           <Route path="/contactus" element={<PopupForm />} />
           <Route path='/digitalmarketing' element={<DigitalMarketing />} />
@@ -131,4 +132,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;
