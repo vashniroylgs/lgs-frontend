@@ -19,6 +19,7 @@ import SaasPage from "./Components/SaasPage";
 import Clients from "./Components/Clients";
 import Careers from "./Components/Careers";
 import WhatsAppIntegration from "./Components/WhatsappIcon";
+import SalesForce from "./Components/SalesforcePage/index";
 
 function App() {
   const [showPopup, setShowPopup] = useState(true); // Set to true to show the pop-up on initial load
