@@ -13,6 +13,7 @@ class ResellerMendix extends Component{
                         <h1>Mendix</h1>
                         <p>LGS is your go-to destination for cutting-edge software and app development using the powerful Mendix low-code platform. We deliver innovative solutions that drive success, tailored to your specific needs. As authorized Mendix resellers, we ensure access to the latest tools for your digital initiatives. Let's embark on this exciting journey together and empower innovation with LGS.</p>
                     </div>
+            </div>
                 <div className="siemens-mendix-card row col-12">
                     <div className="siemens-mendix-hover-card col-6">
                         <img alt="siemens-card-logo" className="siemens-card-logo" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689752914/12-1-300x298_zuhtua.png" />
