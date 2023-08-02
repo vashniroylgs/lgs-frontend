@@ -178,6 +178,8 @@ import SaasPageCarouselSlider from "../SaaspageCarouselSlider/index";
 import Slider from "react-slick"; // Import the Slider component from the package you are using
 import "slick-carousel/slick/slick.css"; // Import the CSS file for the slider
 import "slick-carousel/slick/slick-theme.css";
+import Header from "../navbar";
+import Footer from "../Footer";
 
 const TransformingCarrerList = [
   {
@@ -282,6 +284,8 @@ class SaasPage extends Component {
   };
   render() {
     return (
+      <>
+      <Header />
       <div className="container-fluid salesforce-main-container">
         <div className="row p-5 sales-force-container">
           <div className="col-12">
@@ -342,6 +346,8 @@ class SaasPage extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
 }

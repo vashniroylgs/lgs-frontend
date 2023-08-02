@@ -3,10 +3,15 @@ import career from "../images/careers.jpg";
 import "bootstrap/dist/css/bootstrap.css";
 import ContactForm from "./CarrerContactform";
 import "./index .css";
+import Header from "../navbar";
+import Footer from "../Footer";
 
 class Careers extends Component {
   render() {
     return (
+      <>
+      <Header />
+     
       <div className="container career-form-main-container">
         <div className="row">
           <div className="col-12 col-md-5 careers-heading-container">
@@ -28,6 +33,8 @@ class Careers extends Component {
         </div>
         <ContactForm />
       </div>
+      <Footer />
+      </>
     );
   }
 }

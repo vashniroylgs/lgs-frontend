@@ -1,12 +1,14 @@
 import { Component } from "react"
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Header from "../navbar";
+import Footer from "../Footer";
 
 class ResellerMendix extends Component{
     render(){
         return(
             <>
+            <Header />
             <div className="mendix-main-container container-fluid">
                     <div className="row">
                     <div className="col-12 mb-5">
@@ -276,6 +278,7 @@ class ResellerMendix extends Component{
                     </div>
                     </div>
                 </div>
+                <Footer />
             </>
         )
     }

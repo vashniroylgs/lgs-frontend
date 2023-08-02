@@ -67,7 +67,7 @@ function App() {
 
       <div>
         <CountriesBar />
-        <Header />
+        
         {/* <VisitTracker visitCount={visitCount} />  */}
         <Chat />
         <Routes>
@@ -92,7 +92,7 @@ function App() {
           />
           <Route exact path="/aboutus" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/contactus" element={<FirstTimePopup />} />
+          <Route exact path="/contactus" element={<HomePage />} />
           <Route exact path="saascloudsolutions" element={<SaasPage />} />
           <Route
             exact
@@ -101,7 +101,6 @@ function App() {
           />
           <Route exact path="/clientsPage" element={<Clients />} />
         </Routes>
-        <Footer />
       </div>
     </>
   );
