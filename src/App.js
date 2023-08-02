@@ -60,7 +60,8 @@ import FirstTimePopup from './Components/StartPopup';
 import VisitTracker from './Components/Tracker';
 import CareerForm from './Components/CareerForm';
 import PopupForm from './Components/Popup'
-
+import CountriesBar from './Components/Countriesbar';
+import DigitalMarketing from './Components/DigitalMarketing'
 
 
 
