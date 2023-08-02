@@ -2,7 +2,8 @@
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-
+import Header from "../navbar";
+import Footer from "../Footer";
 
 
 // import {
@@ -637,6 +638,8 @@ class WebMobile extends Component {
   };
   render() {
     return (
+      <>
+      <Header />
       <div className="container-fluid web-mobile-bg-colour">
         <div className="row p-5">
           <h1 className="text-center web-mobile-heading ">
@@ -978,6 +981,8 @@ class WebMobile extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
 }

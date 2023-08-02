@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import meet from "../images/meeting.jpg";
-
+import Header from "../navbar";
+import Footer from "../Footer";
 import "./index.css";
 
 class DigitalMarketing extends Component {
   render() {
     return (
+      <>
+      <Header />
       <div>
         <div className="container-fluid">
           <div className="row">
@@ -77,6 +80,8 @@ class DigitalMarketing extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
 }

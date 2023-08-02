@@ -302,6 +302,7 @@ import ImageSlider from "../ImageSlider";
 import WhyUs from "../Whyus";
 import about from "../images/whyusimage.png";
 import StartPopup from "../StartPopup";
+import Header from "../navbar";
 import Chat from "../chat";
 import Services from "../Services";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -313,6 +314,7 @@ import IndustriesPage from "../IndustriesPage";
 import TechnologiesPage from "../Technologies";
 import Card from "../Card";
 import WhatsAppIntegration from "../WhatsappIcon";
+import Footer from "../Footer";
 
 
 const Details = [
@@ -451,6 +453,8 @@ class HomePage extends Component {
 
   render() {
     return (
+      <>
+      <Header /> 
       <div className="container-fluid">
         <div
           className="home-page-slider-main-container row"
@@ -549,6 +553,8 @@ class HomePage extends Component {
         <StartPopup />
         <Chat />
       </div>
+      <Footer />
+      </>
     );
   }
 }

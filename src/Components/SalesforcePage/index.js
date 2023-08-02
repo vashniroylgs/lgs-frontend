@@ -213,6 +213,8 @@
 import React, { Component } from "react";
 import salesforceanimation from "./salesforceanimation.json";
 import Lottie from "lottie-react";
+import Header from "../navbar";
+import Footer from "../Footer";
 import "./index.css";
 
 class SalesForce extends Component {
@@ -241,6 +243,7 @@ class SalesForce extends Component {
   };
   render() {
     return (
+      <><Header />
       <div>
         <div className="container-fluid">
           <div className="row p-5 salesforce-bg-image">
@@ -420,6 +423,8 @@ class SalesForce extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
 }

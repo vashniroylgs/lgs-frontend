@@ -3,6 +3,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import {Chrono} from 'react-chrono'
+import Footer from '../Footer';
+import Header from '../navbar';
 
 const items = [
   {
@@ -18,6 +20,8 @@ const items = [
 
 const About = () => {
   return (
+    <>
+    <Header />
     <div className='mainContainer'>
       <div className='aboutus-image-container'>
         <center>
@@ -68,6 +72,8 @@ const About = () => {
   </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
  

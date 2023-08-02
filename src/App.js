@@ -65,7 +65,7 @@ function App() {
 
       <div>
         <CountriesBar />
-        <Header />
+        
         {/* <VisitTracker visitCount={visitCount} />  */}
         <Chat />
         <Routes>
@@ -100,7 +100,6 @@ function App() {
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
         </Routes>
-        <Footer />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 // import React, { Component } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
-
+import Header from "../navbar";
+import Footer from "../Footer";
 // import "./index.css";
 
 // class Polarian extends Component {
@@ -228,6 +229,8 @@ class Polarian extends Component {
   };
   render() {
     return (
+      <>
+      <Header />
       <div>
         <div className="container-fluid polarian-alm-bg-colour">
           <div className="row polarain-alm-first-page plarian-alm-reval p-4">
@@ -389,6 +392,8 @@ class Polarian extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
 }
