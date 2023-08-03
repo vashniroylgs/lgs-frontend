@@ -54,7 +54,26 @@ class Header extends Component {
           </Link>
           <li className="nav-mbl-service-container nav-mbl-menu-item">
             PRODUCTS
-            <ul className="mbl-Nav-Service-container-items"></ul>
+            <ul className="mbl-Nav-Service-container-items">
+              <Link to="/contactus" className="link">
+                <li className="Headeroption-item">Quanta Genius</li>
+              </Link>
+              <Link to="/contactus" className="link">
+                <li className="Headeroption-item">Taxoguru Consulting</li>
+              </Link>
+              <Link to="/contactus" className="link">
+                <li className="Headeroption-item">Glorious Mindmine</li>
+              </Link>
+              <Link to="/contactus" className="link">
+                <li className="Headeroption-item">LGS Fresh</li>
+              </Link>
+              <Link to="/contactus" className="link">
+                <li className="Headeroption-item">Digival</li>
+              </Link>
+              <Link to="/contactus" className="link">
+                <li className="Headeroption-item">SRM 360 degree Consulting</li>
+              </Link>
+            </ul>
           </li>
 
           <Link className="nav-link">

@@ -180,6 +180,7 @@ import "slick-carousel/slick/slick.css"; // Import the CSS file for the slider
 import "slick-carousel/slick/slick-theme.css";
 import Header from "../navbar";
 import Footer from "../Footer";
+import StartPopup from "../StartPopup";
 
 const TransformingCarrerList = [
   {
@@ -285,68 +286,69 @@ class SaasPage extends Component {
   render() {
     return (
       <>
-      <Header />
-      <div className="container-fluid salesforce-main-container">
-        <div className="row p-5 sales-force-container">
-          <div className="col-12">
-            <div className="sales-force-text-container">
-              <h1 className="sales-heading">
-                Welcome to Labyrinth Global Solutions Your Ultimate SaaS
-                Solution!
-              </h1>
-              <h1 className="sales-heading">
-                Deploy your Polarion on our ISO 27001 certified cloud.
-              </h1>
+        <Header />
+        <div className="container-fluid salesforce-main-container">
+          <div className="row p-5 sales-force-container">
+            <div className="col-12">
+              <div className="sales-force-text-container">
+                <h1 className="sales-heading">
+                  Welcome to Labyrinth Global Solutions Your Ultimate SaaS
+                  Solution!
+                </h1>
+                <h1 className="sales-heading">
+                  Deploy your Polarion on our ISO 27001 certified cloud.
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div className="row p-5 saas-reval ">
+            <div className="col-12 col-md-6 saas-content">
+              <h2>
+                Streamline Your Business Operations with Labyrinth Global
+                Solutions
+              </h2>
+              <p>
+                Are you looking to revolutionize your business operations,
+                enhance productivity, and outperform the competition? Look no
+                further! Labyrinth Global Solutions offers a cutting-edge
+                Software as a Service (SaaS) platform, empowering businesses of
+                all sizes to thrive in the digital age.
+              </p>
+              <p>
+                Our comprehensive suite of SaaS tools provides seamless
+                integration, unparalleled scalability, and top-notch security,
+                giving you the edge you need to succeed.
+              </p>
+              <h2>Experience the Future of SaaS</h2>
+              <p>
+                Unlock the full potential of your business with Labyrinth Global
+                Solutions. Sign up today for a free trial and discover how our
+                SaaS platform can take your business to new heights.
+              </p>
+              <div>
+                <button className="cta-btn">Contact us</button>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 saas-image-container">
+              <img
+                className="saas-image animate_animated animate_fadeInRight"
+                alt="saas"
+                src="https://img.freepik.com/premium-photo/cloud-storage-download-digital-service-app-with-data-transfer-3d-rendering_599740-2.jpg"
+              />
+            </div>
+          </div>
+          <div className="row pt-5 mt-5 saas-reval">
+            <div className="col-12 saaspage-carousel-container">
+              <Slider {...settings}>
+                {TransformingCarrerList.map((each) => (
+                  <SaasPageCarouselSlider key={each.id} cardDetails={each} />
+                ))}
+              </Slider>
             </div>
           </div>
         </div>
-        <div className="row p-5 saas-reval ">
-          <div className="col-12 col-md-6 saas-content">
-            <h2>
-              Streamline Your Business Operations with Labyrinth Global
-              Solutions
-            </h2>
-            <p>
-              Are you looking to revolutionize your business operations, enhance
-              productivity, and outperform the competition? Look no further!
-              Labyrinth Global Solutions offers a cutting-edge Software as a
-              Service (SaaS) platform, empowering businesses of all sizes to
-              thrive in the digital age.
-            </p>
-            <p>
-              Our comprehensive suite of SaaS tools provides seamless
-              integration, unparalleled scalability, and top-notch security,
-              giving you the edge you need to succeed.
-            </p>
-            <h2>Experience the Future of SaaS</h2>
-            <p>
-              Unlock the full potential of your business with Labyrinth Global
-              Solutions. Sign up today for a free trial and discover how our
-              SaaS platform can take your business to new heights.
-            </p>
-            <div>
-              <button className="cta-btn">Contact us</button>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 saas-image-container">
-            <img
-              className="saas-image animate_animated animate_fadeInRight"
-              alt="saas"
-              src="https://img.freepik.com/premium-photo/cloud-storage-download-digital-service-app-with-data-transfer-3d-rendering_599740-2.jpg"
-            />
-          </div>
-        </div>
-        <div className="row pt-5 mt-5 saas-reval">
-          <div className="col-12 saaspage-carousel-container">
-            <Slider {...settings}>
-              {TransformingCarrerList.map((each) => (
-                <SaasPageCarouselSlider key={each.id} cardDetails={each} />
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </div>
-      <Footer />
+        <Footer />
+        <StartPopup />
       </>
     );
   }
