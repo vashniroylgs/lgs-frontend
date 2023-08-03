@@ -352,9 +352,9 @@ class ResellerMendix extends Component{
                             </figure>
                         </div>
                     </div>
-                </div> */}
+                </div> */
                 /*<div className="row p-3">
-                    {/*<Heading className="text-center">App Development</Heading>*/}
+                    {/*<Heading className="text-center">App Development</Heading>*/
                     /*<div className="col-12 col-md-6 col-lg-4">
                     <div className="card-container">
                         <div className="card">

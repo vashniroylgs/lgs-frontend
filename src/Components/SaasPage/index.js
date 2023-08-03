@@ -174,7 +174,7 @@
 import React, { Component } from "react";
 import "./index.css"; // Import your custom CSS file
 import SaasPageCarouselSlider from "../SaaspageCarouselSlider/index";
-
+import {Link} from 'react-router-dom'
 import Slider from "react-slick"; // Import the Slider component from the package you are using
 import "slick-carousel/slick/slick.css"; // Import the CSS file for the slider
 import "slick-carousel/slick/slick-theme.css";
@@ -325,7 +325,7 @@ class SaasPage extends Component {
               SaaS platform can take your business to new heights.
             </p>
             <div>
-              <button className="cta-btn">Contact us</button>
+              <Link to='/contactus' className="nav-link"><button className="cta-btn">Contact us</button></Link>
             </div>
           </div>
           <div className="col-12 col-md-6 saas-image-container">
