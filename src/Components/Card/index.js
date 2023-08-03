@@ -9,7 +9,7 @@ function Card() {
         <div className="h-line"></div>
       </div>
       <div className="row ">
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Zoox_Motors_qhr2hn.png"
@@ -18,7 +18,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Taulia_ffxzhx.png"
@@ -27,7 +27,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Tata_Alexis_ptw73z.png"
@@ -36,7 +36,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png"
@@ -45,7 +45,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Record_Linc_w9zxvc.jpg"
@@ -54,7 +54,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689926991/64_BitStore_poolzk.png"
@@ -63,7 +63,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/siemens_s7ucfi.png"
@@ -72,7 +72,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/sedemac_dlcgdk.jpg"
@@ -82,7 +82,7 @@ function Card() {
           </div>
         </div>
 
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/ptc_xxn1tl.png"
@@ -91,7 +91,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Padmini-Vna_ep4pwk.jpg"
@@ -100,7 +100,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/CIBT_Visas_cfxkcy.png"
@@ -109,7 +109,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Cognizant_esfsi8.png"
@@ -118,7 +118,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png"
@@ -127,7 +127,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Alcove_Furniture_feq4qz.png"
@@ -136,7 +136,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Air_BNB_ijkep7.png"
@@ -145,7 +145,7 @@ function Card() {
             />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4 col-lg-3">
           <div className="technology-card-image">
             <img
               src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Nityas_Fashion_a9ly47.png"

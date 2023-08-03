@@ -7,7 +7,7 @@ const ContactPopup = () => {
   const [showPopup, setShowPopup] = useState(true);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
-  const [course, setCourse] = useState('');
+  const [course, setCourse] = useState("Mendix");
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [comment, setComment] = useState('');
   const [successMsg,setSuccessMsg]=useState("");
@@ -20,6 +20,9 @@ const ContactPopup = () => {
   };
 
   const handleSubmit = async (event) => {
+    const service=course
+    const phone=phoneNumber
+    const message=comment
     event.preventDefault();
     try {
       const response = await fetch(
@@ -32,9 +35,9 @@ const ContactPopup = () => {
           body: JSON.stringify({
             name,
             email,
-            course,
-            phoneNumber,
-            comment
+            service,
+            phone,
+            message
           })
         }
       );

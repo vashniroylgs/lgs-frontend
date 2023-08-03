@@ -601,6 +601,16 @@ class Header extends Component {
                           <li className="Nav-technology-item">IIS</li>
                         </Link>
                       </ul>
+                      <h6 className="Nav-teachnology-main-heading">
+                            SAAS & CLOUD
+                          </h6>
+                          <ul className="Nav-technology-sub-container-items">
+                            <Link to="/saascloudsolutions" className="link">
+                              <li className="Nav-technology-item">
+                                SAAS & CLOUD SOLUTIONS
+                              </li>
+                            </Link>
+                          </ul>
                     </div>
                     <div className="nav-service-flex-contianer-items">
                       <h6 className="Nav-teachnology-main-heading">
@@ -781,16 +791,7 @@ class Header extends Component {
                       </div>
                       <div className="">
                         <div>
-                          <h6 className="Nav-teachnology-main-heading">
-                            SAAS & CLOUD
-                          </h6>
-                          <ul className="Nav-technology-sub-container-items">
-                            <Link to="/saascloudsolutions" className="link">
-                              <li className="Nav-technology-item">
-                                SAAS & CLOUD SOLUTIONS
-                              </li>
-                            </Link>
-                          </ul>
+                          
                         </div>
                       </div>
                     </div>
