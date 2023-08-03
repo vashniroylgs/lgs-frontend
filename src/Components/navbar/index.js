@@ -482,7 +482,7 @@ class Header extends Component {
           <Link to="/aboutus" className="nav-link">
             <li className="nav-mbl-menu-item">ABOUT US</li>
           </Link>
-          <Link to="/contactus" className="nav-link">
+
           <Link to="/contactus" className="nav-link">
             <li className="nav-mbl-menu-item">CONTACT US</li>
           </Link>
