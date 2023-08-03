@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import {RxCross2} from 'react-icons/rx'
+import { useNavigate } from "react-router-dom";
 
-const FirstTimePopup = () => {
+const ContactPopup = () => {
   const [showPopup, setShowPopup] = useState(true);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -11,10 +12,11 @@ const FirstTimePopup = () => {
   const [comment, setComment] = useState('');
   const [successMsg,setSuccessMsg]=useState("");
   const [errorMsg,setErrorMsg]=useState("")
-
+  const navigate = useNavigate(); 
 
   const closePopup = () => {
     setShowPopup(false);
+    navigate("/");
   };
 
   const handleSubmit = async (event) => {
@@ -157,5 +159,5 @@ const FirstTimePopup = () => {
   );
 };
 
-export default FirstTimePopup;
+export default ContactPopup;
 
