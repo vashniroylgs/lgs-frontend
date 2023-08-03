@@ -326,7 +326,9 @@ class SaasPage extends Component {
                 SaaS platform can take your business to new heights.
               </p>
               <div>
-                <button className="cta-btn">Contact us</button>
+                <Link to="/contactus">
+                  <button className="cta-btn">Contact us</button>{" "}
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-6 saas-image-container">
