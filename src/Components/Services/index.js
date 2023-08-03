@@ -41,7 +41,7 @@ class Services extends Component {
               apps; we build experiences that connect, inspire, and empower. We
               are not just developers; we are dreamers and visionaries who are
               passionate about making a difference in the digital world ...
-              <Link to="/resellermendix">Know More</Link>
+              <Link to="/mobileandappdevelopment">Know More</Link>
             </p>
             <div className="services-image-container">
               <img
