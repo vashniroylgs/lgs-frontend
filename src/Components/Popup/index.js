@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import { RxCross2 } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 const Contactpopup = () => {
   const [showPopup, setShowPopup] = useState(true);
@@ -11,9 +12,11 @@ const Contactpopup = () => {
   const [comment, setComment] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+  const navigate = useNavigate();
 
   const closePopup = () => {
     setShowPopup(false);
+    navigate("/");
   };
 
   const handleSubmit = async (event) => {
