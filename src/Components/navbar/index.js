@@ -56,8 +56,6 @@ class Header extends Component {
             PRODUCTS
             <ul className="mbl-Nav-Service-container-items"></ul>
           </li>
-
-          <Link to="/cart" className="nav-link">
             <li className="nav-mbl-service-container nav-mbl-menu-item">
               TECHNOLOGIES
               <ul className="mbl-Nav-Service-container-items technology-overflow">
@@ -259,8 +257,6 @@ class Header extends Component {
                 </div>
               </ul>
             </li>
-          </Link>
-          <Link to="/cart" className="nav-link">
             <li className="nav-mbl-service-container nav-mbl-menu-item">
               SERVICES
               <ul className="mbl-Nav-Service-container-items technology-overflow">
@@ -472,8 +468,7 @@ class Header extends Component {
                 </div>
               </ul>
             </li>
-          </Link>
-          <Link to="/aboutus" className="nav-link">
+          <Link to="/careers" className="nav-link">
             <li className="nav-mbl-menu-item">CAREERS</li>
           </Link>
           <Link to="/resellerpolarian" className="nav-link">
@@ -482,7 +477,7 @@ class Header extends Component {
           <Link to="/aboutus" className="nav-link">
             <li className="nav-mbl-menu-item">ABOUT US</li>
           </Link>
-          <Link to="/cart" className="nav-link">
+          <Link to="/contactus" className="nav-link">
             <li className="nav-mbl-menu-item">CONTACT US</li>
           </Link>
         </ul>

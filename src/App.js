@@ -20,6 +20,7 @@ import Clients from "./Components/Clients";
 import Careers from "./Components/Careers";
 import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
+import ContactPopup from "./Components/Popup";
 
 function App() {
   const [showPopup, setShowPopup] = useState(true); // Set to true to show the pop-up on initial load
@@ -90,7 +91,7 @@ function App() {
           />
           <Route exact path="/aboutus" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/contactus" element={<FirstTimePopup />} />
+          <Route exact path="/contactus" element={<ContactPopup />} />
           <Route exact path="/saascloudsolutions" element={<SaasPage />} />
           <Route
             exact
