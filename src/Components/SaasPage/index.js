@@ -174,7 +174,7 @@
 import React, { Component } from "react";
 import "./index.css"; // Import your custom CSS file
 import SaasPageCarouselSlider from "../SaaspageCarouselSlider/index";
-
+import { Link } from "react-router-dom";
 import Slider from "react-slick"; // Import the Slider component from the package you are using
 import "slick-carousel/slick/slick.css"; // Import the CSS file for the slider
 import "slick-carousel/slick/slick-theme.css";
