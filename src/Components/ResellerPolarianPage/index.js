@@ -11,7 +11,7 @@ class ResellerPolarian extends Component{
             <Header />
             <div className="mendix-main-container container-fluid">
                 <div className="siemens-mendix-card row col-12">
-                <div className="siemens-mendix-hover-card col-4">
+                <div className="siemens-mendix-hover-card col-12 col-md-6">
                     <img alt="siemens-card-logo" className="siemens-card-logo" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689752914/12-1-300x298_zuhtua.png" />
                     <div className="mendix-card-description">
                         <h1 className="mendix-card-description-heading">SIEMENS POLARION</h1>
@@ -20,17 +20,17 @@ class ResellerPolarian extends Component{
                         <p className="mendix-card-description-para">We have been delivering flawless services across global to various industries such as Automotive, Aerospace, Oil & Gas and Life Science.</p>
                     </div>
                 </div>
-                <div className="col-12 polarianpic-container col-md-6">
+                <div className="polarianpic-container col-12 col-md-6">
                     <img alt="mendixpic" className="polaranpic" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689667771/1_xBu5h-5wTAzLvjvAZw6DZA_fspbjh.webp" />
                 </div>
                 </div>
             </div>
             <div className="mendix-main-container container-fluid">
                 <div className="siemens-mendix-card row col-12">
-                <div className="second-pic-container col-4">
+                <div className="second-pic-container col-12 col-md-6">
                     <img alt="mendixpic" className="second-pic" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690458028/csm_Functional-Safety-automotive_b35b168de7_eu75p1.jpg" />
                 </div>
-                <div className="siemens-mendix-hover-card col-4">
+                <div className="siemens-mendix-hover-card col-12 col-md-6">
                     <img alt="siemens-card-logo" className="siemens-card-logo" src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689752914/12-1-300x298_zuhtua.png" />
                     <div className="mendix-card-description">
                         <h1 className="mendix-card-description-heading">BENEFITS & VALUE ADDITION OF POLARION</h1>
