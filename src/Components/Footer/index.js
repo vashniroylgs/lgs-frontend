@@ -261,27 +261,30 @@ const Footer = () => (
           <div className="footerIconsContainer p-2">
             <div>
               <BiLogoFacebook
-                className="footerIconSocial bg-secondary"
+                className="footerIconSocial"
                 size="30"
                 height="30"
-                color="#0edae8"
               />
             </div>
             <div>
               <AiOutlineTwitter
-                className="footerIconSocial bg-secondary"
+                className="footerIconSocial"
                 size="30"
                 height="30"
-                color="#0edae8"
               />
             </div>
             <div>
-              <TiSocialLinkedin
-                className="footerIconSocial bg-secondary"
-                size="30"
-                height="30"
-                color="#0edae8"
-              />
+              <a
+                rel="linkedin"
+                href="https://www.linkedin.com/company/labyrinth-global-solutions/mycompany/"
+                target="_blank"
+              >
+                <TiSocialLinkedin
+                  className="footerIconSocial"
+                  size="30"
+                  height="30"
+                />
+              </a>
             </div>
           </div>
         </div>

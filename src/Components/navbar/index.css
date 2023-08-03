@@ -448,6 +448,7 @@
   display: block;
   flex-direction: column;
   padding-top: 10px;
+  list-style-type: disc;
   padding-left: 30px;
 }
 .nav-mbl-menu-item {

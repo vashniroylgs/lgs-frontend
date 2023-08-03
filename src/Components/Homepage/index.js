@@ -307,7 +307,7 @@ import Chat from "../chat";
 import Services from "../Services";
 import { BsArrowRightShort } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import IndustriesPage from "../IndustriesPage";
@@ -316,12 +316,10 @@ import Card from "../Card";
 import WhatsAppIntegration from "../WhatsappIcon";
 import Footer from "../Footer";
 
-
 const Details = [
   {
     id: 1,
-    question:
-      "Expertise and Experience",
+    question: "Expertise and Experience",
     answer:
       "LGS specialize in web and mobile app development, which means they have a team of skilled professionals with years of experience in this field. They have the expertise to understand your specific requirements and deliver high-quality solutions. ",
   },
@@ -351,80 +349,80 @@ const Details = [
   },
 ];
 
-const ScrolllingImages = [
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Zoox_Motors_qhr2hn.png",
+// const ScrolllingImages = [
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Zoox_Motors_qhr2hn.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Taulia_ffxzhx.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Taulia_ffxzhx.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Tata_Alexis_ptw73z.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Tata_Alexis_ptw73z.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Siemens_Healthineers_dh3pcl.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Siemens_Healthineers_dh3pcl.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Record_Linc_w9zxvc.jpg",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/Record_Linc_w9zxvc.jpg",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689926991/64_BitStore_poolzk.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689926991/64_BitStore_poolzk.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/siemens_s7ucfi.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/siemens_s7ucfi.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/sedemac_dlcgdk.jpg",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/sedemac_dlcgdk.jpg",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/ptc_xxn1tl.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927042/ptc_xxn1tl.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Padmini-Vna_ep4pwk.jpg",
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/CIBT_Visas_cfxkcy.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Padmini-Vna_ep4pwk.jpg",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/CIBT_Visas_cfxkcy.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Cognizant_esfsi8.png",
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Broadcom_e0g8vx.png",
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Alcove_Furniture_feq4qz.png",
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Air_BNB_ijkep7.png",
-].map((image) => ({
-  id: crypto.randomUUID(),
-  image,
-}));
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Cognizant_esfsi8.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Broadcom_e0g8vx.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Alcove_Furniture_feq4qz.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Air_BNB_ijkep7.png",
+// ].map((image) => ({
+//   id: crypto.randomUUID(),
+//   image,
+// }));
 
-const ScrolllingImages1 = [
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Nityas_Fashion_a9ly47.png",
+// const ScrolllingImages1 = [
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Nityas_Fashion_a9ly47.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Oracle_dmaiik.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Oracle_dmaiik.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/napino_obfge2.jpg",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/napino_obfge2.jpg",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927041/Medtronic_xgouix.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/HCL_igijlj.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/LJB_lladcr.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/LJB_lladcr.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/Hematogenix_frhdaa.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927040/Hematogenix_frhdaa.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/DrR_Logo_wvw2gc.jpg",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/DrR_Logo_wvw2gc.jpg",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/ESPN_Sports_ww7vfh.png",
-].map((image) => ({
-  id: crypto.randomUUID(),
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/ESPN_Sports_ww7vfh.png",
+// ].map((image) => ({
+//   id: crypto.randomUUID(),
 
-  image,
-}));
+//   image,
+// }));
 
-const ScrolllingImages2 = [
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Fidelity_investments_y7t61u.png",
+// const ScrolllingImages2 = [
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Fidelity_investments_y7t61u.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Esnaad_gba3ox.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927009/Esnaad_gba3ox.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Delight_Cabs_aet4l7.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Delight_Cabs_aet4l7.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Covidien_kbldon.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Covidien_kbldon.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Compliance_Group_x8sgyy.jpg",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Compliance_Group_x8sgyy.jpg",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/ConvaTec_almrlt.png",
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/ConvaTec_almrlt.png",
 
-  "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Capgemini-Logo_xe2sql.png",
-].map((image) => ({
-  id: crypto.randomUUID(),
+//   "https://res.cloudinary.com/dg81jw9qd/image/upload/v1689927008/Capgemini-Logo_xe2sql.png",
+// ].map((image) => ({
+//   id: crypto.randomUUID(),
 
-  image,
-}));
+//   image,
+// }));
 
 class HomePage extends Component {
   componentDidMount() {

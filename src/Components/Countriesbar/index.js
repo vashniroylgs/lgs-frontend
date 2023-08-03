@@ -76,7 +76,10 @@ class CountriesBar extends Component {
                 title="WhatsApp"
               />
             </a>
-            <a className="contact-info first_nav_content" href="tel:+16474702985">
+            <a
+              className="contact-info first_nav_content"
+              href="tel:+16474702985"
+            >
               +1 647 470 2985
             </a>
             <a
@@ -91,7 +94,10 @@ class CountriesBar extends Component {
                 title="WhatsApp"
               />
             </a>
-            <a className="contact-info first_nav_content mr-md-2" href="tel:+16108800144">
+            <a
+              className="contact-info first_nav_content mr-md-2"
+              href="tel:+16108800144"
+            >
               +1 610 880 0144
             </a>
             <a
@@ -124,7 +130,10 @@ class CountriesBar extends Component {
                 title="WhatsApp"
               />
             </a>
-            <a class="contact-info first_nav_content mr-md-2" href="tel:+918884739988">
+            <a
+              class="contact-info first_nav_content mr-md-2"
+              href="tel:+918884739988"
+            >
               +91 8884 739 988
             </a>
             <a
@@ -137,7 +146,9 @@ class CountriesBar extends Component {
                 alt="email"
               />
             </a>
-            <a className="contact-info first_nav_content">info@techasoft.com</a>
+            <a className="contact-info first_nav_content">
+              info@labyrinthglobalsolutions
+            </a>
           </div>
         </div>
 

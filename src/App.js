@@ -15,7 +15,7 @@ import DigitalMarketing from "./Components/DigitalMarketing";
 import SaasPage from "./Components/SaasPage";
 import Clients from "./Components/Clients";
 import Careers from "./Components/Careers";
-import WhatsAppIntegration from "./Components/WhatsappIcon";
+// import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 
