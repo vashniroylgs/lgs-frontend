@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 import {RxCross2} from 'react-icons/rx'
 
-const FirstTimePopup = () => {
+const ContactPopup = () => {
   const [showPopup, setShowPopup] = useState(true);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
-  const [course, setCourse] = useState('');
+  const [course, setCourse] = useState("Mendix");
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [comment, setComment] = useState('');
   const [successMsg,setSuccessMsg]=useState("");
@@ -18,6 +18,9 @@ const FirstTimePopup = () => {
   };
 
   const handleSubmit = async (event) => {
+    const service=course
+    const phone=phoneNumber
+    const message=comment
     event.preventDefault();
     try {
       const response = await fetch(
@@ -30,9 +33,9 @@ const FirstTimePopup = () => {
           body: JSON.stringify({
             name,
             email,
-            course,
-            phoneNumber,
-            comment
+            service,
+            phone,
+            message
           })
         }
       );
@@ -157,5 +160,5 @@ const FirstTimePopup = () => {
   );
 };
 
-export default FirstTimePopup;
+export default ContactPopup;
 
