@@ -483,6 +483,7 @@ class Header extends Component {
             <li className="nav-mbl-menu-item">ABOUT US</li>
           </Link>
           <Link to="/contactus" className="nav-link">
+          <Link to="/contactus" className="nav-link">
             <li className="nav-mbl-menu-item">CONTACT US</li>
           </Link>
         </ul>
@@ -529,25 +530,25 @@ class Header extends Component {
                 <li className="Nav-Service-container nav-menu-item technology-item">
                   PRODUCTS
                   <ul className="Nav-Service-container-items">
-                    <Link to="/polarianalm" className="link">
+                    <Link to="/contactus" className="link">
                       <li className="Headeroption-item">Quanta Genius</li>
                     </Link>
-                    <Link to="/saascloudsolutions" className="link">
+                    <Link to="/contactus" className="link">
                       <li className="Headeroption-item">Taxoguru Consulting</li>
                     </Link>
                     {/* <Link to="/ptcintegrity" className="link">
                         <li className="Headeroption-item">PTC Integrity</li>
                     </Link> */}
-                    <Link to="/mobileandappdevelopment" className="link">
+                    <Link to="/contactus" className="link">
                       <li className="Headeroption-item">Glorious Mindmine</li>
                     </Link>
-                    <Link to="/resellermendix" className="link">
+                    <Link to="/contactus" className="link">
                       <li className="Headeroption-item">LGS Fresh</li>
                     </Link>
-                    <Link to="/salesforcepage" className="link">
+                    <Link to="/contactus" className="link">
                       <li className="Headeroption-item">Digival</li>
                     </Link>
-                    <Link to="/salesforcepage" className="link">
+                    <Link to="/contactus" className="link">
                       <li className="Headeroption-item">
                         SRM 360 degree Consulting
                       </li>

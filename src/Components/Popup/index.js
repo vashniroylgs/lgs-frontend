@@ -3,11 +3,11 @@ import "./index.css";
 import { RxCross2 } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 
-const Contactpopup = () => {
+const ContactPopup = () => {
   const [showPopup, setShowPopup] = useState(true);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [course, setCourse] = useState("");
+  const [course, setCourse] = useState("Mendix");
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [comment, setComment] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
@@ -20,6 +20,9 @@ const Contactpopup = () => {
   };
 
   const handleSubmit = async (event) => {
+    const service = course;
+    const phone = phoneNumber;
+    const message = comment;
     event.preventDefault();
     try {
       const response = await fetch("http://localhost:3005/register", {
@@ -30,9 +33,9 @@ const Contactpopup = () => {
         body: JSON.stringify({
           name,
           email,
-          course,
-          phoneNumber,
-          comment,
+          service,
+          phone,
+          message,
         }),
       });
 
@@ -153,4 +156,4 @@ const Contactpopup = () => {
   );
 };
 
-export default Contactpopup;
+export default ContactPopup;

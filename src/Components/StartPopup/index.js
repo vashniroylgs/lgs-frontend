@@ -6,7 +6,7 @@ const FirstTimePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
-  const [course, setCourse] = useState('');
+  const [course, setCourse] = useState("Mendix");
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [comment, setComment] = useState('');
   const [successMsg,setSuccessMsg]=useState("");
@@ -14,6 +14,7 @@ const FirstTimePopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
+      console.log(course,comment,email,name,phoneNumber) 
     }, 3000);
     
     return () => clearTimeout(timer);
@@ -24,10 +25,13 @@ const FirstTimePopup = () => {
   };
 
   const handleSubmit = async (event) => {
+    console.log(course,comment,email,name,phoneNumber) 
     const service=course
     const message=comment
     event.preventDefault();
+    const phone=phoneNumber
     try {
+      
       const response = await fetch(
         "http://localhost:3005/register",
         {
@@ -39,7 +43,7 @@ const FirstTimePopup = () => {
             name,
             email,
             service,
-            phoneNumber,
+            phone,
             message
           })
         }
@@ -51,6 +55,7 @@ const FirstTimePopup = () => {
         alert('registration successful')
         setErrorMsg("");
       } else {
+        console.log(course,comment,email,name,phoneNumber) 
         const data = await response.json();
         console.log(data.error);
         setErrorMsg(data.error);
@@ -63,6 +68,7 @@ const FirstTimePopup = () => {
   
 
   return (
+   
     <>
       {showPopup && (
         <div className="popup">

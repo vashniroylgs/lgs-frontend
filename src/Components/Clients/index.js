@@ -8,13 +8,12 @@ import Footer from '../Footer';
 import {Link } from "react-router-dom";
 
 class Clients extends Component {
-
     render() {
           return (
             <>
             <Header/>
             <div className='container-fluid'>
-            <div className='clients-hero-containe'>
+            <div className='clients-hero-container'>
                     <p>OUR CLIENTS</p>
                     <img alt="client-hero" className='clients-hero-image' src={clients} />
             </div>
