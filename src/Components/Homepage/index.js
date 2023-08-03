@@ -466,9 +466,7 @@ class HomePage extends Component {
             <ImageSlider />
           </div>
         </div>
-        <div className="whatsapp-container">
-          <WhatsAppIntegration />
-        </div>
+        
         <div className="row p-5">
           <div className="col-12 col-md-7 home-page-content-container">
             <h1 className="home-page-heading">About LGS</h1>

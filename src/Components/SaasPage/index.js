@@ -298,7 +298,7 @@ class SaasPage extends Component {
                 Deploy your Polarion on our ISO 27001 certified cloud.
               </h1>
             </div>
-          </div>
+          </div>  
         </div>
         <div className="row p-5 saas-reval ">
           <div className="col-12 col-md-6 saas-content">
