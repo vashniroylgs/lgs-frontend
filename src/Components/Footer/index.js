@@ -243,6 +243,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <div
@@ -323,33 +324,41 @@ const Footer = () => (
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                Home
-              </p>
+              <Link to="/" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  Home
+                </p>
+              </Link>
             </li>
             <li className="footerContactListItem ListItem4">
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                About Us
-              </p>
+              <Link to="/aboutus" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  About Us
+                </p>
+              </Link>
             </li>
             <li className="footerContactListItem ListItem5">
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                FAQ
-              </p>
+              <Link to="/contactus" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  FAQ
+                </p>
+              </Link>
             </li>
             <li className="footerContactListItem ListItem6">
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                Policies
-              </p>
+              <Link to="/contactus" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  Policies
+                </p>
+              </Link>
             </li>
           </ol>
         </div>
@@ -363,41 +372,41 @@ const Footer = () => (
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                Polarion ALM
-              </p>
+              <Link to="/polarianalm" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  Plarian ALM
+                </p>
+              </Link>
             </li>
             <li className="footerContactListItem ListItem8">
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                SAAS & Cloud Solutions
-              </p>
+              <Link to="/saascloudsolutions" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  SAAS & Cloud Solutions
+                </p>
+              </Link>
             </li>
             <li className="footerContactListItem ListItem9">
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                PTC Integrity
-              </p>
+              <Link to="/resellermendix" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  Mendix
+                </p>
+              </Link>
             </li>
             <li className="footerContactListItem ListItem10">
               <div className="footerIcon">
                 <FaGreaterThan size="15" color="#0edae8" />
               </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                Mendix
-              </p>
-            </li>
-            <li className="footerContactListItem ListItem11">
-              <div className="footerIcon">
-                <FaGreaterThan size="15" color="#0edae8" />
-              </div>
-              <p className="pl-2 pt-2" style={{ color: "white" }}>
-                Web Development
-              </p>
+              <Link to="/mobileandappdevelopment" className="footer-link">
+                <p className="pl-2 pt-2" style={{ color: "white" }}>
+                  Web Development
+                </p>
+              </Link>
             </li>
           </ol>
         </div>
