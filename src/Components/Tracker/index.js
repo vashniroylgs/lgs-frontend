@@ -1,51 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import "./index.css"
 
 const VisitTracker = ({ visitCount }) => {
-  const styles = {
-    trackerContainer: {
-      position: 'fixed',
-      top: '65px',
-      width:"120px",
-      height:"80px",
-      right: '10px',
-      backgroundColor: 'blue',
-      color: 'white',
-      padding: '20px',
-      borderRadius: '50%',
-      boxShadow: '0 0 8px rgba(0, 0, 0, 0.1)',
-      zIndex: 9999, // Set a higher z-index to make it appear above the background image
-      cursor: 'pointer', // Add cursor pointer to indicate it's clickable
-    },
-    visitCountStyle: {
-      margin: '0',
-    },
-    trackerContainerHover: {
-      backgroundColor: 'darkblue', // Change background color on hover
-    },
-  };
+  const [count, setCount] = useState(0);
+  const step = Math.ceil(visitCount / 200); // Divide the target by the number of steps (e.g., 100 steps).
 
-  const handleHover = () => {
-    // Function to add hover effect
-    const trackerContainer = document.getElementById('tracker-container');
-    trackerContainer.style.backgroundColor = styles.trackerContainerHover.backgroundColor;
-  };
+  useEffect(() => {
+    const countUp = () => {
+      if (count < visitCount) {
+        setCount((prevCount) => Math.min(prevCount + step, visitCount));
+      }
+    };
 
-  const handleMouseOut = () => {
-    // Function to revert to original style after hover
-    const trackerContainer = document.getElementById('tracker-container');
-    trackerContainer.style.backgroundColor = styles.trackerContainer.backgroundColor;
-  };
+    const animationId = requestAnimationFrame(countUp);
 
-  return (
-    <div
-      id="tracker-container"
-      style={styles.trackerContainer}
-      onMouseEnter={handleHover} // Add onMouseEnter event to trigger hover effect
-      onMouseLeave={handleMouseOut} // Add onMouseLeave event to revert to original style
-    >
-      <p style={styles.visitCountStyle}>Total Visits: {visitCount}</p>
-    </div>
-  );
+    return () => cancelAnimationFrame(animationId);
+  }, [count, visitCount, step]);
+
+  return <div className="tracker-container">
+    <h1 className="tracker-head">Total Visits: {count}</h1></div>;
 };
 
 export default VisitTracker;

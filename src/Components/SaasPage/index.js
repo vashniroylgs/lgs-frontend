@@ -347,7 +347,7 @@ class SaasPage extends Component {
                 ))}
               </Slider>
             </div>
-          </div>
+          </div>  
         </div>
         <Footer />
         <StartPopup />
