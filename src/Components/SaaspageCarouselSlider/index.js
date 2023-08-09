@@ -28,10 +28,6 @@ class SaasPageCarouselSlider extends Component {
         <div className="saas-carousel-image-container">
           <img className="courseReviewProfileImage" src={imgurl} />
         </div>
-        <div className="courseTransformingContainer3">
-          <p className="courseTransformingCompany">{company}</p>
-          <p className="courseTransformingHike">{hike}</p>
-        </div>
       </div>
     );
   }
