@@ -313,7 +313,7 @@ import "./index.css";
 import IndustriesPage from "../IndustriesPage";
 import TechnologiesPage from "../Technologies";
 import Card from "../Card";
-import WhatsAppIntegration from "../WhatsappIcon";
+
 import Footer from "../Footer";
 
 const Details = [
@@ -452,104 +452,104 @@ class HomePage extends Component {
   render() {
     return (
       <>
-      <Header /> 
-      <div className="container-fluid">
-        <div
-          className="home-page-slider-main-container row"
-        >
-          <div className="col-12 col-md-6">
-            <ReactSlick />
+        <Header />
+        <div className="container-fluid">
+          <div className="home-page-slider-main-container row">
+            <div className="col-12 col-md-6">
+              <ReactSlick />
+            </div>
+            <div className="col-12 col-md-6">
+              <ImageSlider />
+            </div>
           </div>
-          <div className="col-12 col-md-6">
-            <ImageSlider />
+
+          <div className="row p-5">
+            <div className="col-12 col-md-7 home-page-content-container">
+              <h1 className="home-page-heading">About LGS</h1>
+              <h5 className="mb-4">
+                Welcome to the world of innovation and digital excellence! At
+                Labyrinth Global Solutions, we are more than just an IT company;
+                we are your partners in transforming ideas into reality. As
+                pioneers in web and app development, we harness the power of
+                technology to create seamless digital experiences that drive
+                growth and inspire change.
+              </h5>
+              <h4>Industries We are Serving </h4>
+              <div className="home-page-list-container">
+                <ul>
+                  <li className="home-page-list">
+                    <TiTick className="home-page-tick" />
+                    Health Tech
+                  </li>
+                  <li className="home-page-list">
+                    {" "}
+                    <TiTick className="home-page-tick" />
+                    Automotive & Transportation
+                  </li>
+                  <li className="home-page-list">
+                    {" "}
+                    <TiTick className="home-page-tick" /> Aerospace
+                  </li>
+                </ul>
+                <ul>
+                  <li className="home-page-list">
+                    {" "}
+                    <TiTick className="home-page-tick" />
+                    Oil & Gas
+                  </li>
+                  <li className="home-page-list">
+                    {" "}
+                    <TiTick className="home-page-tick" />
+                    Enterprise Agile (SAFe)
+                  </li>
+                </ul>
+              </div>
+              <Link to="/contactus">
+                <button className="btn btn-primary">
+                  Learn More <BsArrowRightShort className="home-page-arrow" />
+                </button>
+              </Link>
+            </div>
+            <div className="col-12 col-md-5">
+              <img
+                src="https://www.labyrinthglobalsolutions.com/assets/img/aboutus1.png"
+                alt="home-page"
+                className="home-page-image "
+              />
+            </div>
           </div>
-        </div>
-        
-        <div className="row p-5">
-          <div className="col-12 col-md-7 home-page-content-container">
-            <h1 className="home-page-heading">About LGS</h1>
-            <h5 className="mb-4">
-            Welcome to the world of innovation and digital excellence! At Labyrinth Global Solutions, 
-            we are more than just an IT company; we are your partners in transforming ideas into reality. 
-            As pioneers in web and app development, 
-            we harness the power of technology to create seamless digital experiences that drive growth and inspire change. 
-            </h5>
-            <h4>Industries We are Serving </h4>
-            <div className="home-page-list-container">
-              <ul>
-                <li className="home-page-list">
-                  <TiTick className="home-page-tick" />
-                  Health Tech
-                </li>
-                <li className="home-page-list">
-                  {" "}
-                  <TiTick className="home-page-tick" />
-                  Automotive & Transportation
-                </li>
-                <li className="home-page-list">
-                  {" "}
-                  <TiTick className="home-page-tick" /> Aerospace
-                </li>
-              </ul>
-              <ul>
-                <li className="home-page-list">
-                  {" "}
-                  <TiTick className="home-page-tick" />
-                  Oil & Gas
-                </li>
-                <li className="home-page-list">
-                  {" "}
-                  <TiTick className="home-page-tick" />
-                  Enterprise Agile (SAFe)
-                </li>
+          <div className="row">
+            <h1 className="text-center home-page-heading">
+              BRIDGING THE GAP BETWEEN BUSINESS AND TECHNOLOGY
+            </h1>
+          </div>
+          <div className="row">
+            <Services />
+          </div>
+          <div className="row p-5">
+            <h1 className="home-page-heading text-center">Why Us</h1>
+            <div className="col-12 col-lg-5 mt-3 home-reval">
+              <img className="home-about-us-image" src={about} alt="why-us" />
+            </div>
+            <div className="col-12 col-lg-7 mt-3 home-reval">
+              <ul className="home-page-why-us-container">
+                {Details.map((eachItem) => (
+                  <WhyUs key={eachItem.id} details={eachItem} />
+                ))}
               </ul>
             </div>
-            <Link to='/contactus'>
-            <button className="btn btn-primary">
-              Learn More <BsArrowRightShort className="home-page-arrow" />
-            </button>
-            </Link>
+            <IndustriesPage />
+            <div className="Technology-mbl-container">
+              <TechnologiesPage />
+            </div>
+            <div>
+              <Card />
+            </div>
           </div>
-          <div className="col-12 col-md-5">
-            <img
-              src="https://www.labyrinthglobalsolutions.com/assets/img/aboutus1.png"
-              alt="home-page"
-              className="home-page-image "
-            />
-          </div>
+          <StartPopup />
+          <Chat />
         </div>
-        <div className="row">
-          <h1 className="text-center home-page-heading">
-            BRIDGING THE GAP BETWEEN BUSINESS AND TECHNOLOGY
-          </h1>
-        </div>
-        <div className="row">
-          <Services />
-        </div>
-        <div className="row p-5">
-          <h1 className="home-page-heading text-center">Why Us</h1>
-          <div className="col-12 col-lg-5 mt-3 home-reval">
-            <img className="home-about-us-image" src={about} alt="why-us" />
-          </div>
-          <div className="col-12 col-lg-7 mt-3 home-reval">
-            <ul className="home-page-why-us-container">
-              {Details.map((eachItem) => (
-                <WhyUs key={eachItem.id} details={eachItem} />
-              ))}
-            </ul>
-          </div>
-          <IndustriesPage />
-          <div className="Technology-mbl-container">
-            <TechnologiesPage />
-          </div>
-          <div>
-            <Card />
-          </div>
-        </div>
-        <StartPopup />
-        <Chat />
-      </div>
-      <Footer />
+        <Footer />
       </>
     );
   }
