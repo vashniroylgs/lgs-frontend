@@ -18,6 +18,11 @@
   height: 29px;
   width: 29px;
 }
+.industriesImage-1 {
+  height: 29px;
+  width: 29px;
+  background-color: #fff;
+}
 
 .ToolsPageContainer {
   width: 95%;
@@ -55,10 +60,6 @@
 
 .image-evolution.evolved img {
   opacity: 1; /* When the images are evolved, they become visible */
-}
-
-.educationImage {
-  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {

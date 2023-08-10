@@ -240,7 +240,6 @@ const settings = {
   speed: 2000,
   autoplay: true,
   autoplaySpeed: 5000,
-  speed: 500,
   slidesToShow: 3, // Show 3 slides in large devices
   slidesToScroll: 1,
   responsive: [
@@ -347,7 +346,7 @@ class SaasPage extends Component {
                 ))}
               </Slider>
             </div>
-          </div>  
+          </div>
         </div>
         <Footer />
         <StartPopup />
