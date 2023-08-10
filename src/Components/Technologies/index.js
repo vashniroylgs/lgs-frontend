@@ -3,6 +3,69 @@ import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
+const TechnologiesList = [
+  {
+    id: 1,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555717/14-html-5_fuaohf.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 2,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555717/11-react-native-1_avarfs.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 3,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555717/13-css-3_aaz2wv.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555716/07-node-js_dhu9en.svg",
+    class: "polarian-image-2",
+  },
+  {
+    id: 5,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/03-react-1_mrzfmb.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 6,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/04-angular-js_s2wvp8.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 7,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/01-java-horizontal_dvpaym.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 8,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/02-javascript-1_ufwrf9.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 9,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/05-vuejs_muzxgg.svg",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 10,
+    src: "https://res.cloudinary.com/dkajxnnlq/image/upload/v1690548097/logos-09_kpehpk.png",
+    class: "technologyIndustriesImage",
+  },
+  {
+    id: 11,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690556120/download_emcxnb.png",
+    class: "angular-image",
+  },
+  {
+    id: 12,
+    src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690556120/Polarion_small_cfwksb.png",
+    class: "polarian-image",
+  },
+];
+
 const TechnologiesPage = () => {
   return (
     <div className="container technology-main-container">
@@ -11,125 +74,17 @@ const TechnologiesPage = () => {
       </h3>
       <div className="h-line"></div>
       <div className="row">
-        <div className="col-12 col-md-4 col-lg-3 text-center">
-          <div className="imageContainer  text-center">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555717/14-html-5_fuaohf.svg"
-            />
+        {TechnologiesList.map((eachImage) => (
+          <div className="col-12 col-md-4 col-lg-3 text-center">
+            <div className="imageContainer  text-center">
+              <ImageElement
+                alt={`Technologies ${eachImage.id}`}
+                className={eachImage.class}
+                src={eachImage.src}
+              />
+            </div>
           </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4 text-center">
-          <div className="imageContainer  text-center">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555717/11-react-native-1_avarfs.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4 text-center">
-          <div className="imageContainer  text-center">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555717/13-css-3_aaz2wv.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4 text-center">
-          <div className="imageContainer  text-center">
-            <ImageElement
-              alt=""
-              className="polarian-image-2"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555716/07-node-js_dhu9en.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4 text-center">
-          <div className="imageContainer  text-center">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/03-react-1_mrzfmb.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4 text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/04-angular-js_s2wvp8.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4 text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt="nothing"
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/01-java-horizontal_dvpaym.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4  text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/02-javascript-1_ufwrf9.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3  col-md-4 text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/05-vuejs_muzxgg.svg"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3  col-md-4 text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt=""
-              className="technologyIndustriesImage"
-              src="https://res.cloudinary.com/dkajxnnlq/image/upload/v1690548097/logos-09_kpehpk.png"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4  text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt=""
-              className="angular-image"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690556120/download_emcxnb.png"
-            />
-          </div>
-        </div>
-
-        <div className="col-12 col-lg-3 col-md-4  text-center">
-          <div className="imageContainer">
-            <ImageElement
-              alt=""
-              className="polarian-image"
-              src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690556120/Polarion_small_cfwksb.png"
-            />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
