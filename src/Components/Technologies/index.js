@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
+// List of Technologies in one list
 const TechnologiesList = [
   {
     id: 1,
@@ -74,6 +75,7 @@ const TechnologiesPage = () => {
       </h3>
       <div className="h-line"></div>
       <div className="row">
+        {/* here used list for mapping the elements  */}
         {TechnologiesList.map((eachImage) => (
           <div className="col-12 col-md-4 col-lg-3 text-center">
             <div className="imageContainer  text-center">
