@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 // Flag to check if the Kommunicate script is already loaded
 
