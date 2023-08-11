@@ -57,8 +57,11 @@ const IndustriesPage = () => {
         <div className="container">
           <div className="row">
             {IndustriesList.map((eachIndustrie) => (
-              <div className="col-6 col-lg-3 col-md-3 text-center">
-                <div className="imageContainer" key={eachIndustrie.id}>
+              <div
+                className="col-6 col-lg-3 col-md-3 text-center"
+                key={eachIndustrie.id}
+              >
+                <div className="imageContainer">
                   <ImageElement
                     alt={`industries ${eachIndustrie.id}`}
                     className={eachIndustrie.industriesClass}
