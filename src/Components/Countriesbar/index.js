@@ -130,7 +130,7 @@ class CountriesBar extends Component {
               />
             </a>
             <a
-              class="contact-info mob first_nav_content mr-md-2"
+              className="contact-info mob first_nav_content mr-md-2"
               href="tel:+971506089308"
               rel="noopener noreferrer"
             >
@@ -150,7 +150,7 @@ class CountriesBar extends Component {
               />
             </a>
             <a
-              class="contact-info first_nav_content mr-md-2"
+              className="contact-info first_nav_content mr-md-2"
               href="tel:+918884739988"
               rel="noopener noreferrer"
             >

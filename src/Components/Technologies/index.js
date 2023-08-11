@@ -77,7 +77,10 @@ const TechnologiesPage = () => {
       <div className="row">
         {/* here used list for mapping the elements  */}
         {TechnologiesList.map((eachImage) => (
-          <div className="col-12 col-md-4 col-lg-3 text-center">
+          <div
+            className="col-12 col-md-4 col-lg-3 text-center"
+            key={eachImage.id}
+          >
             <div className="imageContainer  text-center">
               <ImageElement
                 alt={`Technologies ${eachImage.id}`}

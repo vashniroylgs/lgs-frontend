@@ -159,7 +159,7 @@ class WebMobile extends Component {
                       <img
                         className={eachHoverImage.class}
                         src={eachHoverImage.src}
-                        alt={`hover ${eachHoverImage.id}`}
+                        alt={`mobile${eachHoverImage.id}`}
                       />
                     </div>
                     <div class="content">

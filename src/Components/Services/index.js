@@ -33,8 +33,8 @@ class Services extends Component {
   render() {
     return (
       <div>
-        <div class="row1-container">
-          <div class="box box-down cyan services-reval">
+        <div className="row1-container">
+          <div className="box box-down cyan services-reval">
             <h2 className="services-heading">Web & Mobile App Development </h2>
             <p>
               At Labyrinth Global Solutions, we don't just build websites and
@@ -52,7 +52,7 @@ class Services extends Component {
             </div>
           </div>
 
-          <div class="box red services-reval">
+          <div className="box red services-reval">
             <h2 className="services-heading">Mendix</h2>
             <p>
               In today's fast-paced world, staying ahead of the competition
@@ -71,7 +71,7 @@ class Services extends Component {
             </div>
           </div>
 
-          <div class="box box-down blue services-reval">
+          <div className="box box-down blue services-reval">
             <h2 className="services-heading">Digital Marketing</h2>
             <p>
               From crafting captivating websites that leave lasting impressions
@@ -92,8 +92,8 @@ class Services extends Component {
             </div>
           </div>
         </div>
-        <div class="row2-container">
-          <div class="box orange services-reval">
+        <div className="row2-container">
+          <div className="box orange services-reval">
             <h2 className="services-heading">Polarion</h2>
             <p>
               Welcome to the cutting-edge world of Polarion Solutions &
