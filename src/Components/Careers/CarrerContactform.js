@@ -25,7 +25,7 @@
 //   };
 //   const handleFileChange = (event) => {
 //     const file = event.target.files[0];
-//     setFormValues({ 
+//     setFormValues({
 //       ...formValues,
 //       resume: file,
 //     });
@@ -94,7 +94,7 @@
 //           name="name"
 //           required
 //         /> */}
-//         <div className="row career-contact rounded p-4">
+//         <div className="row career-contact rounded span-4">
 //           <div className="col-12 col-md-6">
 //             <div className="form-group">
 //               <label htmlFor="career_name">
@@ -322,7 +322,6 @@
 
 // export default ContactForm;
 
-
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -362,51 +361,55 @@ const ContactForm = () => {
     try {
       // Create a new FormData object to send the form data
       const formDataToSend = new FormData();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('totalExp', formData.totalExp);
-      formDataToSend.append('careerGap', formData.careerGap);
-      formDataToSend.append('currentLocation', formData.currentLocation);
-      formDataToSend.append('preferredLocation', formData.preferredLocation);
-      formDataToSend.append('reasonForJobChange', formData.reasonForJobChange);
-      formDataToSend.append('jobProfile', formData.jobProfile);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('relevantExp', formData.relevantExp);
-      formDataToSend.append('currentCTC', formData.currentCTC);
-      formDataToSend.append('expectedCTC', formData.expectedCTC);
-      formDataToSend.append('noticePeriod', formData.noticePeriod);
-      formDataToSend.append('resume', formData.resume);
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("totalExp", formData.totalExp);
+      formDataToSend.append("careerGap", formData.careerGap);
+      formDataToSend.append("currentLocation", formData.currentLocation);
+      formDataToSend.append("preferredLocation", formData.preferredLocation);
+      formDataToSend.append("reasonForJobChange", formData.reasonForJobChange);
+      formDataToSend.append("jobProfile", formData.jobProfile);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("relevantExp", formData.relevantExp);
+      formDataToSend.append("currentCTC", formData.currentCTC);
+      formDataToSend.append("expectedCTC", formData.expectedCTC);
+      formDataToSend.append("noticePeriod", formData.noticePeriod);
+      formDataToSend.append("resume", formData.resume);
 
       // Send the form data to the server using axios
-      const response = await axios.post('http://localhost:3005/career-form', formDataToSend, {
-        headers: {
-          'Content-Type':'multipart/form-data',
-        },
-      });
+      const response = await axios.post(
+        "http://localhost:3005/career-form",
+        formDataToSend,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
-      console.log('Form submitted successfully:', response.data);
+      console.log("Form submitted successfully:", response.data);
       alert("form has been submitted thank you");
       // Clear the form fields after successful submission
       setFormData({
-        name: '',
-        phone: '',
-        totalExp: '',
-        careerGap: '',
-        currentLocation: '',
-        preferredLocation: '',
-        reasonForJobChange: '',
-        jobProfile: '',
-        email: '',
-        relevantExp: '',
-        currentCTC: '',
-        expectedCTC: '',
-        noticePeriod: '',
+        name: "",
+        phone: "",
+        totalExp: "",
+        careerGap: "",
+        currentLocation: "",
+        preferredLocation: "",
+        reasonForJobChange: "",
+        jobProfile: "",
+        email: "",
+        relevantExp: "",
+        currentCTC: "",
+        expectedCTC: "",
+        noticePeriod: "",
         resume: null,
       });
     } catch (error) {
-      console.error('Error submitting form:', error);
-    }
-  };
+      console.error("Error submitting form:", error);
+    }
+  };
 
   return (
     <div className="container career-form rounded pb-5 px-4">
@@ -417,19 +420,11 @@ const ContactForm = () => {
         Don't be shY! Drop us a line and our team will get to you asap.
       </div>
       <form id="career_form" onSubmit={handleSubmit}>
-        <input
-          hidden
-          type="text"
-          value={formData.name}
-          className="form-control"
-          name="lead_url"
-          required
-        />
         <div className="row career-contact rounded p-4">
           <div className="col-12 col-md-6">
             <div className="form-group">
               <label htmlFor="career_name">
-                Name <a style={{ color: "red" }}>*</a>
+                Name <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 type="text"
@@ -443,7 +438,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_phone">
-                Phone No <a style={{ color: "red" }}>*</a>
+                Phone No <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 type="tel"
@@ -462,7 +457,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_total_exp">
-                Total Exp <a style={{ color: "red" }}>*</a>
+                Total Exp <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="form-control career-fields"
@@ -509,7 +504,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_job_change">
-                Reason for job change <a style={{ color: "red" }}>*</a>
+                Reason for job change <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="form-control career-fields"
@@ -543,7 +538,7 @@ const ContactForm = () => {
           <div className="col-12 col-md-6">
             <div className="form-group">
               <label htmlFor="career_email">
-                Email <a style={{ color: "red" }}>*</a>
+                Email <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 type="email"
@@ -557,7 +552,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_relevant_exp">
-                Relevant Exp <a style={{ color: "red" }}>*</a>
+                Relevant Exp <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="form-control career-fields"
@@ -571,7 +566,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_current_ctc">
-                Current CTC <a style={{ color: "red" }}>*</a>
+                Current CTC <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="form-control career-fields"
@@ -585,7 +580,8 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_exp_ctc">
-                Expected CTC(Offer if any) <a style={{ color: "red" }}>*</a>
+                Expected CTC(Offer if any){" "}
+                <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="form-control career-fields"
@@ -599,7 +595,8 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="career_notice_period">
-                Notice Period(LWD if serving) <a style={{ color: "red" }}>*</a>
+                Notice Period(LWD if serving){" "}
+                <span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="form-control career-fields"
@@ -613,7 +610,7 @@ const ContactForm = () => {
             </div>
             <div className="form-group">
               <label htmlFor="attach_document">
-                Attach your resume <a style={{ color: "red" }}>*</a>
+                Attach your resume <span style={{ color: "red" }}>*</span>
               </label>
               <div
                 className="custom-file cursor-pointer z-1"
