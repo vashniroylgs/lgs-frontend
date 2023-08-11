@@ -1,40 +1,35 @@
-import './index.css'
+import "./index.css";
 
 const ClientsPageCard = (props) => {
-    const {cardData} = props
-    const {companyName,
-    Description,companyLink, button,companyLogo} = cardData
-    return(
-        <div className="shadow-container">
-            <div className="main-container2">
-              <h1 className="career-container">{companyName}</h1>
-              <p>
-                {Description}
-              </p>
-              <div>
-                <a
-                  href={companyLink}
-                  target="_black"
-                  className="learn-Container"
-                >
-                  Learn More
-                </a>
-              </div>
-              <div>
-                <a href={companyLink} target="_black">
-                  <button className="website-button">{button}</button>
-                </a>
-              </div>
-            </div>
-            <div className="image-container">
-              <img
-                src={companyLogo}
-                alt=""
-                className="image-container2"
-              />
-            </div>
-          </div>
-    )
-}
+  const { cardData } = props;
+  const { companyName, Description, companyLink, button, companyLogo } =
+    cardData;
+  return (
+    <div className="shadow-container">
+      <div className="main-container2">
+        <h1 className="career-container">{companyName}</h1>
+        <p>{Description}</p>
+        <div>
+          <a
+            href={companyLink}
+            target="_black"
+            className="learn-Container"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </a>
+        </div>
+        <div>
+          <a href={companyLink} target="_black" rel="noopener noreferrer">
+            <button className="website-button">{button}</button>
+          </a>
+        </div>
+      </div>
+      <div className="image-container">
+        <img src={companyLogo} alt="" className="image-container2" />
+      </div>
+    </div>
+  );
+};
 
-export default ClientsPageCard
+export default ClientsPageCard;
