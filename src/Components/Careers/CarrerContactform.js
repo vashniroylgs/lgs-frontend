@@ -426,15 +426,15 @@ const ContactForm = () => {
               <label htmlFor="career_name">
                 Name <span style={{ color: "red" }}>*</span>
               </label>
-              <input
-                type="text"
-                className="form-control career-fields"
-                id="career_name"
-                name="name"
-                required
-                value={formData.name}
-                onChange={handleInputChange}
-              />
+                <input
+                  type="text"
+                  className="form-control career-fields"
+                  id="career_name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
             </div>
             <div className="form-group">
               <label htmlFor="career_phone">
