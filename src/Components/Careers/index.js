@@ -29,7 +29,7 @@ class Careers extends Component {
                 positions{" "}
               </p>
             </div>
-            <div class=" col-12 col-md-7 careers-image-container">
+            <div className=" col-12 col-md-7 careers-image-container">
               <img className="careers-image" alt="" src={career} />
             </div>
           </div>
