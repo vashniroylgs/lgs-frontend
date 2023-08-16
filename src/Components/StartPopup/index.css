@@ -146,6 +146,7 @@
       margin-top: 10px;
       padding: 15px;
       flex-grow: 1;
+      height: 134px;
     }
   
     .popup-button-container {
@@ -242,9 +243,13 @@
   }
 
   .close-1{
-    color: black !important;
+    color: rgb(14, 222, 32) !important;
     cursor: pointer;
-   font-size: 30px;
+    background-color: #5990f7;
+    font-size: 24px;
+    margin-top: -115px;
+    border: 2px solid #f7fbf7;
+    
   }
   .close-container{
     display: flex;
