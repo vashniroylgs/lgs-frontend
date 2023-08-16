@@ -143,10 +143,10 @@
     }
   
     .popup-image-container {
-      margin-top: 10px;
-      padding: 15px;
+      margin-top: -11px;
+      padding: 29px;
       flex-grow: 1;
-      height: 134px;
+      height: 114px;
     }
   
     .popup-button-container {
@@ -177,8 +177,8 @@
     }
   
     .popup-image-container {
-      margin-top: 10px;
-      padding: 30px;
+      margin-top: -6px;
+      padding: 27px;
       flex-grow: 1;
     }
   
