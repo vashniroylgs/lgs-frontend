@@ -1157,6 +1157,7 @@ class Header extends Component {
               HOME
             </Link>
           </li>
+          <li className="nav-mbl-menu-item"><Link to="/clientsPage" className="nav-link">CLIENTS</Link></li>
 
           <li className="nav-mbl-service-container nav-mbl-menu-item">
             PRODUCTS
@@ -1198,7 +1199,6 @@ class Header extends Component {
               </li>
             </ul>
           </li>
-
           <li className="nav-mbl-service-container nav-mbl-menu-item">
             TECHNOLOGIES
             <ul className="mbl-Nav-Service-container-items technology-overflow">
