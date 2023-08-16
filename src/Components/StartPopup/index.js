@@ -89,7 +89,7 @@ const FirstTimePopup = () => {
                   type="text"
                   id="name"
                   placeholder="Enter your name"
-                  value={name}
+                  value={name || ''}
                   onChange={(e) => setName(e.target.value)}
                   className="input-field"
                   required
@@ -98,7 +98,7 @@ const FirstTimePopup = () => {
               <div className="input-container">
                 <select
                   id="course"
-                  value={course}
+                  value={course || ''}
                   onChange={(e) => setCourse(e.target.value)}
                   className="input-field"
                   required
@@ -123,7 +123,7 @@ const FirstTimePopup = () => {
                   type="number"
                   id="phoneNumber"
                   placeholder="Enter your phone number"
-                  value={phoneNumber}
+                  value={phoneNumber || ''}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   className="input-field"
                   required
@@ -135,7 +135,7 @@ const FirstTimePopup = () => {
                   type="email"
                   id="email"
                   placeholder="Enter your email address"
-                  value={email}
+                  value={email || ''}
                   onChange={(e) => setEmail(e.target.value)}
                   className="input-field"
                   required
@@ -146,7 +146,7 @@ const FirstTimePopup = () => {
                   type="text"
                   id="comment"
                   placeholder="Enter your Comment"
-                  value={comment}
+                  value={comment || ''}
                   onChange={(e) => setComment(e.target.value)}
                   className="input-field"
                 />

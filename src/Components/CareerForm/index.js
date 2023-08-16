@@ -98,7 +98,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="name"
-          value={formData.name}
+          value={formData.name || ""}
           onChange={handleChange}
           required
         />
@@ -108,7 +108,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="phone"
-          value={formData.phone}
+          value={formData.phone || ""}
           onChange={handleChange}
           required
         />
@@ -118,7 +118,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="totalExp"
-          value={formData.totalExp}
+          value={formData.totalExp || ""}
           onChange={handleChange}
           required
         />
@@ -128,7 +128,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="careerGap"
-          value={formData.careerGap}
+          value={formData.careerGap || ""}
           onChange={handleChange}
         />
       </div>
@@ -137,7 +137,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="currentLocation"
-          value={formData.currentLocation}
+          value={formData.currentLocation || ""}
           onChange={handleChange}
         />
       </div>
@@ -146,7 +146,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="preferredLocation"
-          value={formData.preferredLocation}
+          value={formData.preferredLocation || ""}
           onChange={handleChange}
         />
       </div>
@@ -155,7 +155,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="reasonForJobChange"
-          value={formData.reasonForJobChange}
+          value={formData.reasonForJobChange || ""}
           onChange={handleChange}
           required
         />
@@ -165,7 +165,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="jobProfile"
-          value={formData.jobProfile}
+          value={formData.jobProfile || ""}
           onChange={handleChange}
           required
         />
@@ -175,7 +175,7 @@ const CareerForm = () => {
         <input
           type="email"
           name="email"
-          value={formData.email}
+          value={formData.email || ""}
           onChange={handleChange}
           required
         />
@@ -185,7 +185,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="relevantExp"
-          value={formData.relevantExp}
+          value={formData.relevantExp || ""}
           onChange={handleChange}
           required
         />
@@ -195,7 +195,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="currentCTC"
-          value={formData.currentCTC}
+          value={formData.currentCTC || ""}
           onChange={handleChange}
           required
         />
@@ -205,7 +205,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="expectedCTC"
-          value={formData.expectedCTC}
+          value={formData.expectedCTC || ""}
           onChange={handleChange}
           required
         />
@@ -215,7 +215,7 @@ const CareerForm = () => {
         <input
           type="text"
           name="noticePeriod"
-          value={formData.noticePeriod}
+          value={formData.noticePeriod || ""}
           onChange={handleChange}
           required
         />

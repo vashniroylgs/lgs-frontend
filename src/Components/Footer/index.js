@@ -1,13 +1,45 @@
 import { BiPhoneCall, BiLogoFacebook, BiLogoGmail } from "react-icons/bi";
+import React, { useEffect, useState } from "react";
 import { FaGreaterThan } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { AiOutlineTwitter } from "react-icons/ai";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import VisitTracker from "../Tracker";
+
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const Footer = () => (
+const Footer = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    fetchVisitCount(); // Fetch the visit count on initial load
+    // Increment the visit count on every page load by making a request to the homepage
+    fetch("http://localhost:3005/", { method: "GET" })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          setVisitCount(data.visitCount);
+        }
+      })
+      .catch((error) => {
+        console.error("Error incrementing visit count:", error);
+      });
+  }, []);
+
+  const fetchVisitCount = async () => {
+    try {
+      const response = await fetch("http://localhost:3005/api/visit-count");
+      const data = await response.json();
+      setVisitCount(data.visitCount);
+    } catch (error) {
+      console.error("Error fetching visit count:", error);
+    }
+  };
+
+ 
+  return(
   <div
     className="container-fluid p-4 bottom-fixed"
     style={{ backgroundColor: "#353b66" }}
@@ -49,6 +81,7 @@ const Footer = () => (
               </a>
             </div>
           </div>
+          <VisitTracker visitCount={visitCount} />
         </div>
       </div>
       <div className="col-12 col-lg-3 col-md-6 ">
@@ -178,6 +211,6 @@ const Footer = () => (
       </div>
     </div>
   </div>
-);
+)};
 
 export default Footer;
