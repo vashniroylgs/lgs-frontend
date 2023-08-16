@@ -16,6 +16,7 @@ import Careers from "./Components/Careers";
 import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
+import ScrollToTopButton from "./Components/scroll/Scroll";
 
 function App() {
   // Set to true to show the pop-up on initial load
@@ -27,6 +28,7 @@ function App() {
 
         <WhatsAppIntegration />
         <Chat />
+        <ScrollToTopButton />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route
