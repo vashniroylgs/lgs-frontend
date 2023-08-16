@@ -103,15 +103,16 @@ const OurClientsList = [
 
 function Card() {
   return (
-    <div className="container-fluid mt-4">
-      <div className="col-12">
-        <h1 className="text-center our-clients-heading">Our Clients</h1>
-        <div className="h-line"></div>
-      </div>
-      <div className="row ">
+    <div className="container our-clients-main-container mt-4">
+      <h1 className="text-center our-clients-heading">Our Clients</h1>
+      <div className="h-line"></div>
+      <div className="row">
         {OurClientsList.map((eachClient) => (
-          <div className="col-12 col-md-4 col-lg-3" key={eachClient.id}>
-            <div className="technology-card-image">
+          <div
+            className="col-12 col-md-4 col-lg-3 our-clients-image-container"
+            key={eachClient.id}
+          >
+            <div className="our-clients-card-image">
               <img
                 alt={`Client ${eachClient.id}`}
                 src={eachClient.src}
