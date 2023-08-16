@@ -1677,13 +1677,22 @@ class Header extends Component {
           
             <li className="nav-mbl-menu-item"><Link to="/careers" className="nav-link">CAREERS</Link></li>
           
-          
-            <li className="nav-mbl-menu-item"><Link to="/resellerpolarian" className="nav-link">RESELLER</Link></li>
-          
-          
+            <li className="nav-mbl-service-container nav-mbl-menu-item">
+            RESELLER
+            <ul className="mbl-Nav-Service-container-items">
+              <li className="Headeroption-item">
+                <Link to="/resellermendix" className="link">
+                  MENDIX
+                </Link>
+              </li>
+              <li className="Headeroption-item">
+                <Link to="/resellerpolarian" className="link">
+                  POLARION
+                </Link>
+              </li>
+            </ul>
+          </li>
             <li className="nav-mbl-menu-item"><Link to="/aboutus" className="nav-link">ABOUT US</Link></li>
-          
-
           
             <li className="nav-mbl-menu-item"><Link to="/contactus" className="nav-link">CONTACT US</Link></li>
           
