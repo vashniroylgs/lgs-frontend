@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ResellerMendix from "./Components/ResellerMendixPage";
@@ -9,7 +8,6 @@ import Ptcintegrety from "./Components/PTCintegrity";
 import About from "./Components/Aboutus";
 import HomePage from "./Components/Homepage";
 import Chat from "./Components/chat";
-import VisitTracker from "./Components/Tracker";
 import CountriesBar from "./Components/Countriesbar";
 import DigitalMarketing from "./Components/DigitalMarketing";
 import SaasPage from "./Components/SaasPage";
@@ -21,33 +19,6 @@ import Contactpopup from "./Components/Popup";
 
 function App() {
  // Set to true to show the pop-up on initial load
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    fetchVisitCount(); // Fetch the visit count on initial load
-    // Increment the visit count on every page load by making a request to the homepage
-    fetch("http://localhost:3005/", { method: "GET" })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          setVisitCount(data.visitCount);
-        }
-      })
-      .catch((error) => {
-        console.error("Error incrementing visit count:", error);
-      });
-  }, []);
-
-  const fetchVisitCount = async () => {
-    try {
-      const response = await fetch("http://localhost:3005/api/visit-count");
-      const data = await response.json();
-      setVisitCount(data.visitCount);
-    } catch (error) {
-      console.error("Error fetching visit count:", error);
-    }
-  };
-
  
 
   return (
@@ -56,7 +27,6 @@ function App() {
       <div>
         <CountriesBar />
 
-         <VisitTracker visitCount={visitCount} />
          <WhatsAppIntegration />
         <Chat />
         <Routes>

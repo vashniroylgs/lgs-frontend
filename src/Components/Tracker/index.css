@@ -3,7 +3,6 @@
     .tracker-container{
         background-color: black;
         color: #fff;
-        position: fixed;
         top: 48px;
         width: fit-content;
         height: 50px;
