@@ -18,16 +18,14 @@ import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 
 function App() {
- // Set to true to show the pop-up on initial load
- 
+  // Set to true to show the pop-up on initial load
 
   return (
     <>
-
       <div>
         <CountriesBar />
 
-         <WhatsAppIntegration />
+        <WhatsAppIntegration />
         <Chat />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
