@@ -412,7 +412,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container career-form rounded pb-5 px-4">
+    <div className="row career-form ">
       <h4 className="col-12 semi_heading-career text-center text-uppercase pt-5 font-weight-bold careers-heading">
         Come Work With Us
       </h4>
@@ -420,21 +420,21 @@ const ContactForm = () => {
         Don't be shY! Drop us a line and our team will get to you asap.
       </div>
       <form id="career_form" onSubmit={handleSubmit}>
-        <div className="row career-contact rounded p-4">
+        <div className="row career-contact rounded pb-3">
           <div className="col-12 col-md-6">
             <div className="form-group">
               <label htmlFor="career_name">
                 Name <span style={{ color: "red" }}>*</span>
               </label>
-                <input
-                  type="text"
-                  className="form-control career-fields"
-                  id="career_name"
-                  name="name"
-                  required
-                  value={formData.name}
-                  onChange={handleInputChange}
-                />
+              <input
+                type="text"
+                className="form-control career-fields"
+                id="career_name"
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleInputChange}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="career_phone">

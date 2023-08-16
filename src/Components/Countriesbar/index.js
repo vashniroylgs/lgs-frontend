@@ -158,7 +158,7 @@ class CountriesBar extends Component {
             </a>
             <a
               className="navbar_mob_email first_nav_content mr-2"
-              href="mailto:info@labyrinthglobalsolutions"
+              href="mailto:info@labyrinthglobalsolutions.com"
               rel="noopener noreferrer"
             >
               <img
@@ -168,7 +168,7 @@ class CountriesBar extends Component {
               />
             </a>
             <a
-              href="mailto:info@labyrinthglobalsolutions"
+              href="mailto:info@labyrinthglobalsolutions.com"
               className="contact-info first_nav_content"
               rel="noopener noreferrer"
             >
