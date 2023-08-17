@@ -31,17 +31,9 @@ function App() {
         <ScrollToTopButton />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route
-            exact
-            path="/resellerpolarian"
-            element={<ResellerPolarian />}
-          />
+          <Route exact path="/resellerpolarian" element={<ResellerPolarian />} />
           <Route exact path="/resellermendix" element={<ResellerMendix />} />
-          <Route
-            exact
-            path="/mobileandappdevelopment"
-            element={<WebMobile />}
-          />
+          <Route exact path="/mobileandappdevelopment" element={<WebMobile />}/>
           <Route exact path="/polarianalm" element={<PolarianALM />} />
           <Route exact path="/ptcintegrity" element={<Ptcintegrety />} />
           <Route
@@ -53,11 +45,7 @@ function App() {
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/contactus" element={<Contactpopup />} />
           <Route exact path="/saascloudsolutions" element={<SaasPage />} />
-          <Route
-            exact
-            path="/digitalmarketing"
-            element={<DigitalMarketing />}
-          />
+          <Route exact path="/digitalmarketing"  element={<DigitalMarketing />}/>
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
         </Routes>

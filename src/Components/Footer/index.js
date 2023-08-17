@@ -172,7 +172,7 @@ const Footer = () => {
               </div>
               <Link to="/polarianalm" className="footer-link">
                 <p className="pl-2 pt-2" style={{ color: "white" }}>
-                  Plarian ALM
+                  Polarion ALM
                 </p>
               </Link>
             </li>
