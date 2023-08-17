@@ -56,14 +56,13 @@ const IndustriesList = [
 
 const IndustriesPage = () => {
   return (
-    <div className="totalToolsPageContainer">
-      <div className="col-12">
-        <h1 className="industries-heading">Industries</h1>
-        <div className="h-line"></div>
-      </div>
-      <div className="ToolsPageContainer">
-        <div className="container">
-          <div className="row">
+    <div className="container totalToolsPageContainer">
+      <div className="row">
+        <div className="col-12">
+          <h1 className="industries-heading">Industries</h1>
+          <div className="h-line"></div>
+
+          <div className="ToolsPageContainer">
             {IndustriesList.map((eachIndustrie) => (
               <div
                 className="col-6 col-lg-3 col-md-3 text-center"

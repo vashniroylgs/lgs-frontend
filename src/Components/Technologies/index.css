@@ -57,6 +57,10 @@
   margin-bottom: 12px;
 }
 
+.java-image {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 767px) {
   .technologyIndustriesImage {
     height: 90px;
@@ -65,6 +69,17 @@
   .polarian-image-2 {
     margin-bottom: 12px;
     height: 45px;
+    width: 80px;
+  }
+
+  .java-image {
+    margin-bottom: 10px;
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+  }
+  .mendix-image {
+    height: 40px;
     width: 80px;
   }
 }

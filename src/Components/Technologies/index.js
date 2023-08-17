@@ -50,7 +50,7 @@ const TechnologiesList = [
   {
     id: 7,
     src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690555715/01-java-horizontal_dvpaym.svg",
-    class: "technologyIndustriesImage",
+    class: "java-image",
     height: 90,
     width: 105,
   },
@@ -79,14 +79,14 @@ const TechnologiesList = [
     id: 11,
     src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690556120/Polarion_small_cfwksb.png",
     class: "polarian-image-2",
-    height: 70,
-    width: 210,
+    height: 65,
+    width: 180,
   },
   {
     id: 12,
     src: "https://res.cloudinary.com/dg81jw9qd/image/upload/v1690556120/download_emcxnb.png",
-    class: "polarian-image-2",
-    height: 50,
+    class: "mendix-image",
+    height: 45,
     width: 150,
   },
 ];

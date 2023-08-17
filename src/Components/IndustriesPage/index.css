@@ -26,7 +26,7 @@
 
 .ToolsPageContainer {
   width: 95%;
-  height: 100%;
+  height: max-content;
 }
 
 .totalToolsPageContainer {
@@ -35,8 +35,9 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: max-content;
   align-items: center;
+  padding: 20px;
 }
 
 .industries-para {
