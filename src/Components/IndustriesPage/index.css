@@ -40,7 +40,8 @@
 }
 
 .industries-para {
-  font-weight: normal;
+  font-weight: bold;
+  margin: 10px;
   color: #ffffff;
   font-size: 15px;
   text-transform: uppercase;
