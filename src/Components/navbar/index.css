@@ -1,8 +1,16 @@
-/* .active-link {
-  
-  font-weight: bold;
-  color: rgb(219, 219, 229);
-} */
+/* CSS */
+.inactive {
+  /* Normal link styles */
+  color: #b48f8f; /* Change this to your desired normal link color */
+  text-decoration: none;
+}
+
+.active {
+  /* Active link styles */
+  color: blue; /* Change this to your desired active link color */
+  font-weight: bold; /* Or any other styles you want to apply */
+}
+
 .nav-header {
   display: flex;
   flex-direction: column;
