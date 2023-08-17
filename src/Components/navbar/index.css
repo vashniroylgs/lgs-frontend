@@ -1,4 +1,8 @@
-
+/* .active-link {
+  
+  font-weight: bold;
+  color: rgb(219, 219, 229);
+} */
 .nav-header {
   display: flex;
   flex-direction: column;
