@@ -1,5 +1,5 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
@@ -115,25 +115,6 @@ const TechnologiesPage = () => {
           </div>
         ))}
       </div>
-    </div>
-  );
-};
-
-const ImageElement = ({ src, className, alt }) => {
-  const [visible, setVisible] = React.useState(false);
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
-  React.useEffect(() => {
-    if (inView) {
-      setVisible(true);
-    }
-  }, [inView]);
-
-  return (
-    <div className={`image-evolution ${visible ? "evolved" : ""}`} ref={ref}>
-      <img src={src} className={className} alt={alt} />
     </div>
   );
 };
