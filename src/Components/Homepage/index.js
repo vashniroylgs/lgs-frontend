@@ -155,7 +155,7 @@ class HomePage extends Component {
           </div>
           <div className="row p-5">
             <h1 className="home-page-heading text-center">Why Us</h1>
-            <div className="col-12 col-lg-5 mt-3 home-reval">
+            <div className="col-12 col-lg-5 mt-3 home-reval about-us-image-container">
               <img className="home-about-us-image" src={about} alt="why-us" />
             </div>
             <div className="col-12 col-lg-7 mt-3 home-reval">

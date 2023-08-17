@@ -1,3 +1,15 @@
+/* CSS */
+.inactive {
+  /* Normal link styles */
+  color:rgb(122, 141, 162); /* Change this to your desired normal link color */
+  text-decoration: none;
+}
+
+.active {
+  /* Active link styles */
+  color: blue; /* Change this to your desired active link color */
+  font-weight: bold; /* Or any other styles you want to apply */
+}
 
 .nav-header {
   display: flex;

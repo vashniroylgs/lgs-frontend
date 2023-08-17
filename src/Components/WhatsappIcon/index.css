@@ -10,7 +10,7 @@
     
     .whatsapp-container{
         position: fixed;
-        top: 560px;
+        top: 77%;
         width: 120px;
         height: 80px;
         right: -10px;
@@ -29,7 +29,7 @@
         z-index: 999;
         cursor: pointer;
         bottom: 64px;
-        left: 77%;
+        left: 80%;
     }
     .whatsapp-icon{
         height: 40px;
@@ -43,7 +43,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .whatsapp-container{
         position: fixed;
-        top: 990px;
+        top: 80%;
         width: 120px;
         height: 80px;
         right: -25px;
