@@ -41,18 +41,7 @@ class CountriesBar extends Component {
                 className="icon-image"
               />
             </a>
-            {/* <a
-              href="https://in.pinterest.com/techasoft_pvt_ltd/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://www.techasoft.com/debug/img/pinterest.svg"
-                alt="pinterest"
-                className="icon-image"
-              />
-            </a> */}
-            <a
+                        <a
               href="https://www.instagram.com/techasoft_pvt_ltd/"
               target="_blank"
               rel="noopener noreferrer"

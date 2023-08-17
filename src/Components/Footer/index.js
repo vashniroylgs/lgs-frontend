@@ -48,8 +48,8 @@ const Footer = () => {
       <div className="col-12 col-lg-3 col-md-6 ">
         <div className="footerContent pt-3">
           <p style={{ color: "white" }}>
-            LABYRINTH GLOBAL SOLUTIONS LGS <br />
-            has the required experience to help architect, design, develop and
+            LABYRINTH GLOBAL SOLUTIONS <br />
+            LGS has the required experience to help architect, design, develop and
             deliver any technical solution to your organization..
           </p>
           <div className="footerIconsContainer p-2">
