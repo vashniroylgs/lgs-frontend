@@ -1157,6 +1157,7 @@ class Header extends Component {
               HOME
             </Link>
           </li>
+          <li className="nav-mbl-menu-item"><Link to="/clientsPage" className="nav-link">CLIENTS</Link></li>
 
           <li className="nav-mbl-service-container nav-mbl-menu-item">
             PRODUCTS
@@ -1198,7 +1199,6 @@ class Header extends Component {
               </li>
             </ul>
           </li>
-
           <li className="nav-mbl-service-container nav-mbl-menu-item">
             TECHNOLOGIES
             <ul className="mbl-Nav-Service-container-items technology-overflow">
@@ -1453,333 +1453,316 @@ class Header extends Component {
                 </ul>
               </div>
 
-              <div>
-                <h6 className="Nav-Mbl-teachnology-main-heading">
-                  LOW CODE PLATFORM
-                </h6>
-                <ul className="Nav-Mbl-technology-sub-container-items">
-                  <li className="mbl-product-items">
-                    <Link to="/resellermendix" className="link">
-                      MENDIX
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h6 className="Nav-Mbl-teachnology-main-heading">
-                  APPLICATION LIFECYCLE MANAGEMENT TOOL
-                </h6>
-                <ul className="Nav-Mbl-technology-sub-container-items">
-                  <li className="mbl-product-items">
-                    <Link to="/polarianalm" className="link">
-                      POLARION
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h6 className="Nav-Mbl-teachnology-main-heading">
-                  CRM SOFTWARE
-                </h6>
-                <ul className="Nav-Mbl-technology-sub-container-items">
-                  <li className="mbl-product-items">
-                    <Link to="/salesforcepage" className="link">
-                      SALESFORCE
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </ul>
-          </li>
-
-          <li className="nav-mbl-service-container nav-mbl-menu-item">
-            SERVICES
-            <ul className="mbl-Nav-Service-container-items technology-overflow">
-              <div className="nav-service-flex-contianer-items">
-                <h6 className="Nav-teachnology-main-heading">
-                  ONLINE MARKETING
-                </h6>
-                <ul className="Nav-technology-sub-container-items">
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      SEO SERVICES
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      SEARCH ENGINE MARKETING
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      LEAD MANAGEMENT SYSTEM
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/digitalmarketing" className="link">
-                      DIGITAL MARKETING
-                    </Link>
-                  </li>
-                </ul>
-                <h6 className="Nav-teachnology-main-heading">
-                  CREATIVE DESIGN
-                </h6>
-                <ul className="Nav-technology-sub-container-items">
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      UI/UX DESIGN
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      LOGO DESIGN
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      BROCHURE DESIGN
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      IIS
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="nav-service-flex-contianer-items">
-                <h6 className="Nav-teachnology-main-heading">CONSULTANT</h6>
-                <ul className="Nav-technology-sub-container-items">
-                  <li className="Nav-technology-item">
-                    <Link to="/resellermendix" className="link">
-                      MENDIX SOLUTION CONSULTANT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/polarianalm" className="link">
-                      POLARION SOLUTION CONSULTANT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/salesforcepage" className="link">
-                      SALESFORCE SOLUTION CONSULTANT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      CONVENTIONAL DEVELOPMENT CONSULTANT
-                    </Link>
-                  </li>
-                </ul>
-                <h6 className="Nav-teachnology-main-heading">TESTING</h6>
-                <ul className="Nav-technology-sub-container-items">
-                  <li className="Nav-technology-item">
-                    {" "}
-                    <Link to="" className="link">
-                      SOFTWARE TESTING
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      UNIT TESTING{" "}
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      INTEGRATION TESTING
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      SYSTEM TESTING
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      DEPLOYMENT AUTOMATION SUPPORT
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="nav-service-flex-contianer-items">
-                <h6 className="Nav-teachnology-main-heading">
-                  WEB DESIGN & DEVELOPMENT
-                </h6>
-                <ul className="Nav-technology-sub-container-items">
-                  <li className="Nav-technology-item">
-                    <Link to="/mobileandappdevelopment" className="link">
-                      WEBSITE DESIGN
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/mobileandappdevelopment" className="link">
-                      WEBSITE DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/salesforcepage" className="link">
-                      CRM SOFTWARE DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      EDUCATIONAL WEB PORTAL DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      RESTAURANT WEB PORTAL DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      E-COMMERCE WEBSITE DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      HEALTHCARE PORTAL DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      REAL ESTATE PORTAL DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
-                      LEARNING MANAGEMENT SYSTEM DEVELOPMENT
-                    </Link>
-                  </li>
-
-                  <li className="Nav-technology-item">
-                    <Link to="" className="link">
-                      TAXATION PORTAL DEVELOPMENT
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="Mobile-application-flex">
-                <div className="nav-service-flex-contianer-items">
-                  <h6 className="Nav-teachnology-main-heading">
-                    MOBILE APPLICATION
+                <div>
+                  <h6 className="Nav-Mbl-teachnology-main-heading">
+                    LOW CODE PLATFORM
                   </h6>
-                  <ul className="Nav-technology-sub-container-items">
-                    <li className="Nav-technology-item">
-                      <Link to="/mobileandappdevelopment" className="link">
-                        MOBILE APP DEVELOPMENT
-                      </Link>
-                    </li>
-
-                    <li className="Nav-technology-item">
-                      <Link to="" className="link">
-                        WINDOWS APP DEVELOPMENT
-                      </Link>
-                    </li>
-
-                    <li className="Nav-technology-item">
-                      <Link to="" className="link">
-                        XAMARIN APP DEVELOPMENT
-                      </Link>
-                    </li>
-
-                    <li className="Nav-technology-item">
-                      <Link to="/contactus" className="link">
-                        HYBRID APP DEVELOPMENT{" "}
-                      </Link>
-                    </li>
-
-                    <li className="Nav-technology-item">
-                      <Link to="" className="link">
-                        NATIVE APP DEVELOPMENT{" "}
-                      </Link>
-                    </li>
+                  <ul className="Nav-Mbl-technology-sub-container-items">
+                    
+                      <li className="mbl-product-items"><Link to="/resellermendix" className="link">MENDIX</Link></li>
+                    
                   </ul>
                 </div>
-                <div className="">
-                  <div>
+                <div>
+                  <h6 className="Nav-Mbl-teachnology-main-heading">
+                    APPLICATION LIFECYCLE MANAGEMENT TOOL
+                  </h6>
+                  <ul className="Nav-Mbl-technology-sub-container-items">
+                    
+                      <li className="mbl-product-items"><Link to="/polarianalm" className="link">POLARION</Link></li>
+                    
+                  </ul>
+                </div>
+                <div>
+                  <h6 className="Nav-Mbl-teachnology-main-heading">
+                    CRM SOFTWARE
+                  </h6>
+                  <ul className="Nav-Mbl-technology-sub-container-items">
+                    
+                      <li className="mbl-product-items"><Link to="/salesforcepage" className="link">SALESFORCE</Link></li>
+                    
+                  </ul>
+                </div>
+              </ul>
+            </li>
+         
+            <li className="nav-mbl-service-container nav-mbl-menu-item">
+              SERVICES
+              <ul className="mbl-Nav-Service-container-items technology-overflow">
+                <div className="nav-service-flex-contianer-items">
+                  <h6 className="Nav-teachnology-main-heading">
+                    ONLINE MARKETING
+                  </h6>
+                  <ul className="Nav-technology-sub-container-items">
+                    
+                      <li className="Nav-technology-item"><Link to="/contactus" className="link">SEO SERVICES</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="" className="link">
+                        SEARCH ENGINE MARKETING
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/contactus" className="link">
+                        LEAD MANAGEMENT SYSTEM
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item"><Link to="/digitalmarketing" className="link">DIGITAL MARKETING</Link></li>
+                    
+                  </ul>
+                  <h6 className="Nav-teachnology-main-heading">
+                    CREATIVE DESIGN
+                  </h6>
+                  <ul className="Nav-technology-sub-container-items">
+                    
+                      <li className="Nav-technology-item"><Link to="/contactus" className="link">UI/UX DESIGN</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item"><Link to="/contactus" className="link">LOGO DESIGN</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item"><Link to="" className="link">BROCHURE DESIGN</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item"><Link to="/contactus" className="link">IIS</Link></li>
+                    
+                  </ul>
+                </div>
+                <div className="nav-service-flex-contianer-items">
+                  <h6 className="Nav-teachnology-main-heading">CONSULTANT</h6>
+                  <ul className="Nav-technology-sub-container-items">
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/resellermendix" className="link">
+                        MENDIX SOLUTION CONSULTANT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/polarianalm" className="link">
+                        POLARION SOLUTION CONSULTANT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/salesforcepage" className="link">
+                        SALESFORCE SOLUTION CONSULTANT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/contactus" className="link">
+                        CONVENTIONAL DEVELOPMENT CONSULTANT
+                        </Link>
+                      </li>
+                    
+                  </ul>
+                  <h6 className="Nav-teachnology-main-heading">TESTING</h6>
+                  <ul className="Nav-technology-sub-container-items">
+                   
+                      <li className="Nav-technology-item"> <Link to="" className="link">SOFTWARE TESTING</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item"><Link to="/contactus" className="link">UNIT TESTING </Link></li>
+                   
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/contactus" className="link">
+                        INTEGRATION TESTING
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item"><Link to="/contactus" className="link">SYSTEM TESTING</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="" className="link">
+                        DEPLOYMENT AUTOMATION SUPPORT
+                        </Link>
+                      </li>
+                    
+                  </ul>
+                </div>
+                <div className="nav-service-flex-contianer-items">
+                  <h6 className="Nav-teachnology-main-heading">
+                    WEB DESIGN & DEVELOPMENT
+                  </h6>
+                  <ul className="Nav-technology-sub-container-items">
+                    
+                      <li className="Nav-technology-item"><Link to="/mobileandappdevelopment" className="link">WEBSITE DESIGN</Link></li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/mobileandappdevelopment" className="link">
+                        WEBSITE DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/salesforcepage" className="link">
+                        CRM SOFTWARE DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="" className="link">
+                        EDUCATIONAL WEB PORTAL DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/contactus" className="link">
+                        RESTAURANT WEB PORTAL DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                   
+                      <li className="Nav-technology-item">
+                      <Link to="" className="link">
+                        E-COMMERCE WEBSITE DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="/contactus" className="link">
+                        HEALTHCARE PORTAL DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="" className="link">
+                        REAL ESTATE PORTAL DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                   
+                      <li className="Nav-technology-item">
+                      <Link to="/contactus" className="link">
+                        LEARNING MANAGEMENT SYSTEM DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                    
+                      <li className="Nav-technology-item">
+                      <Link to="" className="link">
+                        TAXATION PORTAL DEVELOPMENT
+                        </Link>
+                      </li>
+                    
+                  </ul>
+                </div>
+                <div className="Mobile-application-flex">
+                  <div className="nav-service-flex-contianer-items">
                     <h6 className="Nav-teachnology-main-heading">
-                      LOW CODE PLATFORM
+                      MOBILE APPLICATION
                     </h6>
                     <ul className="Nav-technology-sub-container-items">
-                      <li className="Nav-technology-item">
-                        <Link to="/resellermendix" className="link">
-                          MENDIX{" "}
-                        </Link>
-                      </li>
+                      
+                        <li className="Nav-technology-item">
+                        <Link to="/mobileandappdevelopment" className="link">
+                          MOBILE APP DEVELOPMENT
+                          </Link>
+                        </li>
+                      
+                     
+                        <li className="Nav-technology-item">
+                        <Link to="" className="link">
+                          WINDOWS APP DEVELOPMENT
+                          </Link>
+                        </li>
+                      
+                      
+                        <li className="Nav-technology-item">
+                        <Link to="" className="link">
+                          XAMARIN APP DEVELOPMENT
+                          </Link>
+                        </li>
+                      
+                      
+                        <li className="Nav-technology-item">
+                        <Link to="/contactus" className="link">
+                          HYBRID APP DEVELOPMENT{" "}
+                          </Link>
+                        </li>
+                      
+                      
+                        <li className="Nav-technology-item">
+                        <Link to="" className="link">
+                          NATIVE APP DEVELOPMENT{" "}
+                          </Link>
+                        </li>
+                      
                     </ul>
                   </div>
-                  <div>
-                    <h6 className="Nav-teachnology-main-heading">ALM TOOL</h6>
-                    <ul className="Nav-technology-sub-container-items">
-                      <li className="Nav-technology-item">
-                        <Link to="/polarianalm" className="link">
-                          POLARION
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h6 className="Nav-teachnology-main-heading">
-                      CRM SOFTWARE
-                    </h6>
-                    <ul className="Nav-technology-sub-container-items">
-                      <li className="Nav-technology-item">
-                        <Link to="/salesforcepage" className="link">
-                          SALESFORCE
-                        </Link>
-                      </li>
-                    </ul>
+                  <div className="">
+                    <div>
+                      <h6 className="Nav-teachnology-main-heading">
+                        LOW CODE PLATFORM
+                      </h6>
+                      <ul className="Nav-technology-sub-container-items">
+                        
+                          <li className="Nav-technology-item"><Link to="/resellermendix" className="link">MENDIX </Link></li>
+                       
+                      </ul>
+                    </div>
+                    <div>
+                      <h6 className="Nav-teachnology-main-heading">ALM TOOL</h6>
+                      <ul className="Nav-technology-sub-container-items">
+                        
+                          <li className="Nav-technology-item"><Link to="/polarianalm" className="link">POLARION</Link></li>
+                        
+                      </ul>
+                    </div>
+                    <div>
+                      <h6 className="Nav-teachnology-main-heading">
+                        CRM SOFTWARE
+                      </h6>
+                      <ul className="Nav-technology-sub-container-items">
+                        
+                          <li className="Nav-technology-item"><Link to="/salesforcepage" className="link">SALESFORCE</Link></li>
+                        
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </ul>
+            </li>
+          
+            <li className="nav-mbl-menu-item"><Link to="/careers" className="nav-link">CAREERS</Link></li>
+          
+            <li className="nav-mbl-service-container nav-mbl-menu-item">
+            RESELLER
+            <ul className="mbl-Nav-Service-container-items">
+              <li className="Headeroption-item">
+                <Link to="/resellermendix" className="link">
+                  MENDIX
+                </Link>
+              </li>
+              <li className="Headeroption-item">
+                <Link to="/resellerpolarian" className="link">
+                  POLARION
+                </Link>
+              </li>
             </ul>
           </li>
-
-          <li className="nav-mbl-menu-item">
-            <Link to="/careers" className="nav-link">
-              CAREERS
-            </Link>
-          </li>
-
-          <li className="nav-mbl-menu-item">
-            <Link to="/resellerpolarian" className="nav-link">
-              RESELLER
-            </Link>
-          </li>
-
-          <li className="nav-mbl-menu-item">
-            <Link to="/aboutus" className="nav-link">
-              ABOUT US
-            </Link>
-          </li>
-
-          <li className="nav-mbl-menu-item">
-            <Link to="/contactus" className="nav-link">
-              CONTACT US
-            </Link>
-          </li>
+            <li className="nav-mbl-menu-item"><Link to="/aboutus" className="nav-link">ABOUT US</Link></li>
+          
+            <li className="nav-mbl-menu-item"><Link to="/contactus" className="nav-link">CONTACT US</Link></li>
+          
         </ul>
       </div>
     );

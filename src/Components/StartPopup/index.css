@@ -209,8 +209,8 @@
     }
   
     .login-logo {
-      height: 320px;
       width: 280px;
+      height: 225px !important;
       margin: 10px;
     }
   

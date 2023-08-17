@@ -81,7 +81,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <VisitTracker visitCount={visitCount} />
+          {/* <VisitTracker visitCount={visitCount} /> */}
         </div>
       </div>
       <div className="col-12 col-lg-3 col-md-6 ">
@@ -206,6 +206,7 @@ const Footer = () => {
                 </p>
               </Link>
             </li>
+            <VisitTracker visitCount={visitCount} />
           </ol>
         </div>
       </div>
