@@ -72,7 +72,7 @@ function App() {
             path="/websitemaintanance"
             element={<WebsiteMaintanance />}
           />
-          {/* <Route exact path="/smoservice" element={<SMO />} />
+          {/*
           
           <Route exact path="/websitedevelop" element={<WebDevelop />} />
           <Route exact path="/ppc" element={<PpcTable />} />
@@ -82,7 +82,7 @@ function App() {
 
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
-          <Route exact path="/smo" element={<SMO />} />
+          <Route exact path="/smoservice" element={<SMO />} />
         </Routes>
       </div>
     </>

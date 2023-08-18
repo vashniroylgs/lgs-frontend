@@ -293,42 +293,42 @@ class Header extends Component {
               </div>
               <div>
                 <div>
-                    <h6 className="Nav-Mbl-teachnology-main-heading">
-                  DATA MINING & ANALYTICS
-                </h6>
-                <ul className="Nav-Mbl-technology-sub-container-items">
-                  <li className="mbl-product-items">
-                    <Link to="" className="link">
-                      DATA BASE DESIGN: ORACLE
-                    </Link>
-                  </li>
+                  <h6 className="Nav-Mbl-teachnology-main-heading">
+                    DATA MINING & ANALYTICS
+                  </h6>
+                  <ul className="Nav-Mbl-technology-sub-container-items">
+                    <li className="mbl-product-items">
+                      <Link to="" className="link">
+                        DATA BASE DESIGN: ORACLE
+                      </Link>
+                    </li>
 
-                  <li className="mbl-product-items">
-                    <Link to="/contactus" className="link">
-                      SQL DATABASE
-                    </Link>
-                  </li>
+                    <li className="mbl-product-items">
+                      <Link to="/contactus" className="link">
+                        SQL DATABASE
+                      </Link>
+                    </li>
 
-                  <li className="mbl-product-items">
-                    <Link to="" className="link">
-                      DATABASE DEVELOPMENT MONGO DBE
-                    </Link>
-                  </li>
+                    <li className="mbl-product-items">
+                      <Link to="" className="link">
+                        DATABASE DEVELOPMENT MONGO DBE
+                      </Link>
+                    </li>
 
-                  <li className="mbl-product-items">
-                    <Link to="/contactus" className="link">
-                      DATABASE CONSULTING SQL SERVER
-                    </Link>
-                  </li>
+                    <li className="mbl-product-items">
+                      <Link to="/contactus" className="link">
+                        DATABASE CONSULTING SQL SERVER
+                      </Link>
+                    </li>
 
-                  <li className="mbl-product-items">
-                    <Link to="/contactus" className="link">
-                      DATABASE CONSULTING SQL SERVER
-                    </Link>
-                  </li>
-                </ul>
+                    <li className="mbl-product-items">
+                      <Link to="/contactus" className="link">
+                        DATABASE CONSULTING SQL SERVER
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                
+
                 <h6 className="Nav-Mbl-teachnology-main-heading">
                   WEB SERVER TECHNOLOGY
                 </h6>
@@ -808,6 +808,11 @@ class Header extends Component {
                         <li className="Nav-technology-item">
                           <Link to="/contactus" className="link">
                             SEO SERVICES
+                          </Link>
+                        </li>
+                        <li className="Nav-technology-item">
+                          <Link to="/smoservice" className="link">
+                            SMO SERVICES
                           </Link>
                         </li>
 
