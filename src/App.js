@@ -25,9 +25,9 @@ function App() {
     <>
       <div>
         <CountriesBar />
-
-        <WhatsAppIntegration />
         <Chat />
+        <WhatsAppIntegration />
+        
         <ScrollToTopButton />
         <Routes>
           <Route exact path="/" element={<HomePage />} />

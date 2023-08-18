@@ -174,7 +174,7 @@ class HomePage extends Component {
             </div>
           </div>
           <StartPopup />
-          <Chat />
+          {/* <Chat /> */}
         </div>
         <Footer />
       </>
