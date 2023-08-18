@@ -19,6 +19,7 @@ import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
 import OrmTable from "./Components/ORM";
 import WebsiteDevelopment from "./Components/MobileDevelopment";
+import SMO from "./Components/SMO";
 import WebsiteMaintanance from "./Components/WebsiteMaintance";
 function App() {
   // Set to true to show the pop-up on initial load
@@ -81,6 +82,7 @@ function App() {
 
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
+          <Route exact path="/smo" element={<SMO />} />
         </Routes>
       </div>
     </>
