@@ -28,14 +28,18 @@ h1:last-of-type {
   margin-top: 100px;
 }
 
-.header p {
+.header {
   margin: 0 auto;
   line-height: 2;
   color: var(--grayishBlue);
 }
 
-.box p {
+.box {
   color: var(--grayishBlue);
+}
+.services-paragraph {
+  color: #000000;
+  font-weight: normal;
 }
 
 .box {
