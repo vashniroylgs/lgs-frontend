@@ -57,7 +57,7 @@ class ResellerMendix extends Component {
               />
             </div>
           </div>
-          <div className="reseller-mendix-row p-3">
+          <div className="reseller-mendix-row row p-3">
             <div className="col-md-6 col-12 mendixpic-container">
               <img
                 alt="mendixpic"

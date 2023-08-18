@@ -706,7 +706,7 @@ class Header extends Component {
               </Link>
               <ul className="nav-menu">
                 <li className="Nav-Service-container nav-menu-item home-padding">
-                <NavLink exact to="/"  activeClassName="active" className="inactive">
+                <NavLink exact  to="/"  activeclassname="active" className="inactive">
             HOME
           </NavLink>
                 </li>
@@ -752,7 +752,7 @@ class Header extends Component {
                 </li>
 
                 <li className="Nav-Service-container nav-menu-item technology-item">
-                <NavLink to="/clientsPage"  activeClassName="active" className="inactive">
+                <NavLink to="/clientsPage"  activeclassname="active" className="inactive">
             CLIENTS
           </NavLink>
                 </li>
@@ -1337,7 +1337,7 @@ class Header extends Component {
                 </li>
 
                 <li className="nav-menu-item career-padding">
-                <NavLink to="/careers"  activeClassName="active" className="inactive">
+                <NavLink to="/careers"  activeclassname="active" className="inactive">
             CAREERS
           </NavLink>
                 </li>
@@ -1359,13 +1359,13 @@ class Header extends Component {
                 </li>
 
                 <li className="nav-menu-item about-us-nav about-padding">
-                <NavLink to="/aboutus"  activeClassName="active" className="inactive">
+                <NavLink to="/aboutus"  activeclassname="active" className="inactive">
             ABOUT US
           </NavLink>
                 </li>
 
                 <li className="nav-menu-item about-us-nav about-padding">
-                <NavLink to="/contactus"  activeClassName="active" className="inactive">
+                <NavLink to="/contactus"  activeclassname="active" className="inactive">
             CONTACT US
           </NavLink>
                 </li>

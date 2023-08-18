@@ -22,7 +22,7 @@
 }
 
 .slider-paragraph {
-  font-size: 20px !important;
+  font-size: 15px !important;
   font-weight: 500 !important;
   color: white !important   ;
   width: 400px;
@@ -32,13 +32,18 @@
 .slider-button {
   font-family: "Poppins", sans-serif !important;
   font-size: 17px !important;
-  font-weight: bold;
-  
-  background-color: rgb(234, 10, 10) !important;
-
+  font-weight: 800;
+  color: #0263c4;
+  background-color: rgb(250, 249, 249) !important;
+  border-radius: 5px;
+  border-width: 0px;
+  outline: none;
+  width: 120px;
+  padding: 5px;
 }
-.slider-button:hover{
-  background-color: rgb(56, 36, 112) !important;
+.slider-button:hover {
+  opacity: 0.9;
+  font-weight: 800;
 }
 
 @media screen and (max-width: 767px) {
@@ -58,11 +63,28 @@
   }
 
   .slider-paragraph {
-    font-size: 15px !important;
+    font-size: 12px !important;
     font-weight: 500 !important;
     color: white !important   ;
     text-align: center;
     width: 300px;
+  }
+
+  .slider-button {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 800;
+    color: #0263c4;
+    background-color: rgb(250, 249, 249) !important;
+    border-radius: 5px;
+    border-width: 0px;
+    outline: none;
+    width: 100px;
+    height: 25px;
+  }
+  .slider-button:hover {
+    opacity: 0.9;
+    font-weight: 800;
   }
 }
 
@@ -83,10 +105,28 @@
   }
 
   .slider-paragraph {
-    font-size: 12px !important;
+    font-size: 15px !important;
     font-weight: 500 !important;
     color: white !important   ;
     width: 200px;
     text-align: center;
+  }
+
+  .slider-button {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 800;
+    color: #0263c4;
+    background-color: rgb(250, 249, 249) !important;
+    border-radius: 5px;
+    border-width: 0px;
+    outline: none;
+    width: 100px;
+    height: 28px;
+    padding: 2px;
+  }
+  .slider-button:hover {
+    opacity: 0.9;
+    font-weight: 800;
   }
 }
