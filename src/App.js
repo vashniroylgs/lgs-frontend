@@ -17,7 +17,7 @@ import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
-
+import SMO from './Components/SMO/index.js'
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -48,6 +48,7 @@ function App() {
           <Route exact path="/digitalmarketing"  element={<DigitalMarketing />}/>
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
+          <Route exact path="/smo" element={<SMO/>}/>
         </Routes>
       </div>
     </>
