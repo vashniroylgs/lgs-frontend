@@ -97,7 +97,7 @@ const TechnologiesPage = () => {
       <h3 className=" IndustriesHeading text-center text-uppercase mt-4">
         Technologies
       </h3>
-      <div className="h-line"></div>
+      <div className="technologies-h-line"></div>
       <div className="row">
         {/* here used list for mapping the elements  */}
         {TechnologiesList.map((eachImage) => (

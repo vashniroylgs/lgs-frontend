@@ -66,7 +66,7 @@
 
 .salesforce-bg-image {
   background-image: url("https://assets-global.website-files.com/63b466db0286c6d23709be46/63d059aafb5f584b787cbef6_blog-feat-6-steps-to-backup-restore-salesforce-data-loader.png");
-  height: 100vh;
+  height: 70vh;
   background-size: cover;
   opacity: 1.5;
 }
@@ -76,7 +76,7 @@
   font-size: 30px !important;
   font-weight: bold !important;
   font-family: "Poppins", sans-serif !important;
-
+  letter-spacing: 2.2px;
   width: 600px;
 }
 
@@ -86,6 +86,8 @@
   font-family: "Poppins", sans-serif !important;
   color: #062f46 !important ;
   width: 600px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 .salesforce-content-container {
@@ -113,14 +115,15 @@
   }
   .salesforce-banner-heading-2 {
     color: #ffffff !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: bold !important;
     font-family: "Poppins", sans-serif !important;
-
+    letter-spacing: 1px;
     width: fit-content;
   }
   .salesforce-banner-heading {
-    font-size: 30px !important;
+    letter-spacing: 1px;
+    font-size: 20px !important;
     font-weight: bold !important;
     font-family: "Poppins", sans-serif !important;
     color: #062f46 !important ;
@@ -133,5 +136,45 @@
     font-weight: 500 !important;
     padding: 3px !important;
     font-family: "Poppins", sans-serif !important;
+  }
+  .salesforce-bg-image {
+    background-image: url("https://assets-global.website-files.com/63b466db0286c6d23709be46/63d059aafb5f584b787cbef6_blog-feat-6-steps-to-backup-restore-salesforce-data-loader.png");
+    height: 25vh;
+    background-size: cover;
+    opacity: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 912px) {
+  .salesforce-bg-image {
+    background-image: url("https://assets-global.website-files.com/63b466db0286c6d23709be46/63d059aafb5f584b787cbef6_blog-feat-6-steps-to-backup-restore-salesforce-data-loader.png");
+    height: 35vh;
+    background-size: cover;
+    opacity: 1.5;
+  }
+
+  .salesforce-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  .salesforce-banner-heading-2 {
+    color: #ffffff !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    font-family: "Poppins", sans-serif !important;
+    letter-spacing: 1px;
+    width: 350px;
+  }
+  .salesforce-banner-heading {
+    letter-spacing: 1px;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    font-family: "Poppins", sans-serif !important;
+    color: #062f46 !important ;
+    width: fit-content;
   }
 }
