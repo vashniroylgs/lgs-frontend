@@ -292,7 +292,8 @@ class Header extends Component {
                 </ul>
               </div>
               <div>
-                <h6 className="Nav-Mbl-teachnology-main-heading">
+                <div>
+                    <h6 className="Nav-Mbl-teachnology-main-heading">
                   DATA MINING & ANALYTICS
                 </h6>
                 <ul className="Nav-Mbl-technology-sub-container-items">
@@ -326,6 +327,8 @@ class Header extends Component {
                     </Link>
                   </li>
                 </ul>
+                </div>
+                
                 <h6 className="Nav-Mbl-teachnology-main-heading">
                   WEB SERVER TECHNOLOGY
                 </h6>

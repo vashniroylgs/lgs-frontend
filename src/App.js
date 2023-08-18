@@ -17,8 +17,8 @@ import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
-import WebsiteMaintanance from "./Components/WebsiteMaintance/index";
-
+import OrmTable from "./Components/ORM";
+import WebsiteDevelopment from "./Components/MobileDevelopment";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -31,6 +31,12 @@ function App() {
 
         <ScrollToTopButton />
         <Routes>
+          <Route
+            exact
+            path="/websiteDevelopment"
+            element={<WebsiteDevelopment />}
+          />
+          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/" element={<HomePage />} />
           <Route
             exact
