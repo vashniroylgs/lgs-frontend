@@ -19,6 +19,7 @@ import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
 import OrmTable from "./Components/ORM";
 import WebsiteDevelopment from "./Components/MobileDevelopment";
+import WebsiteMaintanance from "./Components/WebsiteMaintance";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -33,7 +34,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/websiteDevelopment"
+            path="/websitedevelop"
             element={<WebsiteDevelopment />}
           />
           <Route exact path="/orm" element={<OrmTable />} />
