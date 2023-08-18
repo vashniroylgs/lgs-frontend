@@ -213,7 +213,7 @@ const OrmTable = () => {
     <div style={{display:"flex",justifyContent:"center", alignItems:"center"}}>
     <Link to="/contactus">
     <button className="learn-more-buttonorm">
-      Get Quote <BsArrowRightShort className="home-page-arrow" />
+      Get Quote 
     </button>
   </Link>
   </div>
