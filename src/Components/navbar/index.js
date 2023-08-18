@@ -407,7 +407,7 @@ class Header extends Component {
                 </h6>
                 <ul className="Nav-technology-sub-container-items">
                   <li className="Nav-technology-item">
-                    <Link to="/contactus" className="link">
+                    <Link to="/seo" className="link">
                       SEO SERVICES
                     </Link>
                   </li>

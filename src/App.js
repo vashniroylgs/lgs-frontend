@@ -23,6 +23,7 @@ import SMO from "./Components/SMO";
 import WebsiteMaintanance from "./Components/WebsiteMaintance";
 import PpcTable from "./Components/Ppctable";
 import Smm from "./Components/SMM";
+import PricingPage from "./Components/seo/seo";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -76,6 +77,8 @@ function App() {
           />
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
+          <Route exact path="/seo" element={<PricingPage />} />
+
           {/*
           
           <Route exact path="/websitedevelop" element={<WebDevelop />} />
