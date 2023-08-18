@@ -17,7 +17,8 @@ import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
-import SMO from './Components/SMO/index.js'
+import OrmTable from "./Components/ORM";
+import WebsiteDevelopment from "./Components/MobileDevelopment";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -27,13 +28,27 @@ function App() {
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
-        
+
         <ScrollToTopButton />
         <Routes>
+          <Route
+            exact
+            path="/websiteDevelopment"
+            element={<WebsiteDevelopment />}
+          />
+          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/resellerpolarian" element={<ResellerPolarian />} />
+          <Route
+            exact
+            path="/resellerpolarian"
+            element={<ResellerPolarian />}
+          />
           <Route exact path="/resellermendix" element={<ResellerMendix />} />
-          <Route exact path="/mobileandappdevelopment" element={<WebMobile />}/>
+          <Route
+            exact
+            path="/mobileandappdevelopment"
+            element={<WebMobile />}
+          />
           <Route exact path="/polarianalm" element={<PolarianALM />} />
           <Route exact path="/ptcintegrity" element={<Ptcintegrety />} />
           <Route
@@ -45,7 +60,24 @@ function App() {
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/contactus" element={<Contactpopup />} />
           <Route exact path="/saascloudsolutions" element={<SaasPage />} />
-          <Route exact path="/digitalmarketing"  element={<DigitalMarketing />}/>
+          <Route
+            exact
+            path="/digitalmarketing"
+            element={<DigitalMarketing />}
+          />
+          <Route
+            exact
+            path="/websitemaintanance"
+            element={<WebsiteMaintanance />}
+          />
+          {/* <Route exact path="/smoservice" element={<SMO />} />
+          
+          <Route exact path="/websitedevelop" element={<WebDevelop />} />
+          <Route exact path="/ppc" element={<PpcTable />} />
+          <Route exact path="/smm" element={<Smm />} />
+          <Route exact path="/logodesign" element={<Ourlogo />} />
+          <Route exact path="/orm" element={<Orm />} /> */}
+
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smo" element={<SMO/>}/>
