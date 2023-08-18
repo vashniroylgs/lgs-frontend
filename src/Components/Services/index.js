@@ -36,7 +36,7 @@ class Services extends Component {
         <div className="row1-container">
           <div className="box box-down cyan services-reval">
             <h2 className="services-heading">Web & Mobile App Development </h2>
-            <p>
+            <p className="services-paragraph">
               At Labyrinth Global Solutions, we don't just build websites and
               apps; we build experiences that connect, inspire, and empower. We
               are not just developers; we are dreamers and visionaries who are
@@ -54,7 +54,7 @@ class Services extends Component {
 
           <div className="box red services-reval">
             <h2 className="services-heading">Mendix</h2>
-            <p>
+            <p className="services-paragraph">
               In today's fast-paced world, staying ahead of the competition
               requires agility, adaptability, and the ability to rapidly deploy
               custom applications. That's where Mendix comes in—a powerful
@@ -73,7 +73,7 @@ class Services extends Component {
 
           <div className="box box-down blue services-reval">
             <h2 className="services-heading">Digital Marketing</h2>
-            <p>
+            <p className="services-paragraph">
               From crafting captivating websites that leave lasting impressions
               to implementing data-driven SEO strategies that propel businesses
               to the top of search engines, we leave no stone unturned in our
@@ -95,7 +95,7 @@ class Services extends Component {
         <div className="row2-container">
           <div className="box orange services-reval">
             <h2 className="services-heading">Polarion</h2>
-            <p>
+            <p className="services-paragraph">
               Welcome to the cutting-edge world of Polarion Solutions &
               Development, where innovation meets excellence! We empower
               businesses and individuals with state-of-the-art Polarion

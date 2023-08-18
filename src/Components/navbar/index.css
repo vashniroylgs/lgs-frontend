@@ -1,7 +1,7 @@
 /* CSS */
 .inactive {
   /* Normal link styles */
-  color:rgb(122, 141, 162); /* Change this to your desired normal link color */
+  color: rgb(122, 141, 162); /* Change this to your desired normal link color */
   text-decoration: none;
 }
 
@@ -505,8 +505,7 @@
 @media (min-width: 1300px) {
   .data-mining-flex {
     display: flex;
-    flex-direction: column;
-    gap: 0px;
+    gap: 100px;
   }
 }
 @media (max-width: 1100px) {
