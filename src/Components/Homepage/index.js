@@ -29,7 +29,7 @@ const Details = [
     id: 2,
     question: "Cost-Effectiveness",
     answer:
-      "While in-house development teams can be costly to maintain, partnering with LGS allows you to access a skilled workforce without the overhead expenses. You pay for the services you need, making it a cost-effective solution.",
+      "While internal development teams can be costly to maintain, partnering with LGS allows you to access a skilled workforce without the overhead expenses. You pay for the services you need, making it a cost-effective solution.",
   },
   {
     id: 3,

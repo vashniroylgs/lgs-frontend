@@ -11,7 +11,7 @@ const items = [
   {
     cardTitle: "Our Mission",
     cardDetailedText:
-      "Our mission is to empower businesses and individuals through cutting-edge software solutions that drive innovation and growth. We are committed to delivering reliable, efficient, and user-centric software that exceeds our clients expectations. By fostering a culture of collaboration and continuous improvement, we aim to create a positive impact on the world through technology.",
+      "Our mission is to empower businesses and individuals through cutting-edge software solutions that drive innovation and growth. We are committed to delivering reliable, efficient, and user-centric software that exceeds our clients expectations. By fostering a culture of collaboration and continous improvement, we aim to create a positive impact on the world through technology.",
   },
   {
     cardTitle: "Our Vision",
@@ -38,7 +38,7 @@ const About = () => {
               <h1 className="about-title">ABOUT US</h1>
             </center>
             <p className="about-description">
-              Labyrinth global solutins Pvt. Ltd. is a fast-growing IT Company
+              Labyrinth global solutions Pvt. Ltd. is a fast-growing IT Company
               that provides holistic IT solutions to businesses across
               geographies We offer IT expertise in software, website, and
               application (iOS & Android) development; UI/UX design; and digital
@@ -48,7 +48,7 @@ const About = () => {
               shipping, e-commerce, banking, technology, manufacturing, and
               IT-enabled education service industries so far. Currently, we have
               a team of highly skilled IT professionals that work round the
-              clock to ensure Techasoft stays true to its offerings &
+              clock to ensure LGS stays true to its offerings &
               commitments. Our team of experienced experts includes software
               developers, web developers, designers, and digital marketing
               experts.

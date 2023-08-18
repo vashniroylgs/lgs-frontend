@@ -11,6 +11,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     border-radius:12px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
   }
 
   .bg-container-3 {
@@ -29,6 +30,7 @@
     height: 60vh;
     width: 60%;
     margin-top: 30px;
+    border-radius: 25px 25px 25px 25px;
   }
   
   .login-logo {
@@ -53,6 +55,7 @@
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 25px 25px 25px 25px;
   }
   
   .login-button {
@@ -86,7 +89,9 @@
     margin-bottom: 10px;
     border-radius: 10px;
   }
-  
+  .close-1:hover{
+    background-color: antiquewhite;
+  }
   .input-field {
     height: 40px;
     border-radius: 10px;
@@ -243,11 +248,12 @@
   }
 
   .close-1{
-    color: rgb(14, 222, 32) !important;
+    color: rgb(254, 255, 255) !important;
     cursor: pointer;
     background-color: #5990f7;
-    font-size: 24px;
-    margin-top: -115px;
+    font-size: 28px;
+    margin-top: -50px;
+    border-radius: 50%;
     border: 2px solid #f7fbf7;
     
   }

@@ -57,7 +57,7 @@ class Services extends Component {
             <p className="services-paragraph">
               In today's fast-paced world, staying ahead of the competition
               requires agility, adaptability, and the ability to rapidly deploy
-              custom applications. That's where Mendix comes in—a powerful
+              custom applications. That's where Mendix comes in a powerful
               low-code development platform that enables us to build robust and
               scalable applications faster than ever before...
               <Link to="/resellermendix">Know More</Link>

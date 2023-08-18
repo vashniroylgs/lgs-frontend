@@ -34,11 +34,11 @@
   font-size: 17px !important;
   font-weight: bold;
   
-  background-color: rgb(234, 10, 10) !important;
+  background-color: rgb(75, 58, 58) !important;
 
 }
 .slider-button:hover{
-  background-color: rgb(56, 36, 112) !important;
+  background-color: rgb(43, 8, 241) !important;
 }
 
 @media screen and (max-width: 767px) {
