@@ -1,6 +1,6 @@
 
 
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -49,7 +49,6 @@ class Header extends Component {
   // };
 
   renderNavItems = () => {
-    const { showNavItems } = this.state;
     return (
       <div className="mbl-nav-items-container">
         <ul className="mbl-nav-menu">
