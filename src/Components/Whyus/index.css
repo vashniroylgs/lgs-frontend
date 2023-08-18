@@ -29,18 +29,12 @@
 .question {
   color: #050c14 !important;
 
-  font-family: "Poppins", sans-serif !important;
-
   font-size: 12px !important;
-
-  font-weight: bold !important;
 }
 
 @media screen and (min-width: 768px) {
   .question {
     font-size: 20px !important;
-    font-family: "Poppins", sans-serif !important;
-    font-weight: bold !important;
   }
   .faq-item {
     width: 100%;
@@ -62,7 +56,7 @@
 
   font-family: "Poppins", sans-serif;
 
-  font-size: 18px;
+  font-size: 15px;
 }
 
 @media (max-width: 576px) {

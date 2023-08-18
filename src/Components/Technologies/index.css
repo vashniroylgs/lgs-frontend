@@ -1,10 +1,10 @@
 .IndustriesHeading {
   font-weight: 900;
   color: #062953;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-.h-line {
+.technologies-h-line {
   border-bottom: 3px solid #529ff1;
   width: 150px;
   margin: auto;
@@ -81,5 +81,15 @@
   .mendix-image {
     height: 40px;
     width: 80px;
+  }
+  .technologies-h-line {
+    border-bottom: 3px solid #529ff1;
+    width: 145px;
+    margin: auto;
+  }
+  .IndustriesHeading {
+    font-weight: 900;
+    color: #062953;
+    font-size: 20px;
   }
 }
