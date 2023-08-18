@@ -150,6 +150,12 @@ const Data = [
 
 const Table = () => {
   return (
+    <div>
+      <h1>
+        <center>
+        Website Maintenance Packages
+        </center>
+      </h1>
     <table className='table-container'>
       <thead>
         <tr>
@@ -172,6 +178,10 @@ const Table = () => {
         ))}
       </tbody>
     </table>
+    <button className="learn-more-buttonorm">
+      Learn More <BsArrowRightShort className="home-page-arrow" />
+    </button>
+    </div>
   );
 };
 

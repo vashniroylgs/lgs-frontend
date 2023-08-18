@@ -66,4 +66,18 @@ table {
     padding: 20px;
     margin: 10px;
   }
+  .learn-more-buttonorm {
+    text-align: center;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 800;
+    color: white;
+    background-color: #0263c4;
+    border-radius: 5px;
+    border-width: 0px;
+    outline: none;
+    width: 120px;
+    height: 30px;
+    padding: 4px;
+  }
   
