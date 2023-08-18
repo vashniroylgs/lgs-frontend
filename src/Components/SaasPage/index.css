@@ -158,3 +158,10 @@ ul li {
 .saaspage-carousel-container {
   margin-bottom: 40px;
 }
+
+.nav-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  color: #262626;
+}

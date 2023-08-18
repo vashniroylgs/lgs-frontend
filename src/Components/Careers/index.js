@@ -5,6 +5,7 @@ import ContactForm from "./CarrerContactform";
 import "./index .css";
 import Header from "../navbar";
 import Footer from "../Footer";
+import StartPopup from "../StartPopup";
 
 class Careers extends Component {
   render() {
@@ -28,13 +29,14 @@ class Careers extends Component {
                 positions{" "}
               </p>
             </div>
-            <div class=" col-12 col-md-7 careers-image-container">
+            <div className=" col-12 col-md-7 careers-image-container">
               <img className="careers-image" alt="" src={career} />
             </div>
           </div>
           <ContactForm />
         </div>
         <Footer />
+        <StartPopup />
       </>
     );
   }

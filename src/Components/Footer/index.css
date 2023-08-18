@@ -56,7 +56,7 @@
 }
 
 .footerHeader {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .footerHorizontalLine {
@@ -102,12 +102,28 @@
 .ListItem9:hover {
   margin-left: 20px;
 }
+.ListItem10:hover {
+  margin-left: 20px;
+}
 
 .footerIconSocial {
   border-radius: 100%;
   margin: 10px;
   padding: 5px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: aqua;
 }
+
+.footerIconSocial:hover {
+  border-radius: 100%;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #0557a8;
+  color: white;
+}
+
 .footerIcon {
   border-radius: 100%;
   margin-right: 5px;
@@ -119,4 +135,14 @@
 
 .footer-list-container {
   height: auto;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footerHeader {
+    font-size: 20px;
+  }
 }

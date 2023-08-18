@@ -1,116 +1,99 @@
-.container{
-    margin: 0;
-  }
-
-.mendix-main-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #f9f6f6; */
-    background-color: #F0F0F0;
-
-    flex-direction: column;
-    padding-top: 10%;
+.container {
+  margin: 0;
 }
 
-.siemens-mendix-card{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
+.resellar-polarian-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f9f6f6; */
+  background-color: #f0f0f0;
 
+  flex-direction: column;
+  padding-top: 10%;
 }
 
-.polarianpic-container{
+.siemens-resellar-polarian-card {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.polarianpic-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.siemens-card-logo{
-    height: 120px;
-    width: 120px;
-    margin-bottom: 5%;
+.siemens-card-logo {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 5%;
 }
 
-
-
-.siemens-mendix-hover-card:hover{
-    box-shadow: 0px 50px 80px -40px rgba(237, 75, 0, 0.81);
+.siemens-resellar-polarian-hover-card:hover {
+  box-shadow: 0px 50px 80px -40px rgba(237, 75, 0, 0.81);
 }
 
-.siemens-mendix-hover-card{
-    background-color: #ffffff;
-    border-radius: 30px 30px 30px 30px;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 300ms ease 0ms;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 450px;
-    align-items: center;
+.siemens-resellar-polarian-hover-card {
+  background-color: #ffffff;
+  border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 300ms ease 0ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  align-items: center;
 }
 
-.mendix-card-description{
-    font-size: 15px;
+.resellar-polarian-card-description {
+  font-size: 15px;
 }
 
-.polaranpic{
-    height: 450px;  
-    width: 450px;
+.polaranpic {
+  height: 450px;
+  width: 450px;
 }
 
-.labyrinth-offering-unorderedlist-contianer{
-    width: 100%;
-    text-align: left;
-    list-style-type: circle;
+.labyrinth-offering-unorderedlist-contianer {
+  width: 100%;
+  text-align: left;
+  list-style-type: circle;
 }
 
-.mendix-card-description-para{
-    text-align: left;
-    font-size: 15px;
+.resellar-polarian-card-description-para {
+  text-align: left;
+  font-size: 15px;
 }
 
-.mendix-card-description-heading{
-    font-size: 20px;
-    color: #ed4b00;
+.resellar-polarian-card-description-heading {
+  font-size: 20px;
+  color: #ed4b00;
 }
 
-.second-pic{
-    height: 400px;
-    width: 400px;
-    background-color: #f9f6f6;
+.second-pic {
+  height: 400px;
+  width: 400px;
+  background-color: #f9f6f6;
 }
 
-.second-pic-container{
-    display: flex;
-    align-self: center;
+.second-pic-container {
+  display: flex;
+  align-self: center;
+  width: 100%;
 }
 
-.mendix-page-bottom-cards-container{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.resellar-polarian-page-bottom-cards-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width:768px){
-  .siemens-card-logo{
-    height: 50px;
-    width: 50px
-}.polaranpic{
-  margin-top: 40px;
-  width:250px;
-  height:250px;
-}.second-pic{
-  margin-top: 40px;
-  width:250px;
-  height:250px;
-}
-}
 /* 
 
 .feature-box {
@@ -164,114 +147,152 @@
   }
  */
 
+/*Hover cards*/
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 50px 20px;
+}
 
+.card-container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  max-width: 100%;
+  height: 300px;
+  color: #ffffff;
+  background: #1e2b33;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
 
-  /*Hover cards*/
-  .card-container {
-    position: relative;
+.card-container .card:hover {
+  height: 380px !important;
+}
+
+.card-container .card .img-box {
+  position: absolute;
+  top: 20px;
+  width: 170px;
+  height: 170px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-container .card:hover .img-box {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  width: 200px;
+}
+
+.card-container .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container .card .content {
+  position: absolute;
+  top: 230px !important;
+  width: 100%;
+  height: 37px !important;
+  padding: 0 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-container .card:hover .content {
+  top: 130px !important ;
+  height: 300px !important;
+}
+
+.card-container .card .content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-container .card .content p {
+  color: #fff;
+}
+
+.card-container .card .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background: var(--clr);
+  color: white;
+  font-weight: 500;
+}
+
+.card-container .card .content a:hover {
+  opacity: 0.8;
+}
+.polarian-resellar-card-para {
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.polarian-resellsr-card-heading {
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff !important;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 912px) {
+  .polarianpic-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 50px 20px;
   }
-  
-  .card-container .card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .polaranpic {
+    height: 350px;
+    width: 350px;
+  }
+  .second-pic {
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .siemens-card-logo {
+    height: 50px;
+    width: 50px;
+  }
+  .polaranpic {
+    margin-top: 40px;
     width: 250px;
-    max-width: 100%;
-    height: 300px;
-    color: #ffffff;
-    background: #1e2b33;
-    border-radius: 20px;
-    transition: 0.5s;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    height: 250px;
   }
-  
-  .card-container .card:hover {
-    height: 380px !important;
+  .second-pic {
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
   }
-  
-  .card-container .card .img-box {
-    position: absolute;
-    top: 20px;
-    width: 170px;
-    height: 170px;
-    background: #333;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  
-  .card-container .card:hover .img-box {
-    top: -100px;
-    scale: 0.75;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-    height: 200px;
-    width: 200px;
-  }
-  
-  .card-container .card .img-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .second-pic-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin-bottom: 20px;
   }
-  
-  .card-container .card .content {
-    position: absolute;
-    top: 230px !important;
-    width: 100%;
-    height: 37px !important;
-    padding: 0 30px;
-    text-align: center;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  
-  .card-container .card:hover .content {
-    top: 130px !important ;
-    height: 300px !important;
-  }
-  
-  .card-container .card .content h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  
-  .card-container .card .content p {
-    color: #fff;
-  }
-  
-  .card-container .card .content a {
-    position: relative;
-    top: 15px;
-    display: inline-block;
-    padding: 12px 25px;
-    text-decoration: none;
-    background: var(--clr);
-    color: white;
-    font-weight: 500;
-  }
-  
-  .card-container .card .content a:hover {
-    opacity: 0.8;
-  }
-  .polarian-resellar-card-para{
-    font-weight: normal;
-    font-size: 15px;
-    margin-top: 5px;
-  }
-
-  .polarian-resellsr-card-heading{
-    font-weight: bold;
-    font-size: 15px;
-    color: #fff !important;
-    padding: 5px;
-  }
+}
