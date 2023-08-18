@@ -21,6 +21,8 @@ import OrmTable from "./Components/ORM";
 import WebsiteDevelopment from "./Components/MobileDevelopment";
 import SMO from "./Components/SMO";
 import WebsiteMaintanance from "./Components/WebsiteMaintance";
+import PpcTable from "./Components/Ppctable";
+import Smm from "./Components/SMM";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -72,11 +74,13 @@ function App() {
             path="/websitemaintanance"
             element={<WebsiteMaintanance />}
           />
+          <Route exact path="/ppc" element={<PpcTable />} />
+          <Route exact path="/smm" element={<Smm />} />
           {/*
           
           <Route exact path="/websitedevelop" element={<WebDevelop />} />
-          <Route exact path="/ppc" element={<PpcTable />} />
-          <Route exact path="/smm" element={<Smm />} />
+          
+          
           <Route exact path="/logodesign" element={<Ourlogo />} />
           <Route exact path="/orm" element={<Orm />} /> */}
 
