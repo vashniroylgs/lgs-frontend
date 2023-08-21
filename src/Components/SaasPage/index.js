@@ -180,7 +180,6 @@ import "slick-carousel/slick/slick.css"; // Import the CSS file for the slider
 import "slick-carousel/slick/slick-theme.css";
 import Header from "../navbar";
 import Footer from "../Footer";
-import StartPopup from "../StartPopup";
 
 const TransformingCarrerList = [
   {
@@ -349,7 +348,6 @@ class SaasPage extends Component {
           </div>
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }

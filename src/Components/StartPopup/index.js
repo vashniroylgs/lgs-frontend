@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import { RxCross2 } from "react-icons/rx";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 const FirstTimePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -61,6 +63,9 @@ const FirstTimePopup = () => {
       console.error(error);
     }
   };
+  const onChange = () => {
+    
+  }
 
   return (
     <>
@@ -151,6 +156,7 @@ const FirstTimePopup = () => {
                   className="input-field"
                 />
               </div>
+              <ReCAPTCHA sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0" onChange={onChange} />
               <div className="popup-button-container">
                 <button className="login-button" type="submit">
                   SUBMIT

@@ -3,7 +3,6 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../navbar";
 import Footer from "../Footer";
-import StartPopup from "../StartPopup";
 
 class ResellerPolarian extends Component {
   render() {
@@ -206,7 +205,6 @@ class ResellerPolarian extends Component {
           </div>
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }

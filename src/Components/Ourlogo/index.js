@@ -1,5 +1,8 @@
 import React from 'react';
+import {BsArrowRightShort} from 'react-icons/bs'
 import './index.css'
+import Header from '../navbar';
+import Footer from '../Footer';
 
 const Data = [
   {
@@ -143,6 +146,9 @@ const Data = [
 
 const Ourlogo = () => {
   return (
+    <>
+      <Header />
+    
     <div>
     <h1>
     <center>
@@ -171,6 +177,8 @@ const Ourlogo = () => {
       Learn More <BsArrowRightShort className="home-page-arrow" />
     </button>
     </div>
+    <Footer />
+    </>
   );
 };
 

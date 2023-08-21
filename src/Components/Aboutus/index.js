@@ -141,7 +141,7 @@ import video from '../images/Core Values.mp4'
 import whychoosevideo from '../images/whyChooseLGS.mp4'
 import Footer from "../Footer";
 import Header from "../navbar";
-import StartPopup from "../StartPopup";
+
 
 const about = () => {
   return (
@@ -200,7 +200,6 @@ const about = () => {
       </div>
     </div>
     <Footer />
-  <StartPopup />
     </>
   )
 }

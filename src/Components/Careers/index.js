@@ -5,7 +5,6 @@ import ContactForm from "./CarrerContactform";
 import "./index .css";
 import Header from "../navbar";
 import Footer from "../Footer";
-import StartPopup from "../StartPopup";
 
 class Careers extends Component {
   render() {
@@ -36,7 +35,6 @@ class Careers extends Component {
           <ContactForm />
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }

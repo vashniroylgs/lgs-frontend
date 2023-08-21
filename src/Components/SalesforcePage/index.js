@@ -4,7 +4,6 @@ import Lottie from "lottie-react";
 import Header from "../navbar";
 import Footer from "../Footer";
 import "./index.css";
-import StartPopup from "../StartPopup";
 
 const SalesForceList = [
   {
@@ -144,7 +143,6 @@ class SalesForce extends Component {
           </div>
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }
