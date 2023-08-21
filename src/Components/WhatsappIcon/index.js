@@ -10,7 +10,7 @@ const WhatsAppIntegration = () => {
     <div className="whatsapp-container">
       <a
         className="nav-join-whatsapp-anchor mr-5"
-        href="http://wa.me/"
+        href="http://wa.me/+918008448885"
         target="_blank"
         rel="noopener noreferrer"
       >
