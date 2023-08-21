@@ -4,8 +4,10 @@ const ClientsPageCard = (props) => {
   const { cardData } = props;
   const { companyName, Description, companyLink, button, companyLogo } =
     cardData;
+    
   return (
-    <div className="shadow-container">
+    <div className="shadow-container"
+    style={{ backgroundImage: `url(${cardData.backgroundImg})` }}>
       <div className="main-container2">
         <h1 className="clients-heading">{companyName}</h1>
         <p className="clients-paragraph">{Description}</p>
