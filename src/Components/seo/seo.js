@@ -7,8 +7,8 @@ import Footer from '../Footer';
 const PricingPage = () => {
   const rowData = [
     // An array of rows with dummy data
-    // Each row contains: features, small business, mid size business, large or ecommerce, extra features
-    // You can replace the dummy data with actual content
+    // Each row contains: features, small business, mid size business, 
+   
     
     // {
      
@@ -386,7 +386,7 @@ const PricingPage = () => {
   return (
     <div className="pricing-page">
         <Header/>
-      <h1>Our SEO Packages</h1>
+      <h1 className='heading_seo'> Our SEO Packages</h1>
       <table>
         <thead>
           <tr>

@@ -39,11 +39,12 @@ const Footer = () => {
   };
 
   return (
+    // {style={{ backgroundColor: "#353b66" }}}
     <div
-      className="container-fluid p-4 bottom-fixed"
-      style={{ backgroundColor: "#353b66" }}
+      className="container-fluid p-4 bottom-fixed" style={{ backgroundImage: 'url("https://www.techasoft.com/debug/img/industries-back.jpg")', backgroundSize: 'cover'}}
+    
     >
-      <div className="row" style={{ backgroundColor: "#353b66" }}>
+      <div className="row" >
         <div className="col-12 col-lg-3 col-md-6 ">
           <div className="footerContent pt-3">
             <p style={{ color: "white" }}>

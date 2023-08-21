@@ -201,7 +201,7 @@ const ContactForm = () => {
               <label htmlFor="position">Job Profile</label>
               <select
                 name="jobProfile"
-                className="custom-select mb-3 career-fields"
+                className="custom-select m-3 career-fields"
                 id="position"
                 value={formData.jobProfile || ""}
                 onChange={handleInputChange}
