@@ -3,7 +3,6 @@ import "./index.css";
 import { RxCross2 } from "react-icons/rx";
 import ReCAPTCHA from "react-google-recaptcha";
 
-
 const FirstTimePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [email, setEmail] = useState("");
@@ -63,9 +62,16 @@ const FirstTimePopup = () => {
       console.error(error);
     }
   };
-  const onChange = () => {
-    
-  }
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  };
+
+  const captchaStyles = {
+    transform: 'scale(0.77)',
+    WebkitTransform: 'scale(0.77)',
+    transformOrigin: '0 0',
+    WebkitTransformOrigin: '0 0',
+  };
 
   return (
     <>
@@ -94,7 +100,7 @@ const FirstTimePopup = () => {
                   type="text"
                   id="name"
                   placeholder="Enter your name"
-                  value={name || ''}
+                  value={name || ""}
                   onChange={(e) => setName(e.target.value)}
                   className="input-field"
                   required
@@ -103,7 +109,7 @@ const FirstTimePopup = () => {
               <div className="input-container">
                 <select
                   id="course"
-                  value={course || ''}
+                  value={course || ""}
                   onChange={(e) => setCourse(e.target.value)}
                   className="input-field"
                   required
@@ -128,7 +134,7 @@ const FirstTimePopup = () => {
                   type="number"
                   id="phoneNumber"
                   placeholder="Enter your phone number"
-                  value={phoneNumber || ''}
+                  value={phoneNumber || ""}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   className="input-field"
                   required
@@ -140,10 +146,21 @@ const FirstTimePopup = () => {
                   type="email"
                   id="email"
                   placeholder="Enter your email address"
-                  value={email || ''}
+                  value={email || ""}
                   onChange={(e) => setEmail(e.target.value)}
                   className="input-field"
                   required
+                />
+              </div>
+              <div
+                class="g-recaptcha"
+                data-theme="light"
+                data-sitekey="XXXXXXXXXXXXX"
+                style={captchaStyles}
+              >
+                <ReCAPTCHA
+                  sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0"
+                  onChange={onChange}
                 />
               </div>
               <div className="input-container">
@@ -151,12 +168,11 @@ const FirstTimePopup = () => {
                   type="text"
                   id="comment"
                   placeholder="Enter your Comment"
-                  value={comment || ''}
+                  value={comment || ""}
                   onChange={(e) => setComment(e.target.value)}
                   className="input-field"
                 />
               </div>
-              <ReCAPTCHA sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0" onChange={onChange} />
               <div className="popup-button-container">
                 <button className="login-button" type="submit">
                   SUBMIT

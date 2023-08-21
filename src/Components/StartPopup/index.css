@@ -29,7 +29,6 @@
   height: 60vh;
   width: 60%;
   margin-top: 30px;
- 
 }
 
 .login-logo {
@@ -54,7 +53,6 @@
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
- 
 }
 
 .login-button {
@@ -121,9 +119,16 @@
 
 .popup-para {
   color: #ffffff !important;
-
   font-weight: normal !important;
   font-size: 15px !important;
+}
+.popup-captcha {
+  height: 10px !important;
+  width: 30px !important ;
+}
+
+.popup-captcha-container {
+  width: 100% !important;
 }
 
 @media (max-width: 767px) {
