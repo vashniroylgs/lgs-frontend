@@ -170,7 +170,7 @@ class HomePage extends Component {
             <div className="Technology-mbl-container">
               <TechnologiesPage />
             </div>
-            <div>
+            <div className="home-clients">
               <Card />
             </div>
           </div>

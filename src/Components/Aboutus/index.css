@@ -365,6 +365,7 @@ h2 {
   text-align: center;
   padding: 10px;
   color: rgb(60, 85, 226);
+  font-size: 30px;
 }
 
 .aboutUsCard {
@@ -378,11 +379,7 @@ h2 {
   box-shadow: 2px 2px 5px #888888;
 }
 
-.mainContainer {
-  background-image: linear-gradient(to left, #2980b9, #6dd5fa);
-  
-}
-
+ 
 .firstcard{
   display: flex;
   flex-direction: row;
@@ -405,6 +402,7 @@ h2 {
 }
 .thrive-content{
   font-style: italic;
+  font-size: 35px;
 }
 
 
@@ -412,7 +410,7 @@ h2 {
   color: #000000;
   padding: 10px;
   font-family: montserrat, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .sub-heading-aboutpage{

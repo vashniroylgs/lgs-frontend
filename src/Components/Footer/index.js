@@ -53,18 +53,27 @@ const Footer = () => {
             </p>
             <div className="footerIconsContainer p-2">
               <div>
-                <BiLogoFacebook
+              <a
+                  href="https://m.facebook.com/LabyrinthGlobalSolutions/"
+                  target="_blank"
+                ><BiLogoFacebook
                   className="footerIconSocial"
                   size="30"
                   height="30"
                 />
+                </a>
               </div>
               <div>
-                <AiOutlineTwitter
-                  className="footerIconSocial"
-                  size="30"
-                  height="30"
-                />
+                <a
+                  href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsollabyrinth"
+                  target="_blank"
+                >
+                  <AiOutlineTwitter
+                    className="footerIconSocial"
+                    size="30"
+                    height="30"
+                  />
+                </a>
               </div>
               <div>
                 <a

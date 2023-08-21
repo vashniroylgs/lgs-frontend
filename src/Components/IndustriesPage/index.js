@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
+
 import "./index.css";
 
 const IndustriesList = [
@@ -48,8 +49,8 @@ const IndustriesList = [
   },
   {
     id: 8,
-    src: "https://res.cloudinary.com/dots1s0gu/image/upload/v1690541412/Education_copy_jxacqj.png",
-    industriesClass: "industriesImage-1",
+    src: 'https://res.cloudinary.com/dots1s0gu/image/upload/v1692619600/Pngtree_white_book_icon_label_4695326_olas0w.png',
+    industriesClass: "industriesImage",
     title: "EDUCATION",
   },
 ];

@@ -141,7 +141,7 @@ import video from '../images/Core Values.mp4'
 import whychoosevideo from '../images/whyChooseLGS.mp4'
 import Footer from "../Footer";
 import Header from "../navbar";
-import StartPopup from "../StartPopup";
+
 
 const about = () => {
   return (
@@ -192,7 +192,7 @@ const about = () => {
       <div>
       <h1 className='heading'>Our Services:</h1>
         <p className='about-description'><span className='sub-heading-aboutpage'>Application Lifecycle Management (ALM):</span> Our ALM solutions streamline the entire software development process, from ideation to deployment and beyond. We help you manage the complexities of development, testing, and release while ensuring the highest standards of quality and efficiency.</p>
-        <p className='about-description'><span className='sub-heading-aboutpage'>Product Lifecycle Management (PLM):</span>With our PLM expertise, we empower your organization to manage product information, collaboration, and innovation seamlessly. From design to end-of-life, our solutions optimize your product development lifecycle.</p>
+        {/*<p className='about-description'><span className='sub-heading-aboutpage'>Product Lifecycle Management (PLM):</span>With our PLM expertise, we empower your organization to manage product information, collaboration, and innovation seamlessly. From design to end-of-life, our solutions optimize your product development lifecycle.</p>*/}
         <p className='about-description'><span className='sub-heading-aboutpage'>Low-Code Development: </span>Embrace the power of low-code platforms to rapidly build and deploy applications that meet your unique business needs. Our low-code solutions accelerate development while maintaining flexibility and scalability.</p>
         <p className='about-description'><span className='sub-heading-aboutpage'>Custom Development:</span>Recognizing that one size doesn't fit all, our custom development services craft tailored solutions that align with your specific goals and challenges. We turn your ideas into reality with innovative, fully customized applications.</p>
       </div>
@@ -200,7 +200,6 @@ const about = () => {
       </div>
     </div>
     <Footer />
-  <StartPopup />
     </>
   )
 }
