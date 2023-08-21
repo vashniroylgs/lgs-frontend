@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "../navbar";
 import Footer from "../Footer";
-import StartPopup from "../StartPopup";
 import "./index.css";
 
 const PolarianAlmList = [
@@ -140,7 +139,6 @@ class Polarian extends Component {
           </div>
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }

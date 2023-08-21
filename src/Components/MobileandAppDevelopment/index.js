@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
 import "bootstrap/dist/css/bootstrap.min.css";
-import StartPopup from "../StartPopup";
 
 import "./index.css";
 
@@ -287,7 +286,6 @@ class WebMobile extends Component {
           </div>
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }

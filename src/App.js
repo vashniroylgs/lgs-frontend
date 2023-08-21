@@ -24,6 +24,7 @@ import WebsiteMaintanance from "./Components/WebsiteMaintance";
 import PpcTable from "./Components/Ppctable";
 import Smm from "./Components/SMM";
 import PricingPage from "./Components/seo/seo";
+import Ourlogo from "./Components/Ourlogo";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -33,7 +34,6 @@ function App() {
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
-
         <ScrollToTopButton />
         <Routes>
           <Route
@@ -78,15 +78,9 @@ function App() {
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
           <Route exact path="/seo" element={<PricingPage />} />
-
-          {/*
-          
-          <Route exact path="/websitedevelop" element={<WebDevelop />} />
-          
-          
+          {/*<Route exact path="/websitedevelop" element={<WebDevelop />} />*/}
           <Route exact path="/logodesign" element={<Ourlogo />} />
-          <Route exact path="/orm" element={<Orm />} /> */}
-
+          {/*  <Route exact path="/orm" element={<Orm />} /> */}
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smoservice" element={<SMO />} />

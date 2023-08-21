@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
 
 const ContactForm = () => {
@@ -86,6 +87,10 @@ const ContactForm = () => {
       console.error("Error submitting form:", error);
     }
   };
+
+  const onChange = () => {
+
+  }
 
   return (
     <div className="row career-form ">
@@ -284,6 +289,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
               />
             </div>
+            <ReCAPTCHA sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0" onChange={onChange} />
             <div className="form-group">
               <label htmlFor="attach_document">
                 Attach your resume <span style={{ color: "red" }}>*</span>

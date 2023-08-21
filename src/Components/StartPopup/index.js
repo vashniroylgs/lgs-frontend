@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import { RxCross2 } from "react-icons/rx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const FirstTimePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -61,7 +63,18 @@ const FirstTimePopup = () => {
       console.error(error);
     }
   };
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  };
 
+  const [captchaStyles, setCaptchaStyles] = useState({
+    transform: "scale(0.77)",
+    WebkitTransform: "scale(0.77)",
+    transformOrigin: "0 0",
+    WebkitTransformOrigin: "0 0",
+  });
+
+ 
   return (
     <>
       {showPopup && (
@@ -89,7 +102,7 @@ const FirstTimePopup = () => {
                   type="text"
                   id="name"
                   placeholder="Enter your name"
-                  value={name || ''}
+                  value={name || ""}
                   onChange={(e) => setName(e.target.value)}
                   className="input-field"
                   required
@@ -98,7 +111,7 @@ const FirstTimePopup = () => {
               <div className="input-container">
                 <select
                   id="course"
-                  value={course || ''}
+                  value={course || ""}
                   onChange={(e) => setCourse(e.target.value)}
                   className="input-field"
                   required
@@ -123,7 +136,7 @@ const FirstTimePopup = () => {
                   type="number"
                   id="phoneNumber"
                   placeholder="Enter your phone number"
-                  value={phoneNumber || ''}
+                  value={phoneNumber || ""}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   className="input-field"
                   required
@@ -135,23 +148,37 @@ const FirstTimePopup = () => {
                   type="email"
                   id="email"
                   placeholder="Enter your email address"
-                  value={email || ''}
+                  value={email || ""}
                   onChange={(e) => setEmail(e.target.value)}
                   className="input-field"
                   required
                 />
               </div>
+
               <div className="input-container">
                 <input
                   type="text"
                   id="comment"
                   placeholder="Enter your Comment"
-                  value={comment || ''}
+                  value={comment || ""}
                   onChange={(e) => setComment(e.target.value)}
                   className="input-field"
                 />
               </div>
+
               <div className="popup-button-container">
+                <div
+                  class="g-recaptcha"
+                  data-theme="light"
+                  data-sitekey="XXXXXXXXXXXXX"
+                  style={captchaStyles}
+                  className="google-captcha-container"
+                >
+                  <ReCAPTCHA
+                    sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0"
+                    onChange={onChange}
+                  />
+                </div>
                 <button className="login-button" type="submit">
                   SUBMIT
                 </button>

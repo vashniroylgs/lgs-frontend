@@ -34,13 +34,18 @@
   font-size: 17px !important;
   font-weight: 800;
   color: #0263c4;
-  background-color: rgb(250, 249, 249) !important;
-  border-radius: 5px;
+  background-color: transparent;
+  color: white;
   border-width: 0px;
   outline: none;
   width: 120px;
   padding: 5px;
+  border: 3px solid transparent; /* Border width and color (transparent) */
+  border-image: linear-gradient(to right,rgb(0 118 227 / 80%), rgb(255 30 84 / 80%)) 1; /* Use the same gradient for the border */
+  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+  border-radius: 5px !important;
 }
+
 .slider-button:hover {
   opacity: 0.9;
   font-weight: 800;

@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import meet from "../images/meeting.jpg";
 import Header from "../navbar";
 import Footer from "../Footer";
-import StartPopup from "../StartPopup";
 import "./index.css";
 
 const DigitalCardDetails = [
@@ -56,7 +55,6 @@ class DigitalMarketing extends Component {
           </div>
         </div>
         <Footer />
-        <StartPopup />
       </>
     );
   }

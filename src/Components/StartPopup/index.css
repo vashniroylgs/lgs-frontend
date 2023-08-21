@@ -29,7 +29,6 @@
   height: 60vh;
   width: 60%;
   margin-top: 30px;
-  border-radius: 25px 25px 25px 25px;
 }
 
 .login-logo {
@@ -54,7 +53,6 @@
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 25px 25px 25px 25px;
 }
 
 .login-button {
@@ -109,7 +107,8 @@
 
 .popup-button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-heading {
@@ -121,7 +120,6 @@
 
 .popup-para {
   color: #ffffff !important;
-
   font-weight: normal !important;
   font-size: 15px !important;
 }
@@ -155,14 +153,23 @@
 
   .popup-button-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 480px) {
+  .google-captcha-container {
+    margin-left: 80px;
   }
 }
 
 /* Styles for tablets (768px to 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .card-container-3 {
-    height: 60vh;
+    height: 70vh !important;
     width: 70%;
     margin-top: 30px;
   }
@@ -174,10 +181,9 @@
   }
 
   .form-container {
-    height: 60vh;
+    height: 70vh !important;
     width: 60%;
     padding-left: 10px;
-    padding-right: 10px;
   }
 
   .popup-image-container {
@@ -188,7 +194,10 @@
 
   .popup-button-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
   }
 }
 
@@ -239,10 +248,10 @@
     justify-content: center;
     align-items: center;
   }
-
   .popup-button-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
   }
 }
 
