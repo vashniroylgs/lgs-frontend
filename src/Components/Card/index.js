@@ -125,7 +125,7 @@ function Card() {
             key={eachClient.id}
           >
             <div className="our-clients-card-image">
-              <img
+              <img className="clinets-image-size"
                 alt={`Client ${eachClient.id}`}
                 src={eachClient.src}
                 height={eachClient.height}

@@ -66,6 +66,11 @@ our-clients-image-container {
   justify-content: center;
 }
 
+.clinets-image-size{
+  height: auto;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .our-clients-heading {
     font-weight: bold !important;
