@@ -61,6 +61,18 @@
 .career-form {
   height: max-content;
 }
+.add_career_pop_up_button {
+  background: rgb(7, 119, 247) !important;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add_career_pop_up_button:hover {
+  background: rgba(7, 25, 47, 0.8) !important;
+  color: lightgray;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .careers-image {
     height: 100%;
