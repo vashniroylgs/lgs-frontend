@@ -356,8 +356,9 @@
   text-decoration: none;
   background-color: white;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 0px;
   z-index: 100;
   min-width: 220px;
 }
