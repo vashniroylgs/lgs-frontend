@@ -61,10 +61,8 @@ class WhyUs extends Component {
       <li className="faq-item">
         <div className="question-container">
           <h1 className="question">{question}</h1>
-
           {this.renderActiveImage()}
         </div>
-
         {this.renderAnswer()}
       </li>
     );
