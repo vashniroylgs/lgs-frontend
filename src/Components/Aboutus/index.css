@@ -349,7 +349,7 @@ h2 {
 
 /* Base styles for all devices */
 .aboutus-image-container {
-  background-image: url('https://res.cloudinary.com/dots1s0gu/image/upload/v1689671651/Techasoft_Banner_o3bwsv.jpg');
+  background-image: url("https://res.cloudinary.com/dots1s0gu/image/upload/v1689671651/Techasoft_Banner_o3bwsv.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -379,16 +379,16 @@ h2 {
   box-shadow: 2px 2px 5px #888888;
 }
 
- 
-.firstcard{
+.firstcard {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 
-.firstimage{
-  height: 400px;
+.firstimage {
+  height: 350px;
   width: 500px;
   border-radius: 15px;
 }
@@ -400,11 +400,10 @@ h2 {
   font-size: 30px;
   font-weight: bold;
 }
-.thrive-content{
+.thrive-content {
   font-style: italic;
   font-size: 35px;
 }
-
 
 .about-description {
   color: #000000;
@@ -413,10 +412,10 @@ h2 {
   font-size: 16px;
 }
 
-.sub-heading-aboutpage{
+.sub-heading-aboutpage {
   font-weight: bold;
 }
-.about-video-setting{
+.about-video-setting {
   display: flex;
   margin-top: 25px;
   justify-content: center;
@@ -463,7 +462,6 @@ h2 {
 .about-cards-container {
   display: flex;
   justify-content: center;
- 
 }
 
 .mission-image,
@@ -670,7 +668,6 @@ h2 {
   }
   .box-down {
     position: relative;
-    
   }
   .box {
     width: 25%;
@@ -698,12 +695,10 @@ h2 {
   color: #000000;
 }
 
-
-.my-card{
-
+.my-card {
   background-color: white;
 
-  box-shadow: 2px 2px 2px 2px #Bfbfbf;
+  box-shadow: 2px 2px 2px 2px #bfbfbf;
 
   display: flex;
 
@@ -718,39 +713,46 @@ h2 {
   font-size: 25px;
 
   padding: 10px;
-
 }
 
-.my-card-text{
-
-  text-align: center;  
-
+.my-card-text {
+  text-align: center;
 }
 
-.react-player{
-  width:500px;
-  height:600px;
-  
+.react-player {
+  width: 600px;
+  height: 350px;
 }
-@media (max-width:768px){
-  .firstcard{
-      flex-direction:column-reverse;
+@media (max-width: 1200px) {
+  .react-player {
+    width: 50%;
   }
-  .react-player{
-      width:100%;
-      height:100%;
-      
+}
+@media (max-width: 912px) {
+  .firstcard {
+    flex-direction: column-reverse;
+    gap: 5px;
   }
-  .firstimage{
-      width:100%;
+  .react-player {
+    width: 100%;
   }
-  .about-description{
-      font-size:16px;
+  .firstimage {
+    width: 100%;
   }
-  .heading{
-      font-size:24px;
+  .about-description {
+    font-size: 16px;
   }
-  .thrive-content{
-      font-size:24px;
+  .heading {
+    font-size: 24px;
+  }
+  .thrive-content {
+    font-size: 24px;
+  }
+}
+@media (min-width: 912px) and (max-width: 1200px) {
+  .about-us-react-player {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
   }
 }
