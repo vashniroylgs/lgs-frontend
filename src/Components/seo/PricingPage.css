@@ -4,14 +4,13 @@
     margin: 9px;
     margin-left: 6px;
   }
-  .pricing-page h1{
-    background-color: rgb(228, 222, 215);
-  }
+  
   
   table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: -1px;
   }
   
   th, td {
@@ -33,23 +32,33 @@
   /* Style for the "Learn More" button */
 .learn-more-button {
     display: inline-block;
-    padding: 10px 10px;
+    padding: 7px 10px;
     background-color: rgb(34, 34, 53);
     color: white;
     text-decoration: none;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: 5px;
     border-radius: 5px;
+   
   }
   .learn-more-button:hover{
     background-color: blue;
   }
+  /* Media query for mobile devices */
+
+  /* @media screen and (max-width: 768px) {
+    .learn-more-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  } */
   /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    margin-bottom: -5px;
   }
 
   th, td {
@@ -58,23 +67,25 @@
     border-top: 1px solid #ddd;
     padding: 8px; /* Adjust padding as needed */
     font-size: 14px; /* Adjust font size as needed */
+    width: calc(35% - 2px); /* Adjust width and consider border width */
   }
 
   th {
     background-color: #ddd;
     font-weight: bold;
-    width: 35%; /* Adjust width for the header column */
   }
-
   td {
     width: 35%; /* Adjust width for the data columns */
   }
+  .learn-more-button {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: rgb(34, 34, 53);
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 100%;
+  }
 }
-
-  
-  /* @media screen and (max-width: 768px) {
-    .learn-more-button {
-      padding: 8px 15px;
-      font-size: 14px;
-    }
-  } */
