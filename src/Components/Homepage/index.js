@@ -15,7 +15,7 @@ import "./index.css";
 import IndustriesPage from "../IndustriesPage";
 import TechnologiesPage from "../Technologies";
 import Card from "../Card";
-import lgshome from '../images/lgsaboutushome.png'
+import lgshome from '../images/lgsaboutushomei.png'
 
 import Footer from "../Footer";
 
