@@ -1,4 +1,4 @@
-import Cookies from "js-cookie"
+
 
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
@@ -47,42 +47,42 @@ function App() {
     
   //   console.log('Current visit count state:', visitCount); // Check the state value before and after updating
   // }, []);
-  const [visitCount, setVisitCount] = useState(0);
+//   const [visitCount, setVisitCount] = useState(0);
 
-useEffect(() => {
-  fetchVisitCount(); // Fetch the visit count on initial load
-  postVisitCount();
-});
+// useEffect(() => {
+//   fetchVisitCount(); // Fetch the visit count on initial load
+//   postVisitCount();
+// });
 
-const fetchVisitCount = async () => {
-    try {
-      const response = await fetch("http://localhost:3005/getVisitCount");
-      const data = await response.json();
-      console.log("fetch called")
-      console.log(data)
-      setVisitCount(data.visitCount);
-    } catch (error) {
-      console.error("Error fetching visit count:", error);
-    }
-};
-const postVisitCount=()=>{
-  const visitCookie=Cookies.get("VisitCount")
-  if(visitCookie==="saicharan"){
-    return;
-  }
-  else{
-    Cookies.set("VisitCount","saicharan")
-    fetch("http://localhost:3005/incrementVisitCount",{method: "POST"})
-   .then((response)=>response.json())
-    .then((data)=>{
-      if(data.success){
-        return
-      }
-    })
-    .catch((error)=>{
-      console.log(error)})
-    };
-  }
+// const fetchVisitCount = async () => {
+//     try {
+//       const response = await fetch("http://localhost:3005/getVisitCount");
+//       const data = await response.json();
+//       console.log("fetch called")
+//       console.log(data)
+//       setVisitCount(data.visitCount);
+//     } catch (error) {
+//       console.error("Error fetching visit count:", error);
+//     }
+// };
+// const postVisitCount=()=>{
+//   const visitCookie=Cookies.get("VisitCount")
+//   if(visitCookie==="saicharan"){
+//     return;
+//   }
+//   else{
+//     Cookies.set("VisitCount","saicharan")
+//     fetch("http://localhost:3005/incrementVisitCount",{method: "POST"})
+//    .then((response)=>response.json())
+//     .then((data)=>{
+//       if(data.success){
+//         return
+//       }
+//     })
+//     .catch((error)=>{
+//       console.log(error)})
+//     };
+//   }
 
 
   
@@ -91,11 +91,7 @@ const postVisitCount=()=>{
   return (
     <>
       <div>
-      <div>
-
-      <h1>Visitor Tracker App</h1>
-        <p>Unique Visitor Count: {visitCount}</p>
-    </div>
+      
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
