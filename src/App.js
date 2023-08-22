@@ -36,12 +36,6 @@ function App() {
         <WhatsAppIntegration />
         <ScrollToTopButton />
         <Routes>
-          <Route
-            exact
-            path="/websitedevelop"
-            element={<WebsiteDevelopment />}
-          />
-          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/" element={<HomePage />} />
           <Route
             exact
@@ -75,12 +69,16 @@ function App() {
             path="/websitemaintanance"
             element={<WebsiteMaintanance />}
           />
+          <Route
+            exact
+            path="/websitedevelop"
+            element={<WebsiteDevelopment />}
+          />
+          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
           <Route exact path="/seo" element={<PricingPage />} />
-          {/*<Route exact path="/websitedevelop" element={<WebDevelop />} />*/}
           <Route exact path="/logodesign" element={<Ourlogo />} />
-          {/*  <Route exact path="/orm" element={<Orm />} /> */}
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smoservice" element={<SMO />} />
