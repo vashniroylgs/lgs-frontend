@@ -1,83 +1,89 @@
+.ppc-main-container {
+  margin: 10px 100px 10px 100px;
+}
 
 table {
+  border: 1px solid #333;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  padding: 0px;
+  overflow: auto;
+}
 
-    border:1px solid #333;
-  
-    width: 100%;
-  
-    border-collapse: collapse;
-  
-    margin-bottom: 20px;
-  
+th,
+td {
+  border: 1px solid #333;
+
+  padding: 10px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* TableComponent.css */
+
+/* Style for the "Features" column */
+.feature-cell {
+  font-weight: bold;
+  background-color: #00bfff;
+  font-family: "Poppins Sans serif";
+  color: white;
+  height: 80px;
+}
+
+.row-cell {
+  color: black;
+}
+
+.Smo-category {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  color: #196ae5;
+}
+.smo-heading {
+  font-size: 32px;
+  font-family: "Roboto";
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .ppc-main-container {
+    margin: 10px 50px 10px 50px;
   }
-  
-   
-  
-  th, td {
-    border: 1px solid #333;
-  
-    padding: 10px;
-  
-    text-align: left;
-  
-    border-bottom: 1px solid #ddd;
-  
+  table {
+    width: fit-content;
+    max-width: fit-content;
+    border-radius: 10px;
   }
-  
-  th {
-  
-    background-color: #f2f2f2;
-    
+  th,
+  td,
+  tr {
+    width: 33.3% !important;
   }
-  
-  tr:nth-child(even) {
-  
-    background-color: #f2f2f2;
-  
-  }
-  
-  tr:hover {
-  
-    background-color: #e0e0e0;
-  
-  }
-  
-  .table-container{
-    border: 1px;
-    border-style: solid;
-  }
-  /* TableComponent.css */
-  
-  /* Style for the "Features" column */
-  .feature-cell {
-    font-weight: bold;
-    background-color:#00BFFF;
-    font-family:Tahoma;
-    color:white;
-    
-  }
-  
-  .row-cell{
-  background-color: #C9C0BB;
-  color :black;
-  }
-  
-  .table-container{
-    padding: 20px;
-    margin: 10px;
-  }
-  .learn-more-buttonorm {
-    text-align: center;
-    font-family: "Poppins", sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 800;
-    color: white;
-    background-color: #0263c4;
-    border-radius: 5px;
-    border-width: 0px;
-    outline: none;
-    width: 120px;
-    height: 30px;
-    padding: 4px;
-  }
-  
+}
+.learn-more-buttonorm {
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800;
+  color: white;
+  background-color: #0263c4;
+  border-radius: 5px;
+  border-width: 0px;
+  outline: none;
+  width: 120px;
+  height: 30px;
+  padding: 4px;
+}

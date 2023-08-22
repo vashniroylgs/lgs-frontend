@@ -1,11 +1,11 @@
 table {
   border: 1px solid #333;
-
   width: 100%;
-
   border-collapse: collapse;
-
   margin-bottom: 20px;
+  padding: 0px;
+  overflow: auto;
+  border-radius: 10px;
 }
 
 th,
@@ -31,10 +31,6 @@ tr:hover {
   background-color: #e0e0e0;
 }
 
-.table-container {
-  border: 1px;
-  border-style: solid;
-}
 /* TableComponent.css */
 
 /* Style for the "Features" column */
@@ -46,22 +42,44 @@ tr:hover {
 }
 
 .row-cell {
-  background-color: #c9c0bb;
   color: black;
 }
 
-.table-container {
-  padding: 20px;
+.learn-more-buttonorm {
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800;
+  color: white;
+  background-color: #0263c4;
+  border-radius: 5px;
+  border-width: 0px;
+  outline: none;
+  width: 120px;
+  height: 30px;
+  padding: 5px;
+}
+.Smo-category {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  color: #196ae5;
+}
+.smo-heading {
+  font-size: 32px;
+  font-family: "Roboto";
+  font-weight: 600;
+  text-align: center;
   margin: 10px;
 }
-
-.website-heading {
-  text-align: center;
-  font-size: 30px;
-  padding: 10px;
-}
-
-.websitemaintannce-button {
-  text-align: center;
-  padding: 20px;
+@media (max-width: 768px) {
+  table {
+    width: fit-content;
+    max-width: fit-content;
+  }
+  th,
+  td,
+  tr {
+    width: 33.3% !important;
+  }
 }
