@@ -710,7 +710,7 @@ class Header extends Component {
     const { showNavItems } = this.state;
     return (
       <>
-        <nav className="nav-header">
+        <nav className="nav-header sticky-header">
           <div className="nav-content">
             <div className="nav-bar-mobile-logo-container">
               <Link to="/" className="nav-link">

@@ -1,4 +1,11 @@
 /* CSS */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Make sure the header is above other elements */
+  /* Add more styling properties as needed */
+}
 .inactive {
   /* Normal link styles */
   color: rgb(122, 141, 162); /* Change this to your desired normal link color */
