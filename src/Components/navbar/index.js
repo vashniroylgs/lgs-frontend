@@ -706,6 +706,7 @@ class Header extends Component {
     );
   };
 
+  
   render() {
     const { showNavItems } = this.state;
     return (
