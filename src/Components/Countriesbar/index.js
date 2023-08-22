@@ -41,7 +41,7 @@ class CountriesBar extends Component {
                 className="icon-image"
               />
             </a>
-                        <a
+            <a
               href="https://instagram.com/labyrinth_global_solutions?igshid=NTc4MTIwNjQ2YQ=="
               target="_blank"
               rel="noopener noreferrer"
@@ -52,11 +52,7 @@ class CountriesBar extends Component {
                 className="icon-image"
               />
             </a>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://www.techasoft.com/debug/img/youtube.svg"
                 alt="youtube"
@@ -66,28 +62,28 @@ class CountriesBar extends Component {
           </div>
           <div className="logos-container-2">
             <a
-              className="whatsapp_web "
-              href="https://wa.me/16474702985?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              className="whatsapp_web"
+              href="https://wa.me/442081236407?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="https://www.techasoft.com/debug/img/canada_watsapp.png"
+                src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1692641085/download_op1ski.png"
                 className="whatsapp-image"
                 alt="whatsapp"
                 title="WhatsApp"
               />
             </a>
             <a
-              className="contact-info first_nav_content"
-              href="tel:+16474702985"
+              className="contact-info first_nav_content mr-md-2"
+              href="tel:+442081236407"
               rel="noopener noreferrer"
             >
-              +1 647 470 2985
+              +442081236407
             </a>
             <a
               className="whatsapp_web"
-              href="https://wa.me/16108800144?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+442081236407?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -100,14 +96,14 @@ class CountriesBar extends Component {
             </a>
             <a
               className="contact-info first_nav_content mr-md-2"
-              href="tel:+16108800144"
+              href="tel:+1 8722606999"
               rel="noopener noreferrer"
             >
-              +1 610 880 0144
+              +1 8722606999
             </a>
             <a
               className="whatsapp_web"
-              href="https://wa.me/971564576426?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+971522286916?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -120,10 +116,10 @@ class CountriesBar extends Component {
             </a>
             <a
               className="contact-info mob first_nav_content mr-md-2"
-              href="tel:+971506089308"
+              href="tel:+971522286916"
               rel="noopener noreferrer"
             >
-              +971 50 608 9308
+              +971522286916
             </a>
             <a
               className="whatsapp_web"
@@ -140,10 +136,10 @@ class CountriesBar extends Component {
             </a>
             <a
               className="contact-info first_nav_content mr-md-2"
-              href="tel:+918884739988"
+              href="tel:+918008448885"
               rel="noopener noreferrer"
             >
-              +91 8884 739 988
+              +91 8008448885
             </a>
             <a
               className="navbar_mob_email first_nav_content mr-2"

@@ -1,4 +1,11 @@
 /* CSS */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Make sure the header is above other elements */
+  /* Add more styling properties as needed */
+}
 .inactive {
   /* Normal link styles */
   color: rgb(122, 141, 162); /* Change this to your desired normal link color */
@@ -356,8 +363,9 @@
   text-decoration: none;
   background-color: white;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 0px;
   z-index: 100;
   min-width: 220px;
 }
