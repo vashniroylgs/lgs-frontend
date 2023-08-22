@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "../navbar";
 import Footer from "../Footer";
+import StartPopup from "../StartPopup";
 import ClientsPageCard from "../ClientsPageCard";
-import dereddy from '../images/drreddy.jpg'
+
 
 const careerPageDetails = [
   {
@@ -100,6 +101,7 @@ class Clients extends Component {
           ))}
         </div>
         <Footer />
+        <StartPopup />
       </>
     );
   }
