@@ -103,7 +103,7 @@ class CountriesBar extends Component {
             </a>
             <a
               className="whatsapp_web"
-              href="https://wa.me/971564576426?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+971522286916?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,10 +116,10 @@ class CountriesBar extends Component {
             </a>
             <a
               className="contact-info mob first_nav_content mr-md-2"
-              href="tel:+971506089308"
+              href="tel:+971522286916"
               rel="noopener noreferrer"
             >
-              +971 50 608 9308
+              +971522286916
             </a>
             <a
               className="whatsapp_web"
