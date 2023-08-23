@@ -23,8 +23,6 @@ const fetchVisitCount = async () => {
     try {
       const response = await fetch("http://localhost:3005/getVisitCount");
       const data = await response.json();
-      console.log("fetch called")
-      console.log(data)
       setVisitCount(data.visitCount);
     } catch (error) {
       console.error("Error fetching visit count:", error);
@@ -32,11 +30,11 @@ const fetchVisitCount = async () => {
 };
 const postVisitCount=()=>{
   const visitCookie=Cookies.get("VisitCount")
-  if(visitCookie==="saicharan"){
+  if(visitCookie==="booyah"){
     return;
   }
   else{
-    Cookies.set("VisitCount","saicharan")
+    Cookies.set("VisitCount","booyah")
     fetch("http://localhost:3005/incrementVisitCount",{method: "POST"})
    .then((response)=>response.json())
     .then((data)=>{
