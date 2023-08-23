@@ -1,5 +1,3 @@
-
-
 import { Link, NavLink } from "react-router-dom";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -47,6 +45,8 @@ class Header extends Component {
   //     </ul>
   //   );
   // };
+
+  // Mobile View Navbar Code
 
   renderNavItems = () => {
     return (
@@ -706,11 +706,13 @@ class Header extends Component {
     );
   };
 
+  // Web view Navbar Code
+
   render() {
     const { showNavItems } = this.state;
     return (
       <>
-        <nav className="nav-header">
+        <nav className="nav-header sticky-header">
           <div className="nav-content">
             <div className="nav-bar-mobile-logo-container">
               <Link to="/" className="nav-link">
@@ -802,7 +804,7 @@ class Header extends Component {
                   SERVICES
                   <ul className="Nav-Service-container-items nav-service-flex-contianer ">
                     <div className="nav-service-flex-contianer-items">
-                      <h6 className="Nav-teachnology-main-heading">
+                      <h6 className="Nav-teachnology-main-heading ">
                         ONLINE MARKETING
                       </h6>
                       <ul className="Nav-technology-sub-container-items">
@@ -818,8 +820,8 @@ class Header extends Component {
                         </li>
 
                         <li className="Nav-technology-item">
-                          <Link to="" className="link">
-                            SEARCH ENGINE MARKETING
+                          <Link to="/smm" className="link">
+                            SOCIAL MEDIA MARKETING PRICING PLANS
                           </Link>
                         </li>
                         <li className="Nav-technology-item">

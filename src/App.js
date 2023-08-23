@@ -1,3 +1,5 @@
+
+
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ResellerMendix from "./Components/ResellerMendixPage";
@@ -27,22 +29,73 @@ import PricingPage from "./Components/seo/seo";
 import Ourlogo from "./Components/Ourlogo";
 import ContactPage from "./Components/ContactPage";
 function App() {
-  // Set to true to show the pop-up on initial load
+  
+
+  // useEffect(() => {
+  //   // Fetch the visit count from the server
+  //   fetch('/getVisitCount?timestamp=' + Date.now())
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log('Backend Response:', data);
+  //       setVisitCount(data.visitCount);
+  //       console.log('Updated visit count state:', visitCount);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching visit count:', error);
+  //     });
+    
+  //   console.log('Current visit count state:', visitCount); // Check the state value before and after updating
+  // }, []);
+//   const [visitCount, setVisitCount] = useState(0);
+
+// useEffect(() => {
+//   fetchVisitCount(); // Fetch the visit count on initial load
+//   postVisitCount();
+// });
+
+// const fetchVisitCount = async () => {
+//     try {
+//       const response = await fetch("http://localhost:3005/getVisitCount");
+//       const data = await response.json();
+//       console.log("fetch called")
+//       console.log(data)
+//       setVisitCount(data.visitCount);
+//     } catch (error) {
+//       console.error("Error fetching visit count:", error);
+//     }
+// };
+// const postVisitCount=()=>{
+//   const visitCookie=Cookies.get("VisitCount")
+//   if(visitCookie==="saicharan"){
+//     return;
+//   }
+//   else{
+//     Cookies.set("VisitCount","saicharan")
+//     fetch("http://localhost:3005/incrementVisitCount",{method: "POST"})
+//    .then((response)=>response.json())
+//     .then((data)=>{
+//       if(data.success){
+//         return
+//       }
+//     })
+//     .catch((error)=>{
+//       console.log(error)})
+//     };
+//   }
+
+
+  
+  
 
   return (
     <>
       <div>
+      
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
         <ScrollToTopButton />
         <Routes>
-          <Route
-            exact
-            path="/websitedevelop"
-            element={<WebsiteDevelopment />}
-          />
-          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/" element={<HomePage />} />
           <Route
             exact
@@ -75,12 +128,16 @@ function App() {
             path="/websitemaintanance"
             element={<WebsiteMaintanance />}
           />
+          <Route
+            exact
+            path="/websitedevelop"
+            element={<WebsiteDevelopment />}
+          />
+          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
           <Route exact path="/seo" element={<PricingPage />} />
-          {/*<Route exact path="/websitedevelop" element={<WebDevelop />} />*/}
           <Route exact path="/logodesign" element={<Ourlogo />} />
-          {/*  <Route exact path="/orm" element={<Orm />} /> */}
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smoservice" element={<SMO />} />
@@ -89,6 +146,6 @@ function App() {
       </div>
     </>
   );
-}
+  }
 
 export default App;

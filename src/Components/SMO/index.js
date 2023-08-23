@@ -508,36 +508,38 @@ const SMO = () => {
   return (
     <>
       <Header />
-      <h1 className="smo-heading">Our Monthly SMO Packages</h1>
-      <table className="table-container">
-        <thead>
-          <tr>
-            <th className="feature-cell">Basic</th>
-            <th className="feature-cell">Advanced</th>
-            <th className="feature-cell">Enterprise</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Data.map((row, index) => (
-            <tr key={index}>
-              <td className={row.style}>{row.Basic}</td>
-              <td className={row.style}>{row.Advanced}</td>
-              <td className={row.style}>{row.Enterprise}</td>
+      <div className="smo-main-container">
+        <h1 className="smo-heading">Our Monthly SMO Packages</h1>
+        <table>
+          <thead>
+            <tr>
+              <th className="feature-cell">Basic</th>
+              <th className="feature-cell">Advanced</th>
+              <th className="feature-cell">Enterprise</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "10px",
-        }}
-      >
-        <Link to="/contactus">
-          <button className="learn-more-buttonorm">Get Quote</button>
-        </Link>
+          </thead>
+          <tbody>
+            {Data.map((row, index) => (
+              <tr key={index}>
+                <td className={row.style}>{row.Basic}</td>
+                <td className={row.style}>{row.Advanced}</td>
+                <td className={row.style}>{row.Enterprise}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "10px",
+          }}
+        >
+          <Link to="/contactus">
+            <button className="learn-more-buttonorm">Get Quote</button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>
