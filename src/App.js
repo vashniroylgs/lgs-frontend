@@ -1,5 +1,3 @@
-
-
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ResellerMendix from "./Components/ResellerMendixPage";
@@ -20,7 +18,7 @@ import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
 import OrmTable from "./Components/ORM";
-import WebsiteDevelopment from "./Components/MobileDevelopment";
+import WebsiteDevelopment from "./Components/WebsiteDevelopment";
 import SMO from "./Components/SMO";
 import WebsiteMaintanance from "./Components/WebsiteMaintance";
 import PpcTable from "./Components/Ppctable";
@@ -33,7 +31,6 @@ function App() {
   return (
     <>
       <div>
-      
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
@@ -89,6 +86,6 @@ function App() {
       </div>
     </>
   );
-  }
+}
 
 export default App;
