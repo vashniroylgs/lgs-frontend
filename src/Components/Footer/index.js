@@ -6,6 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import VisitTracker from "../Tracker";
+import Cookies from "js-cookie"
 
 import "./index.css";
 import { Link } from "react-router-dom";
@@ -13,30 +14,42 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [visitCount, setVisitCount] = useState(0);
 
-  useEffect(() => {
-    fetchVisitCount(); // Fetch the visit count on initial load
-    // Increment the visit count on every page load by making a request to the homepage
-    fetch("http://localhost:3005/", { method: "GET" })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          setVisitCount(data.visitCount);
-        }
-      })
-      .catch((error) => {
-        console.error("Error incrementing visit count:", error);
-      });
-  }, []);
+useEffect(() => {
+  fetchVisitCount(); // Fetch the visit count on initial load
+  postVisitCount();
+});
 
-  const fetchVisitCount = async () => {
+const fetchVisitCount = async () => {
     try {
-      const response = await fetch("http://localhost:3005/api/visit-count");
+      const response = await fetch("http://localhost:3005/getVisitCount");
       const data = await response.json();
+      console.log("fetch called")
+      console.log(data)
       setVisitCount(data.visitCount);
     } catch (error) {
       console.error("Error fetching visit count:", error);
     }
-  };
+};
+const postVisitCount=()=>{
+  const visitCookie=Cookies.get("VisitCount")
+  if(visitCookie==="saicharan"){
+    return;
+  }
+  else{
+    Cookies.set("VisitCount","saicharan")
+    fetch("http://localhost:3005/incrementVisitCount",{method: "POST"})
+   .then((response)=>response.json())
+    .then((data)=>{
+      if(data.success){
+        return
+      }
+    })
+    .catch((error)=>{
+      console.log(error)})
+    };
+  }
+
+
 
   return (
     // {style={{ backgroundColor: "#353b66" }}}
@@ -90,7 +103,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            {/* <VisitTracker visitCount={visitCount} /> */}
+           
           </div>
         </div>
         <div className="col-12 col-lg-3 col-md-6 ">

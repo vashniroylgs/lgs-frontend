@@ -1,67 +1,90 @@
 /* Styling for the pricing page */
 .pricing-page {
-    text-align: center;
-    margin: 9px;
-    margin-left: 6px;
-  }
-  
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: -1px;
-  }
-  
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  /* Apply alternating background color to rows */
-  tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  /* Add more styles as needed */
-  /* Add highlight style for the specific row */
-.highlighted {
-    background-color: rgb(183, 183, 172); /* You can change this color */
-  }
-  /* Style for the "Learn More" button */
-.learn-more-button {
-    display: inline-block;
-    padding: 7px 10px;
-    background-color: rgb(34, 34, 53);
-    color: white;
-    text-decoration: none;
-    margin-top: 12px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-   
-  }
-  .learn-more-button:hover{
-    background-color: blue;
-  }
-  /* Media query for mobile devices */
+  text-align: center;
+  margin: 10px 100px 10px 100px;
+}
 
-  /* @media screen and (max-width: 768px) {
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -1px;
+  border-radius: 8px;
+}
+
+.seo-column {
+  height: 80px;
+  background-color: #487dc2;
+  color: #ffffff;
+}
+.seo-column-2 {
+  height: 80px;
+  background-color: #48c24a;
+  color: #fff;
+}
+.seo-column-3 {
+  height: 80px;
+  background-color: #e8d46d;
+  color: #fff;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Apply alternating background color to rows */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Add more styles as needed */
+/* Add highlight style for the specific row */
+.highlighted {
+  background-color: rgb(183, 183, 172); /* You can change this color */
+}
+/* Style for the "Learn More" button */
+.learn-more-button {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: rgb(34, 34, 53);
+  color: white;
+  text-decoration: none;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.learn-more-button:hover {
+  background-color: blue;
+}
+/* Media query for mobile devices */
+
+/* @media screen and (max-width: 768px) {
     .learn-more-button {
       padding: 8px 15px;
       font-size: 14px;
     }
   } */
-  /* Media query for mobile devices */
+/* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
     margin-bottom: -5px;
+    border-radius: 5px;
   }
 
-  th, td {
+  th,
+  td {
     display: inline-block;
     box-sizing: border-box;
     border-top: 1px solid #ddd;
