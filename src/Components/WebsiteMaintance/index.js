@@ -139,33 +139,35 @@ const WebsiteMaintanance = () => {
   return (
     <>
       <Header />
-      <h1 className="website-heading">Website Maintenance Packages</h1>
-      <table className="table-container">
-        <thead>
-          <tr>
-            <th className="feature-cell">Features</th>
-            <th className="feature-cell"> BRONZE</th>
-            <th className="feature-cell">SILVER</th>
-            <th className="feature-cell">GOLD</th>
-            <th className="feature-cell">PLATINUM</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Data.map((row, index) => (
-            <tr key={index}>
-              <td className="row-cell">{row.Features}</td>
-              <td>{row.BRONZE}</td>
-              <td>{row.SILVER}</td>
-              <td>{row.GOLD}</td>
-              <td>{row.PLATINUM}</td>
+      <div className="web-main-container">
+        <h1 className="website-heading">Website Maintenance Packages</h1>
+        <table>
+          <thead>
+            <tr>
+              <th className="web-main-column">Features</th>
+              <th className="web-main-column-1"> BRONZE</th>
+              <th className="web-main-column-2">SILVER</th>
+              <th className="web-main-column-3">GOLD</th>
+              <th className="web-main-column-4">PLATINUM</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="websitemaintannce-button">
-        <Link to="/contactus">
-          <button className="learn-more-button">Get Quote</button>
-        </Link>
+          </thead>
+          <tbody>
+            {Data.map((row, index) => (
+              <tr key={index}>
+                <td className="row-cell">{row.Features}</td>
+                <td>{row.BRONZE}</td>
+                <td>{row.SILVER}</td>
+                <td>{row.GOLD}</td>
+                <td>{row.PLATINUM}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="websitemaintannce-button">
+          <Link to="/contactus">
+            <button className="learn-more-button-web-main">Get Quote</button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>

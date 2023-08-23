@@ -17,7 +17,7 @@ const Data = [
     style: "",
   },
   {
-    Basic: "Account Management – 2 (FB & IG)",
+    Basic: "Account Management – 2",
     Advanced: "Account Management – 3",
     Enterprise: "Account Management – 6",
     style: "",
@@ -77,9 +77,9 @@ const Data = [
     style: "",
   },
   {
-    Basic: "Video Posting(Provide By Client)",
-    Advanced: "Video Posting(Provide By Client)",
-    Enterprise: "Video Posting(Provide By Client)",
+    Basic: "Video Posting",
+    Advanced: "Video Posting",
+    Enterprise: "Video Posting",
     style: "",
   },
   {
@@ -245,9 +245,9 @@ const Data = [
     style: "",
   },
   {
-    Basic: "Video Posting (Provide By Client)",
-    Advanced: "Video Posting (Provide By Client)",
-    Enterprise: "Video Posting (Provide By Client)",
+    Basic: "Video Posting ",
+    Advanced: "Video Posting ",
+    Enterprise: "Video Posting ",
     style: "",
   },
   {
@@ -305,9 +305,9 @@ const Data = [
     style: "",
   },
   {
-    Basic: "Video Optimization(Video Provided By Client) – 1",
-    Advanced: "Video Optimization(Video Provided By Client) – 3",
-    Enterprise: "Video Optimization(Video Provided By Client) – 6",
+    Basic: "Video Optimization – 1",
+    Advanced: "Video Optimization – 3",
+    Enterprise: "Video Optimization – 6",
     style: "",
   },
   {
@@ -509,13 +509,15 @@ const SMO = () => {
     <>
       <Header />
       <div className="smo-main-container">
-        <h1 className="smo-heading">Our Monthly SMO Packages</h1>
+        <h1 className="smo-heading">
+          Our Monthly Social Media Optimization Packages
+        </h1>
         <table>
           <thead>
             <tr>
-              <th className="feature-cell">Basic</th>
-              <th className="feature-cell">Advanced</th>
-              <th className="feature-cell">Enterprise</th>
+              <th className="smo-column">BASIC</th>
+              <th className="smo-column-1">ADVANCED</th>
+              <th className="smo-column-2">ENTERPRISE</th>
             </tr>
           </thead>
           <tbody>
@@ -528,16 +530,9 @@ const SMO = () => {
             ))}
           </tbody>
         </table>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: "10px",
-          }}
-        >
+        <div className="smo-button">
           <Link to="/contactus">
-            <button className="learn-more-buttonorm">Get Quote</button>
+            <button className="learn-more-button-smo">Get Quote</button>
           </Link>
         </div>
       </div>
