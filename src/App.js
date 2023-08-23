@@ -27,7 +27,11 @@ import PpcTable from "./Components/Ppctable";
 import Smm from "./Components/SMM";
 import PricingPage from "./Components/seo/seo";
 import Ourlogo from "./Components/Ourlogo";
+<<<<<<< HEAD
 
+=======
+import ContactPage from "./Components/ContactPage";
+>>>>>>> 86bd650ca53fde5555fba442233fb75d4c953815
 function App() {
   
 
@@ -44,12 +48,6 @@ function App() {
         <WhatsAppIntegration />
         <ScrollToTopButton />
         <Routes>
-          <Route
-            exact
-            path="/websitedevelop"
-            element={<WebsiteDevelopment />}
-          />
-          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/" element={<HomePage />} />
           <Route
             exact
@@ -71,7 +69,6 @@ function App() {
           />
           <Route exact path="/aboutus" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/contactus" element={<Contactpopup />} />
           <Route exact path="/saascloudsolutions" element={<SaasPage />} />
           <Route
             exact
@@ -83,15 +80,20 @@ function App() {
             path="/websitemaintanance"
             element={<WebsiteMaintanance />}
           />
+          <Route
+            exact
+            path="/websitedevelop"
+            element={<WebsiteDevelopment />}
+          />
+          <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
           <Route exact path="/seo" element={<PricingPage />} />
-          {/*<Route exact path="/websitedevelop" element={<WebDevelop />} />*/}
           <Route exact path="/logodesign" element={<Ourlogo />} />
-          {/*  <Route exact path="/orm" element={<Orm />} /> */}
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smoservice" element={<SMO />} />
+          <Route exact path="/contactus" element={<ContactPage />} />
         </Routes>
       </div>
     </>

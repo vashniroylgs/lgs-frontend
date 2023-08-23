@@ -63,6 +63,7 @@ const FirstTimePopup = () => {
       console.error(error);
     }
   };
+  
   const onChange = (value) => {
     console.log("Captcha value:", value);
   };
