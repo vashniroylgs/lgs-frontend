@@ -129,7 +129,7 @@ const ContactPage = () => {
           onChange={(e) => setservicesBusinessEmail(e.target.value)}
         />
       </div>
-      <div className="d-flex flex-column mt-3">
+      <div className="d-flex flex-column mt-2 " >
         <textarea
           required
           className="servicesTextarea"
@@ -138,16 +138,16 @@ const ContactPage = () => {
         />
       </div>
       <div>
-        <div className="checkbox-container">
+        <div className="checkbox-container mb-2 mt-2">
           <input type="checkbox" required />
-          <p className="contact-checkbox-field">Agree Terms & Coditions</p>
+          <p className="contact-terms-description m-0">Agree Terms & Coditions</p>
         </div>
-        <p>
+        <p className="contact-terms-description">
           Send me occasional information about Labyrinth Global Solutions, a LGS
           Group Company news and events to the provided email address.
         </p>
-        <p>You may withdraw your consent at any time.</p>
-        <p>
+        <p className="contact-terms-description">You may withdraw your consent at any time.</p>
+        <p className="contact-terms-description">
           For more information about how Labyrinth Global Solutions protects
           your privacy and processes your personal data please see our{" "}
           <a>Privacy Policy</a>
@@ -499,7 +499,7 @@ const ContactPage = () => {
             new career, we would love to hear from you.
           </p>
         </div>
-        <div className="container">
+        <div className="contact-container">
           <h1>Get in touch</h1>
           <p>
             Please fill out the form below. You can also contact us via
@@ -515,9 +515,7 @@ const ContactPage = () => {
               />
             ))}
           </ul>
-          <div className="app-item-container">
             <div className="contact-form-main-contianer">{ShowForm()}</div>
-          </div>
         </div>
       </div>
       <Footer />

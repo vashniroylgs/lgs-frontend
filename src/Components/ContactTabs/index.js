@@ -1,19 +1,19 @@
-import './index.css'
+import "./index.css";
 
-const ContactTabItem = props => {
-  const {tabDetails, changeTab, isActive} = props
-  const {tabId, displayText} = tabDetails
+const ContactTabItem = (props) => {
+  const { tabDetails, changeTab, isActive } = props;
+  const { tabId, displayText } = tabDetails;
 
   const onChangeTab = () => {
-    changeTab(tabId)
-    console.log(tabId)
-  }
+    changeTab(tabId);
+    console.log(tabId);
+  };
 
-  const activeTabItem = isActive ? 'contactactivetab' : ''
-  console.log(activeTabItem)
+  const activeTabItem = isActive ? "contactactivetab" : "";
+  console.log(activeTabItem);
 
   return (
-    <li className="contact-tab-item">
+    <li className="contact-tab-item" >
       <button
         className={`contact-tab-button ${activeTabItem}`}
         type="button"
@@ -22,7 +22,7 @@ const ContactTabItem = props => {
         {displayText}
       </button>
     </li>
-  )
-}
+  );
+};
 
-export default ContactTabItem
+export default ContactTabItem;
