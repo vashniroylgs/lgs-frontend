@@ -10,7 +10,7 @@ const ContactTabItem = props => {
   }
 
   const activeTabItem = isActive ? 'contactactivetab' : ''
-  console.log(activeTabItem)
+  
 
   return (
     <li className="contact-tab-item">
