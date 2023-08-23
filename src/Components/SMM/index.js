@@ -110,21 +110,19 @@ const Data = [
     Advanced: "Instagram Marketing",
   },
   {
-    Basic: [
-      "Audience Research",
-      "Instagram Ads Creative Creation & Design",
-      "Instagram Ads Monitoring And Management",
-    ],
-    Professional: [
-      "Audience Research",
-      "Instagram Ads Creative Creation & Design",
-      "Instagram Ads Monitoring And Management",
-    ],
-    Advanced: [
-      "Audience Research",
-      "Instagram Ads Creative Creation & Design",
-      "Instagram Ads Monitoring And Management",
-    ],
+    Basic:"Audience Research",
+    Professional: "Audience Research",
+    Advanced: "Audience Research",
+  },
+  {
+    Basic:"Instagram Ads Creative Creation & Design",
+    Professional: "Instagram Ads Creative Creation & Design",
+    Advanced:"Instagram Ads Creative Creation & Design",
+  },
+  {
+    Basic: "Instagram Ads Monitoring And Management",
+    Professional:  "Instagram Ads Monitoring And Management",
+    Advanced:  "Instagram Ads Monitoring And Management",
   },
   {
     Basic: "",
@@ -132,21 +130,29 @@ const Data = [
     Advanced: "LinkedIn Marketing",
   },
   {
-    Basic: [],
-    Professional: [
-      "Campaign Manager Account Set Up",
-      "LinkedIn Insight Tag Installation",
-      "Creation Of Custom Conversion",
-      "Ads Monitoring",
-      "Monthly Report",
-    ],
-    Advanced: [
-      "Campaign Manager Account Set Up",
-      "LinkedIn Insight Tag Installation",
-      "Creation Of Custom Conversion",
-      "Ads Monitoring",
-      "Monthly Report",
-    ],
+    Basic: "",
+    Professional:"Campaign Manager Account Set Up",
+    Advanced: "Campaign Manager Account Set Up",
+  },
+  {
+    Basic: "",
+    Professional:"LinkedIn Insight Tag Installation",
+    Advanced:"LinkedIn Insight Tag Installation",
+  },
+  {
+    Basic: "",
+    Professional: "Creation Of Custom Conversion",
+    Advanced: "Creation Of Custom Conversion",
+  },
+  {
+    Basic: "",
+    Professional:"Ads Monitoring",
+    Advanced: "Ads Monitoring",
+  },
+  {
+    Basic: "",
+    Professional: "Monthly Report",
+    Advanced: "Monthly Report",
   },
   {
     Basic: "",
@@ -154,35 +160,64 @@ const Data = [
     Advanced: "Youtube Marketing",
   },
   {
-    Basic: [],
-    Professional: [
-      "Youtube Ad Account Set Up",
-      "Skippable In-Stream Ads",
-      "Non-Skippable In-Stream Ads",
-      "Bumper Ads",
-      "Discovery Ads",
-      "Youtube Video Sequence Ads",
-      "Detailed Audience Creation",
-      "Custom Audience Creation",
-      "A/B Testing Of Targeting",
-      "Remarketing Video Ads",
-      "Video Ads With Promotion Of Your Products",
-      "Monthly Report",
-    ],
-    Advanced: [
-      "Youtube Ad Account Set Up",
-      "Skippable In-Stream Ads",
-      "Non-Skippable In-Stream Ads",
-      "Bumper Ads",
-      "Discovery Ads",
-      "Youtube Video Sequence Ads",
-      "Detailed Audience Creation",
-      "Custom Audience Creation",
-      "A/B Testing Of Targeting",
-      "Remarketing Video Ads",
-      "Video Ads With Promotion Of Your Products",
-      "Monthly Report",
-    ],
+    Basic:'',
+    Professional: "Youtube Ad Account Set Up",
+    Advanced: "Youtube Ad Account Set Up",
+  },
+  {
+    Basic:'',
+    Professional: "Skippable In-Stream Ads",
+    Advanced: "Skippable In-Stream Ads",
+  },
+  {
+    Basic:'',
+    Professional: "Non-Skippable In-Stream Ads",
+    Advanced: "Non-Skippable In-Stream Ads",
+  },
+  {
+    Basic:'',
+    Professional:"Bumper Ads", 
+    Advanced: "Bumper Ads",
+  },
+  {
+    Basic:'',
+    Professional:  "Discovery Ads",
+    Advanced:  "Discovery Ads",
+  },
+  {
+    Basic:'',
+    Professional: "Youtube Video Sequence Ads",
+    Advanced: "Youtube Video Sequence Ads",
+  },
+  {
+    Basic:'',
+    Professional:  "Detailed Audience Creation",
+    Advanced:  "Detailed Audience Creation",
+  },
+  {
+    Basic:'',
+    Professional: "Custom Audience Creation", 
+    Advanced:  "Custom Audience Creation",
+  },
+  {
+    Basic:'',
+    Professional:  "A/B Testing Of Targeting",
+    Advanced:  "A/B Testing Of Targeting",
+  },
+  {
+    Basic:'',
+    Professional:  "Remarketing Video Ads",
+    Advanced:  "Remarketing Video Ads",
+  },
+  {
+    Basic:'',
+    Professional: "Video Ads With Promotion Of Your Products",
+    Advanced: "Video Ads With Promotion Of Your Products",
+  },
+  {
+    Basic:'',
+    Professional: "Monthly Report", 
+    Advanced:  "Monthly Report",
   },
   {
     Basic: "",
@@ -190,34 +225,57 @@ const Data = [
     Advanced: "Twitter Marketing",
   },
   {
-    Basic: [],
-    Professional: [
-      "Tweet Engagement Ads",
-      "Video Or GIF View Ads",
-      "Awareness Ads",
-      " Website Conversion Ads",
-      "In-stream Video View Ads",
-      "Follower Ads",
-      "App Install Ads",
-      "App Reengagement",
-      "Audience Creation",
-      "Monthly Report",
-    ],
-    Advanced: [
-      "Tweet Engagement Ads",
-      "Video Or GIF View Ads",
-      "Awareness Ads",
-      "Website Conversion Ads",
-      "In-stream Video View Ads",
-      "Follower Ads",
-      "App Install Ads",
-      "App Reengagement",
-      "Audience Creation",
-      "Monthly Report",
-    ],
+    Basic: "",
+    Professional: "Tweet Engagement Ads",
+    Advanced:"Tweet Engagement Ads",
   },
-];
-
+  {
+    Basic: "",
+    Professional:"Video Or GIF View Ads", 
+    Advanced:"Video Or GIF View Ads",
+  },
+  {
+    Basic: "",
+    Professional:"Awareness Ads", 
+    Advanced:"Awareness Ads",
+  },
+  {
+    Basic: "",
+    Professional:"Website Conversion Ads", 
+    Advanced:"Website Conversion Ads",
+  },
+  {
+    Basic: "",
+    Professional:  "In-stream Video View Ads",
+    Advanced: "In-stream Video View Ads",
+  },
+  {
+    Basic: "",
+    Professional:  "Follower Ads",
+    Advanced: "Follower Ads",
+  },
+  {
+    Basic: "",
+    Professional: "App Install Ads", 
+    Advanced:"App Install Ads",
+  },
+  {
+    Basic: "",
+    Professional:"App Reengagement", 
+    Advanced:"App Reengagement",
+  },
+  {
+    Basic: "",
+    Professional:"Audience Creation", 
+    Advanced:"Audience Creation",
+  },
+  {
+    Basic: "",
+    Professional: "Monthly Report",
+    Advanced:"Monthly Report",
+  },
+  
+]
 const Smm = () => {
   return (
     <>
