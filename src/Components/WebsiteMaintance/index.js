@@ -154,11 +154,11 @@ const WebsiteMaintanance = () => {
           <tbody>
             {Data.map((row, index) => (
               <tr key={index}>
-                <td className="row-cell">{row.Features}</td>
-                <td>{row.BRONZE}</td>
-                <td>{row.SILVER}</td>
-                <td>{row.GOLD}</td>
-                <td>{row.PLATINUM}</td>
+                <td className="web-main-features">{row.Features}</td>
+                <td className="website-maintance-directory">{row.BRONZE}</td>
+                <td className="website-maintance-directory">{row.SILVER}</td>
+                <td className="website-maintance-directory">{row.GOLD}</td>
+                <td className="website-maintance-directory">{row.PLATINUM}</td>
               </tr>
             ))}
           </tbody>

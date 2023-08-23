@@ -114,14 +114,14 @@ const Ourlogo = () => {
           <tbody>
             {Data.map((row, index) => (
               <tr key={index}>
-                <td className="row-cell">{row.Basic}</td>
+                <td>{row.Basic}</td>
                 <td>{row.Professional}</td>
                 <td>{row.Advanced}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        <div className="log-button">
+        <div className="logo-button">
           <Link to="/contactus">
             <button className="learn-more-button-logo">Get Quote</button>
           </Link>

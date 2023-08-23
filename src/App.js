@@ -25,18 +25,8 @@ import PpcTable from "./Components/Ppctable";
 import Smm from "./Components/SMM";
 import PricingPage from "./Components/seo/seo";
 import Ourlogo from "./Components/Ourlogo";
-<<<<<<< HEAD
-
-=======
 import ContactPage from "./Components/ContactPage";
->>>>>>> 86bd650ca53fde5555fba442233fb75d4c953815
 function App() {
-  
-
-  
-  
-  
-
   return (
     <>
       <div>

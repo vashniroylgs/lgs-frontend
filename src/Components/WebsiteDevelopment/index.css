@@ -98,8 +98,31 @@ tr:hover {
   td,
   tr {
     width: 33.3% !important;
+    font-size: 8px;
   }
-  .smo-main-container {
-    margin: 10px 50px 10px 50px;
+  .web-development-main-container {
+    margin: 10px 25px 10px 25px;
+  }
+  .web-development-heading {
+    font-family: "Poppins";
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .web-development-column {
+    height: 40px;
+    background-color: #487dc2;
+    color: #ffffff;
+  }
+  .web-development-column-1 {
+    height: 40px;
+    background-color: #48c24a;
+    color: #ffffff;
+  }
+
+  .web-development-column-2 {
+    height: 40px;
+    background-color: #e8d46d;
+    color: #ffffff;
   }
 }
