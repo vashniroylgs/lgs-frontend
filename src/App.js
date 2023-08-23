@@ -25,6 +25,7 @@ import PpcTable from "./Components/Ppctable";
 import Smm from "./Components/SMM";
 import PricingPage from "./Components/seo/seo";
 import Ourlogo from "./Components/Ourlogo";
+import ContactPage from "./Components/ContactPage";
 function App() {
   // Set to true to show the pop-up on initial load
 
@@ -63,7 +64,6 @@ function App() {
           />
           <Route exact path="/aboutus" element={<About />} />
           <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/contactus" element={<Contactpopup />} />
           <Route exact path="/saascloudsolutions" element={<SaasPage />} />
           <Route
             exact
@@ -84,6 +84,7 @@ function App() {
           <Route exact path="/salesforcepage" element={<SalesForce />} />
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smoservice" element={<SMO />} />
+          <Route exact path="/contactus" element={<ContactPage />} />
         </Routes>
       </div>
     </>

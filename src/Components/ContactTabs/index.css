@@ -1,0 +1,24 @@
+  .contact.tab-item {
+    background-color: #e6e7e8;
+    list-style: none;
+    height: 50px;
+    margin-right: 10%;
+}
+  
+.contact-tab-button {
+    background-color: #1565d8;
+    color: white;
+    border: none;
+    font-size: 16px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.contactactivetab {
+    color: black;
+    background-color: white;
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to right,rgb(0 118 227 / 80%), rgb(255 30 84 / 80%)) 1;
+    border-image-slice: 1; 
+    border-radius: 5px !important;
+}
