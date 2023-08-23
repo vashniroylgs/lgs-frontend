@@ -680,6 +680,8 @@
 
   .contact-query-first-container {
     margin-right: 2%;
+    width: 200px;
+    margin-left:100px;
   }
 
   .query-input-options-field {

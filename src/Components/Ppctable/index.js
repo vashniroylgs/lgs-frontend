@@ -132,15 +132,15 @@ const PpcTable = () => {
     <>
       <Header />
       <div className="ppc-main-container">
-        <h1>
+        <h1 className="ppc-heading">
           <center>Price Per Click</center>
         </h1>
         <table>
           <thead>
             <tr>
-              <th className="feature-cell">BASIC</th>
-              <th className="feature-cell"> ADVANCED</th>
-              <th className="feature-cell">ENTERPRICE</th>
+              <th className="ppc-column">BASIC</th>
+              <th className="ppc-column-1">ADVANCED</th>
+              <th className="ppc-column-2">ENTERPRISE</th>
             </tr>
           </thead>
           <tbody>
@@ -153,9 +153,9 @@ const PpcTable = () => {
             ))}
           </tbody>
         </table>
-        <div style={{ textAlign: "center" }}>
+        <div className="ppc-button">
           <Link to="/contactus">
-            <button className="learn-more-button">Get Quote</button>
+            <button className="learn-more-button-ppc">Get Quote</button>
           </Link>
         </div>
       </div>

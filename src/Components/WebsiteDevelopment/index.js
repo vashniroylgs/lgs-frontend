@@ -8,15 +8,15 @@ const WebsiteDevelopment = () => {
   return (
     <>
       <Header />
-      <div className="main-container p-3">
-        <h1>Website Development</h1>
-        <div className="sub-container">
-          <table className="excel-table">
-            <thead className="fixed-header">
+      <div className="web-development-main-container">
+        <h1 className="web-development-heading">Website Development</h1>
+        <div>
+          <table>
+            <thead>
               <tr>
-                <th>Startup</th>
-                <th>Small Bussiness</th>
-                <th>Ecommerse</th>
+                <th className="web-development-column">STARTUP</th>
+                <th className="web-development-column-1">SMALL BUSINESS</th>
+                <th className="web-development-column-2">ECOMMERCE</th>
               </tr>
             </thead>
             <tbody>
@@ -104,46 +104,54 @@ const WebsiteDevelopment = () => {
               <tr>
                 <td> Social Profile Link</td>
                 <td> 200 Rs – Content/Page</td>
+                <td></td>
               </tr>
 
               <tr>
                 <td> Facebook Page Creation</td>
                 <td>Social Profile Link</td>
+                <td></td>
               </tr>
 
               <tr>
                 <td> Click to Call/Email</td>
                 <td> Facebook Page Creation</td>
+                <td></td>
               </tr>
 
               <tr>
                 <td> Mobile Responsive</td>
                 <td> Click to Call/Email</td>
+                <td></td>
               </tr>
 
               <tr>
                 <td> Login Details Will Be Given</td>
                 <td>Mobile Responsive</td>
+                <td></td>
               </tr>
 
               <tr>
                 <td> Delivery in 3 Days</td>
                 <td>Login Details Will Be Given</td>
+                <td></td>
               </tr>
 
               <tr>
                 <td>Renewal – 2000 Rs + Domain Price Plus GST</td>
                 <td>Delivery in 7 Days</td>
+                <td></td>
               </tr>
               <tr>
                 <td> Support – 500 Rs/Hr</td>
                 <td> Renewal – 3000 Rs + Domain Price Plus GST</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
-          <div className="buttonsContainer">
+          <div className="website-development-button">
             <Link to="/contactus">
-              <button className="learn-more-button">Get Quote</button>
+              <button className="learn-more-button-website">Get Quote</button>
             </Link>
           </div>
         </div>

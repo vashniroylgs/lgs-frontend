@@ -9,8 +9,8 @@ const ContactTabItem = (props) => {
     console.log(tabId);
   };
 
-  const activeTabItem = isActive ? "contactactivetab" : "";
-  console.log(activeTabItem);
+  const activeTabItem = isActive ? 'contactactivetab' : ''
+  
 
   return (
     <li className="contact-tab-item" >
@@ -22,7 +22,5 @@ const ContactTabItem = (props) => {
         {displayText}
       </button>
     </li>
-  );
-};
-
-export default ContactTabItem;
+  )
+}

@@ -192,51 +192,49 @@ const Smm = () => {
   return (
     <>
       <Header />
-      <h1 className="smo-heading">
-        Our Monthly Social Media Marketing Pricing Plans
-      </h1>
-      <table className="table-container">
-        <thead>
-          <tr>
-            <th className="feature-cell">Basic</th>
-            <th className="feature-cell">Professional</th>
-            <th className="feature-cell">Advanced</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Data.map((row, index) => (
-            <tr key={index}>
-              <td>
-                {Array.isArray(row.Basic)
-                  ? row.Basic.map((item, idx) => <div key={idx}>{item}</div>)
-                  : row.Basic}
-              </td>
-              <td>
-                {Array.isArray(row.Professional)
-                  ? row.Professional.map((item, idx) => (
-                      <div key={idx}>{item}</div>
-                    ))
-                  : row.Professional}
-              </td>
-              <td>
-                {Array.isArray(row.Advanced)
-                  ? row.Advanced.map((item, idx) => <div key={idx}>{item}</div>)
-                  : row.Advanced}
-              </td>
+      <div className="smm-main-container">
+        <h1 className="smm-heading">
+          Our Monthly Social Media Marketing Pricing Plans
+        </h1>
+        <table>
+          <thead>
+            <tr>
+              <th className="smm-column">BASIC</th>
+              <th className="smm-column-1">PROFESSIONAL</th>
+              <th className="smm-column-2">ADVANCED</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Link to="/contactus">
-          <button className="learn-more-buttonorm">Learn More</button>
-        </Link>
+          </thead>
+          <tbody>
+            {Data.map((row, index) => (
+              <tr key={index}>
+                <td>
+                  {Array.isArray(row.Basic)
+                    ? row.Basic.map((item, idx) => <div key={idx}>{item}</div>)
+                    : row.Basic}
+                </td>
+                <td>
+                  {Array.isArray(row.Professional)
+                    ? row.Professional.map((item, idx) => (
+                        <div key={idx}>{item}</div>
+                      ))
+                    : row.Professional}
+                </td>
+                <td>
+                  {Array.isArray(row.Advanced)
+                    ? row.Advanced.map((item, idx) => (
+                        <div key={idx}>{item}</div>
+                      ))
+                    : row.Advanced}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="smm-button">
+          <Link to="/contactus">
+            <button className="learn-more-button-smm">Get Quote</button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>
