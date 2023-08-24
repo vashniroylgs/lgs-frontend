@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
-import Footer from "../Footer";
-import Header from "../navbar";
+import Footer from "../../Footer";
+import Header from "../../navbar";
 
 const WebsiteDevelopment = () => {
   return (

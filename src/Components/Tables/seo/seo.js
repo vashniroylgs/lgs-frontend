@@ -1,8 +1,8 @@
 import React from "react";
 import "./PricingPage.css"; // Import the CSS file for styling
 import { Link } from "react-router-dom";
-import Header from "../navbar";
-import Footer from "../Footer";
+import Header from "../../navbar";
+import Footer from "../../Footer";
 
 const PricingPage = () => {
   const rowData = [
