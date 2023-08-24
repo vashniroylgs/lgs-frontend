@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import Header from "../navbar";
-import Footer from "../Footer";
+import Header from "../../navbar";
+import Footer from "../../Footer";
 import { Link } from "react-router-dom";
 
 const Data = [

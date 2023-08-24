@@ -15,7 +15,7 @@ import "./index.css";
 import IndustriesPage from "../IndustriesPage";
 import TechnologiesPage from "../Technologies";
 import Card from "../Card";
-import lgshome from '../images/lgsaboutushomei.png'
+import lgshome from "../images/lgsaboutushomei.png";
 
 import Footer from "../Footer";
 
@@ -139,11 +139,7 @@ class HomePage extends Component {
               </Link>
             </div>
             <div className="col-12 col-md-5">
-              <img
-                src={lgshome}
-                alt="home-page"
-                className="home-page-image "
-              />
+              <img src={lgshome} alt="home-page" className="home-page-image " />
             </div>
           </div>
           <div className="row">
@@ -170,7 +166,7 @@ class HomePage extends Component {
             <div className="Technology-mbl-container">
               <TechnologiesPage />
             </div>
-            <div className="home-clients">
+            <div className="home-clients" id="clients">
               <Card />
             </div>
           </div>

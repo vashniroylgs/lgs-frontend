@@ -301,24 +301,26 @@ class SaasPage extends Component {
           </div>
           <div className="row p-5 saas-reval ">
             <div className="col-12 col-md-6 saas-content">
-              <h2>
+              <h2 className="saas-card-heading">
                 Streamline Your Business Operations with Labyrinth Global
                 Solutions
               </h2>
-              <p>
+              <p className="saas-card-para">
                 Are you looking to revolutionize your business operations,
                 enhance productivity, and outperform the competition? Look no
                 further! Labyrinth Global Solutions offers a cutting-edge
                 Software as a Service (SaaS) platform, empowering businesses of
                 all sizes to thrive in the digital age.
               </p>
-              <p>
+              <p className="saas-card-para">
                 Our comprehensive suite of SaaS tools provides seamless
                 integration, unparalleled scalability, and top-notch security,
                 giving you the edge you need to succeed.
               </p>
-              <h2>Experience the Future of SaaS</h2>
-              <p>
+              <h2 className="saas-card-heading">
+                Experience the Future of SaaS
+              </h2>
+              <p className="saas-card-para">
                 Unlock the full potential of your business with Labyrinth Global
                 Solutions. Sign up today for a free trial and discover how our
                 SaaS platform can take your business to new heights.

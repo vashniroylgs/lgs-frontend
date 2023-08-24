@@ -70,7 +70,6 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  max-width: 1110px;
 }
 
 .nav-website-logo {
@@ -159,10 +158,34 @@
   z-index: 100;
 }
 
+.Nav-products-container-items {
+  position: absolute;
+  top: 50px;
+  left: -115px;
+  list-style-type: disc;
+  visibility: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 320px;
+  z-index: 100;
+}
+
+.Nav-Service-container:hover .Nav-products-container-items {
+  visibility: visible;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-top: 4px;
+}
+
 .Nav-Service-container:hover .Nav-Service-container-items {
   visibility: visible;
   padding-left: 40px;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 20px;
   margin-top: 4px;
 }
@@ -170,12 +193,24 @@
   color: #222;
   text-decoration: none;
   min-width: 150px;
+  list-style-type: none;
   justify-content: flex-start;
+}
+.product-heading {
+  color: #222;
+  text-decoration: none;
+  min-width: 150px;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.product-heading:hover {
+  color: #007bff;
 }
 
 .nav-service-flex-contianer {
   display: flex;
-  min-width: 70vw;
+  min-width: 44vw;
   left: -400px;
   justify-content: space-between;
   padding-right: 20px;
@@ -183,12 +218,12 @@
 @media (max-width: 1000px) {
   .nav-service-flex-contianer {
     left: -300px;
-    min-width: 75vw;
+    min-width: 44vw;
   }
 }
 @media (min-width: 1000px) {
   .nav-service-flex-contianer {
-    left: -350px;
+    left: -300px;
   }
 }
 @media (max-width: 900px) {
@@ -198,7 +233,7 @@
 }
 
 .Headeroption-item:hover {
-  color: #007bff;
+  color: #007bff !important;
 }
 
 .link {
@@ -265,11 +300,38 @@
   background-color: white;
 }
 .nav-service-flex-contianer-items {
-  width: 300px;
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.nav-service-flex-container-online-marketing:hover
+  .Nav-technology-sub-container-items-online-marketing {
+  display: block;
+}
+
+.Nav-technology-sub-container-items-online-marketing {
+  padding: 10px 0px 10px 25px;
+  list-style-type: disc;
+  display: none;
+}
+.Nav-technology-sub-container-items-creative-design {
+  padding: 10px 0px 10px 25px;
+  list-style-type: disc;
+  display: none;
+}
+
+.nav-service-flex-container-creative-design:hover
+  .Nav-technology-sub-container-items-creative-design {
+  display: block;
+}
+
 @media (max-width: 920px) {
   .nav-service-flex-contianer-items {
     width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 .Nav-teachnology-container:hover .Nav-teachnology-container-items {
@@ -292,15 +354,26 @@
 .Nav-technology-item:hover {
   color: #007bff;
 }
-
+.nav-service-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .Nav-teachnology-main-heading {
-  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+}
+
+.Nav-teachnology-main-heading:hover {
+  color: #007bff;
+  cursor: pointer;
 }
 @media (max-width: 840px) {
   .Nav-technology-item {
     font-size: 10px;
   }
   .Nav-teachnology-main-heading {
+    margin-bottom: 0px;
     font-size: 12px;
   }
 }
