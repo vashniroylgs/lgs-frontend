@@ -73,6 +73,17 @@
   cursor: pointer;
 }
 
+.career-input-fields{
+  border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1; 
+}
+
 @media screen and (max-width: 767px) {
   .careers-image {
     height: 100%;

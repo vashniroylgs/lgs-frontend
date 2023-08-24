@@ -37,10 +37,13 @@
 
 /* Extra Small Devices*/
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  .contact.tab-item {
-    background-color: #e6e7e8;
+  .contact-tab-item {
     list-style: none;
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 430px;
   }
 
   .contact-tab-button {
@@ -49,11 +52,14 @@
     border: none;
     font-size: 16px;
     height: 100%;
+    border-radius: 8px;
     cursor: pointer;
+    width: 100%;
   }
 
   .contactactivetab {
     color: black;
+    border-radius: 8px;
     background-color: white;
     border: 3px solid transparent;
     border-image: linear-gradient(
@@ -63,16 +69,17 @@
       )
       1;
     border-image-slice: 1;
-    border-radius: 5px !important;
   }
 }
 
 /* Small tablets */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .contact.tab-item {
+  .contact-tab-item {
     background-color: #e6e7e8;
     list-style: none;
+    margin: 0;
     height: 50px;
+    cursor: pointer;
   }
 
   .contact-tab-button {
@@ -101,10 +108,12 @@
 
 /* Large tablets / Laptops */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .contact.tab-item {
+  .contact-tab-item {
     background-color: #e6e7e8;
     list-style: none;
+    margin: 0;
     height: 50px;
+    cursor: pointer;
   }
 
   .contact-tab-button {
@@ -133,10 +142,12 @@
 
 /* Desktops */
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
-  .contact.tab-item {
+  .contact-tab-item {
     background-color: #e6e7e8;
     list-style: none;
+    margin: 0;
     height: 50px;
+    cursor: pointer;
   }
 
   .contact-tab-button {
@@ -165,10 +176,12 @@
 
 /* Extra large screens */
 @media screen and (min-width: 1920px) {
-  .contact.tab-item {
+  .contact-tab-item {
     background-color: #e6e7e8;
     list-style: none;
+    margin: 0;
     height: 50px;
+    cursor: pointer;
   }
 
   .contact-tab-button {
