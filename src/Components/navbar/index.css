@@ -193,7 +193,7 @@
   color: #222;
   text-decoration: none;
   min-width: 150px;
-  list-style-type: none;
+  list-style: none;
   justify-content: flex-start;
 }
 .product-heading {
@@ -391,9 +391,16 @@
 .nav-reseller-polarion-text:hover {
   color: #007bff;
 }
+.nav-reseller-polarion-text {
+  list-style: none;
+}
 
 .nav-reseller-mendix-text:hover {
   color: #007bff;
+}
+
+.nav-reseller-mendix-text {
+  list-style: none;
 }
 
 @media (min-width: 1050px) and (max-width: 1400px) {
