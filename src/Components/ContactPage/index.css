@@ -18,7 +18,7 @@
     color: white;
   }
 
-  .contactus-hero-section-description{
+  .contactus-hero-section-description {
     font-size: 13px;
   }
 
@@ -69,10 +69,18 @@
 
   .contact-input-field {
     margin-right: 2%;
-    width: 100%;
+    width: 220px;
     margin-bottom: 20px;
+    font-size: 13px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .servicesTextarea-container {
@@ -83,14 +91,24 @@
   }
 
   .contact-submit-button {
-    width: 100px;
-    color: #ffffff;
-    background-color: #1565d8;
-    font-size: 16px;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #196ae5, red 100%) border-box;
+    transition: all 0.5s ease;
+    border: 2.5px solid transparent;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .contact-submit-button:hover {
+    background: linear-gradient(to right, #196ae5, #196ae5) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.1s ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .tabs-container {
@@ -139,10 +157,18 @@
 
   .query-input-field {
     margin-right: 2%;
-    width: 100%;
+    width: 330px;
     margin-bottom: 20px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .button-container {
@@ -154,15 +180,33 @@
     background-color: lightblue;
   }
   .servicesTextarea {
-    height: 150px;
-    width: 100%;
+    height: 120px;
+    width: 690px;
     border: 2px solid rgb(233, 231, 231);
+    display: flex;
+    align-self: flex-start;
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .queryTextarea {
-    height: 150px;
-    width: 100%;
+    height: 100px;
+    width: 670px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
   .contact-query-checkbox-container {
     flex-direction: row;
@@ -191,7 +235,7 @@
     color: white;
   }
 
-  .contactus-hero-section-description{
+  .contactus-hero-section-description {
     font-size: 13px;
   }
 
@@ -243,10 +287,18 @@
 
   .contact-input-field {
     margin-right: 2%;
-    width: 430px;
+    width: 220px;
     margin-bottom: 20px;
+    font-size: 13px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .servicesTextarea-container {
@@ -257,14 +309,24 @@
   }
 
   .contact-submit-button {
-    width: 100px;
-    color: #ffffff;
-    background-color: #1565d8;
-    font-size: 16px;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #196ae5, red 100%) border-box;
+    transition: all 0.5s ease;
+    border: 2.5px solid transparent;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .contact-submit-button:hover {
+    background: linear-gradient(to right, #196ae5, #196ae5) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.1s ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .tabs-container {
@@ -298,10 +360,18 @@
 
   .query-input-field {
     margin-right: 2%;
-    width: 430px;
+    width: 330px;
     margin-bottom: 20px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .button-container {
@@ -313,17 +383,33 @@
     background-color: lightblue;
   }
   .servicesTextarea {
-    height: 150px;
-    width: 430px;
+    height: 120px;
+    width: 690px;
     border: 2px solid rgb(233, 231, 231);
     display: flex;
-    align-self: center;
+    align-self: flex-start;
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .queryTextarea {
-    height: 150px;
-    width: 450px;
+    height: 100px;
+    width: 670px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
   .contact-query-checkbox-container {
     flex-direction: row;
@@ -351,7 +437,7 @@
     color: white;
   }
 
-  .contactus-hero-section-description{
+  .contactus-hero-section-description {
     font-size: 13px;
   }
 
@@ -403,28 +489,53 @@
     margin-right: 2%;
     width: 220px;
     margin-bottom: 20px;
+    font-size: 13px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
-  .servicesTextarea-container {
+  .servicesTextarea {
+    height: 120px;
+    width: 690px;
+    border: 2px solid rgb(233, 231, 231);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 5px;
-    width: 100%;
+    align-self: flex-start;
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .contact-submit-button {
-    width: 100px;
-    color: #ffffff;
-    background-color: #1565d8;
-    font-size: 16px;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #196ae5, red 100%) border-box;
+    transition: all 0.5s ease;
+    border: 2.5px solid transparent;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .contact-submit-button:hover {
+    background: linear-gradient(to right, #196ae5, #196ae5) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.1s ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .tabs-container {
@@ -459,6 +570,14 @@
     margin-bottom: 20px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .button-container {
@@ -469,14 +588,6 @@
     border-radius: 7px;
     background-color: lightblue;
   }
-  .servicesTextarea {
-    height: 120px;
-    width: 650px;
-    border: 2px solid rgb(233, 231, 231);
-    display: flex;
-    align-self: flex-start;
-  }
-
   .query-Textarea-container {
     display: flex;
     flex-direction: column;
@@ -490,6 +601,14 @@
     height: 100px;
     width: 670px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
   .contact-query-checkbox-container {
     flex-direction: row;
@@ -517,7 +636,7 @@
     color: white;
   }
 
-  .contactus-hero-section-description{
+  .contactus-hero-section-description {
     font-size: 13px;
   }
 
@@ -561,16 +680,21 @@
     padding-left: 2px;
   }
 
- 
   .contact-input-field {
     margin-right: 2%;
     width: 220px;
     margin-bottom: 20px;
+    font-size: 13px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
-
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
-
 
   .servicesTextarea-container {
     display: flex;
@@ -582,14 +706,24 @@
   }
 
   .contact-submit-button {
-    width: 100px;
-    color: #ffffff;
-    background-color: #1565d8;
-    font-size: 16px;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #196ae5, red 100%) border-box;
+    transition: all 0.5s ease;
+    border: 2.5px solid transparent;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .contact-submit-button:hover {
+    background: linear-gradient(to right, #196ae5, #196ae5) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.1s ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .tabs-container {
@@ -624,6 +758,14 @@
     margin-bottom: 20px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .button-container {
@@ -636,10 +778,18 @@
   }
   .servicesTextarea {
     height: 120px;
-    width: 695px;
+    width: 690px;
     border: 2px solid rgb(233, 231, 231);
     display: flex;
     align-self: flex-start;
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .query-Textarea-container {
@@ -655,6 +805,14 @@
     height: 100px;
     width: 670px;
     border: 2px solid rgb(233, 231, 231);
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
   .contact-query-checkbox-container {
     flex-direction: row;
@@ -682,7 +840,7 @@
     color: white;
   }
 
-  .contactus-hero-section-description{
+  .contactus-hero-section-description {
     font-size: 14px;
   }
 
@@ -739,7 +897,7 @@
       )
       1;
     border-image-slice: 1;
-  } 
+  }
 
   .servicesTextarea-container {
     display: flex;
@@ -750,15 +908,49 @@
     width: 100%;
   }
 
-  .contact-submit-button {
+  /* .contact-submit-button {
     width: 100px;
-    color: #ffffff;
-    background-color: #1565d8;
     font-size: 16px;
     height: 40px;
-    border: none;
-    outline: none;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
+    color: black;
     border-radius: 10px;
+  }
+
+  .contact-submit-button:hover {
+    width: 100px;
+    font-size: 16px;
+    height: 40px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    background-image: none;
+  } */
+  .contact-submit-button {
+    cursor: pointer;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #196ae5, red 100%) border-box;
+    transition: all 0.5s ease;
+    border: 2.5px solid transparent;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .contact-submit-button:hover {
+    background: linear-gradient(to right, #196ae5, #196ae5) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.1s ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .tabs-container {
@@ -839,7 +1031,7 @@
 
   .queryTextarea {
     height: 100px;
-    width: 670px;
+    width: 680px;
     border: 2px solid rgb(233, 231, 231);
     font-size: 13px;
     border-image: linear-gradient(
@@ -877,11 +1069,11 @@
     color: white;
   }
 
-  .contact-getin-touch-description{
+  .contact-getin-touch-description {
     font-size: 22px;
   }
 
-  .contactus-hero-section-description{
+  .contactus-hero-section-description {
     font-size: 20px;
   }
 
@@ -925,12 +1117,18 @@
 
   .contact-input-field {
     margin-right: 2%;
-    width: 40%;
+    width: 220px;
     margin-bottom: 20px;
-    font-size: 15px;
-    height: 50px;
+    font-size: 13px;
+    height: 40px;
     border: 2px solid rgb(233, 231, 231);
-
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .servicesTextarea-container {
@@ -941,16 +1139,25 @@
     margin-top: 5px;
     width: 100%;
   }
-
   .contact-submit-button {
-    width: 100px;
-    color: #ffffff;
-    background-color: #1565d8;
-    font-size: 16px;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #196ae5, red 100%) border-box;
+    transition: all 0.5s ease;
+    border: 2.5px solid transparent;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .contact-submit-button:hover {
+    background: linear-gradient(to right, #196ae5, #196ae5) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.1s ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .tabs-container {
@@ -985,8 +1192,14 @@
     margin-bottom: 20px;
     height: 40px;
     border: 2px solid rgb(233, 231, 231);
-    font-size: 15px;
-
+    font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .button-container {
@@ -997,14 +1210,21 @@
     border-radius: 7px;
     background-color: lightblue;
   }
+  
   .servicesTextarea {
     height: 120px;
-    width: 88%;
+    width: 690px;
     border: 2px solid rgb(233, 231, 231);
     display: flex;
     align-self: flex-start;
     font-size: 13px;
-    font-size: 15px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
 
   .query-Textarea-container {
@@ -1022,6 +1242,13 @@
     width: 670px;
     border: 2px solid rgb(233, 231, 231);
     font-size: 13px;
+    border-image: linear-gradient(
+        to right,
+        rgb(0 118 227 / 80%),
+        rgb(255 30 84 / 80%)
+      )
+      1;
+    border-image-slice: 1;
   }
   .contact-query-checkbox-container {
     flex-direction: row;

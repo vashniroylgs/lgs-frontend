@@ -164,7 +164,11 @@
     height: 20px;
     margin-left: 2px;
   }
-  
+
+  .uk-logo-styling {
+    margin-top: 10px;
+  }
+
   .first_nav_content {
     display: flex;
     align-self: center;
