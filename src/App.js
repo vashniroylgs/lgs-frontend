@@ -27,7 +27,6 @@ import PricingPage from "./Components/seo/seo";
 import Ourlogo from "./Components/Ourlogo";
 import ContactPage from "./Components/ContactPage";
 function App() {
-
   return (
     <>
       <div>

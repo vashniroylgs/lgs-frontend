@@ -90,16 +90,41 @@ tr:hover {
 
 @media (max-width: 768px) {
   .ppc-main-container {
-    margin: 10px 50px 10px 50px;
+    margin: 10px 25px 10px 25px;
   }
   table {
     width: fit-content;
     max-width: fit-content;
-    border-radius: 10px;
   }
   th,
   td,
   tr {
     width: 33.3% !important;
+    font-size: 10px;
+  }
+  .ppc-heading {
+    font-family: "Poppins";
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ppc-column {
+    height: 40px;
+    background-color: #487dc2;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  .ppc-column-1 {
+    height: 40px;
+    background-color: #48c24a;
+    color: #ffffff;
+    font-size: 10px;
+  }
+
+  .ppc-column-2 {
+    height: 40px;
+    background-color: #e8d46d;
+    color: #ffffff;
+    font-size: 10px;
   }
 }

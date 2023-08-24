@@ -42,21 +42,27 @@ const OrmTable = () => {
               <td className="ormsub-heading">CONTENT MARKETING</td>
             </tr>
             <tr>
-              <td>
-                Article Submission (500–700 words) <br /> - 2 Per Month
+              <td className="artical">
+                Article Submission (500–700 words) - 2 Per Month
               </td>
               <td>Blog Submission - 2 Per Month</td>
               <td>Press Release Submission - 2 Per Month</td>
             </tr>
             <tr>
               <td>Blog Submission - 1 Per Month</td>
-              <td>Article Submission (500–700 words) - 4 Per Month</td>
-              <td>Article Submission (500–700 words) - 6 Per Month</td>
+              <td className="artical">
+                Article Submission (500–700 words) - 4 Per Month
+              </td>
+              <td className="artical">
+                Article Submission (500–700 words) - 6 Per Month
+              </td>
             </tr>
             <tr>
               <td>Press Release Submission - 2 Per Month</td>
               <td>Blog Submission - 2 Per Month</td>
-              <td>Press Release Submission (300–500 words) - 2 Per Month</td>
+              <td className="artical">
+                Press Release Submission (300–500 words) - 2 Per Month
+              </td>
             </tr>
             <tr>
               <td className="ormsub-heading">Link Building</td>

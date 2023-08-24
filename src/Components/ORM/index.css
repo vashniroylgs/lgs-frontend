@@ -93,6 +93,9 @@ tr:hover {
   font-size: 30px;
 }
 @media (max-width: 768px) {
+  .artical {
+    font-size: 8px;
+  }
   table {
     width: fit-content;
     max-width: fit-content;
