@@ -288,13 +288,13 @@ const PricingPage = () => {
     <div>
       <Header />
       <div className="pricing-page">
-        <h1 className="heading_seo"> Our SEO Packages</h1>
+        <h1 className="heading-seo"> Our SEO Packages</h1>
         <table>
           <thead>
             <tr>
-              <th className="seo-column">Small Business</th>
-              <th className="seo-column-2">Mid Size Business</th>
-              <th className="seo-column-3">Large Or Ecommerce</th>
+              <th className="seo-column">SMALL BUSINESS</th>
+              <th className="seo-column-2">MID SIZE BUSINESS</th>
+              <th className="seo-column-3">LARGE OR ECOMMERCE</th>
             </tr>
           </thead>
           <tbody>
@@ -307,9 +307,11 @@ const PricingPage = () => {
             ))}
           </tbody>
         </table>
-        <Link to="/contactus" className="learn-more-button">
-          Learn More
-        </Link>
+        <div className="seo-button">
+          <Link to="/contactus">
+            <button className="learn-more-button-seo">Get Quote</button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>

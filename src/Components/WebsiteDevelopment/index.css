@@ -1,7 +1,6 @@
-.smm-main-container {
+.web-development-main-container {
   margin: 10px 100px 10px 100px;
 }
-
 table {
   border: 1px solid #333;
   width: 100%;
@@ -35,6 +34,23 @@ tr:hover {
   background-color: #e0e0e0;
 }
 
+.web-development-column {
+  height: 80px;
+  background-color: #487dc2;
+  color: #ffffff;
+}
+.web-development-column-1 {
+  height: 80px;
+  background-color: #48c24a;
+  color: #ffffff;
+}
+
+.web-development-column-2 {
+  height: 80px;
+  background-color: #e8d46d;
+  color: #ffffff;
+}
+
 /* TableComponent.css */
 
 /* Style for the "Features" column */
@@ -49,34 +65,11 @@ tr:hover {
   color: black;
 }
 
-.smm-column {
-  height: 80px;
-  background-color: #487dc2;
-  color: #ffffff;
-}
-.smm-column-1 {
-  height: 80px;
-  background-color: #48c24a;
-  color: #ffffff;
-}
-
-.smm-column-2 {
-  height: 80px;
-  background-color: #e8d46d;
-  color: #ffffff;
-}
-
-.smm-button {
+.website-development-button {
   text-align: center;
 }
 
-.smm-heading {
-  font-size: 30px;
-  font-family: "Poppins";
-  text-align: center;
-}
-
-.learn-more-button-smm {
+.learn-more-button-website {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -90,7 +83,11 @@ tr:hover {
   height: 40px;
   padding: 5px;
 }
-
+.web-development-heading {
+  font-family: "Poppins";
+  font-size: 30px;
+  text-align: center;
+}
 @media (max-width: 768px) {
   table {
     width: fit-content;
@@ -101,30 +98,31 @@ tr:hover {
   td,
   tr {
     width: 33.3% !important;
-    font-size: 10px;
+    font-size: 8px;
   }
-  .smm-main-container {
+  .web-development-main-container {
     margin: 10px 25px 10px 25px;
   }
-  .smm-column {
+  .web-development-heading {
+    font-family: "Poppins";
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .web-development-column {
     height: 40px;
     background-color: #487dc2;
     color: #ffffff;
   }
-  .smm-column-1 {
+  .web-development-column-1 {
     height: 40px;
     background-color: #48c24a;
     color: #ffffff;
   }
 
-  .smm-column-2 {
+  .web-development-column-2 {
     height: 40px;
     background-color: #e8d46d;
     color: #ffffff;
-  }
-  .smm-heading {
-    font-size: 20px;
-    font-family: "Poppins";
-    text-align: center;
   }
 }

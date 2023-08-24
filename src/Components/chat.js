@@ -69,17 +69,39 @@
 
 // export default Chat;
 
-import React from 'react';
+// import React from 'react';
+
+// const Chat = () => {
+//   return (
+//     <df-messenger
+//       intent="WELCOME"
+//       chat-title="LGSAGENT"
+//       agent-id="f7965425-6216-484b-bb02-f97a1e371333"
+//       language-code="en"
+//     ></df-messenger>
+//   );
+// };
+
+// export default Chat;
+import React, { useEffect } from 'react';
 
 const Chat = () => {
-  return (
-    <df-messenger
-      intent="WELCOME"
-      chat-title="LGSAGENT"
-      agent-id="f7965425-6216-484b-bb02-f97a1e371333"
-      language-code="en"
-    ></df-messenger>
-  );
+  useEffect(() => {
+    var Tawk_API = Tawk_API || {};
+    var Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script");
+      var s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/64e598e794cf5d49dc6bf928/1h8gdqinv';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []); // Empty dependency array to ensure this effect runs only once
+
+  return <div></div>; // Empty div or any other JSX you want to render
 };
 
 export default Chat;
+
