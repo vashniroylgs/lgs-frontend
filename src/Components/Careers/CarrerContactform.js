@@ -109,7 +109,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 id="career_name"
                 name="name"
                 required
@@ -123,7 +123,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="tel"
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 id="career_phone"
                 name="phone"
                 minLength="10"
@@ -141,7 +141,7 @@ const ContactForm = () => {
                 Total Exp <span style={{ color: "red" }}>*</span>
               </label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 id="career_total_exp"
                 type="text"
                 name="totalExp"
@@ -153,7 +153,7 @@ const ContactForm = () => {
             <div className="form-group">
               <label htmlFor="career_gap">Career Gap(Reason)</label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_gap"
                 name="careerGap"
@@ -164,7 +164,7 @@ const ContactForm = () => {
             <div className="form-group">
               <label htmlFor="career_current_loc">Current Location</label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_current_loc"
                 name="currentLocation"
@@ -175,7 +175,7 @@ const ContactForm = () => {
             <div className="form-group">
               <label htmlFor="career_preferred_loc">Preferred Location</label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_preferred_loc"
                 name="preferredLocation"
@@ -188,7 +188,7 @@ const ContactForm = () => {
                 Reason for job change <span style={{ color: "red" }}>*</span>
               </label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_job_change"
                 name="reasonForJobChange"
@@ -201,7 +201,7 @@ const ContactForm = () => {
               <label htmlFor="position">Job Profile</label>
               <select
                 name="jobProfile"
-                className="custom-select m-3 career-fields"
+                className="custom-select m-3 career-fields career-input-fields"
                 id="position"
                 value={formData.jobProfile || ""}
                 onChange={handleInputChange}
@@ -223,7 +223,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="email"
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 id="career_email"
                 name="email"
                 required
@@ -236,7 +236,7 @@ const ContactForm = () => {
                 Relevant Exp <span style={{ color: "red" }}>*</span>
               </label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_relevant_exp"
                 name="relevantExp"
@@ -250,7 +250,7 @@ const ContactForm = () => {
                 Current CTC <span style={{ color: "red" }}>*</span>
               </label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_current_ctc"
                 name="currentCTC"
@@ -265,7 +265,7 @@ const ContactForm = () => {
                 <span style={{ color: "red" }}>*</span>
               </label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_exp_ctc"
                 name="expectedCTC"
@@ -280,7 +280,7 @@ const ContactForm = () => {
                 <span style={{ color: "red" }}>*</span>
               </label>
               <input
-                className="form-control career-fields"
+                className="form-control career-fields career-input-fields"
                 type="text"
                 id="career_notice_period"
                 name="noticePeriod"
@@ -289,7 +289,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <ReCAPTCHA sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0" onChange={onChange} />
+            <ReCAPTCHA className="mt-2" sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0" onChange={onChange} />
             <div className="form-group">
               <label htmlFor="attach_document">
                 Attach your resume <span style={{ color: "red" }}>*</span>
@@ -300,7 +300,7 @@ const ContactForm = () => {
               >
                 <input
                   type="file"
-                  className="custom-file-input cursor-pointer"
+                  className="custom-file-input cursor-pointer career-input-fields"
                   id="customFile"
                   name="resume"
                   required

@@ -40,7 +40,7 @@
 //       email,
 //       message,
 //     };
-   
+
 //     try {
 //       const response = await fetch("http://localhost:3005/contactlgs", {
 //         method: "POST",
@@ -535,9 +535,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import Footer from "../Footer";
 import Header from "../navbar";
-import ReactSelect from 'react-select';
-import countries from 'countries-list';
-
+import ReactSelect from "react-select";
+import countries from "countries-list";
 
 const tabsList = [
   { tabId: "Services", displayText: "Request for Services" },
@@ -559,6 +558,10 @@ const ContactPage = () => {
   const [queryCountry, setqueryCountry] = useState("");
   const [queryMessage, setqueryMessage] = useState("");
   const [querySubmitbtn, setQuerySubmitbtn] = useState(false);
+  const [isServicesRecaptchaVerified, setIsServicesRecaptchaVerified] =
+    useState(false);
+  const [isQueryRecaptchaVerified, setIsQueryRecaptchaVerified] =
+    useState(false);
 
   const changeTab = (tabId) => {
     changeTabId(tabId);
@@ -567,7 +570,7 @@ const ContactPage = () => {
     value: code,
     label: countries.countries[code].name,
   }));
-  
+
   const submitContactServices = async (e) => {
     e.preventDefault();
     const servicesformData = {
@@ -576,7 +579,7 @@ const ContactPage = () => {
       email,
       message,
     };
-   
+
     try {
       const response = await fetch("http://localhost:3005/contactlgs", {
         method: "POST",
@@ -628,8 +631,12 @@ const ContactPage = () => {
     }
   };
 
-  const onChange = (value) => {
-    console.log("Captcha value:", value);
+  const handleServicesCaptchaChange = (value) => {
+    setIsServicesRecaptchaVerified(true);
+  };
+
+  const handleQueryCaptchaChange = (value) => {
+    setIsQueryRecaptchaVerified(true);
   };
 
   const [captchaStyles, setCaptchaStyles] = useState({
@@ -641,7 +648,7 @@ const ContactPage = () => {
 
   const showServicesPage = () => (
     <form onSubmit={submitContactServices} className="contact-form-container">
-      <h1>Let’s Work Together</h1>
+      <h1 className="contact-services-heading">Let’s Work Together</h1>
       <div className="contact-input-fields-container">
         <input
           required
@@ -665,7 +672,7 @@ const ContactPage = () => {
           onChange={(e) => setservicesBusinessEmail(e.target.value)}
         />
       </div>
-      <div className="d-flex flex-column mt-2 " >
+      <div className="servicesTextarea-container">
         <textarea
           required
           className="servicesTextarea"
@@ -676,13 +683,17 @@ const ContactPage = () => {
       <div>
         <div className="checkbox-container mb-2 mt-2">
           <input type="checkbox" required />
-          <p className="contact-terms-description m-0">Agree Terms & Coditions</p>
+          <p className="contact-terms-description m-0">
+            Agree Terms & Coditions
+          </p>
         </div>
         <p className="contact-terms-description">
           Send me occasional information about Labyrinth Global Solutions, a LGS
           Group Company news and events to the provided email address.
         </p>
-        <p className="contact-terms-description">You may withdraw your consent at any time.</p>
+        <p className="contact-terms-description">
+          You may withdraw your consent at any time.
+        </p>
         <p className="contact-terms-description">
           For more information about how Labyrinth Global Solutions protects
           your privacy and processes your personal data please see our{" "}
@@ -698,10 +709,14 @@ const ContactPage = () => {
       >
         <ReCAPTCHA
           sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0"
-          onChange={onChange}
+          onChange={handleServicesCaptchaChange}
         />
       </div>
-      <button className="contact-submit-button" type="submit">
+      <button
+        className="contact-submit-button"
+        type="submit"
+        disabled={!isServicesRecaptchaVerified}
+      >
         SUBMIT
       </button>
     </form>
@@ -711,113 +726,110 @@ const ContactPage = () => {
     return <Navigate to="/careers" />;
   };
 
-  const showQueriesPage =  () => (
-    <div className="contact-query-main-container1">
-      <div className="contact-query-main-container2">
-        <h1>Reach Out To Us</h1>
-        <form
-          className="contact-query-form-container"
-          onSubmit={submitContactQueries}
-        >
-          <div className="contact-query-main-container3">
-            <div className="contact-query-first-container">
-              <input
-                className="query-input-field"
-                placeholder="First Name"
-                type="text"
-                id="firstName"
-                name="FirstName"
-                onChange={(e) => setqueryFirstName(e.target.value)}
-              />
-            </div>
-            <div className="contact-query-first-container">
-              <input
-                className="query-input-field"
-                placeholder="Last Name"
-                type="text"
-                id="lastName"
-                name="LastName"
-                onChange={(e) => setqueryLastName(e.target.value)}
-              />
-            </div>
-          </div>
-          <div className="contact-query-main-container3">
-            <div className="contact-query-first-container">
-              <input
-                placeholder="Email"
-                type="email"
-                id="email"
-                className="query-input-field"
-                name="Email"
-                onChange={(e) => setqueryEmail(e.target.value)}
-              />
-            </div>
-            <div>
-              <div className="contact-query-first-container">
-              <ReactSelect
-  options={countryOptions}
-  onChange={(selectedOption) => setqueryCountry(selectedOption.value)}
-  value={countryOptions.find((option) => option.value === queryCountry)}
-  placeholder="Country"
-  className="custom-select" // Apply a custom CSS class
-  styles={{
-    // Override default styles
-    control: (provided) => ({
-      ...provided,
-      border: '1px solid #ccc',
-      borderRadius: '4px',
-    }),
-    option: (provided, state) => ({
-      ...provided,
-      backgroundColor: state.isSelected ? '#007bff' : 'white',
-      color: state.isSelected ? 'white' : 'black',
-    }),
-  }}
-/>
+  const showQueriesPage = () => (
+    <form
+      className="contact-query-form-container"
+      onSubmit={submitContactQueries}
+    >
+      <h1>Reach Out To Us</h1>
+      <div className="contact-query-input-fields-container">
+        <input
+          className="query-input-field"
+          placeholder="First Name*"
+          required
+          type="text"
+          id="firstName"
+          name="FirstName"
+          onChange={(e) => setqueryFirstName(e.target.value)}
+        />
+        <input
+          className="query-input-field"
+          placeholder="Last Name*"
+          required
+          type="text"
+          id="lastName"
+          name="LastName"
+          onChange={(e) => setqueryLastName(e.target.value)}
+        />
+        <input
+          placeholder="Email*"
+          type="email"
+          required
+          id="email"
+          className="query-input-field"
+          name="Email"
+          onChange={(e) => setqueryEmail(e.target.value)}
+        />
 
-
-              </div>
-            </div>
-          </div>
-          <textarea
-            className="massage-container"
-            placeholder="Message"
-            rows="5"
-            cols="75"
-            onChange={(e) => setqueryMessage(e.target.value)}
-          ></textarea>
-          <div className="contact-query-checkbox-container">
-            <input type="checkbox" />
-            <div>
-              <p>
-                Send me occasional information about GlobalLogic, a Hitachi
-                Group Company news and events to the provided email address.
-              </p>
-              <p>
-                You may withdraw your consent at any time. For more information
-                about how GlobalLogic protects your privacy and processes your
-                personal data please see our Privacy Policy.
-              </p>
-            </div>
-          </div>
-          <div
-            class="g-recaptcha"
-            data-theme="light"
-            data-sitekey="XXXXXXXXXXXXX"
-            style={captchaStyles}
-            className="google-captcha-container"
-          >
-            <ReCAPTCHA
-              sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0"
-              onChange={onChange}
-            />
-          </div>
-          <button className="contact-submit-button" type="submit">
-            {querySubmitbtn ? "Submitting.." : "SUBMIT"}
-          </button>
-        </form>
+        <ReactSelect
+          options={countryOptions}
+          onChange={(selectedOption) => setqueryCountry(selectedOption.value)}
+          className="query-input-field"
+          value={countryOptions.find((option) => option.value === queryCountry)}
+          placeholder="Country"
+          styles={{
+            // Override default styles
+            control: (provided) => ({
+              ...provided,
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+            }),
+            option: (provided, state) => ({
+              ...provided,
+              backgroundColor: state.isSelected ? "#007bff" : "white",
+              color: state.isSelected ? "white" : "black",
+            }),
+          }}
+        />
       </div>
-    </div>
+      <div className="query-Textarea-container">
+        <textarea
+          placeholder="Message*"
+          required
+          className="queryTextarea"
+          onChange={(e) => setqueryMessage(e.target.value)}
+        ></textarea>
+      </div>
+      <div>
+        <div className="checkbox-container mb-2 mt-2">
+          <input type="checkbox" required />
+          <p className="contact-terms-description m-0">
+            Agree Terms & Coditions
+          </p>
+        </div>
+        <p className="contact-terms-description">
+          Send me occasional information about Labyrinth Global Solutions, a LGS
+          Group Company news and events to the provided email address.
+        </p>
+        <p className="contact-terms-description">
+          You may withdraw your consent at any time.
+        </p>
+        <p className="contact-terms-description">
+          For more information about how Labyrinth Global Solutions protects
+          your privacy and processes your personal data please see our{" "}
+          <a>Privacy Policy</a>
+        </p>
+      </div>
+      <div
+        class="g-recaptcha"
+        data-theme="light"
+        data-sitekey="XXXXXXXXXXXXX"
+        style={captchaStyles}
+        className="google-captcha-container"
+      >
+        <ReCAPTCHA
+          sitekey="6LfHycEnAAAAAF_Yt24Y7H6nxaAXeEZ9OCO4Cxz0"
+          onChange={handleQueryCaptchaChange}
+        />
+      </div>
+      <button
+        className="contact-submit-button"
+        type="submit"
+        disabled={!isQueryRecaptchaVerified}
+      >
+        {querySubmitbtn ? "Submitting.." : "SUBMIT"}
+      </button>
+    </form>
   );
 
   const ShowForm = () => {
@@ -836,15 +848,15 @@ const ContactPage = () => {
       <Header />
       <div className="contact-page-main-container">
         <div className="Contact-hero-section">
-          <h1>How Can I help You ?</h1>
-          <p>
+          <h1>How Can We help You ?</h1>
+          <p className="contactus-hero-section-description">
             Whether you’re searching for a new engineering partner or starting a
             new career, we would love to hear from you.
           </p>
         </div>
         <div className="contact-container">
           <h1>Get in touch</h1>
-          <p>
+          <p className="contact-getin-touch-description">
             Please fill out the form below. You can also contact us via
             email/phone, and our team will gladly handle your request!
           </p>
@@ -858,7 +870,7 @@ const ContactPage = () => {
               />
             ))}
           </ul>
-            <div className="contact-form-main-contianer">{ShowForm()}</div>
+          <div className="contact-form-main-contianer">{ShowForm()}</div>
         </div>
       </div>
       <Footer />
