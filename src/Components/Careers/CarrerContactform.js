@@ -306,19 +306,12 @@ const ContactForm = () => {
                   required
                   onChange={handleFileChange}
                 />
-                <label
-                  className="custom-file-label rounded-0 career-fields file-choose cursor-pointer"
-                  htmlFor="customFile"
-                >
-                  Choose file
-                </label>
               </div>
             </div>
             <div className="text-end mt-4">
               <button
-                className="btn text-uppercase text-white ml-auto add_career_pop_up_button"
+                className=" text-uppercase ml-auto  career-form-submit-btn"
                 type="submit"
-                style={{ background: "rgb(2, 80, 169)" }}
               >
                 Submit
               </button>

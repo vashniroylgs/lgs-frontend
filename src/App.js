@@ -11,21 +11,22 @@ import Chat from "./Components/chat";
 import CountriesBar from "./Components/Countriesbar";
 import DigitalMarketing from "./Components/DigitalMarketing";
 import SaasPage from "./Components/SaasPage";
-import Clients from "./Components/Clients";
+// import Clients from "./Components/Clients";
 import Careers from "./Components/Careers";
 import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
 import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
-import OrmTable from "./Components/ORM";
-import WebsiteDevelopment from "./Components/WebsiteDevelopment";
-import SMO from "./Components/SMO";
-import WebsiteMaintanance from "./Components/WebsiteMaintance";
-import PpcTable from "./Components/Ppctable";
-import Smm from "./Components/SMM";
-import PricingPage from "./Components/seo/seo";
-import Ourlogo from "./Components/Ourlogo";
+// import OrmTable from "./Components/Tables/ORM";
+// import WebsiteDevelopment from "./Components/Tables/WebsiteDevelopment";
+// import SMO from "./Components/Tables/SMO";
+// import WebsiteMaintanance from "./Components/Tables/WebsiteMaintance";
+// import PpcTable from "./Components/Ppctable";
+// import Smm from "./Components/Tables/SMM";
+// import PricingPage from "./Components/Tables/seo/seo";
+// import Ourlogo from "./Components/Tables/Ourlogo";
 import ContactPage from "./Components/ContactPage";
+import TestingPage from "./Components/TestingPage";
 function App() {
   return (
     <>
@@ -62,7 +63,8 @@ function App() {
             path="/digitalmarketing"
             element={<DigitalMarketing />}
           />
-          <Route
+          <Route exact path="/testing" element={<TestingPage />} />
+          {/* <Route
             exact
             path="/websitemaintanance"
             element={<WebsiteMaintanance />}
@@ -77,10 +79,11 @@ function App() {
           <Route exact path="/smm" element={<Smm />} />
           <Route exact path="/seo" element={<PricingPage />} />
           <Route exact path="/logodesign" element={<Ourlogo />} />
-          <Route exact path="/salesforcepage" element={<SalesForce />} />
-          <Route exact path="/clientsPage" element={<Clients />} />
-          <Route exact path="/smoservice" element={<SMO />} />
+          
+          <Route exact path="/smoservice" element={<SMO />} /> */}
           <Route exact path="/contactus" element={<ContactPage />} />
+          <Route exact path="/salesforcepage" element={<SalesForce />} />
+          {/* <Route exact path="/clientsPage" element={<Clients />} /> */}
         </Routes>
       </div>
     </>
