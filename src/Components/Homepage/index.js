@@ -4,7 +4,7 @@ import ImageSlider from "../ImageSlider";
 import WhyUs from "../Whyus";
 import about from "../images/whyusimage.png";
 import StartPopup from "../StartPopup";
-import Header from "../navbar";
+import HomepageHeader from "../HomePageNavbar";
 import Chat from "../chat";
 import Services from "../Services";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -80,7 +80,7 @@ class HomePage extends Component {
   render() {
     return (
       <>
-        <Header />
+        <HomepageHeader />
         <div className="container-fluid">
           <div className="home-page-slider-main-container row">
             <div className="col-12 col-md-6">
@@ -163,7 +163,7 @@ class HomePage extends Component {
               </ul>
             </div>
             <IndustriesPage />
-            <div className="Technology-mbl-container">
+            <div className="Technology-mbl-container" id="technologies">
               <TechnologiesPage />
             </div>
             <div className="home-clients" id="clients">

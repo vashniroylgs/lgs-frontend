@@ -6,7 +6,7 @@ import { Component } from "react";
 
 import "./index.css";
 
-class Header extends Component {
+class HomepageHeader extends Component {
   state = { showNavItems: false, showmblItems: false };
 
   toggleShowNavItems = () => {
@@ -56,6 +56,16 @@ class Header extends Component {
             <Link to="/" className="nav-link">
               HOME
             </Link>
+          </li>
+          <li className="nav-mbl-menu-item">
+            <a href="#clients" className="inactive">
+              CLIENTS
+            </a>
+          </li>
+          <li className="nav-mbl-menu-item">
+            <a href="#technologies" className="inactive">
+              TECHNOLOGIES
+            </a>
           </li>
 
           <li className="nav-mbl-service-container nav-mbl-menu-item">
@@ -130,7 +140,7 @@ class Header extends Component {
                 <h6>
                   <Link
                     className="Nav-teachnology-main-heading"
-                    to="/consultant"
+                    to="/contactus"
                   >
                     CONSULTANT
                   </Link>
@@ -299,6 +309,17 @@ class Header extends Component {
                 </li>
 
                 <li className="Nav-Service-container nav-menu-item technology-item">
+                  <a href="#clients" className="inactive">
+                    CLIENTS
+                  </a>
+                </li>
+                <li className="Nav-Service-container nav-menu-item technology-item">
+                  <a href="#technologies" className="inactive">
+                    TECHNOLOGIES
+                  </a>
+                </li>
+
+                <li className="Nav-Service-container nav-menu-item technology-item">
                   SERVICES
                   <ul className="Nav-Service-container-items nav-service-flex-contianer ">
                     <div className="nav-service-flex-contianer-items">
@@ -332,7 +353,7 @@ class Header extends Component {
                         <h6>
                           <Link
                             className="Nav-teachnology-main-heading"
-                            to="/consultant"
+                            to="/contactus"
                           >
                             CONSULTANT
                           </Link>
@@ -443,4 +464,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default HomepageHeader;
