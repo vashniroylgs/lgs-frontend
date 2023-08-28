@@ -130,7 +130,7 @@ class Header extends Component {
                 <h6>
                   <Link
                     className="Nav-teachnology-main-heading"
-                    to="/contactus"
+                    to="/consultant"
                   >
                     CONSULTANT
                   </Link>
@@ -332,7 +332,7 @@ class Header extends Component {
                         <h6>
                           <Link
                             className="Nav-teachnology-main-heading"
-                            to="/contactus"
+                            to="/consultant"
                           >
                             CONSULTANT
                           </Link>
