@@ -29,7 +29,7 @@ class CountriesBar extends Component {
                 alt="twitter"
                 className="icon-image"
               />
-            </a>
+            </a>            
             <a
               href="https://www.linkedin.com/company/14662183/admin/feed/posts/"
               target="_blank"
