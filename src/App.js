@@ -26,6 +26,7 @@ import ScrollToTopButton from "./Components/scroll/Scroll";
 // import PricingPage from "./Components/Tables/seo/seo";
 // import Ourlogo from "./Components/Tables/Ourlogo";
 import ContactPage from "./Components/ContactPage";
+import TestingPage from "./Components/TestingPage";
 function App() {
   return (
     <>
@@ -62,6 +63,7 @@ function App() {
             path="/digitalmarketing"
             element={<DigitalMarketing />}
           />
+          <Route exact path="/testing" element={<TestingPage />} />
           {/* <Route
             exact
             path="/websitemaintanance"
