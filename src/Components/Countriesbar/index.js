@@ -70,8 +70,7 @@ class CountriesBar extends Component {
             >
               <img
                 src={uklogo}
-                className="uk-logo-styling mt-1"
-                style={{ width: "25px", height: "25px" }}
+                className="uk-logo"
                 alt="whatsapp"
                 title="WhatsApp"
               />

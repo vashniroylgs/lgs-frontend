@@ -16,6 +16,7 @@ import IndustriesPage from "../IndustriesPage";
 import TechnologiesPage from "../Technologies";
 import Card from "../Card";
 import lgshome from "../images/lgsaboutushomei.png";
+import Minicards from "../MiniCards";
 
 import Footer from "../Footer";
 
@@ -140,6 +141,9 @@ class HomePage extends Component {
             </div>
             <div className="col-12 col-md-5">
               <img src={lgshome} alt="home-page" className="home-page-image " />
+            </div>
+            <div className="col-12 mincards-container">
+              <Minicards />
             </div>
           </div>
           <div className="row">
