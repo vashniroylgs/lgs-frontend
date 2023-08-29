@@ -6,16 +6,18 @@ import Footer from '../Footer';
 import Header from '../navbar';
 
 const JobDetails = () => {
-  const { jobId } = useParams();
+  const {  id } = useParams();
   const [jobDetails, setJobDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchJobDetails() {
       try {
-        const response = await fetch(`http://localhost:3005/job/${jobId}`);
+        console.log('jobId:',  id); 
+        const response = await fetch(`http://localhost:3005/job/${ id}`);
         const data = await response.json();
         setJobDetails(data);
+        console.log("job details",jobDetails);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching job details:', error);
@@ -23,7 +25,7 @@ const JobDetails = () => {
     }
 
     fetchJobDetails();
-  }, [jobId]);
+  }, [ id]);
 
   if (loading) {
     return <div className="job-details-container">Loading...</div>;
@@ -37,6 +39,7 @@ const JobDetails = () => {
     <div>
       <Header/>
   <h1>Job Details</h1>
+ 
       <div className="job-details-container">
   
   <div className="job-details-content">

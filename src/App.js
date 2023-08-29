@@ -102,15 +102,24 @@ function App() {
           <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
-          <Route exact path="/seo" element={<PricingPage />} />
+          <Route exact path="/seo" element={<PricingPage />} />s
           <Route exact path="/logodesign" element={<Ourlogo />} />
           
           <Route exact path="/smoservice" element={<SMO />} /> */}
           <Route exact path="/contactus" element={<ContactPage />} />
           <Route exact path="/salesforcepage" element={<SalesForce />} />
-          <Route exact path="/clientsPage" element={<Clients />} />
-          <Route exact path="/smoservice" element={<SMO />} />
+       
+        
           <Route exact path="/contactus" element={<ContactPage />} />
+          <Route exact path="/testing" element={<TestingPage />} />
+          <Route exact path="/testing" element={<TestingPage />} />
+          <Route path="/career/:id" element={<JobDetails />} />
+          <Route
+            path="/umarmohammadsheikh/dashboard"
+            element={isAuthenticated ? <AdminDashboard /> : <Navigate to="/umarmohammadsheikh" />}
+          />
+          {/* Login page */}
+          <Route path="/umarmohammadsheikh" element={<AdminLoginPage />} />
         </Routes>
       </div>
     </>
