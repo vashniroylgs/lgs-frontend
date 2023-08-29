@@ -308,7 +308,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/contactus"
                           >
-                            ONLINE MARKETING
+                            Online Marketing
                           </Link>
                         </h6>
                         <h6>
@@ -316,7 +316,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/contactus"
                           >
-                            CREATIVE DESIGN
+                            Creative Design
                           </Link>
                         </h6>
                         <h6>
@@ -324,7 +324,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/saascloudsolutions"
                           >
-                            SAAS & CLOUD
+                            Saas & Cloud
                           </Link>
                         </h6>
                       </div>
@@ -334,7 +334,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/consultant"
                           >
-                            CONSULTANT
+                            Consultant
                           </Link>
                         </h6>
 
@@ -344,7 +344,7 @@ class Header extends Component {
                             to="/testing"
                           >
                             {" "}
-                            TESTING
+                            Testing
                           </Link>
                         </h6>
 
@@ -353,7 +353,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/mobileandappdevelopment"
                           >
-                            WEB DESIGN & DEVELOPMENT
+                            Web Design & Development
                           </Link>
                         </h6>
                       </div>
@@ -363,7 +363,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/resellermendix"
                           >
-                            MENDIX
+                            Mendix
                           </Link>
                         </h6>
 
@@ -372,7 +372,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/polarianalm"
                           >
-                            POLARIAN ALM
+                            Polarian ALM
                           </Link>
                         </h6>
 
@@ -381,7 +381,7 @@ class Header extends Component {
                             className="Nav-teachnology-main-heading"
                             to="/salesforcepage"
                           >
-                            SALESFORCE
+                            SalesForce
                           </Link>
                         </h6>
                       </div>

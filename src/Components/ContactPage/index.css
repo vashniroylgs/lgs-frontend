@@ -1,3 +1,5 @@
+/*new code original*/
+
 /*Mobile */
 @media screen and (max-width: 480px) {
   .contact-page-main-container {
@@ -181,10 +183,10 @@
   }
   .servicesTextarea {
     height: 120px;
-    width: 690px;
+    width: 90%;
     border: 2px solid rgb(233, 231, 231);
     display: flex;
-    align-self: flex-start;
+    align-self: center;
     font-size: 13px;
     border-image: linear-gradient(
         to right,
@@ -195,9 +197,18 @@
     border-image-slice: 1;
   }
 
+  .query-Textarea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5px;
+    width: 100%;
+  }
+
   .queryTextarea {
     height: 100px;
-    width: 670px;
+    width: 97%;
     border: 2px solid rgb(233, 231, 231);
     font-size: 13px;
     border-image: linear-gradient(
@@ -384,10 +395,10 @@
   }
   .servicesTextarea {
     height: 120px;
-    width: 690px;
+    width: 90%;
     border: 2px solid rgb(233, 231, 231);
     display: flex;
-    align-self: flex-start;
+    align-self: center;
     font-size: 13px;
     border-image: linear-gradient(
         to right,
@@ -398,9 +409,18 @@
     border-image-slice: 1;
   }
 
+  .query-Textarea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+  }
+
   .queryTextarea {
     height: 100px;
-    width: 670px;
+    width: 80%;
     border: 2px solid rgb(233, 231, 231);
     font-size: 13px;
     border-image: linear-gradient(
@@ -470,7 +490,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .contact-services-heading {
@@ -503,7 +523,7 @@
 
   .servicesTextarea {
     height: 120px;
-    width: 690px;
+    width: 646px;
     border: 2px solid rgb(233, 231, 231);
     display: flex;
     align-self: flex-start;
@@ -597,9 +617,19 @@
     width: 100%;
   }
 
+  .query-Textarea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+
   .queryTextarea {
     height: 100px;
-    width: 670px;
+    width: 80%;
     border: 2px solid rgb(233, 231, 231);
     font-size: 13px;
     border-image: linear-gradient(
@@ -803,7 +833,7 @@
 
   .queryTextarea {
     height: 100px;
-    width: 670px;
+    width: 690px;
     border: 2px solid rgb(233, 231, 231);
     font-size: 13px;
     border-image: linear-gradient(
@@ -874,6 +904,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    align-self: flex-start;
   }
 
   .contact-input-fields-container {
@@ -1210,7 +1241,7 @@
     border-radius: 7px;
     background-color: lightblue;
   }
-  
+
   .servicesTextarea {
     height: 120px;
     width: 690px;
