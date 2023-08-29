@@ -34,13 +34,14 @@ import AdminLoginPage from "./Components/Admin/adminLogin";
 import AdminDashboard from "./Components/Admin/admindashboard";
 import { useEffect, useState } from "react";
 function App() {
+  const apiUrl = process.env.REACT_APP_API_BASE_URL
 
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     const checkAuthentication = async () => {
       try {
-        const response = await axios.get('http://localhost:3005/check-auth', {
+        const response = await axios.get(`${apiUrl}/check-auth`, {
           withCredentials: true,
         });
         setIsAuthenticated(response.data.isAuthenticated);

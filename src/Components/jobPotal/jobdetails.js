@@ -5,6 +5,8 @@ import ContactForm from "../Careers/CarrerContactform";
 import Footer from "../Footer";
 import Header from "../navbar";
 
+const apiUrl = process.env.REACT_APP_API_BASE_URL
+
 const JobDetails = () => {
   const { id } = useParams();
   const [jobDetails, setJobDetails] = useState(null);
@@ -14,7 +16,7 @@ const JobDetails = () => {
     async function fetchJobDetails() {
       try {
         console.log("jobId:", id);
-        const response = await fetch(`http://localhost:3005/job/${id}`);
+        const response = await fetch(`${apiUrl}/job/${id}`);
         const data = await response.json();
         setJobDetails(data);
         console.log("job details", jobDetails);

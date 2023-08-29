@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./jobs.css";
 
+const apiUrl = process.env.REACT_APP_API_BASE_URL
+
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
   const [filters, setFilters] = useState({
@@ -15,7 +17,7 @@ const Jobs = () => {
       try {
         const queryParams = new URLSearchParams(filters).toString();
         const response = await fetch(
-          `http://localhost:3005/alljobs?${queryParams}`
+          `${apiUrl}/alljobs?${queryParams}`
         );
         const data = await response.json();
         setJobs(data.data);

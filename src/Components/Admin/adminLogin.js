@@ -9,11 +9,13 @@ const AdminLoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const apiUrl = process.env.REACT_APP_API_BASE_URL
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3005/' + (isRegistering ? 'adminreg' : 'login'), {
+      const response = await axios.post(`${apiUrl}/` + (isRegistering ? 'adminreg' : 'login'), {
         username,
         password,
       }, {

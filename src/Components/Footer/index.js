@@ -19,9 +19,11 @@ useEffect(() => {
   postVisitCount();
 });
 
+const apiUrl = process.env.REACT_APP_API_BASE_URL
+
 const fetchVisitCount = async () => {
     try {
-      const response = await fetch("http://localhost:3005/getVisitCount");
+      const response = await fetch(`${apiUrl}/getVisitCount`);
       const data = await response.json();
       setVisitCount(data.visitCount);
     } catch (error) {
@@ -35,7 +37,7 @@ const postVisitCount=()=>{
   }
   else{
     Cookies.set("VisitCount","booyah")
-    fetch("http://localhost:3005/incrementVisitCount",{method: "POST"})
+    fetch(`${apiUrl}/incrementVisitCount`,{method: "POST"})
    .then((response)=>response.json())
     .then((data)=>{
       if(data.success){

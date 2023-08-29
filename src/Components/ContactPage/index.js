@@ -571,6 +571,8 @@ const ContactPage = () => {
     label: countries.countries[code].name,
   }));
 
+  const apiUrl = process.env.REACT_APP_API_BASE_URL
+
   const submitContactServices = async (e) => {
     e.preventDefault();
     const servicesformData = {
@@ -581,7 +583,7 @@ const ContactPage = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3005/contactlgs", {
+      const response = await fetch(`${apiUrl}/contactlgs`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -611,7 +613,7 @@ const ContactPage = () => {
     };
     console.log(queriesformData);
     try {
-      const queryresponse = await fetch("http://localhost:3005/queries", {
+      const queryresponse = await fetch(`${apiUrl}/queries`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

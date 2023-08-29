@@ -4,6 +4,8 @@ import { RxCross2 } from "react-icons/rx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReCAPTCHA from "react-google-recaptcha";
 
+const apiUrl = process.env.REACT_APP_API_BASE_URL
+
 const FirstTimePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [email, setEmail] = useState("");
@@ -33,7 +35,7 @@ const FirstTimePopup = () => {
     event.preventDefault();
     const phone = phoneNumber;
     try {
-      const response = await fetch("http://localhost:3005/register", {
+      const response = await fetch(`${apiUrl}/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

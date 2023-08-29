@@ -20,13 +20,15 @@ const ContactPopup = () => {
     navigate("/");
   };
 
+  const apiUrl = process.env.REACT_APP_API_BASE_URL
+
   const handleSubmit = async (event) => {
     const service = course;
     const phone = phoneNumber;
     const message = comment;
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3005/register", {
+      const response = await fetch(`${apiUrl}/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
