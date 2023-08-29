@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
-import Jobs from "../jobPotal/jobs";
+// import Jobs from "../jobPotal/jobs";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

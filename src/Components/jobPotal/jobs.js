@@ -1,21 +1,26 @@
-
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './jobs.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./jobs.css";
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
-  const [filters, setFilters] = useState({ keyword: '', experience: '', location: '' });
+  const [filters, setFilters] = useState({
+    keyword: "",
+    experience: "",
+    location: "",
+  });
 
   useEffect(() => {
     async function fetchJobs() {
       try {
         const queryParams = new URLSearchParams(filters).toString();
-        const response = await fetch(`http://localhost:3005/alljobs?${queryParams}`);
+        const response = await fetch(
+          `http://localhost:3005/alljobs?${queryParams}`
+        );
         const data = await response.json();
         setJobs(data.data);
       } catch (error) {
-        console.error('Error fetching jobs:', error);
+        console.error("Error fetching jobs:", error);
       }
     }
 
@@ -29,8 +34,10 @@ const Jobs = () => {
 
   return (
     <div>
+      <h1 className="jobs-portal-heading">Jobs</h1>
       <div className="filters">
         <input
+        className="filters-input"
           type="text"
           name="keyword"
           placeholder="Search by keyword"
@@ -38,6 +45,7 @@ const Jobs = () => {
           onChange={handleFilterChange}
         />
         <input
+        className="filters-input"
           type="text"
           name="experience"
           placeholder="Filter by experience"
@@ -45,6 +53,7 @@ const Jobs = () => {
           onChange={handleFilterChange}
         />
         <input
+        className="filters-input"
           type="text"
           name="location"
           placeholder="Filter by location"
@@ -52,19 +61,33 @@ const Jobs = () => {
           onChange={handleFilterChange}
         />
       </div>
-      <h1 className='head'>Jobs</h1>
-      <div className="job-listings">
+      
+      <div className="job-container">
         {jobs.length > 0 ? (
           jobs.map((job) => (
-            <div className="job-listing" key={job._id}>
-              <div className="job-details">
-                <h2 className="job-title">{job.title}</h2>
+            <div className="job-card-container" key={job._id}>
+
+                <h2 className="job-card-heading">
+                  Title: <span className="job-main-title">{job.title}</span>
+                </h2>
+              
                 <p className="job-description">{job.description}</p>
-                <p className="job-details">Experience: {job.experience} years</p>
-                <p className="job-details">Location: {job.location}</p>
-                <Link className="apply-link" to={`/career/${job._id}`}>Apply</Link>
+          
+                <div className="job-location-button-container">
+                <div>
+                <p className="job-details">
+                  <span className="job-card-heading">Experience:</span> {job.experience} years
+                </p>
+                <p className="job-details"><span className="job-card-heading">Location:</span> {job.location}</p>
+                </div>
+                <div>
+                <Link className="apply-link" to={`/career/${job._id}`}>
+                  Apply
+                </Link>
+                </div>
+                </div>
               </div>
-            </div>
+            
           ))
         ) : (
           <p>No jobs found.</p>

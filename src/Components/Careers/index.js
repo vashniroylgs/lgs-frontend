@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import career from "../images/careers.jpg";
 import "bootstrap/dist/css/bootstrap.css";
-import ContactForm from "./CarrerContactform";
+// import ContactForm from "./CarrerContactform";
 import "./index .css";
 import Header from "../navbar";
 import Footer from "../Footer";

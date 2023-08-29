@@ -42,12 +42,13 @@ const AdminLoginPage = () => {
   
     <div className="admin-card">
       
-      <div className={`card ${isRegistering ? 'card-flip' : ''}`}>
+      <div className={`admin-inner-card ${isRegistering ? 'card-flip' : ''}`}>
         <div className="card-face card-front">
           <h2>{isRegistering ? 'Register' : 'Login'}</h2>
           <form onSubmit={handleFormSubmit}>
             <input
               type="text"
+              className='admin-input-field'
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -58,7 +59,7 @@ const AdminLoginPage = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">{isRegistering ? 'Register' : 'Login'}</button>
+            <button className='admin-submit-btn' type="submit">{isRegistering ? 'Register' : 'Login'}</button>
           </form>
           <p
             className="toggle-link"

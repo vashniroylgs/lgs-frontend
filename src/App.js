@@ -15,7 +15,7 @@ import SaasPage from "./Components/SaasPage";
 import Careers from "./Components/Careers";
 import WhatsAppIntegration from "./Components/WhatsappIcon";
 import SalesForce from "./Components/SalesforcePage/index";
-import Contactpopup from "./Components/Popup";
+// import Contactpopup from "./Components/Popup";
 import ScrollToTopButton from "./Components/scroll/Scroll";
 // import OrmTable from "./Components/Tables/ORM";
 // import WebsiteDevelopment from "./Components/Tables/WebsiteDevelopment";

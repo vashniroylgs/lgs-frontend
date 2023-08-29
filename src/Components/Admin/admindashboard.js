@@ -107,7 +107,7 @@ const AdminDashboard = () => {
        <div className="admin-dashboard">
       
   <div className="dashboard-content">
-    <h2>Admin Dashboard</h2>
+    <h2 className='admin-dashbord-heading-1'>Admin Dashboard</h2>
     <div className="image-container">
        
       </div>
@@ -115,7 +115,7 @@ const AdminDashboard = () => {
   
     <div className="card-form">
     
-      <h3>Create New Job</h3>
+      <h3 className='admin-dashbord-heading-2'>Create New Job</h3>
       <form onSubmit={handleCreateJob}>
         <input
           type="text"
