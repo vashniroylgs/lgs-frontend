@@ -3,13 +3,29 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../navbar";
 import Footer from "../Footer";
+import { BeatLoader } from "react-spinners";
 
 class ResellerMendix extends Component {
+  state = {loading: true}
+
+  componentDidMount() {
+    // Simulate an API call or any async operation
+    setTimeout(() => {
+      this.setState({ loading: false }); // Set loading to false when your data is ready
+    }, 500); // Simulating a 2-second delay
+  }
+
   render() {
+    const {loading} = this.state
     return (
       <>
         <Header />
-        <div className="mendix-main-container container-fluid">
+        {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
+          <div className="mendix-main-container container-fluid">
           <div className="row">
             <div className="col-12 mb-5">
               <h1 className="reseller-mendix-heading">Mendix</h1>
@@ -214,6 +230,7 @@ class ResellerMendix extends Component {
             </div>
           </div>
         </div>
+        )}
         <Footer />
       </>
     );

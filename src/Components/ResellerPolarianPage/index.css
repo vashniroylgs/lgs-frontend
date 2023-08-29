@@ -4,19 +4,19 @@
 
 .resellar-polarian-main-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   /* background-color: #f9f6f6; */
   background-color: #f0f0f0;
 
   flex-direction: column;
-  padding-top: 10%;
 }
 
 .siemens-resellar-polarian-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 100px;
+  padding: 50px 50px;
 }
 
 .polarianpic-container {
@@ -74,13 +74,13 @@
   color: #ed4b00;
 }
 
-.second-pic {
+.polarian-second-pic {
   height: 400px;
   width: 400px;
   background-color: #f9f6f6;
 }
 
-.second-pic-container {
+.polarian-second-pic-container {
   display: flex;
   align-self: center;
   width: 100%;
@@ -158,7 +158,7 @@
   padding: 50px 20px;
 }
 
-.card-container .card {
+.card-container .polarian-card {
   position: relative;
   display: flex;
   justify-content: center;
@@ -173,11 +173,11 @@
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
-.card-container .card:hover {
+.card-container .polarian-card:hover {
   height: 380px !important;
 }
 
-.card-container .card .img-box {
+.card-container .polarian-card .img-box {
   position: absolute;
   top: 20px;
   width: 170px;
@@ -188,7 +188,7 @@
   transition: 0.5s;
 }
 
-.card-container .card:hover .img-box {
+.card-container .polairan-card:hover .img-box {
   top: -100px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
@@ -196,7 +196,7 @@
   width: 200px;
 }
 
-.card-container .card .img-box img {
+.card-container .polairan-card .img-box .img-box-image-polarion {
   position: absolute;
   top: 0;
   left: 0;
@@ -205,7 +205,7 @@
   object-fit: cover;
 }
 
-.card-container .card .content {
+.card-container .polarian-card .content {
   position: absolute;
   top: 230px !important;
   width: 100%;
@@ -216,21 +216,21 @@
   transition: 0.5s;
 }
 
-.card-container .card:hover .content {
+.card-container .polariancard:hover .content {
   top: 130px !important ;
   height: 300px !important;
 }
 
-.card-container .card .content h2 {
+.card-container .polariancard .content h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.card-container .card .content p {
+.card-container .polarian-card .content p {
   color: #fff;
 }
 
-.card-container .card .content a {
+.card-container .polarian-card .content a {
   position: relative;
   top: 15px;
   display: inline-block;
@@ -241,7 +241,7 @@
   font-weight: 500;
 }
 
-.card-container .card .content a:hover {
+.card-container .polarian-card .content a:hover {
   opacity: 0.8;
 }
 .polarian-resellar-card-para {
@@ -267,7 +267,7 @@
     height: 350px;
     width: 350px;
   }
-  .second-pic {
+  .polarian-second-pic {
     margin-top: 40px;
     width: 350px;
     height: 350px;
@@ -284,12 +284,12 @@
     width: 250px;
     height: 250px;
   }
-  .second-pic {
+  .polarian-second-pic {
     margin-top: 40px;
     width: 250px;
     height: 250px;
   }
-  .second-pic-container {
+  .polarian-second-pic-container {
     display: flex;
     justify-content: center;
     width: 100%;

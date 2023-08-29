@@ -179,6 +179,7 @@ import Slider from "react-slick"; // Import the Slider component from the packag
 import "slick-carousel/slick/slick.css"; // Import the CSS file for the slider
 import "slick-carousel/slick/slick-theme.css";
 import Header from "../navbar";
+import { BeatLoader } from "react-spinners";
 import Footer from "../Footer";
 
 const TransformingCarrerList = [
@@ -258,9 +259,15 @@ const settings = {
 };
 
 class SaasPage extends Component {
+  state = {loading: true}
   componentDidMount() {
     // Attach the scroll event listener to the window
     window.addEventListener("scroll", this.handleScroll);
+      // Simulate an API call or any async operation
+      setTimeout(() => {
+        this.setState({ loading: false }); // Set loading to false when your data is ready
+      }, 500);
+  
   }
 
   componentWillUnmount() {
@@ -282,10 +289,17 @@ class SaasPage extends Component {
     }
   };
   render() {
+    
+    const {loading} = this.state
     return (
       <>
         <Header />
-        <div className="container-fluid salesforce-main-container">
+        {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
+          <div className="container-fluid salesforce-main-container">
           <div className="row p-5 sales-force-container">
             <div className="col-12">
               <div className="sales-force-text-container">
@@ -349,6 +363,8 @@ class SaasPage extends Component {
             </div>
           </div>
         </div>
+        )}
+       
         <Footer />
       </>
     );

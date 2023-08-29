@@ -17,7 +17,7 @@ import TechnologiesPage from "../Technologies";
 import Card from "../Card";
 import lgshome from "../images/lgsaboutushomei.png";
 import Minicards from "../MiniCards";
-
+import { BeatLoader } from "react-spinners";
 import Footer from "../Footer";
 
 const Details = [
@@ -54,14 +54,19 @@ const Details = [
 ];
 
 class HomePage extends Component {
+  state  = {loading: true}
   componentDidMount() {
     // Attach the scroll event listener to the window
     window.addEventListener("scroll", this.handleScroll);
+    setTimeout(() => {
+      this.setState({ loading: false }); // Set loading to false when your data is ready
+    }, 500);
   }
 
   componentWillUnmount() {
     // Remove the scroll event listener when the component is unmounted
     window.removeEventListener("scroll", this.handleScroll);
+    
   }
 
   handleScroll = () => {
@@ -79,10 +84,18 @@ class HomePage extends Component {
   };
 
   render() {
-    return (
-      <>
-        <HomepageHeader />
-        <div className="container-fluid">
+    const { loading } = this.state;
+    return (     
+      <> 
+          <div>
+          <HomepageHeader />
+          {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
+          <div>
+           <div className="container-fluid">
           <div className="home-page-slider-main-container row">
             <div className="col-12 col-md-6">
               <ReactSlick />
@@ -177,8 +190,11 @@ class HomePage extends Component {
           <StartPopup />
           {/* <Chat /> */}
         </div>
+          </div>
+        )}
         <Footer />
-      </>
+        </div>
+        </>
     );
   }
 }

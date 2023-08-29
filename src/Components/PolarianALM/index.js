@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../navbar";
 import Footer from "../Footer";
 import "./index.css";
+import { BeatLoader } from "react-spinners";
+
 
 const PolarianAlmList = [
   {
@@ -51,9 +53,13 @@ const PolarianAlmList = [
 ];
 
 class Polarian extends Component {
+  state = {loading:true} 
   componentDidMount() {
     // Attach the scroll event listener to the window
     window.addEventListener("scroll", this.handleScroll);
+    setTimeout(() => {
+      this.setState({ loading: false }); // Set loading to false when your data is ready
+    }, 500);
   }
 
   componentWillUnmount() {
@@ -75,10 +81,15 @@ class Polarian extends Component {
     }
   };
   render() {
+    const { loading } = this.state;
     return (
       <>
         <Header />
-        <div>
+        {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
           <div className="container-fluid polarian-alm-bg-colour">
             <div className="row polarain-alm-first-page plarian-alm-reval p-4">
               <div className="col-12 col-md-7">
@@ -137,7 +148,7 @@ class Polarian extends Component {
               ))}
             </div>
           </div>
-        </div>
+        )}
         <Footer />
       </>
     );

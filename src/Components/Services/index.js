@@ -6,10 +6,12 @@ import mendixCard from "../images/mendix2.png";
 import digitalmarketingCard from "../images/digitalmarketing2.png";
 import webdevelopmentCard from "../images/webdevelopment.png";
 
+
 class Services extends Component {
   componentDidMount() {
     // Attach the scroll event listener to the window
     window.addEventListener("scroll", this.handleScroll);
+
   }
 
   componentWillUnmount() {
@@ -32,6 +34,7 @@ class Services extends Component {
   };
   render() {
     return (
+
       <div>
         <div className="row1-container">
           <div className="box box-down cyan services-reval">

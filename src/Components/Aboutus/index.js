@@ -131,7 +131,6 @@
 
 // export default About;
 
-import React from "react";
 import ReactPlayer from "react-player";
 
 import "./index.css";
@@ -141,12 +140,31 @@ import video from "../images/Core Values.mp4";
 import whychoosevideo from "../images/whyChooseLGS.mp4";
 import Footer from "../Footer";
 import Header from "../navbar";
+import { BeatLoader } from "react-spinners";
 
-const about = () => {
-  return (
-    <>
+import React, { Component } from 'react'
+
+ class about extends Component {
+  state = {loading: true}
+
+  componentDidMount() {
+    // Simulate an API call or any async operation
+    setTimeout(() => {
+      this.setState({ loading: false }); // Set loading to false when your data is ready
+    }, 500); // Simulating a 2-second delay
+  }
+
+  render() {
+    const { loading } = this.state;
+    return (
+      <>
       <Header />
-      <div className="mainContainer">
+      {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
+            <div className="mainContainer">
         <div className="aboutus-image-container">
           <center>
             <h1 className="about-top-heading">Get To Know About LGS</h1>
@@ -271,9 +289,14 @@ const about = () => {
           </div>
         </div>
       </div>
+        )}
+      
       <Footer />
-    </>
-  );
-};
+      </>
+    )
+  }
+}
 
-export default about;
+export default about
+
+

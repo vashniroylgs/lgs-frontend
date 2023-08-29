@@ -3,6 +3,7 @@ import salesforceanimation from "./salesforceanimation.json";
 import Lottie from "lottie-react";
 import Header from "../navbar";
 import Footer from "../Footer";
+import { BeatLoader } from "react-spinners";
 import "./index.css";
 
 const SalesForceList = [
@@ -39,9 +40,15 @@ const SalesForceList = [
 ];
 
 class SalesForce extends Component {
+  state = {loading: true}
   componentDidMount() {
     // Attach the scroll event listener to the window
     window.addEventListener("scroll", this.handleScroll);
+      // Simulate an API call or any async operation
+      setTimeout(() => {
+        this.setState({ loading: false }); // Set loading to false when your data is ready
+      }, 500); // Simulating a 2-second delay
+
   }
 
   componentWillUnmount() {
@@ -63,10 +70,15 @@ class SalesForce extends Component {
     }
   };
   render() {
+    const {loading} = this.state
     return (
       <>
         <Header />
-        <div>
+        {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
           <div className="container-fluid">
             <div className="row p-5 salesforce-bg-image">
               <div className="col-12 salesforce-content-container">
@@ -141,7 +153,8 @@ class SalesForce extends Component {
               ))}
             </div>
           </div>
-        </div>
+        )}
+        
         <Footer />
       </>
     );

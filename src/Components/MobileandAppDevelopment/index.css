@@ -11,6 +11,12 @@
   gap: 100px 50px;
   padding: 50px 20px;
 }
+.spinner{
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-container .card {
   position: relative;

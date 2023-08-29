@@ -3,13 +3,29 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../navbar";
 import Footer from "../Footer";
+import { BeatLoader } from "react-spinners";
 
 class ResellerPolarian extends Component {
+  state = {loading: true}
+
+  componentDidMount() {
+    // Simulate an API call or any async operation
+    setTimeout(() => {
+      this.setState({ loading: false }); // Set loading to false when your data is ready
+    }, 500); 
+  }
+
   render() {
+    const {loading} = this.state
     return (
       <>
         <Header />
-        <div className="resellar-polarian-main-container container-fluid p-3">
+        {loading ? (
+          <div className="spinner">
+            <BeatLoader size={20} color={"#123abc"} loading={loading} />
+          </div>
+        ) : (
+          <div className="resellar-polarian-main-container container-fluid">
           <div className="siemens-resellar-polarian-card row ">
             <div className="siemens-resellar-polarian-hover-card col-12 col-md-6">
               <img
@@ -45,10 +61,10 @@ class ResellerPolarian extends Component {
           </div>
 
           <div className="siemens-resellar-polarian-card row ">
-            <div className="second-pic-container col-12 col-md-6">
+            <div className="polarian-second-pic-container col-12 col-md-6">
               <img
                 alt="mendixpic"
-                className="second-pic"
+                className="polarian-second-pic"
                 src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690458028/csm_Functional-Safety-automotive_b35b168de7_eu75p1.jpg"
               />
             </div>
@@ -92,11 +108,12 @@ class ResellerPolarian extends Component {
             <div className="row p-3">
               <div className="col-12 col-md-6 col-lg-4">
                 <div class="card-container">
-                  <div class="card">
+                  <div class="polarian-card">
                     <div class="img-box">
                       <img
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920542/SAFe_kiglfu.png"
                         alt="safe"
+                        className="img-box-image-polarion"
                       />
                     </div>
                     <div class="content">
@@ -113,7 +130,7 @@ class ResellerPolarian extends Component {
               </div>
               <div className="col-12 col-md-6 col-lg-4">
                 <div class="card-container">
-                  <div class="card">
+                  <div class="polarian-card">
                     <div class="img-box">
                       <img
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920535/medical_s0sgks.png"
@@ -136,7 +153,7 @@ class ResellerPolarian extends Component {
               </div>
               <div className="col-12 col-md-6 col-lg-4">
                 <div class="card-container">
-                  <div class="card">
+                  <div class="polarian-card">
                     <div class="img-box">
                       <img
                         className="chat-image"
@@ -159,7 +176,7 @@ class ResellerPolarian extends Component {
               </div>
               <div className="col-12 col-md-6 col-lg-4">
                 <div class="card-container">
-                  <div class="card">
+                  <div class="polarian-card">
                     <div class="img-box">
                       <img
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920519/automotive_jenrnw.png"
@@ -180,7 +197,7 @@ class ResellerPolarian extends Component {
               </div>
               <div className="col-12 col-md-6 col-lg-4">
                 <div class="card-container">
-                  <div class="card">
+                  <div class="polarian-card">
                     <div class="img-box">
                       <img
                         className="chat-image"
@@ -204,6 +221,7 @@ class ResellerPolarian extends Component {
             </div>
           </div>
         </div>
+        )}
         <Footer />
       </>
     );
