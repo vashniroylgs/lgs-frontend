@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import uklogo from "../images/uklogo.png";
 import "./index.css";
 
 class CountriesBar extends Component {
@@ -29,7 +30,7 @@ class CountriesBar extends Component {
                 alt="twitter"
                 className="icon-image"
               />
-            </a>
+            </a>            
             <a
               href="https://www.linkedin.com/company/14662183/admin/feed/posts/"
               target="_blank"
@@ -63,13 +64,13 @@ class CountriesBar extends Component {
           <div className="logos-container-2">
             <a
               className="whatsapp_web"
-              href="https://wa.me/442081236407?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+442081236407"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1692641085/download_op1ski.png"
-                className="whatsapp-image"
+                src={uklogo}
+                className="uk-logo"
                 alt="whatsapp"
                 title="WhatsApp"
               />
@@ -83,7 +84,7 @@ class CountriesBar extends Component {
             </a>
             <a
               className="whatsapp_web"
-              href="https://wa.me/+442081236407?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+442081236407"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -103,7 +104,7 @@ class CountriesBar extends Component {
             </a>
             <a
               className="whatsapp_web"
-              href="https://wa.me/+971522286916?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+971522286916"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +124,7 @@ class CountriesBar extends Component {
             </a>
             <a
               className="whatsapp_web"
-              href="https://wa.me/918884739988?text=I%20want%20to%20know%20more%20details%20about%20Techasoft%20Services"
+              href="https://wa.me/+918008448885"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -141,6 +142,7 @@ class CountriesBar extends Component {
             >
               +91 8008448885
             </a>
+
             <a
               className="navbar_mob_email first_nav_content mr-2"
               href="mailto:info@labyrinthglobalsolutions.com"

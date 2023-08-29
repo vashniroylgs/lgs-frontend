@@ -176,6 +176,10 @@
   opacity: 1;
 }
 
+.mincards-container {
+  display: flex;
+  justify-content: center;
+}
 .home-page-slider-main-container {
   background-image: url("../images/bgimage.jpg");
   background-size: cover;
@@ -201,6 +205,12 @@
   .home-page-slider-main-container {
     background-image: url("../images/tabletviewbgimage.png");
     background-size: cover;
+  }
+  .mincards-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 10px;
   }
 
   .home-page-heading {
@@ -286,7 +296,6 @@
   margin-bottom: 20px;
 }
 
-.home-clients{
+.home-clients {
   margin-top: 40px;
 }
-

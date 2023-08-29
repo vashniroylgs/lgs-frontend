@@ -91,6 +91,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.saas-card-heading {
+  color: #000;
+}
+
+.saas-card-para {
+  color: #000;
+  font-weight: normal;
+}
 
 .saas-image-container {
   height: 400px; /* Set a fixed height for the image container */
