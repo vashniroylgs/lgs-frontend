@@ -1,0 +1,76 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import './AdminLogin.css'
+import Header from '../navbar';
+const AdminLoginPage = () => {
+  const history = useNavigate();
+  const [isRegistering, setIsRegistering] = useState(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:3005/' + (isRegistering ? 'adminreg' : 'login'), {
+        username,
+        password,
+      }, {
+        withCredentials: true, // Enable sending cookies
+      });
+
+      if (response.data.success) {
+        if (isRegistering) {
+          // Show an alert for successful registration
+          alert('Registration successful! Please log in.');
+        } else {
+          // Login successful, navigate to the admin dashboard
+          history('/umarmohammadsheikh/dashboard');
+        }
+      } else {
+        console.error('Error:', response.data.error || 'An error occurred.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  return (
+    <div>
+      <Header/>
+  
+    <div className="admin-card">
+      
+      <div className={`card ${isRegistering ? 'card-flip' : ''}`}>
+        <div className="card-face card-front">
+          <h2>{isRegistering ? 'Register' : 'Login'}</h2>
+          <form onSubmit={handleFormSubmit}>
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="submit">{isRegistering ? 'Register' : 'Login'}</button>
+          </form>
+          <p
+            className="toggle-link"
+            onClick={() => setIsRegistering(!isRegistering)}
+          >
+            {isRegistering ? 'Already have an account? Login' : "Don't have an account? Register"}
+          </p>
+
+        </div>
+      </div>
+    </div>  </div>
+  );
+};
+
+export default AdminLoginPage;

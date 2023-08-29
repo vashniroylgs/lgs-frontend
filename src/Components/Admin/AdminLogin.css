@@ -1,0 +1,73 @@
+/* Add this CSS to your existing styles or create a new CSS file */
+.admin-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background-image: url('https://e0.pxfuel.com/wallpapers/667/98/desktop-wallpaper-login-background-outlook-login.jpg');
+   background-size: cover;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    
+  }
+  
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    background-color: rgb(192, 145, 198);
+  }
+  input, button, select, optgroup, textarea {
+    margin: 6px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #2a323b;
+  }
+  .toggle-link {
+    color: #333; /* Text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-decoration: underline; /* Underline the text */
+    margin-top: 10px; /* Add spacing from surrounding elements */
+    font-size: 14px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  
+    /* Style when hovering */
+    &:hover {
+      color: #007bff; /* Change color on hover */
+    }
+  }
+  

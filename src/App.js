@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import ResellerMendix from "./Components/ResellerMendixPage";
 import ResellerPolarian from "./Components/ResellerPolarianPage";
 import WebMobile from "./Components/MobileandAppDevelopment";
@@ -26,10 +26,33 @@ import Smm from "./Components/SMM";
 import PricingPage from "./Components/seo/seo";
 import Ourlogo from "./Components/Ourlogo";
 import ContactPage from "./Components/ContactPage";
+import axios from "axios";
+import JobDetails from "./Components/jobPotal/jobdetails";
+import AdminLoginPage from "./Components/Admin/adminLogin";
+import AdminDashboard from "./Components/Admin/admindashboard";
+import { useEffect, useState } from "react";
 function App() {
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const checkAuthentication = async () => {
+      try {
+        const response = await axios.get('http://localhost:3005/check-auth', {
+          withCredentials: true,
+        });
+        setIsAuthenticated(response.data.isAuthenticated);
+      } catch (error) {
+        console.error('Authentication check error:', error);
+      }
+    };
+
+    checkAuthentication();
+  }, []);
   return (
     <>
       <div>
+       
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
@@ -81,7 +104,16 @@ function App() {
           <Route exact path="/clientsPage" element={<Clients />} />
           <Route exact path="/smoservice" element={<SMO />} />
           <Route exact path="/contactus" element={<ContactPage />} />
-        </Routes>
+          <Route path="/career/:jobId" element={<JobDetails />} />
+           <Route exact path="/umarmohammadsheikh" element={<AdminLoginPage />} />
+          {/*<Route path="/admin" element={isAuthenticated ? <AdminDashboard /> : <AdminLoginPage />} />
+           */}
+            {/* <Route path="/admin" element={isAuthenticated ? <Navigate to="/admin/dashboard" /> : <AdminLoginPage />} /> */}
+        <Route
+          path="/umarmohammadsheikh/dashboard"
+          element={isAuthenticated ? <AdminDashboard /> : <Navigate to="/umarmohammadsheikh" />}
+        />
+          </Routes>
       </div>
     </>
   );

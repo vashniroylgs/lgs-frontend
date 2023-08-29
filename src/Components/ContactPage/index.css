@@ -230,13 +230,12 @@
   .tabs-container {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     padding: 0;
-    width: 450px;
+    width: 550px;
   }
 
-  .contact-form-main-contianer {
-  }
+  
 
   .contact-query-form-container {
     width: 100%;
@@ -244,10 +243,7 @@
     padding: 10px;
     border-radius: 5px;
   }
-  .contact-query-main-container1 {
-  }
-  .contact-query-main-container2 {
-  }
+  
   .contact-query-main-container3 {
     display: flex;
     justify-content: flex-start;
@@ -372,13 +368,12 @@
   .tabs-container {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     padding: 0;
-    width: 450px;
+    width: 550px;
   }
 
-  .contact-form-main-contianer {
-  }
+  
 
   .contact-query-form-container {
     width: 100%;
@@ -386,10 +381,7 @@
     padding: 10px;
     border-radius: 5px;
   }
-  .contact-query-main-container1 {
-  }
-  .contact-query-main-container2 {
-  }
+  
   .contact-query-main-container3 {
     display: flex;
     justify-content: flex-start;
@@ -510,12 +502,11 @@
   .tabs-container {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     padding: 0;
     width: 450px;
   }
-  .contact-form-main-contianer {
-  }
+   
 
   .contact-query-form-container {
     width: 100%;
@@ -523,10 +514,7 @@
     padding: 10px;
     border-radius: 5px;
   }
-  .contact-query-main-container1 {
-  }
-  .contact-query-main-container2 {
-  }
+  
   .contact-query-main-container3 {
     display: flex;
     justify-content: flex-start;
@@ -654,13 +642,12 @@
   .tabs-container {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     padding: 0;
-    width: 450px;
+    width: 550px;
   }
 
-  .contact-form-main-contianer {
-  }
+  
 
   .contact-query-form-container {
     width: 100%;
@@ -668,10 +655,7 @@
     padding: 10px;
     border-radius: 5px;
   }
-  .contact-query-main-container1 {
-  }
-  .contact-query-main-container2 {
-  }
+ 
   .contact-query-main-container3 {
     display: flex;
     justify-content: flex-start;
@@ -797,8 +781,7 @@
     padding: 0;
   }
 
-  .contact-form-main-contianer {
-  }
+  
 
   .contact-query-form-container {
     width: 100%;
@@ -806,10 +789,7 @@
     padding: 10px;
     border-radius: 5px;
   }
-  .contact-query-main-container1 {
-  }
-  .contact-query-main-container2 {
-  }
+  
   .contact-query-main-container3 {
     display: flex;
     justify-content: flex-start;
