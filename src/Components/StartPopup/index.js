@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const apiUrl = process.env.REACT_APP_API_BASE_URL
+console.log(apiUrl)
 
 const FirstTimePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -54,12 +55,18 @@ const FirstTimePopup = () => {
         setSuccessMsg(data.success);
         alert("registration successful");
         setErrorMsg("");
+        setEmail("");
+        setName("");
+        setCourse("");
+        setPhoneNumber("");
+        setComment("");
       } else {
         console.log(course, comment, email, name, phoneNumber);
         const data = await response.json();
         console.log(data.error);
         setErrorMsg(data.error);
         setSuccessMsg("");
+
       }
     } catch (error) {
       console.error(error);
@@ -171,7 +178,7 @@ const FirstTimePopup = () => {
 
               <div className="popup-button-container">
                 <div
-                  class="g-recaptcha"
+                  className="g-recaptcha"
                   data-theme="light"
                   data-sitekey="XXXXXXXXXXXXX"
                   style={captchaStyles}

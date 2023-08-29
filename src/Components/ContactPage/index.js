@@ -552,6 +552,7 @@ const ContactPage = () => {
   const [lastName, setserviesLastName] = useState("");
   const [email, setservicesBusinessEmail] = useState("");
   const [message, setservicesMessage] = useState("");
+  const [Submitbtn, setSubmitbtn] = useState(false);
   const [queryFirstName, setqueryFirstName] = useState("");
   const [queryLastName, setqueryLastName] = useState("");
   const [queryEmail, setqueryEmail] = useState("");
@@ -571,10 +572,11 @@ const ContactPage = () => {
     label: countries.countries[code].name,
   }));
 
-  const apiUrl = process.env.REACT_APP_API_BASE_URL
+  const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
   const submitContactServices = async (e) => {
     e.preventDefault();
+    setSubmitbtn(true);
     const servicesformData = {
       firstName,
       lastName,
@@ -592,12 +594,19 @@ const ContactPage = () => {
       });
       if (response.ok) {
         console.log("services Form submitted successfully");
+        setservicesFirstName("");
+        setserviesLastName("");
+        setservicesBusinessEmail("");
+        setservicesMessage("");
         alert("Form Submitted Successfully");
       } else {
         console.error("form submission falied");
       }
     } catch (error) {
       console.error("Error", error);
+      
+    }finally {
+      setSubmitbtn(false);
     }
   };
 
@@ -622,6 +631,11 @@ const ContactPage = () => {
       });
       if (queryresponse.ok) {
         console.log("queries Form submitted successfully");
+        setqueryFirstName("");
+        setqueryLastName("");
+        setqueryEmail("");
+        setqueryCountry("");
+        setqueryMessage("");
         alert("your query has been Submitted Successfully");
       } else {
         console.error("query form submission falied");
@@ -656,12 +670,14 @@ const ContactPage = () => {
           required
           type="text"
           className="contact-input-field"
+          value={firstName}
           placeholder="First Name*"
           onChange={(e) => setservicesFirstName(e.target.value)}
         />
         <input
           required
           type="text"
+          value={lastName}
           className="contact-input-field"
           placeholder="Last Name*"
           onChange={(e) => setserviesLastName(e.target.value)}
@@ -669,6 +685,7 @@ const ContactPage = () => {
         <input
           required
           type="email"
+          value={email}
           className="contact-input-field"
           placeholder="Business Email Address*"
           onChange={(e) => setservicesBusinessEmail(e.target.value)}
@@ -677,6 +694,7 @@ const ContactPage = () => {
       <div className="servicesTextarea-container">
         <textarea
           required
+          value={message}
           className="servicesTextarea"
           placeholder="Message*"
           onChange={(e) => setservicesMessage(e.target.value)}
@@ -719,7 +737,7 @@ const ContactPage = () => {
         type="submit"
         disabled={!isServicesRecaptchaVerified}
       >
-        SUBMIT
+        {Submitbtn ? "Submitting.." : "SUBMIT"}
       </button>
     </form>
   );
@@ -741,6 +759,7 @@ const ContactPage = () => {
           required
           type="text"
           id="firstName"
+          value={queryFirstName}
           name="FirstName"
           onChange={(e) => setqueryFirstName(e.target.value)}
         />
@@ -750,6 +769,7 @@ const ContactPage = () => {
           required
           type="text"
           id="lastName"
+          value={queryLastName}
           name="LastName"
           onChange={(e) => setqueryLastName(e.target.value)}
         />
@@ -758,6 +778,7 @@ const ContactPage = () => {
           type="email"
           required
           id="email"
+          value={queryEmail}
           className="query-input-field"
           name="Email"
           onChange={(e) => setqueryEmail(e.target.value)}
@@ -788,6 +809,7 @@ const ContactPage = () => {
         <textarea
           placeholder="Message*"
           required
+          value={queryMessage}
           className="queryTextarea"
           onChange={(e) => setqueryMessage(e.target.value)}
         ></textarea>
