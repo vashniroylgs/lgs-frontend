@@ -5,6 +5,7 @@ import ContactForm from "./CarrerContactform";
 import "./index .css";
 import Header from "../navbar";
 import Footer from "../Footer";
+import Jobs from "../jobPotal/jobs";
 
 class Careers extends Component {
   render() {
@@ -32,7 +33,8 @@ class Careers extends Component {
               <img className="careers-image" alt="" src={career} />
             </div>
           </div>
-          <ContactForm />
+          <Jobs/>
+          {/* <ContactForm /> */}
         </div>
         <Footer />
       </>

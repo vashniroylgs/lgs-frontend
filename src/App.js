@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import ResellerMendix from "./Components/ResellerMendixPage";
 import ResellerPolarian from "./Components/ResellerPolarianPage";
 import WebMobile from "./Components/MobileandAppDevelopment";
@@ -28,10 +28,33 @@ import ScrollToTopButton from "./Components/scroll/Scroll";
 import ContactPage from "./Components/ContactPage";
 import Consultant from "./Components/Consultant";
 import TestingPage from "./Components/TestingPage";
+import axios from "axios";
+import JobDetails from "./Components/jobPotal/jobdetails";
+import AdminLoginPage from "./Components/Admin/adminLogin";
+import AdminDashboard from "./Components/Admin/admindashboard";
+import { useEffect, useState } from "react";
 function App() {
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const checkAuthentication = async () => {
+      try {
+        const response = await axios.get('http://localhost:3005/check-auth', {
+          withCredentials: true,
+        });
+        setIsAuthenticated(response.data.isAuthenticated);
+      } catch (error) {
+        console.error('Authentication check error:', error);
+      }
+    };
+
+    checkAuthentication();
+  }, []);
   return (
     <>
       <div>
+       
         <CountriesBar />
         <Chat />
         <WhatsAppIntegration />
@@ -79,13 +102,24 @@ function App() {
           <Route exact path="/orm" element={<OrmTable />} />
           <Route exact path="/ppc" element={<PpcTable />} />
           <Route exact path="/smm" element={<Smm />} />
-          <Route exact path="/seo" element={<PricingPage />} />
+          <Route exact path="/seo" element={<PricingPage />} />s
           <Route exact path="/logodesign" element={<Ourlogo />} />
           
           <Route exact path="/smoservice" element={<SMO />} /> */}
           <Route exact path="/contactus" element={<ContactPage />} />
           <Route exact path="/salesforcepage" element={<SalesForce />} />
-          {/* <Route exact path="/clientsPage" element={<Clients />} /> */}
+       
+        
+          <Route exact path="/contactus" element={<ContactPage />} />
+          <Route exact path="/testing" element={<TestingPage />} />
+          <Route exact path="/testing" element={<TestingPage />} />
+          <Route path="/career/:id" element={<JobDetails />} />
+          <Route
+            path="/umarmohammadsheikh/dashboard"
+            element={isAuthenticated ? <AdminDashboard /> : <Navigate to="/umarmohammadsheikh" />}
+          />
+          {/* Login page */}
+          <Route path="/umarmohammadsheikh" element={<AdminLoginPage />} />
         </Routes>
       </div>
     </>

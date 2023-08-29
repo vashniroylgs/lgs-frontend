@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
+import Jobs from "../jobPotal/jobs";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -93,7 +94,9 @@ const ContactForm = () => {
   }
 
   return (
+    
     <div className="row career-form ">
+       {/* <Jobs/> */}
       <h4 className="col-12 semi_heading-career text-center text-uppercase pt-5 font-weight-bold careers-heading">
         Come Work With Us
       </h4>

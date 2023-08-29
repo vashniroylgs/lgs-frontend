@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./index.css";
+import Jobs from "../jobPotal/jobs";
 
 const CareerForm = () => {
   const [formData, setFormData] = useState({
@@ -92,7 +93,9 @@ const CareerForm = () => {
   };
 
   return (
+    
     <form className="form-container" onSubmit={handleSubmit}>
+      
       <div>
         <label>Name *</label>
         <input
