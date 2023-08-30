@@ -90,7 +90,7 @@ const TestingPage = () => (
         </h1>
         <div className="testing-icons-container">
           {IconsList.map((eachIcon) => (
-            <div className="testing-icon-card">
+            <div  key={eachIcon.src}  className="testing-icon-card">
               <div className={eachIcon.class}>
                 <img
                   height={eachIcon.height}
@@ -136,7 +136,7 @@ const TestingPage = () => (
         <h1 className="testing-second-main-heading">OUR SERVICES</h1>
         <div className="testing-service-container">
           {ourServicesList.map((eachSevice) => (
-            <div className="testing-service-card">
+            <div key={eachSevice.heading} className="testing-service-card">
               <h1 className="testing-service-card-heading">
                 {eachSevice.heading}
               </h1>

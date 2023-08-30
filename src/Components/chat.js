@@ -82,6 +82,7 @@
 // export default Chat;
 import React, { useEffect } from "react";
 
+//const chatbotApi = process.env.REACT_APP_CHATBOT;
 
 const Chat = () => {
   useEffect(() => {

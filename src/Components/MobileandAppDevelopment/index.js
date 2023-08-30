@@ -163,17 +163,17 @@ class WebMobile extends Component {
                 Web Development Features
               </h1>
               {HoverCardList.map((eachHoverImage) => (
-                <div className="col-12 col-md-6 col-lg-3 web-reval">
-                  <div class="card-container">
-                    <div class="card">
-                      <div class="img-box">
+                <div key={eachHoverImage.id} className="col-12 col-md-6 col-lg-3 web-reval">
+                  <div className="card-container">
+                    <div className="card">
+                      <div className="img-box">
                         <img
                           className={eachHoverImage.class}
                           src={eachHoverImage.src}
                           alt={`mobile${eachHoverImage.id}`}
                         />
                       </div>
-                      <div class="content">
+                      <div className="content">
                         <h1 className="web-mobile-card-heading">
                           {eachHoverImage.heading}
                         </h1>

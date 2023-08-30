@@ -721,7 +721,7 @@ const ContactPage = () => {
         </p>
       </div>
       <div
-        class="g-recaptcha"
+        className="g-recaptcha"
         data-theme="light"
         data-sitekey="XXXXXXXXXXXXX"
         style={captchaStyles}
@@ -835,7 +835,7 @@ const ContactPage = () => {
         </p>
       </div>
       <div
-        class="g-recaptcha"
+        className="g-recaptcha"
         data-theme="light"
         data-sitekey="XXXXXXXXXXXXX"
         style={captchaStyles}

@@ -264,7 +264,6 @@ class HomepageHeader extends Component {
               <ul className="nav-menu">
                 <li className="Nav-Service-container nav-menu-item home-padding">
                   <NavLink
-                    exact
                     to="/"
                     activeclassname="active"
                     className="inactive"

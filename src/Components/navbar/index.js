@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Component } from "react";
+import logo from '../images/companylogo.jpg'
 
 import "./index.css";
 
@@ -232,7 +233,7 @@ class Header extends Component {
                 <img
                   alt="website logo"
                   className="nav-mobile-logo"
-                  src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690553185/Favicon_lgs_uvfyzx.png"
+                  src={logo}
                 />
               </Link>
               <button
@@ -247,14 +248,13 @@ class Header extends Component {
               <Link to="/" className="nav-link">
                 <img
                   className="nav-website-logo"
-                  src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1690553185/Favicon_lgs_uvfyzx.png"
+                  src={logo}
                   alt="website logo"
                 />
               </Link>
               <ul className="nav-menu">
                 <li className="Nav-Service-container nav-menu-item home-padding">
                   <NavLink
-                    exact
                     to="/"
                     activeclassname="active"
                     className="inactive"

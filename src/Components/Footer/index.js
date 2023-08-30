@@ -6,7 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import VisitTracker from "../Tracker";
-import Cookies from "js-cookie"
+import Cookies from "js-cookie";
 
 import "./index.css";
 import { Link } from "react-router-dom";
@@ -14,14 +14,14 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [visitCount, setVisitCount] = useState(0);
 
-useEffect(() => {
-  fetchVisitCount(); // Fetch the visit count on initial load
-  postVisitCount();
-});
+  useEffect(() => {
+    fetchVisitCount(); // Fetch the visit count on initial load
+    postVisitCount();
+  });
 
-const apiUrl = process.env.REACT_APP_API_BASE_URL
+  const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
-const fetchVisitCount = async () => {
+  const fetchVisitCount = async () => {
     try {
       const response = await fetch(`${apiUrl}/getVisitCount`);
       const data = await response.json();
@@ -29,35 +29,37 @@ const fetchVisitCount = async () => {
     } catch (error) {
       console.error("Error fetching visit count:", error);
     }
-};
-const postVisitCount=()=>{
-  const visitCookie=Cookies.get("VisitCount")
-  if(visitCookie==="booyah"){
-    return;
-  }
-  else{
-    Cookies.set("VisitCount","booyah")
-    fetch(`${apiUrl}/incrementVisitCount`,{method: "POST"})
-   .then((response)=>response.json())
-    .then((data)=>{
-      if(data.success){
-        return
-      }
-    })
-    .catch((error)=>{
-      console.log(error)})
-    };
-  }
-
-
+  };
+  const postVisitCount = () => {
+    const visitCookie = Cookies.get("VisitCount");
+    if (visitCookie === "booyah") {
+      return;
+    } else {
+      Cookies.set("VisitCount", "booyah");
+      fetch(`${apiUrl}/incrementVisitCount`, { method: "POST" })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            return;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  };
 
   return (
     // {style={{ backgroundColor: "#353b66" }}}
     <div
-      className="container-fluid p-4 bottom-fixed" style={{ backgroundImage: 'url("https://www.techasoft.com/debug/img/industries-back.jpg")', backgroundSize: 'cover'}}
-    
+      className="container-fluid p-4 bottom-fixed"
+      style={{
+        backgroundImage:
+          'url("https://www.techasoft.com/debug/img/industries-back.jpg")',
+        backgroundSize: "cover",
+      }}
     >
-      <div className="row" >
+      <div className="row">
         <div className="col-12 col-lg-3 col-md-6 ">
           <div className="footerContent pt-3">
             <p style={{ color: "white" }}>
@@ -67,14 +69,15 @@ const postVisitCount=()=>{
             </p>
             <div className="footerIconsContainer p-2">
               <div>
-              <a
+                <a
                   href="https://m.facebook.com/LabyrinthGlobalSolutions/"
                   target="_blank"
-                ><BiLogoFacebook
-                  className="footerIconSocial"
-                  size="30"
-                  height="30"
-                />
+                >
+                  <BiLogoFacebook
+                    className="footerIconSocial"
+                    size="30"
+                    height="30"
+                  />
                 </a>
               </div>
               <div>
@@ -103,7 +106,6 @@ const postVisitCount=()=>{
                 </a>
               </div>
             </div>
-           
           </div>
         </div>
         <div className="col-12 col-lg-3 col-md-6 ">
@@ -127,8 +129,8 @@ const postVisitCount=()=>{
                   <p className="pl-2" style={{ color: "white" }}>
                     info@labyrinthglobalsolutions
                     <br />
-                    Address: 16-8-933/3, Government Printing Press Rd, Officers
-                    Colony, Malakpet, Hyderabad, Telangana
+                    Address: Cyber Space Building, 5th Floor, Madhapur Hi-Tech
+                    City, 500081
                   </p>
                 </div>
               </li>

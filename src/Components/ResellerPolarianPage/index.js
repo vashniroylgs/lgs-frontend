@@ -107,16 +107,16 @@ class ResellerPolarian extends Component {
           <div className="resellar-polarian-main-container">
             <div className="row p-3">
               <div className="col-12 col-md-6 col-lg-4">
-                <div class="card-container">
-                  <div class="polarian-card">
-                    <div class="img-box">
+                <div className="card-container">
+                  <div className="polarian-card">
+                    <div className="img-box">
                       <img
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920542/SAFe_kiglfu.png"
                         alt="safe"
                         className="img-box-image-polarion"
                       />
                     </div>
-                    <div class="content">
+                    <div className="content">
                       <h1 className="polarian-resellsr-card-heading">
                         SAFe for Polarion
                       </h1>
@@ -129,15 +129,15 @@ class ResellerPolarian extends Component {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4">
-                <div class="card-container">
-                  <div class="polarian-card">
-                    <div class="img-box">
+                <div className="card-container">
+                  <div className="polarian-card">
+                    <div className="img-box">
                       <img
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920535/medical_s0sgks.png"
                         alt="seo-friendly"
                       />
                     </div>
-                    <div class="content">
+                    <div className="content">
                       <h1 className="polarian-resellsr-card-heading">
                         Medical Devices
                       </h1>
@@ -152,16 +152,16 @@ class ResellerPolarian extends Component {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4">
-                <div class="card-container">
-                  <div class="polarian-card">
-                    <div class="img-box">
+                <div className="card-container">
+                  <div className="polarian-card">
+                    <div className="img-box">
                       <img
                         className="chat-image"
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920528/embeded_bvh4fr.jpg"
                         alt="chat-social"
                       />
                     </div>
-                    <div class="content">
+                    <div className="content">
                       <h1 className="polarian-resellsr-card-heading">
                         Embedded Systems
                       </h1>
@@ -175,15 +175,15 @@ class ResellerPolarian extends Component {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4">
-                <div class="card-container">
-                  <div class="polarian-card">
-                    <div class="img-box">
+                <div className="card-container">
+                  <div className="polarian-card">
+                    <div className="img-box">
                       <img
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920519/automotive_jenrnw.png"
                         alt="theme"
                       />
                     </div>
-                    <div class="content">
+                    <div className="content">
                       <h1 className="polarian-resellsr-card-heading">
                         Automotive
                       </h1>
@@ -196,16 +196,16 @@ class ResellerPolarian extends Component {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-4">
-                <div class="card-container">
-                  <div class="polarian-card">
-                    <div class="img-box">
+                <div className="card-container">
+                  <div className="polarian-card">
+                    <div className="img-box">
                       <img
                         className="chat-image"
                         src="https://res.cloudinary.com/dg81jw9qd/image/upload/v1689920499/aerospace_jtyuam.jpg"
                         alt="chat-social"
                       />
                     </div>
-                    <div class="content">
+                    <div className="content">
                       <h1 className="polarian-resellsr-card-heading">
                         Aerospace
                       </h1>

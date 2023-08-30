@@ -129,13 +129,13 @@ class SalesForce extends Component {
                 LABYRINTH OFFERING
               </h1>
               {SalesForceList.map((eachSale) => (
-                <div class="col-md-6 col-12 col-lg-4 my-5 d-flex justify-content-center salesforce-reval">
-                  <div class="sales-box sales-dark-graybg p-4 sales-radius5">
+                <div key={eachSale.title} className="col-md-6 col-12 col-lg-4 my-5 d-flex justify-content-center salesforce-reval">
+                  <div className="sales-box sales-dark-graybg p-4 sales-radius5">
                     <figure>
                       {" "}
-                      <div class="sales-img-block sales-bgdarkblue">
+                      <div className="sales-img-block sales-bgdarkblue">
                         <img
-                          class="polarian-card-image-2"
+                          className="polarian-card-image-2"
                           src={eachSale.src}
                           alt={`salesforce ${eachSale.title}`}
                           width="100"
@@ -143,7 +143,7 @@ class SalesForce extends Component {
                         />
                       </div>
                       <figcaption>
-                        <div class="fs-18 text-uppercase my-3 polarian-alm-card-heading text-center">
+                        <div className="fs-18 text-uppercase my-3 polarian-alm-card-heading text-center">
                           {eachSale.title}
                         </div>
                       </figcaption>
