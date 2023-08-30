@@ -5,7 +5,7 @@ import "./index.css";
 
 // import Whatsappanimation from './whatsappanimation.json'
 
-const whatsppAPI = process.env.REACT_APP_WHATSAPPLINK
+const whatsppAPI = process.env.REACT_APP_WHATSAPPLINK;
 
 const WhatsAppIntegration = () => {
   return (

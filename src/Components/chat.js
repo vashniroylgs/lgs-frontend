@@ -82,7 +82,7 @@
 // export default Chat;
 import React, { useEffect } from "react";
 
-//const chatbotApi = process.env.REACT_APP_CHATBOT;
+const chatbotApi = process.env.REACT_APP_CHATBOT;
 
 const Chat = () => {
   useEffect(() => {
@@ -92,7 +92,7 @@ const Chat = () => {
       var s1 = document.createElement("script");
       var s0 = document.getElementsByTagName("script")[0];
       s1.async = true;
-      s1.src = "https://embed.tawk.to/64e598e794cf5d49dc6bf928/1h8gdqinv";
+      s1.src = chatbotApi;
       s1.charset = "UTF-8";
       s1.setAttribute("crossorigin", "*");
       s0.parentNode.insertBefore(s1, s0);
