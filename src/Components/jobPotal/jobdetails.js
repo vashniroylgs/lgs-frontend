@@ -4,8 +4,8 @@ import "./JobDetails.css"; // Import your custom CSS file
 import ContactForm from "../Careers/CarrerContactform";
 import Footer from "../Footer";
 import Header from "../navbar";
-
-const apiUrl = process.env.REACT_APP_API_BASE_URL
+//job portal
+const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
 const JobDetails = () => {
   const { id } = useParams();
